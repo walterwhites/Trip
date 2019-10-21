@@ -1,0 +1,75 @@
+{
+	"id": "5c7a6137-dcc0-479f-aa11-c626d0c2efcb",
+	"name": "Trip",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"419d94d7-c803-464d-b325-109f930bfa7a",
+		"75db02b7-72c5-42c8-b16b-b03db2e4c0a4",
+		"e4387b0b-3573-4a0f-91dd-1f23efbdeb60"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "419d94d7-c803-464d-b325-109f930bfa7a",
+			"name": "Get adventures",
+			"url": "http://localhost:9090/adventures",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "75db02b7-72c5-42c8-b16b-b03db2e4c0a4",
+			"name": "Get adventure",
+			"url": "http://localhost:9090/adventures/1",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "e4387b0b-3573-4a0f-91dd-1f23efbdeb60",
+			"name": "create adventure",
+			"url": "http://localhost:9090/adventures",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n    \"id\": 5,\n    \"price\": 0,\n    \"name\": \"test\",\n    \"description\": \"test\",\n    \"date\": \"2019-10-21T16:06:06.126+0000\",\n    \"maxEntrant\": 32\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
