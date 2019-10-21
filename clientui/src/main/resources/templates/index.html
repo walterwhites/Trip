@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Trip Application</title>
-    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="container">
     <h1>Trip Application</h1>
+
+    <div class="row">
+        <div th:each="adventure : ${adventures}" class="col-md-4 my-1">
+            <a th:href="@{|/adventures/${adventure.id}|}" >
+                <img th:src="${adventure.image}"  class="card-img-top" />
+                <h5 th:text= "${adventure.name}"></h5>
+            </a>
+            <h6 th:text= "${adventure.description}"></h6>
+            <i class="fa d-inline-block fa-calendar"></i><p th:text="| Started date: ${#dates.format(adventure.date, 'MM-dd-yyyy HH:mm')}|"></p>
+            <i class="fa d-inline-block fa-ticket"></i><p th:text= "| Maximum Entrance: ${adventure.maxEntrant}|"></p>
+            <span th:text= "| ${adventure.price} $|" class="badge badge-pill badge-primary"></span>
+        </div>
+    </div>
 </div>
 
-
-<script type="text/javascript" src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
