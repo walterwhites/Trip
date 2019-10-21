@@ -6,10 +6,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class TripApplication {
-
+public class AdventureApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(TripApplication.class, args);
+		SpringApplication.run(AdventureApplication.class, args);
 	}
-
 }
