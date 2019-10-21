@@ -1,20 +1,13 @@
-package com.ecommerce.trip.model;
+package com.ecommerce.clientui.beans;
 
-import org.hibernate.validator.constraints.Length;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.util.Date;
 
-@Entity
-public class Adventure {
+public class AdventureBean {
 
-    @Id
-    @GeneratedValue
+    public AdventureBean() {
+    }
+
     private int id;
-
-    @Length(min = 3, max = 50)
     private String name;
     private String description;
     private String image;
@@ -22,34 +15,12 @@ public class Adventure {
     private int maxEntrant;
     private int price;
 
-    public Adventure() {
-
-    }
-
-    public Adventure(int id, int price, String name, String description, String image, Date date, int maxEntrant) {
-        this.id = id;
-        this.price = price;
-        this.name = name;
-        this.image = image;
-        this.description = description;
-        this.date = date;
-        this.maxEntrant = maxEntrant;
-    }
-
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     public String getName() {
@@ -92,16 +63,24 @@ public class Adventure {
         this.maxEntrant = maxEntrant;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
-        return "Adventure{" +
+        return "AdventureBean{" +
                 "id=" + id +
-                ", price=" + price +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +
                 ", date=" + date +
                 ", maxEntrant=" + maxEntrant +
+                ", price=" + price +
                 '}';
     }
 }
