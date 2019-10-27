@@ -12,15 +12,15 @@
     <h1>Trip Application</h1>
 
     <div class="row">
-        <div th:each="adventure : ${adventures}" class="col-md-4 my-1">
-            <a th:href="@{|/adventures/${adventure.id}|}" >
-                <img th:src="${adventure.image}"  class="card-img-top" />
-                <h5 th:text= "${adventure.name}"></h5>
+        <div th:each="category : ${adventures}" class="col-md-4 my-1">
+            <a th:href="@{|/adventures/${category.id}|}" >
+                <img th:src="${category.image}"  class="card-img-top" />
+                <h5 th:text= "${category.name}"></h5>
             </a>
-            <h6 th:text= "${adventure.description}"></h6>
-            <i class="fa d-inline-block fa-calendar"></i><p th:text="| Started date: ${#dates.format(adventure.date, 'MM-dd-yyyy HH:mm')}|"></p>
-            <i class="fa d-inline-block fa-ticket"></i><p th:text= "| Maximum Entrance: ${adventure.maxEntrant}|"></p>
-            <span th:text= "| ${adventure.price} $|" class="badge badge-pill badge-primary"></span>
+            <h6 th:text= "${category.description}"></h6>
+            <i class="fa d-inline-block fa-calendar"></i><p th:text="| Started date: ${#dates.format(category.date, 'MM-dd-yyyy HH:mm')}|"></p>
+            <i class="fa d-inline-block fa-ticket"></i><p th:text= "| Maximum Entrance: ${category.maxEntrant}|"></p>
+            <span th:text= "| ${category.price} $|" class="badge badge-pill badge-primary"></span>
         </div>
     </div>
 </div>
