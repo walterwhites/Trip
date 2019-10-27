@@ -9,5 +9,6 @@ Swagger JSON doc: http://localhost:9090/v2/api-docs
 
 Applications port listening:
 - adventure-microservice = 9090
-- clientui-microservice = 9091
-- payment-microservice = 9092
+- category-microservice = 9091
+- clientui-microservice = 9092
+- payment-microservice = 9093
