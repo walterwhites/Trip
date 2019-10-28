@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 public class Payment {
@@ -18,6 +19,10 @@ public class Payment {
     private Integer amount;
 
     private Long cardNumber;
+
+    private Date paymentDate;
+
+    private String state;
 
     public Payment() {
     }
@@ -61,6 +66,22 @@ public class Payment {
         this.cardNumber = cardNumber;
     }
 
+    public Date getPaymentDate() {
+        return paymentDate;
+    }
+
+    public void setPaymentDate(Date paymentDate) {
+        this.paymentDate = paymentDate;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
     @Override
     public String toString() {
         return "Payment{" +
@@ -68,6 +89,8 @@ public class Payment {
                 ", idCommand=" + idCommand +
                 ", amount=" + amount +
                 ", cardNumber=" + cardNumber +
+                ", paymentDate=" + paymentDate +
+                ", state='" + state + '\'' +
                 '}';
     }
 }

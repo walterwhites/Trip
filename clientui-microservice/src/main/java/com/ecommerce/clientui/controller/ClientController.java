@@ -17,8 +17,25 @@ public class ClientController {
 
     @RequestMapping("/")
     public String home(Model model) {
+        return "index";
+    }
+
+    @RequestMapping("/about-us")
+    public String aboutUs(Model model) {
         List<AdventureBean> adventures = microserviceAdventureProxy.adventureList();
         model.addAttribute("adventures", adventures);
-        return "index";
+        return "about-us";
+    }
+
+    @RequestMapping("/pricing")
+    public String pricing(Model model) {
+        return "pricing";
+    }
+
+    @RequestMapping("/adventures")
+    public String adventures(Model model) {
+        List<AdventureBean> adventures = microserviceAdventureProxy.adventureList();
+        model.addAttribute("adventures", adventures);
+        return "adventures";
     }
 }
