@@ -1,4 +1,4 @@
-package com.ecommerce.payment.web.exceptions;
+package com.ecommerce.payment.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

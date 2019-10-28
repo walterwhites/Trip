@@ -16,24 +16,16 @@ public class Category {
 
     @Length(min = 3, max = 50)
     private String name;
-    private String description;
-    private String image;
-    private Date date;
-    private int maxEntrant;
-    private int price;
+    private String color;
 
     public Category() {
 
     }
 
-    public Category(int id, int price, String name, String description, String image, Date date, int maxEntrant) {
+    public Category(int id, String name, String color) {
         this.id = id;
-        this.price = price;
         this.name = name;
-        this.image = image;
-        this.description = description;
-        this.date = date;
-        this.maxEntrant = maxEntrant;
+        this.color = color;
     }
 
     public int getId() {
@@ -44,14 +36,6 @@ public class Category {
         this.id = id;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
     public String getName() {
         return name;
     }
@@ -60,48 +44,20 @@ public class Category {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getColor() {
+        return color;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public int getMaxEntrant() {
-        return maxEntrant;
-    }
-
-    public void setMaxEntrant(int maxEntrant) {
-        this.maxEntrant = maxEntrant;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
     public String toString() {
         return "Category{" +
                 "id=" + id +
-                ", price=" + price +
                 ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", image='" + image + '\'' +
-                ", date=" + date +
-                ", maxEntrant=" + maxEntrant +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

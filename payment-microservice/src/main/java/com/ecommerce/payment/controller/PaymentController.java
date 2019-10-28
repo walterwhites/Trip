@@ -1,9 +1,9 @@
-package com.ecommerce.payment.web.controller;
+package com.ecommerce.payment.controller;
 
 import com.ecommerce.payment.dao.PaymentDao;
 import com.ecommerce.payment.model.Payment;
-import com.ecommerce.payment.web.exceptions.PaymentAlreadyExistException;
-import com.ecommerce.payment.web.exceptions.PaymentNotPossibleException;
+import com.ecommerce.payment.exceptions.PaymentAlreadyExistException;
+import com.ecommerce.payment.exceptions.PaymentNotPossibleException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
