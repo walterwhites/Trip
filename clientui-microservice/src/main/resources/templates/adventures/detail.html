@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adventure detail - Trip</title>
+</head>
+<header lang="en" th:replace="fragments/header :: header"></header>
+<body>
+<nav lang="en" th:replace="fragments/navDetail :: nav"></nav>
+<div class="container">
+    <h1 th:text= "${adventure.name}"></h1>
+
+    <div class="row align-content-center">
+        <div class="col-md-6 my-1">
+            <img id="adventures-img" th:width="300" th:src="${adventure.image}"  class="card-img-top" />
+            <h6 th:text= "${adventure.description}"></h6>
+            <div class="block">
+                <i class="fa d-inline-block fa-calendar m-2"></i><p class="d-inline-block" th:text="| Started date: ${#dates.format(adventure.date, 'MM-dd-yyyy HH:mm')}|"></p>
+            </div>
+            <div class="block">
+                <i class="fa d-inline-block fa-ticket m-2"></i><p class="d-inline-block" th:text= "| Maximum Entrance: ${adventure.maxEntrant}|"></p>
+            </div>
+            <span th:text= "| ${adventure.price} $|" class="badge badge-pill badge-primary"></span>
+        </div>
+    </div>
+</div>
+</body>
+<footer lang="en" th:replace="fragments/footer :: footer"></footer>
+</html>
