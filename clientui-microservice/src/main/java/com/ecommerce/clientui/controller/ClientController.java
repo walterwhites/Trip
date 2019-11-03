@@ -5,6 +5,7 @@ import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -36,6 +37,13 @@ public class ClientController {
     public String adventures(Model model) {
         List<AdventureBean> adventures = microserviceAdventureProxy.adventureList();
         model.addAttribute("adventures", adventures);
-        return "adventures";
+        return "adventures/list";
+    }
+
+    @RequestMapping("/adventures/{id}")
+    public String adventures(Model model, @PathVariable("id") int id) {
+        AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id);
+        model.addAttribute("adventure", adventure);
+        return "adventures/detail";
     }
 }
