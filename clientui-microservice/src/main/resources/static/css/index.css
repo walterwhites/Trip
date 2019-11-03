@@ -1,0 +1,17 @@
+#footer {
+    background: #007b5e !important;
+    margin-top: 0px;
+}
+
+p {
+    color: rgb(195, 195, 195);
+}
+
+h2 {
+    font-family: cursive;
+    color: rgb(195, 195, 195);
+}
+
+nav {
+    background-color: transparent !important;
+}

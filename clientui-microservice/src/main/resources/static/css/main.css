@@ -2,3 +2,9 @@
     display: inline-block;
     margin-bottom: 10px;
 }
+
+.btn-primary {
+    background-color: #007b5e;
+    border-color: #007b5e;
+    color: white;
+}
