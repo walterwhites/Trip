@@ -1,5 +1,6 @@
 package com.ecommerce.adventure.controller;
 
+import com.ecommerce.adventure.configuration.ApplicationPropertiesConfig;
 import com.ecommerce.adventure.dao.AdventureDao;
 import com.ecommerce.adventure.exception.AdventureNotFoundException;
 import com.ecommerce.adventure.model.Adventure;
@@ -21,10 +22,16 @@ public class AdventureController {
     @Autowired
     private AdventureDao adventureDao;
 
+    @Autowired
+    ApplicationPropertiesConfig applicationPropertiesConfig;
+
     @ApiOperation(value = "List all adventures")
     @GetMapping(value = "adventures")
     public List<Adventure> adventureList() {
-        return adventureDao.findAll();
+        List<Adventure> adventureList = adventureDao.findAll();
+        if(adventureList.isEmpty()) throw new AdventureNotFoundException("No adventures found");
+        List<Adventure> adventureList1 = adventureList.subList(0, applicationPropertiesConfig.getLimitAdventures());
+        return adventureList1;
     }
 
     @ApiOperation(value = "Display an adventure")
