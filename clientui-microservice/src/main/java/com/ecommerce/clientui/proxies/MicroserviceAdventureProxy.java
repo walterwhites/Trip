@@ -2,13 +2,15 @@ package com.ecommerce.clientui.proxies;
 
 
 import com.ecommerce.clientui.beans.AdventureBean;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "adventure-microservice", url = "localhost:9090")
+@FeignClient(name = "adventure-microservice")
+@RibbonClient(name = "adventure-microservice")
 public interface MicroserviceAdventureProxy {
 
     @GetMapping(value = "adventures")

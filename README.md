@@ -14,6 +14,7 @@ Applications port listening:
 - clientui-microservice = 9092
 - payment-microservice = 9093
 - config-server-microservice = 9094
+- Eureka server = 9095
 
 
 ## Spring Cloud config
@@ -25,3 +26,7 @@ https://github.com/walterwhites/config-microservice-trip/blob/master/adventure-m
 
 POST url endpoint to refresh spring cloud config without restart application
 http://localhost:9090/actuator/refresh
+
+
+## Eureka server
+access to Eureka dashboard with instances list: http://localhost:9095/
