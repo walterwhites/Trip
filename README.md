@@ -30,3 +30,7 @@ http://localhost:9090/actuator/refresh
 
 ## Eureka server
 access to Eureka dashboard with instances list: http://localhost:9095/
+
+## Zipkin
+run java -jar zipkin.jar
+access to all requests datas on http://localhost:9411/
