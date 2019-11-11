@@ -1,6 +1,12 @@
 language: java
 before_install:
-  - cd adventure-microservice
+  - cd config-server-microservice
+  - mvn clean install
+  - cd ../eureka-server-microservice
+  - mvn clean install
+  - cd ../zuul-server-microservice
+  - mvn clean install
+  - cd ../adventure-microservice
   - mvn clean install
   - cd ../category-microservice
   - mvn clean install
@@ -8,4 +14,3 @@ before_install:
   - mvn clean install
   - cd ../payment-microservice
   - mvn clean install
-
