@@ -1,15 +1,17 @@
-package com.ecommerce.category;
+package com.ecommerce.zuulservermicroservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
-@EnableSwagger2
+@EnableZuulProxy
 @EnableDiscoveryClient
-public class CategoryApplication {
+public class ZuulServerMicroserviceApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(CategoryApplication.class, args);
+		SpringApplication.run(ZuulServerMicroserviceApplication.class, args);
 	}
+
 }
