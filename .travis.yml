@@ -2,7 +2,7 @@ language: java
 before_install:
   - cd config-server-microservice
   - mvn clean install
-  - cd ../eureka-server-microservice
+  - cd ../eureka-microservice
   - mvn clean install
   - cd ../zuul-server-microservice
   - mvn clean install
