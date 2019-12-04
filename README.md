@@ -15,7 +15,7 @@ Applications port listening:
 - payment-microservice = 9093
 - config-server-microservice = 9094
 - Eureka server = 9095
-
+- Zuul server = 9096
 
 ## Spring Cloud config
 endpoint spring cloud config
@@ -34,3 +34,17 @@ access to Eureka dashboard with instances list: http://localhost:9095/
 ## Zipkin
 run java -jar zipkin.jar
 access to all requests datas on http://localhost:9411/
+
+## Zuul Server
+Api Gateway, which call other microservices API
+http://localhost:9096/{{microservice-name}}/{{endpoint}}/
+
+Exemple to call adventure endpoint:
+http://localhost:9096/adventure-microservice/adventures/
+
+A specific adventure:
+http://localhost:9096/adventure-microservice/adventures/1
+
+## Other informations
+- All microservices use Actuator library which allow to expose endpoint that Eureka Server use to know microservices's health:
+Exemple, Eureka call http://localhost:9096/actuator to know Zuul microservice's health
