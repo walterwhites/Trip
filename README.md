@@ -16,6 +16,8 @@ Applications port listening:
 - config-server-microservice = 9094
 - Eureka server = 9095
 - Zuul server = 9096
+- login-microservice = 9097
+- client-microservice = 9098
 
 ## Spring Cloud config
 endpoint spring cloud config

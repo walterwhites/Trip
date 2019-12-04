@@ -1,0 +1,100 @@
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.ecommerce:config-server-microservice >--------------
+[INFO] Building config-server-microservice 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ config-server-microservice >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ config-server-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ config-server-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ config-server-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/config-server-microservice/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ config-server-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ config-server-microservice <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ config-server-microservice ---
+[INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+2019-12-04 22:41:45.563  INFO [,,,] 96030 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6473be5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+2019-12-04 22:41:45.639  INFO [adventure-microservice,,,] 96030 --- [           main] .e.c.ConfigServerMicroserviceApplication : No active profile set, falling back to default profiles: default
+2019-12-04 22:41:46.228  INFO [adventure-microservice,,,] 96030 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=54aaf2f5-d931-3289-bb09-027bfbc2165d
+2019-12-04 22:41:46.420  INFO [adventure-microservice,,,] 96030 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6473be5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 22:41:46.915  INFO [adventure-microservice,,,] 96030 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9094 (http)
+2019-12-04 22:41:46.922  INFO [adventure-microservice,,,] 96030 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 22:41:46.922  INFO [adventure-microservice,,,] 96030 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-04 22:41:47.019  INFO [adventure-microservice,,,] 96030 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 22:41:47.019  INFO [adventure-microservice,,,] 96030 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1369 ms
+2019-12-04 22:41:47.895  WARN [adventure-microservice,,,] 96030 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@34695b23}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2019-12-04 22:41:48.624  INFO [adventure-microservice,,,] 96030 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-04 22:41:49.287  INFO [adventure-microservice,,,] 96030 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-04 22:41:49.387  INFO [adventure-microservice,,,] 96030 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9094 (http) with context path ''
+2019-12-04 22:41:49.390  INFO [adventure-microservice,,,] 96030 --- [           main] .e.c.ConfigServerMicroserviceApplication : Started ConfigServerMicroserviceApplication in 4.442 seconds (JVM running for 4.877)
+2019-12-04 22:42:05.605  INFO [adventure-microservice,,,] 96030 --- [nio-9094-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-04 22:42:05.605  INFO [adventure-microservice,,,] 96030 --- [nio-9094-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-04 22:42:05.628  INFO [adventure-microservice,,,] 96030 --- [nio-9094-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-12-04 22:42:08.208  INFO [adventure-microservice,534b5c5b3175d6dc,534b5c5b3175d6dc,true] 96030 --- [nio-9094-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/var/folders/6m/0kg6fn8d27vcdfs3x8hvk5rc0000gp/T/config-repo-10319799166702464212/zuul-server-microservice.properties
+2019-12-04 22:42:08.937  WARN [adventure-microservice,,,] 96030 --- [ender@34695b23}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2019-12-04 22:42:08.939  WARN [adventure-microservice,,,] 96030 --- [ender@34695b23}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.17.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.10.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) ~[zipkin-reporter-2.10.3.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 9 common frames omitted
+
+2019-12-04 22:42:33.466  INFO [adventure-microservice,ccf8a18ca6fb0cf1,ccf8a18ca6fb0cf1,true] 96030 --- [nio-9094-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/var/folders/6m/0kg6fn8d27vcdfs3x8hvk5rc0000gp/T/config-repo-10319799166702464212/category-microservice.properties
+2019-12-04 22:42:34.029  INFO [adventure-microservice,997ec89375421c69,997ec89375421c69,false] 96030 --- [nio-9094-exec-8] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/var/folders/6m/0kg6fn8d27vcdfs3x8hvk5rc0000gp/T/config-repo-10319799166702464212/login-microservice.properties
+2019-12-04 22:42:34.564  INFO [adventure-microservice,d1da5018b56070e8,d1da5018b56070e8,true] 96030 --- [nio-9094-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/var/folders/6m/0kg6fn8d27vcdfs3x8hvk5rc0000gp/T/config-repo-10319799166702464212/adventure-microservice.properties
+2019-12-04 22:42:35.097  INFO [adventure-microservice,1061623a9bbc4b6c,1061623a9bbc4b6c,true] 96030 --- [nio-9094-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/var/folders/6m/0kg6fn8d27vcdfs3x8hvk5rc0000gp/T/config-repo-10319799166702464212/client-microservice.properties
+2019-12-04 22:42:35.633  INFO [adventure-microservice,d57d0bdbdbe51817,d57d0bdbdbe51817,true] 96030 --- [nio-9094-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/var/folders/6m/0kg6fn8d27vcdfs3x8hvk5rc0000gp/T/config-repo-10319799166702464212/adventure-microservice.properties
+2019-12-04 22:42:35.782  WARN [adventure-microservice,8f42f065dae76a6f,8f42f065dae76a6f,true] 96030 --- [nio-9094-exec-4] .c.s.e.MultipleJGitEnvironmentRepository : Could not fetch remote for master remote: https://github.com/walterwhites/config-microservice-trip.git
+2019-12-04 22:42:35.819  INFO [adventure-microservice,8f42f065dae76a6f,8f42f065dae76a6f,true] 96030 --- [nio-9094-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/var/folders/6m/0kg6fn8d27vcdfs3x8hvk5rc0000gp/T/config-repo-10319799166702464212/clientui-microservice.properties

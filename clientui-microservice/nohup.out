@@ -1,0 +1,160 @@
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.ecommerce:clientui-microservice >-----------------
+[INFO] Building clientui 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ clientui-microservice >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ clientui-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 18 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ clientui-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ clientui-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/clientui-microservice/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ clientui-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ clientui-microservice <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ clientui-microservice ---
+[INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+2019-12-04 22:42:32.272  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-04 22:42:32.277  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-04 22:42:32.735  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bef525b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+2019-12-04 22:42:32.914  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-04 22:42:35.839  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=clientui-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
+2019-12-04 22:42:35.841  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/clientui-microservice.properties'}]}
+2019-12-04 22:42:35.878  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.e.clientui.ClientuiApplication         : No active profile set, falling back to default profiles: default
+2019-12-04 22:42:37.242  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 22:42:37.324  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 1 repository interfaces.
+2019-12-04 22:42:37.586  WARN [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-04 22:42:37.960  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4acdd7a8-f4c7-3f32-b60f-1f4b77b7b1d4
+2019-12-04 22:42:38.300  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 22:42:38.405  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bef525b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 22:42:38.981  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-12-04 22:42:38.995  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 22:42:38.996  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-04 22:42:39.155  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 22:42:39.155  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3248 ms
+2019-12-04 22:42:39.324  WARN [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-04 22:42:39.325  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-04 22:42:39.336  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7963af75
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils (file:/Users/florent.masdoumier/.m2/repository/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-12-04 22:42:39.514  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 22:42:39.618  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 22:42:39.625  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-04 22:42:40.552  WARN [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@764f904}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2019-12-04 22:42:40.854  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-04 22:42:40.931  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-12-04 22:42:41.063  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-04 22:42:41.201  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 22:42:41.987  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-04 22:42:41.996  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 22:42:42.045  WARN [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-12-04 22:42:42.210  WARN [clientui-microservice,,,] 96260 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-04 22:42:42.968  WARN [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-04 22:42:42.969  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-04 22:42:43.474  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-04 22:42:43.638  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-04 22:42:44.398  WARN [clientui-microservice,,,] 96260 --- [  restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-04 22:42:44.587  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-04 22:42:44.657  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-04 22:42:44.725  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-04 22:42:44.852  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-04 22:42:44.852  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-04 22:42:44.962  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-04 22:42:44.962  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-04 22:42:45.114  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 22:42:45.127  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-04 22:42:45.127  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-04 22:42:45.127  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-04 22:42:45.127  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-04 22:42:45.127  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-04 22:42:45.127  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-04 22:42:45.127  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-04 22:42:45.223  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-04 22:42:45.225  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-04 22:42:45.227  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-04 22:42:45.230  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575495765229 with initial instances count: 1
+2019-12-04 22:42:45.241  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLIENTUI-MICROSERVICE with eureka with status UP
+2019-12-04 22:42:45.241  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575495765241, current=UP, previous=STARTING]
+2019-12-04 22:42:45.242  INFO [clientui-microservice,,,] 96260 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTUI-MICROSERVICE/port-201811-01:clientui-microservice:9092: registering service...
+2019-12-04 22:42:45.269  INFO [clientui-microservice,,,] 96260 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTUI-MICROSERVICE/port-201811-01:clientui-microservice:9092 - registration status: 204
+2019-12-04 22:42:45.298  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+2019-12-04 22:42:45.299  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9092
+2019-12-04 22:42:45.303  INFO [clientui-microservice,,,] 96260 --- [  restartedMain] c.e.clientui.ClientuiApplication         : Started ClientuiApplication in 13.76 seconds (JVM running for 14.85)
+2019-12-04 22:43:58.424  INFO [clientui-microservice,,,] 96260 --- [nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-04 22:43:58.425  INFO [clientui-microservice,,,] 96260 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-04 22:43:58.440  INFO [clientui-microservice,,,] 96260 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-12-04 22:43:59.819  WARN [clientui-microservice,,,] 96260 --- [Sender@764f904}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2019-12-04 22:43:59.828  WARN [clientui-microservice,,,] 96260 --- [Sender@764f904}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.17.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.10.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) ~[zipkin-reporter-2.10.3.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 9 common frames omitted
+
+2019-12-04 22:44:01.354  INFO [clientui-microservice,c1cc2320832b7f8b,c1cc2320832b7f8b,true] 96260 --- [nio-9092-exec-4] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-04 22:44:01.384  INFO [clientui-microservice,c1cc2320832b7f8b,c1cc2320832b7f8b,true] 96260 --- [nio-9092-exec-4] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-adventure-microservice
+2019-12-04 22:44:01.384  INFO [clientui-microservice,c1cc2320832b7f8b,c1cc2320832b7f8b,true] 96260 --- [nio-9092-exec-4] c.netflix.loadbalancer.BaseLoadBalancer  : Client: adventure-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=adventure-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-12-04 22:44:01.391  INFO [clientui-microservice,c1cc2320832b7f8b,c1cc2320832b7f8b,true] 96260 --- [nio-9092-exec-4] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-12-04 22:44:01.409  INFO [clientui-microservice,c1cc2320832b7f8b,c1cc2320832b7f8b,true] 96260 --- [nio-9092-exec-4] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-04 22:44:01.411  INFO [clientui-microservice,c1cc2320832b7f8b,c1cc2320832b7f8b,true] 96260 --- [nio-9092-exec-4] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client adventure-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=adventure-microservice,current list of Servers=[port-201811-01:9011, port-201811-01:9090],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:port-201811-01:9090;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:port-201811-01:9011;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@939fe8a
+2019-12-04 22:44:02.397  INFO [clientui-microservice,,,] 96260 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-04 22:47:45.140  INFO [clientui-microservice,,,] 96260 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 22:52:45.150  INFO [clientui-microservice,,,] 96260 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 22:57:45.160  INFO [clientui-microservice,,,] 96260 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

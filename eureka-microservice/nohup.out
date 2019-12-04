@@ -1,0 +1,169 @@
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.ecommerce:eureka-microservice >------------------
+[INFO] Building eureka-server-microservice 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ eureka-microservice >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ eureka-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ eureka-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ eureka-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/eureka-microservice/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ eureka-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ eureka-microservice <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ eureka-microservice ---
+[INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+2019-12-04 22:42:05.351  INFO [,,,] 96103 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c5aba513] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+2019-12-04 22:42:05.451  INFO [eureka-server,,,] 96103 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-12-04 22:42:05.527  INFO [eureka-server,,,] 96103 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-12-04 22:42:05.527  WARN [eureka-server,,,] 96103 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/eureka-server/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2019-12-04 22:42:05.528  INFO [eureka-server,,,] 96103 --- [           main] .e.e.EurekaServerMicroserviceApplication : No active profile set, falling back to default profiles: default
+2019-12-04 22:42:06.050  WARN [eureka-server,,,] 96103 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-04 22:42:06.220  INFO [eureka-server,,,] 96103 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=88491c44-cf06-33e2-956d-b6f59b7c7e64
+2019-12-04 22:42:06.477  INFO [eureka-server,,,] 96103 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c5aba513] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 22:42:06.699  INFO [eureka-server,,,] 96103 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2019-12-04 22:42:06.706  INFO [eureka-server,,,] 96103 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 22:42:06.706  INFO [eureka-server,,,] 96103 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-04 22:42:06.791  INFO [eureka-server,,,] 96103 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 22:42:06.792  INFO [eureka-server,,,] 96103 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1251 ms
+2019-12-04 22:42:06.891  WARN [eureka-server,,,] 96103 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-04 22:42:06.891  INFO [eureka-server,,,] 96103 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-04 22:42:06.896  INFO [eureka-server,,,] 96103 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3711c71c
+2019-12-04 22:42:07.403  WARN [eureka-server,,,] 96103 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@61d09475}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2019-12-04 22:42:07.536  INFO [eureka-server,,,] 96103 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-04 22:42:07.576  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-04 22:42:07.576  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-12-04 22:42:07.663  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-04 22:42:07.663  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-04 22:42:07.877  WARN [eureka-server,,,] 96103 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-04 22:42:07.877  INFO [eureka-server,,,] 96103 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-04 22:42:08.063  INFO [eureka-server,,,] 96103 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-04 22:42:08.463  WARN [eureka-server,,,] 96103 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-04 22:42:08.581  INFO [eureka-server,,,] 96103 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-04 22:42:08.600  INFO [eureka-server,,,] 96103 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-04 22:42:08.600  INFO [eureka-server,,,] 96103 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2019-12-04 22:42:08.604  INFO [eureka-server,,,] 96103 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575495728603 with initial instances count: 0
+2019-12-04 22:42:08.644  INFO [eureka-server,,,] 96103 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2019-12-04 22:42:08.646  INFO [eureka-server,,,] 96103 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9095/eureka/]
+2019-12-04 22:42:08.782  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-04 22:42:08.782  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-04 22:42:08.782  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-04 22:42:08.782  INFO [eureka-server,,,] 96103 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-04 22:42:08.855  INFO [eureka-server,,,] 96103 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9095/eureka/
+2019-12-04 22:42:08.861  INFO [eureka-server,,,] 96103 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2019-12-04 22:42:08.861  INFO [eureka-server,,,] 96103 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2019-12-04 22:42:08.932  INFO [eureka-server,,,] 96103 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-04 22:42:08.975  INFO [eureka-server,,,] 96103 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2019-12-04 22:42:08.977  INFO [eureka-server,,,] 96103 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2019-12-04 22:42:08.978  INFO [eureka-server,,,] 96103 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-04 22:42:08.979  INFO [eureka-server,,,] 96103 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-04 22:42:08.986  INFO [eureka-server,,,] 96103 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2019-12-04 22:42:08.987  INFO [eureka-server,,,] 96103 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2019-12-04 22:42:08.987  INFO [eureka-server,,,] 96103 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2019-12-04 22:42:08.987  INFO [eureka-server,,,] 96103 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2019-12-04 22:42:08.987  INFO [eureka-server,,,] 96103 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2019-12-04 22:42:08.994  INFO [eureka-server,,,] 96103 --- [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-04 22:42:09.025  INFO [eureka-server,,,] 96103 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path ''
+2019-12-04 22:42:09.026  INFO [eureka-server,,,] 96103 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
+2019-12-04 22:42:09.029  INFO [eureka-server,,,] 96103 --- [           main] .e.e.EurekaServerMicroserviceApplication : Started EurekaServerMicroserviceApplication in 4.23 seconds (JVM running for 4.543)
+2019-12-04 22:42:11.152  INFO [eureka-server,,,] 96103 --- [nio-9095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-04 22:42:11.152  INFO [eureka-server,,,] 96103 --- [nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-04 22:42:11.162  INFO [eureka-server,,,] 96103 --- [nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-12-04 22:42:11.413  WARN [eureka-server,,,] 96103 --- [ender@61d09475}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2019-12-04 22:42:11.415  WARN [eureka-server,,,] 96103 --- [ender@61d09475}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.17.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.10.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) ~[zipkin-reporter-2.10.3.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 9 common frames omitted
+
+2019-12-04 22:42:12.157  INFO [eureka-server,85e388260540e9f9,85e388260540e9f9,true] 96103 --- [nio-9095-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-SERVER-MICROSERVICE/port-201811-01:zuul-server-microservice:9096 with status UP (replication=false)
+2019-12-04 22:42:12.748  INFO [eureka-server,d3c9e14ee7399451,d3c9e14ee7399451,true] 96103 --- [nio-9095-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-SERVER-MICROSERVICE/port-201811-01:zuul-server-microservice:9096 with status UP (replication=true)
+2019-12-04 22:42:42.058  INFO [eureka-server,5ff7fd3e778f7bd0,5ff7fd3e778f7bd0,true] 96103 --- [nio-9095-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LOGIN-MICROSERVICE/port-201811-01:login-microservice:9097 with status UP (replication=false)
+2019-12-04 22:42:42.569  INFO [eureka-server,ddeb082ae81c3f1c,ddeb082ae81c3f1c,true] 96103 --- [nio-9095-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LOGIN-MICROSERVICE/port-201811-01:login-microservice:9097 with status UP (replication=true)
+2019-12-04 22:42:43.257  INFO [eureka-server,ca991b7840058ea4,ca991b7840058ea4,true] 96103 --- [nio-9095-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CATEGORY-MICROSERVICE/port-201811-01:category-microservice:9091 with status UP (replication=false)
+2019-12-04 22:42:43.767  INFO [eureka-server,57111ea93ea0aea9,57111ea93ea0aea9,true] 96103 --- [nio-9095-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CATEGORY-MICROSERVICE/port-201811-01:category-microservice:9091 with status UP (replication=true)
+2019-12-04 22:42:44.176  INFO [eureka-server,9cf81b073429b5ca,9cf81b073429b5ca,true] 96103 --- [nio-9095-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011 with status UP (replication=false)
+2019-12-04 22:42:44.419  INFO [eureka-server,98068d30700f5088,98068d30700f5088,true] 96103 --- [nio-9095-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENT-MICROSERVICE/port-201811-01:client-microservice:9098 with status UP (replication=false)
+2019-12-04 22:42:44.684  INFO [eureka-server,a12db76e46ddeca5,a12db76e46ddeca5,true] 96103 --- [nio-9095-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011 with status UP (replication=true)
+2019-12-04 22:42:44.685  INFO [eureka-server,a12db76e46ddeca5,a12db76e46ddeca5,true] 96103 --- [nio-9095-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENT-MICROSERVICE/port-201811-01:client-microservice:9098 with status UP (replication=true)
+2019-12-04 22:42:45.080  INFO [eureka-server,d57898da948b6318,d57898da948b6318,false] 96103 --- [nio-9095-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090 with status UP (replication=false)
+2019-12-04 22:42:45.268  INFO [eureka-server,b1a053ab03027601,b1a053ab03027601,true] 96103 --- [nio-9095-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTUI-MICROSERVICE/port-201811-01:clientui-microservice:9092 with status UP (replication=false)
+2019-12-04 22:42:45.590  INFO [eureka-server,88fded6208cd31a7,88fded6208cd31a7,true] 96103 --- [nio-9095-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090 with status UP (replication=true)
+2019-12-04 22:42:45.590  INFO [eureka-server,88fded6208cd31a7,88fded6208cd31a7,true] 96103 --- [nio-9095-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTUI-MICROSERVICE/port-201811-01:clientui-microservice:9092 with status UP (replication=true)
+2019-12-04 22:43:08.989  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-04 22:44:08.994  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-04 22:45:08.999  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-04 22:46:09.002  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-12-04 22:47:09.006  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-04 22:48:09.008  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-04 22:49:09.014  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-04 22:50:09.020  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-12-04 22:51:09.022  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-12-04 22:52:09.028  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-04 22:53:09.033  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-04 22:54:09.038  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-04 22:55:09.043  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-12-04 22:56:09.048  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-04 22:57:08.895  INFO [eureka-server,,,] 96103 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 13
+2019-12-04 22:57:09.052  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-04 22:58:09.056  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-12-04 22:59:09.061  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-12-04 23:00:09.067  INFO [eureka-server,,,] 96103 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
