@@ -16,6 +16,10 @@ public class ClientController {
     @Autowired
     MicroserviceAdventureProxy microserviceAdventureProxy;
 
+    //@RequestMapping("/")
+    /*public String home(Model model) {
+        return "trip-index";
+    }*/
     @RequestMapping("/")
     public String home(Model model) {
         return "index";
