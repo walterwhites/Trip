@@ -28,7 +28,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ zuul-server-microservice ---
 [INFO] Attaching agents: []
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-2019-12-04 22:42:05.404  INFO [zuul-server-microservice,,,] 96104 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d9494c52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 14:11:45.654  INFO [zuul-server-microservice,,,] 33122 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2dc622a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -38,203 +38,92 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
-2019-12-04 22:42:05.491  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-04 22:42:08.269  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=zuul-server-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
-2019-12-04 22:42:08.270  INFO [zuul-server-microservice,,,] 96104 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/zuul-server-microservice.properties'}]}
-2019-12-04 22:42:08.292  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : No active profile set, falling back to default profiles: default
-2019-12-04 22:42:08.926  WARN [zuul-server-microservice,,,] 96104 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-04 22:42:08.974  WARN [zuul-server-microservice,,,] 96104 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-12-04 22:42:09.128  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=46387ecb-341b-3bf1-8c82-dbe171eb4e1e
-2019-12-04 22:42:09.382  INFO [zuul-server-microservice,,,] 96104 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d9494c52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-04 22:42:09.596  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9096 (http)
-2019-12-04 22:42:09.602  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-04 22:42:09.603  INFO [zuul-server-microservice,,,] 96104 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-04 22:42:09.679  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-04 22:42:09.679  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1372 ms
-2019-12-04 22:42:09.792  WARN [zuul-server-microservice,,,] 96104 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-04 22:42:09.792  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-04 22:42:09.798  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6e00837f
-2019-12-04 22:42:10.509  WARN [zuul-server-microservice,,,] 96104 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2e40fdbd}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
-2019-12-04 22:42:10.580  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
-2019-12-04 22:42:10.722  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-12-04 22:42:10.774  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-12-04 22:42:10.882  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-12-04 22:42:10.882  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-05 14:11:45.762  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-05 14:11:47.984  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=zuul-server-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
+2019-12-05 14:11:47.985  INFO [zuul-server-microservice,,,] 33122 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/zuul-server-microservice.properties'}]}
+2019-12-05 14:11:48.016  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : No active profile set, falling back to default profiles: default
+2019-12-05 14:11:48.757  WARN [zuul-server-microservice,,,] 33122 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-05 14:11:48.806  WARN [zuul-server-microservice,,,] 33122 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-12-05 14:11:48.988  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=46387ecb-341b-3bf1-8c82-dbe171eb4e1e
+2019-12-05 14:11:49.299  INFO [zuul-server-microservice,,,] 33122 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2dc622a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 14:11:49.690  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9096 (http)
+2019-12-05 14:11:49.700  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-05 14:11:49.701  INFO [zuul-server-microservice,,,] 33122 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-05 14:11:49.821  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-05 14:11:49.821  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1787 ms
+2019-12-05 14:11:50.002  WARN [zuul-server-microservice,,,] 33122 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 14:11:50.002  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-05 14:11:50.010  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@32e5af53
+2019-12-05 14:11:50.923  WARN [zuul-server-microservice,,,] 33122 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@18483b8b}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2019-12-05 14:11:51.003  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-12-05 14:11:51.177  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-05 14:11:51.241  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-05 14:11:51.380  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-05 14:11:51.380  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
 WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-2019-12-04 22:42:10.955  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-12-04 22:42:10.955  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-12-04 22:42:11.069  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-04 22:42:11.078  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-04 22:42:11.078  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-04 22:42:11.079  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-04 22:42:11.079  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-04 22:42:11.079  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-04 22:42:11.079  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-12-04 22:42:11.079  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-04 22:42:11.214  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-04 22:42:11.215  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-12-04 22:42:11.216  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-12-04 22:42:11.219  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575495731218 with initial instances count: 0
-2019-12-04 22:42:11.312  WARN [zuul-server-microservice,,,] 96104 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-04 22:42:11.312  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-04 22:42:11.476  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-04 22:42:11.839  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@587bf2e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@74901d7, org.springframework.security.web.header.HeaderWriterFilter@641ab175, org.springframework.security.web.authentication.logout.LogoutFilter@5fe024a7, com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenFilter@6530a1de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fbd47b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cc5408c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20b921be, org.springframework.security.web.session.SessionManagementFilter@2f11d889, org.springframework.security.web.access.ExceptionTranslationFilter@7d1cfe97, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b8b9b2d]
-2019-12-04 22:42:11.876  WARN [zuul-server-microservice,,,] 96104 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2019-12-04 22:42:12.035  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
-2019-12-04 22:42:12.076  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
-2019-12-04 22:42:12.119  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZUUL-SERVER-MICROSERVICE with eureka with status UP
-2019-12-04 22:42:12.120  INFO [zuul-server-microservice,,,] 96104 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575495732120, current=UP, previous=STARTING]
-2019-12-04 22:42:12.121  INFO [zuul-server-microservice,,,] 96104 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/port-201811-01:zuul-server-microservice:9096: registering service...
-2019-12-04 22:42:12.159  INFO [zuul-server-microservice,,,] 96104 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/port-201811-01:zuul-server-microservice:9096 - registration status: 204
-2019-12-04 22:42:12.167  INFO [zuul-server-microservice,,,] 96104 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9096 (http) with context path ''
-2019-12-04 22:42:12.167  INFO [zuul-server-microservice,,,] 96104 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
-2019-12-04 22:42:12.171  INFO [zuul-server-microservice,,,] 96104 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : Started ZuulServerMicroserviceApplication in 7.308 seconds (JVM running for 7.619)
-2019-12-04 22:42:41.220  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-04 22:42:41.221  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-04 22:42:41.221  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-04 22:42:41.221  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-04 22:42:41.221  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-04 22:42:41.221  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2019-12-04 22:42:41.221  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-04 22:42:41.256  INFO [zuul-server-microservice,,,] 96104 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-04 22:42:42.715  INFO [zuul-server-microservice,,,] 96104 --- [nio-9096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-04 22:42:42.715  INFO [zuul-server-microservice,,,] 96104 --- [nio-9096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-04 22:42:42.750  INFO [zuul-server-microservice,,,] 96104 --- [nio-9096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
-2019-12-04 22:42:43.352 ERROR [zuul-server-microservice,c808a72cd657c2d3,c808a72cd657c2d3,true] 96104 --- [nio-9096-exec-2] c.e.z.security.jwt.JwtTokenProvider      : Expired or invalid JWT token
-2019-12-04 22:42:43.363 ERROR [zuul-server-microservice,c808a72cd657c2d3,c808a72cd657c2d3,true] 96104 --- [nio-9096-exec-2] o.s.c.s.i.web.ExceptionLoggingFilter     : Uncaught exception thrown
-
-com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException: Unmatched JWT token.
-	at com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenProvider.validateToken(JwtTokenProvider.java:72) ~[classes/:na]
-	at com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:27) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:82) ~[brave-instrumentation-servlet-5.8.0.jar:na]
-	at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:138) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2019-12-04 22:42:43.385 ERROR [zuul-server-microservice,,,] 96104 --- [nio-9096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException: Unmatched JWT token.
-	at com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenProvider.validateToken(JwtTokenProvider.java:72) ~[classes/:na]
-	at com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:27) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:82) ~[brave-instrumentation-servlet-5.8.0.jar:na]
-	at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:138) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2019-12-04 22:42:43.612  WARN [zuul-server-microservice,,,] 96104 --- [ender@2e40fdbd}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
-2019-12-04 22:42:43.613  WARN [zuul-server-microservice,,,] 96104 --- [ender@2e40fdbd}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+2019-12-05 14:11:51.472  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-05 14:11:51.472  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-05 14:11:51.615  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 14:11:51.627  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-05 14:11:51.627  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-05 14:11:51.627  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-05 14:11:51.627  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-05 14:11:51.627  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-05 14:11:51.627  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-05 14:11:51.627  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-05 14:11:51.819  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-05 14:11:51.821  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-05 14:11:51.822  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-05 14:11:51.825  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575551511824 with initial instances count: 0
+2019-12-05 14:11:51.949  WARN [zuul-server-microservice,,,] 33122 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 14:11:51.949  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-05 14:11:52.166  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 14:11:52.571  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2559f65c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6500e886, org.springframework.security.web.header.HeaderWriterFilter@6277a496, org.springframework.security.web.authentication.logout.LogoutFilter@4d0d568f, com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenFilter@490704a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@646ddc20, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78e4fa1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d682397, org.springframework.security.web.session.SessionManagementFilter@16f62062, org.springframework.security.web.access.ExceptionTranslationFilter@f2b4303, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62fbefad]
+2019-12-05 14:11:52.616  WARN [zuul-server-microservice,,,] 33122 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-05 14:11:52.802  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2019-12-05 14:11:52.853  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-12-05 14:11:52.926  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZUUL-SERVER-MICROSERVICE with eureka with status UP
+2019-12-05 14:11:52.926  INFO [zuul-server-microservice,,,] 33122 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575551512926, current=UP, previous=STARTING]
+2019-12-05 14:11:52.928  INFO [zuul-server-microservice,,,] 33122 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/port-201811-01:zuul-server-microservice:9096: registering service...
+2019-12-05 14:11:52.991  INFO [zuul-server-microservice,,,] 33122 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/port-201811-01:zuul-server-microservice:9096 - registration status: 204
+2019-12-05 14:11:53.019  INFO [zuul-server-microservice,,,] 33122 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9096 (http) with context path ''
+2019-12-05 14:11:53.020  INFO [zuul-server-microservice,,,] 33122 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
+2019-12-05 14:11:53.026  INFO [zuul-server-microservice,,,] 33122 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : Started ZuulServerMicroserviceApplication in 8.078 seconds (JVM running for 8.666)
+2019-12-05 14:12:21.826  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-05 14:12:21.827  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-05 14:12:21.827  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-05 14:12:21.827  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-05 14:12:21.827  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-05 14:12:21.827  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-12-05 14:12:21.827  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-05 14:12:21.858  INFO [zuul-server-microservice,,,] 33122 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-05 14:13:04.190  INFO [zuul-server-microservice,,,] 33122 --- [nio-9096-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-05 14:13:04.192  INFO [zuul-server-microservice,,,] 33122 --- [nio-9096-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-05 14:13:04.215  INFO [zuul-server-microservice,,,] 33122 --- [nio-9096-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-12-05 14:13:04.614  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-05 14:13:04.638  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-client-microservice
+2019-12-05 14:13:04.638  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: client-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=client-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-12-05 14:13:04.643  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-12-05 14:13:04.660  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-05 14:13:04.662  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client client-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=client-microservice,current list of Servers=[port-201811-01:9098],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:port-201811-01:9098;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@619b2054
+2019-12-05 14:13:04.923  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.e.z.filters.LogFilter                  : request intercepted http://localhost:9096/adventure-microservice/adventures
+2019-12-05 14:13:04.950  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-05 14:13:04.952  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-adventure-microservice
+2019-12-05 14:13:04.952  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: adventure-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=adventure-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-12-05 14:13:04.953  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-12-05 14:13:04.954  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-05 14:13:04.955  INFO [zuul-server-microservice,7baaa7d39c1e764b,7baaa7d39c1e764b,true] 33122 --- [nio-9096-exec-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client adventure-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=adventure-microservice,current list of Servers=[port-201811-01:9011, port-201811-01:9090],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:port-201811-01:9090;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:port-201811-01:9011;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@553ba67
+2019-12-05 14:13:05.112  WARN [zuul-server-microservice,,,] 33122 --- [ender@18483b8b}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2019-12-05 14:13:05.116  WARN [zuul-server-microservice,,,] 33122 --- [ender@18483b8b}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
 
 org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
@@ -269,39 +158,11 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
 	... 9 common frames omitted
 
-2019-12-04 22:42:47.550  WARN [zuul-server-microservice,bf8d27b28c381a82,bf8d27b28c381a82,true] 96104 --- [nio-9096-exec-3] o.s.c.n.zuul.web.ZuulHandlerMapping      : No routes found from RouteLocator
-2019-12-04 22:43:19.614  INFO [zuul-server-microservice,58d61ebd1c2c5c4b,58d61ebd1c2c5c4b,true] 96104 --- [nio-9096-exec-5] c.e.z.filters.LogFilter                  : request intercepted http://localhost:9096/login-microservice/api/login
-2019-12-04 22:43:19.747  INFO [zuul-server-microservice,58d61ebd1c2c5c4b,58d61ebd1c2c5c4b,true] 96104 --- [nio-9096-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:19.770  INFO [zuul-server-microservice,58d61ebd1c2c5c4b,58d61ebd1c2c5c4b,true] 96104 --- [nio-9096-exec-5] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-login-microservice
-2019-12-04 22:43:19.770  INFO [zuul-server-microservice,58d61ebd1c2c5c4b,58d61ebd1c2c5c4b,true] 96104 --- [nio-9096-exec-5] c.netflix.loadbalancer.BaseLoadBalancer  : Client: login-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=login-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2019-12-04 22:43:19.778  INFO [zuul-server-microservice,58d61ebd1c2c5c4b,58d61ebd1c2c5c4b,true] 96104 --- [nio-9096-exec-5] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
-2019-12-04 22:43:19.797  INFO [zuul-server-microservice,58d61ebd1c2c5c4b,58d61ebd1c2c5c4b,true] 96104 --- [nio-9096-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:19.798  INFO [zuul-server-microservice,58d61ebd1c2c5c4b,58d61ebd1c2c5c4b,true] 96104 --- [nio-9096-exec-5] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client login-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=login-microservice,current list of Servers=[port-201811-01:9097],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:port-201811-01:9097;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@3871e1f2
-2019-12-04 22:43:20.781  INFO [zuul-server-microservice,,,] 96104 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:25.140  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:25.142  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-client-microservice
-2019-12-04 22:43:25.142  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.netflix.loadbalancer.BaseLoadBalancer  : Client: client-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=client-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2019-12-04 22:43:25.145  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
-2019-12-04 22:43:25.147  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:25.148  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client client-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=client-microservice,current list of Servers=[port-201811-01:9098],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:port-201811-01:9098;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@39b8dd30
-2019-12-04 22:43:25.182  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.e.z.filters.LogFilter                  : request intercepted http://localhost:9096/adventure-microservice/adventures
-2019-12-04 22:43:25.212  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:25.213  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-adventure-microservice
-2019-12-04 22:43:25.213  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.netflix.loadbalancer.BaseLoadBalancer  : Client: adventure-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=adventure-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2019-12-04 22:43:25.214  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
-2019-12-04 22:43:25.216  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:25.216  INFO [zuul-server-microservice,9a70cbdb9b56b3ea,9a70cbdb9b56b3ea,true] 96104 --- [nio-9096-exec-6] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client adventure-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=adventure-microservice,current list of Servers=[port-201811-01:9011, port-201811-01:9090],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:port-201811-01:9090;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-, [Server:port-201811-01:9011;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@789f640e
-2019-12-04 22:43:26.152  INFO [zuul-server-microservice,,,] 96104 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:43:26.216  INFO [zuul-server-microservice,,,] 96104 --- [erListUpdater-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2019-12-04 22:44:42.305 ERROR [zuul-server-microservice,59da44aafcaa3dab,59da44aafcaa3dab,true] 96104 --- [nio-9096-exec-2] c.e.z.security.jwt.JwtTokenProvider      : Expired or invalid JWT token
-2019-12-04 22:44:42.308 ERROR [zuul-server-microservice,59da44aafcaa3dab,59da44aafcaa3dab,true] 96104 --- [nio-9096-exec-2] o.s.c.s.i.web.ExceptionLoggingFilter     : Uncaught exception thrown
+2019-12-05 14:13:05.651  INFO [zuul-server-microservice,,,] 33122 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-05 14:13:05.956  INFO [zuul-server-microservice,,,] 33122 --- [erListUpdater-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: adventure-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-05 14:16:51.640  INFO [zuul-server-microservice,,,] 33122 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 14:20:15.513 ERROR [zuul-server-microservice,ffba0f4b5f434035,ffba0f4b5f434035,true] 33122 --- [nio-9096-exec-5] c.e.z.security.jwt.JwtTokenProvider      : Expired or invalid JWT token
+2019-12-05 14:20:15.541 ERROR [zuul-server-microservice,ffba0f4b5f434035,ffba0f4b5f434035,true] 33122 --- [nio-9096-exec-5] o.s.c.s.i.web.ExceptionLoggingFilter     : Uncaught exception thrown
 
 com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException: Unmatched JWT token.
 	at com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenProvider.validateToken(JwtTokenProvider.java:72) ~[classes/:na]
@@ -365,7 +226,7 @@ com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException: Unm
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2019-12-04 22:44:42.310 ERROR [zuul-server-microservice,,,] 96104 --- [nio-9096-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2019-12-05 14:20:15.560 ERROR [zuul-server-microservice,,,] 33122 --- [nio-9096-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
 
 com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException: Unmatched JWT token.
 	at com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenProvider.validateToken(JwtTokenProvider.java:72) ~[classes/:na]
@@ -429,9 +290,7 @@ com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException: Unm
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2019-12-04 22:44:48.265  INFO [zuul-server-microservice,37ea5956c8709429,37ea5956c8709429,true] 96104 --- [nio-9096-exec-3] c.e.z.filters.LogFilter                  : request intercepted http://localhost:9096/adventure-microservice/adventures
-2019-12-04 22:47:11.094  INFO [zuul-server-microservice,,,] 96104 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-04 22:52:11.107  INFO [zuul-server-microservice,,,] 96104 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-04 22:55:09.803  INFO [zuul-server-microservice,cc11325a6519f497,cc11325a6519f497,true] 96104 --- [nio-9096-exec-6] c.e.z.filters.LogFilter                  : request intercepted http://localhost:9096/adventure-microservice/adventures
-2019-12-04 22:55:16.685  INFO [zuul-server-microservice,48dca31e83dea8ea,48dca31e83dea8ea,true] 96104 --- [nio-9096-exec-9] c.e.z.filters.LogFilter                  : request intercepted http://localhost:9096/adventure-microservice/adventures
-2019-12-04 22:57:11.117  INFO [zuul-server-microservice,,,] 96104 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 14:20:19.729  INFO [zuul-server-microservice,938fc2e9354e1099,938fc2e9354e1099,true] 33122 --- [nio-9096-exec-6] c.e.z.filters.LogFilter                  : request intercepted http://localhost:9096/adventure-microservice/adventures
+2019-12-05 14:21:51.649  INFO [zuul-server-microservice,,,] 33122 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 14:26:51.661  INFO [zuul-server-microservice,,,] 33122 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 14:31:51.673  INFO [zuul-server-microservice,,,] 33122 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

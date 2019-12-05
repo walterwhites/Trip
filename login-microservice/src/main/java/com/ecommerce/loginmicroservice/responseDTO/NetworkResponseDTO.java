@@ -7,7 +7,6 @@ import java.io.Serializable;
 @Getter
 @Setter
 public class NetworkResponseDTO implements Serializable {
-
     private String ipAddress;
     private String macAddress;
 }

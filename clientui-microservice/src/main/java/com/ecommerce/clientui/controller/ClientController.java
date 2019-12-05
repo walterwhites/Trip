@@ -1,6 +1,7 @@
 package com.ecommerce.clientui.controller;
 
 import com.ecommerce.clientui.beans.AdventureBean;
+import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -34,9 +35,13 @@ public class ClientController {
     }
 
     @RequestMapping("/adventures")
-    public String adventures(Model model) {
-        List<AdventureBean> adventures = microserviceAdventureProxy.adventureList();
-        model.addAttribute("adventures", adventures);
+    public String adventures(Model model) throws UnauthorisedException {
+        try {
+            List<AdventureBean> adventures = microserviceAdventureProxy.adventureList();
+            model.addAttribute("adventures", adventures);
+        } catch (UnauthorisedException unauthorisedException) {
+            return "redirect:/login";
+        }
         return "adventures/list";
     }
 

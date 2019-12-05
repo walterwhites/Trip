@@ -14,6 +14,10 @@ public class CustomErrorDecoder implements ErrorDecoder {
             return new AdventureNotFoundException("Adventure not found");
         }
 
+        if (response.status() == 403) {
+            return new UnauthorisedException("Access denied", "Access denied, zuul server responds 403");
+        }
+
         return defaultErrorDecoder.decode(s, response);
     }
 }
