@@ -1,23 +1,16 @@
 package com.ecommerce.client.filter;
-import com.ecommerce.client.constants.GatewayConstant;
 import com.ecommerce.client.exceptions.ErrorResponse;
 import com.ecommerce.client.exceptions.UnauthorisedException;
+import com.ecommerce.client.utils.DebugUtils.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.web.filter.GenericFilterBean;
-
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
+import static com.ecommerce.client.constants.SecurityConstants.LOGIN_MICROSERVICE_REFERER;
+import static com.ecommerce.client.constants.SecurityConstants.REFERER_HEADER;
 
-public class CustomGatewayFilter extends GenericFilterBean {
+public class CustomGatewayFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
@@ -26,11 +19,12 @@ public class CustomGatewayFilter extends GenericFilterBean {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
-        System.out.println("wesh" + request.getHeader("Host") + " " + request.getHeader("X-Forwarded-Host"));
-        String proxyForwardedHostHeader = request.getHeader("X-Forwarded-Host");
-        
+        ZipkinDebug.displayTraceUrl(request);
+        RequestInfo.displayAllRequestHeaders(request);
 
-            if (proxyForwardedHostHeader == null || !proxyForwardedHostHeader.equals(GatewayConstant.getGatewayURL())) {
+        if (RequestInfo.getRequestHeader(request, REFERER_HEADER) == null ||
+                !RequestInfo.getRequestHeader(request, REFERER_HEADER).equals(LOGIN_MICROSERVICE_REFERER)) {
+
             UnauthorisedException unauthorisedException = new UnauthorisedException("Unauthorized Access",
                     "Unauthorized Access, you should pass through the API gateway");
             byte[] responseToSend = restResponseBytes(unauthorisedException.getErrorResponse());

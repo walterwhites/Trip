@@ -50,3 +50,14 @@ http://localhost:9096/adventure-microservice/adventures/1
 ## Other informations
 - All microservices use Actuator library which allow to expose endpoint that Eureka Server use to know microservices's health:
 Exemple, Eureka call http://localhost:9096/actuator to know Zuul microservice's health
+
+## Debug the app
+DebugUtils class provide many methods to debug the code, requests etc.
+exemple to get trace url of a request with Ziplkin
+```
+ZipkinDebug.displayTraceUrl(request);
+```
+get a request header info
+```
+RequestInfo.displayRequestHeader(request, "X-Forwarded-Host");
+```

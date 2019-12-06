@@ -21,6 +21,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import com.ecommerce.loginmicroservice.Constants.ErrorMessageConstants.*;
 
+import static com.ecommerce.loginmicroservice.Constants.SecurityConstants.REFERER_HEADER;
+
 @Service
 @Transactional("transactionManager")
 public class LoginServiceImpl implements LoginService {
@@ -31,8 +33,11 @@ public class LoginServiceImpl implements LoginService {
     @Autowired
     private ClientInterface clientInterface;
 
+    private HttpServletRequest request;
+
     @Override
     public String login(LoginRequestDTO requestDTO, HttpServletRequest request) throws RuntimeException {
+        this.request = request;
         ClientResponseDTO client = fetchClientDetails.apply(requestDTO);
         validateClientStatus.accept(client);
         validatePassword.accept(requestDTO, client);
@@ -43,8 +48,8 @@ public class LoginServiceImpl implements LoginService {
         Pattern pattern = Pattern.compile(PatternConstants.EmailConstants.EMAIL_PATTERN);
         Matcher m = pattern.matcher(loginRequestDTO.getUsername());
         Boolean find = m.find();
-        ClientResponseDTO clientResponseDTO =  find ? clientInterface.searchClient(ClientRequestDTO.builder().username(null).emailAddress(loginRequestDTO.getUsername()).build()) :
-                clientInterface.searchClient(ClientRequestDTO.builder().username(loginRequestDTO.getUsername()).emailAddress(null).build());
+        ClientResponseDTO clientResponseDTO =  find ? clientInterface.searchClient(ClientRequestDTO.builder().username(null).emailAddress(loginRequestDTO.getUsername()).build(), request.getHeader(REFERER_HEADER)) :
+                clientInterface.searchClient(ClientRequestDTO.builder().username(loginRequestDTO.getUsername()).emailAddress(null).build(), request.getHeader(REFERER_HEADER));
         if (clientResponseDTO.getEmailAddress() == null) {
             throw new UnauthorisedException(InvalidCredentials.MESSAGE, InvalidClientUsername.DEVELOPER_MESSAGE);
         }
