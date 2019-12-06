@@ -1,5 +1,6 @@
 package com.ecommerce.client.exceptions;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,8 +15,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class ErrorResponse implements Serializable {
 
+    private HttpStatus status;
     private String errorMsg;
+
+    @JsonIgnore
     private String developerMsg;
-    private HttpStatus responseStatus;
-    private int responseCode;
 }

@@ -57,30 +57,4 @@ public class ClientController {
     public ResponseEntity<ResponseDTO> getClientsToSendEmail() {
         return new ResponseEntity<>(clientService.clientsToSendEmails(), HttpStatus.OK);
     }
-
-
-    @GetMapping("/sayHello/{name}")
-    @HystrixCommand(fallbackMethod = "fallBackHello", commandProperties = {
-            @HystrixProperty(
-                    name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000"
-            )
-    })
-    public String sayHello(@PathVariable("name") String name) {
-        if (name.equalsIgnoreCase("hello"))
-            throw new RuntimeException();
-        return "success METHOD";
-
-    }
-
-    public String fallBackHello(String name) {
-        return "fallback hello";
-    }
-
-
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello world!!!";
-    }
-
-
 }

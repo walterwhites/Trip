@@ -1,19 +1,19 @@
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-[INFO] Scanning for p[INFO] Scanning for projects...
-rojects...
+[INFO] Scanning for projects...
+[INFO] Scanning for projects...
 [INFO] 
+[INFO] ----------------< com.ecommerce:adventure-microservice >-----[INFO] 
 [INFO] ----------------< com.ecommerce:adventure-microservice >----------------
 [INFO] Building adventure 0.0.1-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] ----------------< com.ecommerce:adventure-microservice >----------------
+-----------
 [INFO] Building adventure 0.0.1-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ adventure-microservice >>>
-[INFO] 
-[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ adventure-microservice >>>
+[[IINFO] 
+[INFO] >>> sNpFrOing]-b o
+ot-maven-plugin:2.2.0.RELE[AISE:run (default-cli) > test-compile @ adventure-microservice >>>
+NFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ adventure-microservice >>>
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ adventure-microservice ---
 [INFO] 
@@ -29,41 +29,41 @@ rojects...
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ adventure-microservice ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 10 source files to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/classes
+[INFO] Compiling 13 source files to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/classes
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 10 source files to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/classes
+[INFO] Compiling 13 source files to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ adventure-microservice ---
-[INFO] 
-[INFO] --- maven-resources-plugin:3.1.0:te[sINFO] Using 'UTF-8' encoding to copy filtered resoutrceRse.
-sources[ INF(O]d skip noefault-testRens oexiustinrgc resourceDirectory e/sU)s ers/florent@ .admvaesnture-microservidcoeum i-e-r-/
-IdeaProjects/Trip/adventure-microservice/src/test/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ adventure-microservice ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ adventure-microservice ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 1 source file to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/test-classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ adventure-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ adventure-microservice ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 1 source file to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/test-classes
 [INFO] 
 [INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ adventure-microservice <<<
 [INFO] 
 [INFO] 
-[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ adventure-micro[servicIeNFO] 
- -[-IN-FO] 
-<<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ adventure-microservice <<<
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ adventure-microservice ---
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ adventure-microservice <<<
 [INFO] 
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ adventure-microservice ---
 [INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] Attaching agents: []
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-2019-12-05 16:00:56.713  INFO [adventure-microservice,,,] 47455 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84e80c31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-05 16:00:56.739  INFO [adventure-microservice,,,] 47452 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84e80c31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:48.176  INFO [adventure-microservice,,,] 88271 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$52d063e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:48.209  INFO [adventure-microservice,,,] 88272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1f93f3a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -82,300 +82,543 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
-2019-12-05 16:00:56.935  INFO [adventure-microservice,,,] 47455 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-05 16:00:56.974  INFO [adventure-microservice,,,] 47452 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-05 16:00:57.705  INFO [adventure-microservice,,,] 47455 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
-2019-12-05 16:00:57.706  INFO [adventure-microservice,,,] 47455 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
-2019-12-05 16:00:57.756  INFO [adventure-microservice,,,] 47455 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
-2019-12-05 16:00:57.876  INFO [adventure-microservice,,,] 47452 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
-2019-12-05 16:00:57.876  INFO [adventure-microservice,,,] 47452 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
-2019-12-05 16:00:57.909  INFO [adventure-microservice,,,] 47452 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
-2019-12-05 16:00:59.480  INFO [adventure-microservice,,,] 47455 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-05 16:00:59.581  INFO [adventure-microservice,,,] 47455 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 1 repository interfaces.
-2019-12-05 16:00:59.581  INFO [adventure-microservice,,,] 47452 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-05 16:00:59.684  INFO [adventure-microservice,,,] 47452 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 1 repository interfaces.
-2019-12-05 16:00:59.808  WARN [adventure-microservice,,,] 47455 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-05 16:00:59.900  WARN [adventure-microservice,,,] 47452 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-05 16:01:00.157  INFO [adventure-microservice,,,] 47455 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c51d303-7660-3bd5-88fc-d6098f3889ff
-2019-12-05 16:01:00.277  INFO [adventure-microservice,,,] 47452 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7c51d303-7660-3bd5-88fc-d6098f3889ff
-2019-12-05 16:01:00.681  INFO [adventure-microservice,,,] 47455 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-05 16:01:00.808  INFO [adventure-microservice,,,] 47452 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-05 16:01:00.841  INFO [adventure-microservice,,,] 47455 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84e80c31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-05 16:01:00.929  INFO [adventure-microservice,,,] 47452 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84e80c31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-05 16:01:01.235  INFO [adventure-microservice,,,] 47455 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9011 (http)
-2019-12-05 16:01:01.245  INFO [adventure-microservice,,,] 47455 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-05 16:01:01.246  INFO [adventure-microservice,,,] 47455 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-05 16:01:01.313  INFO [adventure-microservice,,,] 47452 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2019-12-05 16:01:01.322  INFO [adventure-microservice,,,] 47452 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-05 16:01:01.322  INFO [adventure-microservice,,,] 47452 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-05 16:01:01.366  INFO [adventure-microservice,,,] 47455 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-05 16:01:01.366  INFO [adventure-microservice,,,] 47455 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3587 ms
-2019-12-05 16:01:01.480  INFO [adventure-microservice,,,] 47452 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-05 16:01:01.481  INFO [adventure-microservice,,,] 47452 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3551 ms
-2019-12-05 16:01:01.603  WARN [adventure-microservice,,,] 47455 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-05 16:01:01.604  INFO [adventure-microservice,,,] 47455 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-05 16:01:01.612  INFO [adventure-microservice,,,] 47455 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@67f8f5a6
-2019-12-05 16:01:01.690  WARN [adventure-microservice,,,] 47452 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-05 16:01:01.690  INFO [adventure-microservice,,,] 47452 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-05 16:01:01.700  INFO [adventure-microservice,,,] 47452 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@67f8f5a6
-2019-12-05 16:01:01.794  INFO [adventure-microservice,,,] 47455 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-05 16:01:01.886  INFO [adventure-microservice,,,] 47452 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-05 16:01:01.915  INFO [adventure-microservice,,,] 47455 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-05 16:01:01.923  INFO [adventure-microservice,,,] 47455 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2019-12-05 16:01:01.985  INFO [adventure-microservice,,,] 47452 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-05 16:01:01.993  INFO [adventure-microservice,,,] 47452 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2019-12-05 16:01:02.818  WARN [adventure-microservice,,,] 47455 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5dc9d25a}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
-2019-12-05 16:01:02.863  WARN [adventure-microservice,,,] 47452 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@4d79d187}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
-2019-12-05 16:01:03.080  INFO [adventure-microservice,,,] 47455 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-05 16:01:03.131  INFO [adventure-microservice,,,] 47452 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-05 16:01:03.147  INFO [adventure-microservice,,,] 47455 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
-2019-12-05 16:01:03.198  INFO [adventure-microservice,,,] 47452 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
-2019-12-05 16:01:03.272  INFO [adventure-microservice,,,] 47455 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-05 16:01:03.385  INFO [adventure-microservice,,,] 47452 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-05 16:01:03.453  INFO [adventure-microservice,,,] 47455 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-12-05 16:01:03.533  INFO [adventure-microservice,,,] 47452 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-05 21:35:48.373  INFO [adventure-microservice,,,] 88271 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-05 21:35:48.399  INFO [adventure-microservice,,,] 88272 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-05 21:35:49.097  INFO [adventure-microservice,,,] 88271 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
+2019-12-05 21:35:49.098  INFO [adventure-microservice,,,] 88271 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
+2019-12-05 21:35:49.126  INFO [adventure-microservice,,,] 88271 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
+2019-12-05 21:35:50.279  INFO [adventure-microservice,,,] 88271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-05 21:35:50.355  INFO [adventure-microservice,,,] 88271 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 1 repository interfaces.
+2019-12-05 21:35:50.402  INFO [adventure-microservice,,,] 88272 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
+2019-12-05 21:35:50.403  INFO [adventure-microservice,,,] 88272 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
+2019-12-05 21:35:50.430  INFO [adventure-microservice,,,] 88272 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
+2019-12-05 21:35:50.534  WARN [adventure-microservice,,,] 88271 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-05 21:35:50.885  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61af3d11-26eb-36ac-b7f4-477de0eddd95
+2019-12-05 21:35:51.360  INFO [adventure-microservice,,,] 88271 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:51.486  INFO [adventure-microservice,,,] 88271 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$52d063e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:51.788  INFO [adventure-microservice,,,] 88272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-05 21:35:51.882  INFO [adventure-microservice,,,] 88272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85ms. Found 1 repository interfaces.
+2019-12-05 21:35:51.891  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-12-05 21:35:51.902  INFO [adventure-microservice,,,] 88271 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-05 21:35:51.902  INFO [adventure-microservice,,,] 88271 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-05 21:35:52.069  WARN [adventure-microservice,,,] 88272 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-05 21:35:52.073  INFO [adventure-microservice,,,] 88271 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-05 21:35:52.073  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2929 ms
+2019-12-05 21:35:52.278  WARN [adventure-microservice,,,] 88271 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 21:35:52.278  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-05 21:35:52.289  INFO [adventure-microservice,,,] 88271 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@13374ca6
+2019-12-05 21:35:52.433  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61af3d11-26eb-36ac-b7f4-477de0eddd95
+2019-12-05 21:35:52.477  INFO [adventure-microservice,,,] 88271 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-05 21:35:52.613  INFO [adventure-microservice,,,] 88271 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-05 21:35:52.623  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-05 21:35:52.823  INFO [adventure-microservice,,,] 88272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:52.944  INFO [adventure-microservice,,,] 88272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1f93f3a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:53.312  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9011 (http)
+2019-12-05 21:35:53.321  INFO [adventure-microservice,,,] 88272 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-05 21:35:53.322  INFO [adventure-microservice,,,] 88272 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-05 21:35:53.482  INFO [adventure-microservice,,,] 88272 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-05 21:35:53.483  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3031 ms
+2019-12-05 21:35:53.504  WARN [adventure-microservice,,,] 88271 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5c9e6d95}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2019-12-05 21:35:53.685  WARN [adventure-microservice,,,] 88272 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 21:35:53.685  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-05 21:35:53.694  INFO [adventure-microservice,,,] 88272 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2e1291a4
+2019-12-05 21:35:53.807  INFO [adventure-microservice,,,] 88271 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-05 21:35:53.899  INFO [adventure-microservice,,,] 88271 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-12-05 21:35:53.970  INFO [adventure-microservice,,,] 88272 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-05 21:35:54.073  INFO [adventure-microservice,,,] 88271 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-05 21:35:54.090  INFO [adventure-microservice,,,] 88272 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-05 21:35:54.098  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-05 21:35:54.200  INFO [adventure-microservice,,,] 88271 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table adventure if exists
 Hibernate: drop sequence if exists hibernate_sequence
 Hibernate: create sequence hibernate_sequence start with 1 increment by 1
 Hibernate: create table adventure (id integer not null, date timestamp, description varchar(255), image varchar(255), max_entrant integer not null, name varchar(50), price integer not null, primary key (id))
-2019-12-05 16:01:04.322  INFO [adventure-microservice,,,] 47455 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-05 16:01:04.330  INFO [adventure-microservice,,,] 47455 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-05 21:35:54.882  INFO [adventure-microservice,,,] 88271 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-05 21:35:54.889  INFO [adventure-microservice,,,] 88271 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-05 21:35:55.023  WARN [adventure-microservice,,,] 88271 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-05 21:35:55.025  WARN [adventure-microservice,,,] 88272 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@62ee1c89}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2019-12-05 21:35:55.272  INFO [adventure-microservice,,,] 88272 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-05 21:35:55.339  INFO [adventure-microservice,,,] 88272 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-12-05 21:35:55.450  INFO [adventure-microservice,,,] 88272 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-05 21:35:55.595  INFO [adventure-microservice,,,] 88272 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-05 21:35:55.933  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-05 21:35:56.095  INFO [adventure-microservice,,,] 88271 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-05 21:35:56.127  WARN [adventure-microservice,,,] 88271 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 21:35:56.127  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
 Hibernate: drop table adventure if exists
 Hibernate: drop sequence if exists hibernate_sequence
 Hibernate: create sequence hibernate_sequence start with 1 increment by 1
 Hibernate: create table adventure (id integer not null, date timestamp, description varchar(255), image varchar(255), max_entrant integer not null, name varchar(50), price integer not null, primary key (id))
-2019-12-05 16:01:04.410  INFO [adventure-microservice,,,] 47452 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-05 16:01:04.418  INFO [adventure-microservice,,,] 47452 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-05 16:01:04.467  WARN [adventure-microservice,,,] 47455 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-05 16:01:04.561  WARN [adventure-microservice,,,] 47452 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-05 16:01:05.493  INFO [adventure-microservice,,,] 47455 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2019-12-05 16:01:05.590  INFO [adventure-microservice,,,] 47452 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2019-12-05 16:01:05.633  INFO [adventure-microservice,,,] 47455 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-05 16:01:05.665  WARN [adventure-microservice,,,] 47455 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-05 16:01:05.665  INFO [adventure-microservice,,,] 47455 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-05 16:01:05.719  INFO [adventure-microservice,,,] 47452 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-05 16:01:05.752  WARN [adventure-microservice,,,] 47452 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-05 16:01:05.752  INFO [adventure-microservice,,,] 47452 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-05 16:01:05.880  INFO [adventure-microservice,,,] 47455 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-05 16:01:05.942  INFO [adventure-microservice,,,] 47452 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-05 16:01:06.265  INFO [adventure-microservice,,,] 47455 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2019-12-05 21:35:56.198  INFO [adventure-microservice,,,] 88272 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-05 21:35:56.206  INFO [adventure-microservice,,,] 88272 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-05 21:35:56.305  WARN [adventure-microservice,,,] 88272 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-05 21:35:56.392  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 21:35:57.022  INFO [adventure-microservice,,,] 88271 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 7c9936cc-372a-4e81-9001-f371fad812ae
+Using generated security password: 3a3b85f9-7c13-4889-a9f7-5bc02ac8a3ea
 
-2019-12-05 16:01:06.305  INFO [adventure-microservice,,,] 47452 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2019-12-05 21:35:57.222  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4afdcdf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@20bc72af, org.springframework.security.web.header.HeaderWriterFilter@6ca6d195, org.springframework.security.web.authentication.logout.LogoutFilter@3c971473, com.ecommerce.adventure.filter.CustomGatewayFilter@75364777, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f02ce3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b52f723, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48028e11, org.springframework.security.web.session.SessionManagementFilter@53b10e9a, org.springframework.security.web.access.ExceptionTranslationFilter@2835574b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50e7f88b]
+2019-12-05 21:35:57.497  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-05 21:35:57.698  INFO [adventure-microservice,,,] 88272 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-05 21:35:57.729  WARN [adventure-microservice,,,] 88272 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 21:35:57.730  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-05 21:35:57.978  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 21:35:58.409  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-12-05 21:35:58.447  INFO [adventure-microservice,,,] 88272 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 68b239ee-9802-4cbc-83ff-1d9822d2e5cb
+Using generated security password: 4ec12c90-0acc-4385-8aa1-514ded6a2234
 
-2019-12-05 16:01:06.310  WARN [adventure-microservice,,,] 47455 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-2019-12-05 16:01:06.311  INFO [adventure-microservice,,,] 47455 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-05 16:01:06.314  INFO [adventure-microservice,,,] 47455 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-12-05 16:01:06.314  INFO [adventure-microservice,,,] 47455 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-05 21:35:58.502  WARN [adventure-microservice,,,] 88271 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-05 21:35:58.586  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e7f88b, org.springframework.security.web.context.SecurityContextPersistenceFilter@22a9fa23, org.springframework.security.web.header.HeaderWriterFilter@2c3762c7, org.springframework.security.web.authentication.logout.LogoutFilter@46823e8, com.ecommerce.adventure.filter.CustomGatewayFilter@7a461744, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46219104, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b91e3d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b1cc2fb, org.springframework.security.web.session.SessionManagementFilter@64d49e35, org.springframework.security.web.access.ExceptionTranslationFilter@6554f841, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68c06a2]
+2019-12-05 21:35:58.781  WARN [adventure-microservice,,,] 88272 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-05 21:35:58.806  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-05 21:35:58.882  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-05 21:35:59.063  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-05 21:35:59.086  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-05 21:35:59.086  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-05 21:35:59.149  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-12-05 21:35:59.200  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-05 21:35:59.201  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-05 21:35:59.300  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-05 21:35:59.300  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-05 21:35:59.349  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:35:59.364  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-05 21:35:59.364  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-05 21:35:59.365  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-05 21:35:59.365  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-05 21:35:59.365  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-05 21:35:59.365  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-05 21:35:59.365  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-12-05 21:35:59.434  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-05 21:35:59.435  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-05 21:35:59.503  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-05 21:35:59.506  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-05 21:35:59.509  INFO [adventure-microservice,,,] 88271 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-05 21:35:59.514  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575578159512 with initial instances count: 1
+2019-12-05 21:35:59.528  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADVENTURE-MICROSERVICE with eureka with status UP
+2019-12-05 21:35:59.529  INFO [adventure-microservice,,,] 88271 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575578159529, current=UP, previous=STARTING]
+2019-12-05 21:35:59.531  INFO [adventure-microservice,,,] 88271 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090: registering service...
+2019-12-05 21:35:59.532  INFO [adventure-microservice,,,] 88271 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-05 21:35:59.548  INFO [adventure-microservice,,,] 88271 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-05 21:35:59.567  INFO [adventure-microservice,,,] 88271 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090 - registration status: 204
+2019-12-05 21:35:59.627  INFO [adventure-microservice,,,] 88271 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-05 21:35:59.661  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:35:59.678  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-05 21:35:59.678  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-05 21:35:59.678  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-05 21:35:59.679  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-05 21:35:59.679  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-05 21:35:59.679  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-05 21:35:59.679  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-05 21:35:59.811  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-05 21:35:59.814  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-05 21:35:59.816  INFO [adventure-microservice,,,] 88272 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-05 21:35:59.820  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575578159819 with initial instances count: 1
+2019-12-05 21:35:59.832  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADVENTURE-MICROSERVICE with eureka with status UP
+2019-12-05 21:35:59.832  INFO [adventure-microservice,,,] 88272 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575578159832, current=UP, previous=STARTING]
+2019-12-05 21:35:59.834  INFO [adventure-microservice,,,] 88272 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011: registering service...
+2019-12-05 21:35:59.835  INFO [adventure-microservice,,,] 88272 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-05 21:35:59.835  INFO [adventure-microservice,,,] 88271 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2019-12-05 21:35:59.836  INFO [adventure-microservice,,,] 88271 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2019-12-05 21:35:59.841  INFO [adventure-microservice,,,] 88271 --- [           main] c.e.adventure.AdventureApplication       : Started AdventureApplication in 12.815 seconds (JVM running for 13.461)
+2019-12-05 21:35:59.848  INFO [adventure-microservice,,,] 88272 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-05 21:35:59.861  INFO [adventure-microservice,,,] 88272 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011 - registration status: 204
+2019-12-05 21:35:59.885  INFO [adventure-microservice,,,] 88272 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-05 21:36:00.018  INFO [adventure-microservice,,,] 88272 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9011 (http) with context path ''
+2019-12-05 21:36:00.019  INFO [adventure-microservice,,,] 88272 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9011
+2019-12-05 21:36:00.023  INFO [adventure-microservice,,,] 88272 --- [           main] c.e.adventure.AdventureApplication       : Started AdventureApplication in 12.889 seconds (JVM running for 13.515)
+2019-12-05 21:40:59.365  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:40:59.674  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:45:59.371  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:45:59.677  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:50:59.374  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:50:59.681  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:55:59.376  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:55:59.683  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:00:59.418  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:00:59.726  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:05:59.428  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:05:59.737  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:10:59.437  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:10:59.743  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:15:59.447  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:15:59.754  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:20:59.456  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:20:59.763  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:25:59.468  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:25:59.774  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:30:59.482  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:30:59.788  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:35:59.491  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:35:59.799  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:40:59.497  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:40:59.806  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:45:59.505  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:45:59.817  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:50:59.516  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:50:59.825  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:55:59.525  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:55:59.834  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:00:59.533  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:00:59.845  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:05:59.543  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:05:59.854  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:10:59.553  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:10:59.863  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:15:59.562  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:15:59.871  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:20:59.577  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:20:59.879  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:25:59.591  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:25:59.891  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:30:59.589  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:30:59.891  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:35:59.600  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:35:59.897  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:40:59.608  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:40:59.906  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:45:59.616  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:45:59.917  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:50:59.624  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:50:59.923  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:55:59.633  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:55:59.932  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:00:59.631  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:00:59.927  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:05:59.642  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:05:59.937  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:10:59.652  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:10:59.946  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:15:59.661  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:15:59.954  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:20:59.671  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:20:59.963  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:24:36.918  INFO [adventure-microservice,,,] 88271 --- [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-06 00:24:36.919  INFO [adventure-microservice,,,] 88271 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-06 00:24:37.128  INFO [adventure-microservice,,,] 88271 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 208 ms
+2019-12-06 00:25:59.681  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:25:59.976  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:30:59.681  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:30:59.976  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:35:59.693  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:35:59.988  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:40:59.707  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:40:59.998  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:45:59.718  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:46:00.008  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:50:59.729  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:51:00.017  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:55:59.743  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:56:00.028  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 01:00:59.742  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 01:01:00.024  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 01:04:21.464  WARN [adventure-microservice,,,] 88271 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s335ms).
+2019-12-06 01:04:22.898  WARN [adventure-microservice,,,] 88272 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s339ms).
+2019-12-06 03:04:25.813  WARN [adventure-microservice,,,] 88271 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m34s336ms).
+2019-12-06 03:04:27.244  WARN [adventure-microservice,,,] 88272 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m34s331ms).
+2019-12-06 05:05:26.276  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 05:05:26.290  WARN [adventure-microservice,,,] 88271 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h425ms).
+2019-12-06 05:05:26.266  WARN [adventure-microservice,,,] 88272 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h28s979ms).
+2019-12-06 05:05:26.266  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 05:05:27.234  INFO [adventure-microservice,,,] 88271 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:9095: The target server failed to respond
+2019-12-06 05:05:27.235  INFO [adventure-microservice,,,] 88271 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Retrying request to {}->http://localhost:9095
+2019-12-06 05:05:27.434  INFO [adventure-microservice,,,] 88272 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:9095: The target server failed to respond
+2019-12-06 05:05:27.434  INFO [adventure-microservice,,,] 88272 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Retrying request to {}->http://localhost:9095
+2019-12-06 05:05:27.434 ERROR [adventure-microservice,,,] 88271 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:9095/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2019-12-06 05:05:27.441  WARN [adventure-microservice,,,] 88271 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+2019-12-06 05:05:27.447 ERROR [adventure-microservice,,,] 88271 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2019-12-06 05:05:27.600 ERROR [adventure-microservice,,,] 88272 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:9095/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2019-12-06 05:05:27.605  WARN [adventure-microservice,,,] 88272 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+2019-12-06 05:05:27.610 ERROR [adventure-microservice,,,] 88272 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2019-12-06 07:05:43.019  WARN [adventure-microservice,,,] 88271 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h16s747ms).
+2019-12-06 07:05:43.029  WARN [adventure-microservice,,,] 88272 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h16s776ms).
+2019-12-06 07:05:43.274 ERROR [adventure-microservice,,,] 88271 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:9095/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2019-12-06 07:05:43.300  WARN [adventure-microservice,,,] 88271 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+2019-12-06 07:05:43.302 ERROR [adventure-microservice,,,] 88271 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2019-12-06 08:15:08.940  WARN [adventure-microservice,,,] 88271 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m25s939ms).
+2019-12-06 08:15:08.947  WARN [adventure-microservice,,,] 88272 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m25s936ms).
+2019-12-06 10:24:30.934  WARN [adventure-microservice,,,] 88271 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h9m21s996ms).
+2019-12-06 10:24:30.936  WARN [adventure-microservice,,,] 88272 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h9m21s991ms).
+2019-12-06 10:27:58.098  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:27:58.203  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:32:58.222  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:32:58.332  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:37:58.225  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:37:58.333  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:41:16.070  INFO [adventure-microservice,8420382d6917ba46,b00450573518ac88,true] 88271 --- [nio-9090-exec-5] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+2019-12-06 10:41:22.711  INFO [adventure-microservice,,,] 88272 --- [nio-9011-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-06 10:41:22.712  INFO [adventure-microservice,,,] 88272 --- [nio-9011-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-06 10:41:22.894  INFO [adventure-microservice,,,] 88272 --- [nio-9011-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 182 ms
+2019-12-06 10:41:23.113  INFO [adventure-microservice,a8e608a824dc7181,3ffb319ca4ab0725,true] 88272 --- [nio-9011-exec-1] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+2019-12-06 10:41:24.871  INFO [adventure-microservice,b0a194289d8625b8,6c8991b6cc603b42,true] 88271 --- [nio-9090-exec-6] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+2019-12-06 10:42:58.222  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:42:58.333  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:47:58.225  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:47:58.332  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:52:58.226  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:52:58.333  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:57:58.225  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:57:58.331  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:02:23.751  INFO [adventure-microservice,134b6fc4ea37d931,145d19a0c0070d38,true] 88272 --- [nio-9011-exec-2] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+2019-12-06 11:02:58.257  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:02:58.360  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:07:58.259  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:07:58.362  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:12:58.261  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:12:58.362  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:17:58.268  INFO [adventure-microservice,,,] 88271 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:17:58.367  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:22:51.654  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADVENTURE-MICROSERVICE with eureka with status DOWN
+2019-12-06 11:22:51.655  WARN [adventure-microservice,,,] 88271 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575627771654, current=DOWN, previous=UP]
+2019-12-06 11:22:51.656  INFO [adventure-microservice,,,] 88271 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090: registering service...
+2019-12-06 11:22:51.671  INFO [adventure-microservice,,,] 88271 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090 - registration status: 204
+2019-12-06 11:22:51.684  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-06 11:22:51.711  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-06 11:22:51.725  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 Hibernate: drop table adventure if exists
 Hibernate: drop sequence if exists hibernate_sequence
-2019-12-05 16:01:06.347  WARN [adventure-microservice,,,] 47452 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-2019-12-05 16:01:06.347  INFO [adventure-microservice,,,] 47452 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-05 16:01:06.350  INFO [adventure-microservice,,,] 47452 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-12-05 16:01:06.350  INFO [adventure-microservice,,,] 47452 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-06 11:22:52.188  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-06 11:22:55.192  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-06 11:22:55.200  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9090 - deregister  status: 200
+2019-12-06 11:22:55.200  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADVENTURE-MICROSERVICE with eureka with status DOWN
+2019-12-06 11:22:55.201  WARN [adventure-microservice,,,] 88272 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575627775201, current=DOWN, previous=UP]
+2019-12-06 11:22:55.205  INFO [adventure-microservice,,,] 88272 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011: registering service...
+2019-12-06 11:22:55.227  INFO [adventure-microservice,,,] 88272 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011 - registration status: 204
+2019-12-06 11:22:55.233  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-06 11:22:55.236  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-12-06 11:22:55.237  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-06 11:22:55.242  INFO [adventure-microservice,,,] 88271 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-06 11:22:55.261  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-06 11:22:55.273  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 Hibernate: drop table adventure if exists
 Hibernate: drop sequence if exists hibernate_sequence
-2019-12-05 16:01:06.828  WARN [adventure-microservice,,,] 47455 --- [ender@5dc9d25a}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
-2019-12-05 16:01:06.834  WARN [adventure-microservice,,,] 47455 --- [ender@5dc9d25a}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 0 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
-
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.17.0.jar:na]
-	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.10.3.jar:na]
-	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) ~[zipkin-reporter-2.10.3.jar:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[na:na]
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 9 common frames omitted
-
-2019-12-05 16:01:06.837  INFO [adventure-microservice,,,] 47455 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-12-05 16:01:06.840  INFO [adventure-microservice,,,] 47455 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-12-05 16:01:06.841  INFO [adventure-microservice,,,] 47455 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-12-05 16:01:06.858  INFO [adventure-microservice,,,] 47455 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-05 16:01:06.866 ERROR [adventure-microservice,,,] 47455 --- [           main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at com.ecommerce.adventure.AdventureApplication.main(AdventureApplication.java:13) ~[classes/:na]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 21 common frames omitted
-Caused by: java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-	at org.springframework.security.config.annotation.web.builders.HttpSecurity.addFilter(HttpSecurity.java:2601) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at com.ecommerce.adventure.configuration.SecurityConfig.configure(SecurityConfig.java:35) ~[classes/:na]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:92) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at com.ecommerce.adventure.configuration.SecurityConfig$$EnhancerBySpringCGLIB$$7919d10c.init(<generated>) ~[classes/:na]
-	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 22 common frames omitted
-
-2019-12-05 16:01:06.869  WARN [adventure-microservice,,,] 47452 --- [ender@4d79d187}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
-2019-12-05 16:01:06.873  WARN [adventure-microservice,,,] 47452 --- [ender@4d79d187}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 0 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
-
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.17.0.jar:na]
-	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.10.3.jar:na]
-	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) ~[zipkin-reporter-2.10.3.jar:na]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[na:na]
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 9 common frames omitted
-
-2019-12-05 16:01:06.875  INFO [adventure-microservice,,,] 47452 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-12-05 16:01:06.878  INFO [adventure-microservice,,,] 47452 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-12-05 16:01:06.879  INFO [adventure-microservice,,,] 47452 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-12-05 16:01:06.897  INFO [adventure-microservice,,,] 47452 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-12-05 16:01:06.903 ERROR [adventure-microservice,,,] 47452 --- [           main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at com.ecommerce.adventure.AdventureApplication.main(AdventureApplication.java:13) ~[classes/:na]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 21 common frames omitted
-Caused by: java.lang.IllegalArgumentException: The Filter class com.ecommerce.adventure.filter.CustomGatewayFilter does not have a registered order and cannot be added without a specified order. Consider using addFilterBefore or addFilterAfter instead.
-	at org.springframework.security.config.annotation.web.builders.HttpSecurity.addFilter(HttpSecurity.java:2601) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at com.ecommerce.adventure.configuration.SecurityConfig.configure(SecurityConfig.java:35) ~[classes/:na]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:92) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at com.ecommerce.adventure.configuration.SecurityConfig$$EnhancerBySpringCGLIB$$7919d10c.init(<generated>) ~[classes/:na]
-	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 22 common frames omitted
-
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 24.321 s
-[INFO] Finished at: 2019-12-05T16:01:06+01:00
+[INFO] Total time: 13:47 h
+[INFO] Finished at: 2019-12-06T11:22:56+01:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project adventure-microservice: Application finished with exit code: 1 -> [Help 1]
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project adventure-microservice: Application finished with exit code: 143 -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2019-12-06 11:22:56.195  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-06 11:22:58.370  INFO [adventure-microservice,,,] 88272 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:22:59.202  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-06 11:22:59.213  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/port-201811-01:adventure-microservice:9011 - deregister  status: 200
+2019-12-06 11:22:59.247  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-12-06 11:22:59.250  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-06 11:22:59.255  INFO [adventure-microservice,,,] 88272 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 24.358 s
-[INFO] Finished at: 2019-12-05T16:01:06+01:00
+[INFO] Total time: 13:47 h
+[INFO] Finished at: 2019-12-06T11:22:59+01:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project adventure-microservice: Application finished with exit code: 1 -> [Help 1]
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project adventure-microservice: Application finished with exit code: 143 -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.

@@ -28,7 +28,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ category-microservice ---
 [INFO] Attaching agents: []
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-2019-12-05 16:00:52.805  INFO [category-microservice,,,] 47442 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6f77698d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:43.384  INFO [category-microservice,,,] 88262 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fe6940c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -38,131 +38,221 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
-2019-12-05 16:00:53.069  INFO [category-microservice,,,] 47442 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-05 16:00:53.910  INFO [category-microservice,,,] 47442 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=category-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
-2019-12-05 16:00:53.911  INFO [category-microservice,,,] 47442 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/category-microservice.properties'}]}
-2019-12-05 16:00:53.950  INFO [category-microservice,,,] 47442 --- [           main] c.e.category.CategoryApplication         : No active profile set, falling back to default profiles: default
-2019-12-05 16:00:55.802  INFO [category-microservice,,,] 47442 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-05 16:00:55.980  INFO [category-microservice,,,] 47442 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145ms. Found 1 repository interfaces.
-2019-12-05 16:00:56.268  WARN [category-microservice,,,] 47442 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-05 16:00:56.676  INFO [category-microservice,,,] 47442 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4be0831b-1e31-3773-8a62-c01a1f16ca64
-2019-12-05 16:00:57.232  INFO [category-microservice,,,] 47442 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-05 16:00:57.351  INFO [category-microservice,,,] 47442 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6f77698d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-05 16:00:57.646  INFO [category-microservice,,,] 47442 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-2019-12-05 16:00:57.658  INFO [category-microservice,,,] 47442 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-05 16:00:57.658  INFO [category-microservice,,,] 47442 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-05 16:00:57.837  INFO [category-microservice,,,] 47442 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-05 16:00:57.838  INFO [category-microservice,,,] 47442 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3862 ms
-2019-12-05 16:00:58.091  WARN [category-microservice,,,] 47442 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-05 16:00:58.092  INFO [category-microservice,,,] 47442 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-05 16:00:58.106  INFO [category-microservice,,,] 47442 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2f0cab82
-2019-12-05 16:00:58.383  INFO [category-microservice,,,] 47442 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-05 16:00:58.609  INFO [category-microservice,,,] 47442 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-05 16:00:58.619  INFO [category-microservice,,,] 47442 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2019-12-05 16:00:59.644  WARN [category-microservice,,,] 47442 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@127d2aee}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
-2019-12-05 16:00:59.979  INFO [category-microservice,,,] 47442 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-05 16:01:00.125  INFO [category-microservice,,,] 47442 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
-2019-12-05 16:01:00.372  INFO [category-microservice,,,] 47442 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-05 16:01:00.616  INFO [category-microservice,,,] 47442 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-05 21:35:43.642  INFO [category-microservice,,,] 88262 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-05 21:35:44.609  INFO [category-microservice,,,] 88262 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=category-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
+2019-12-05 21:35:44.610  INFO [category-microservice,,,] 88262 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/category-microservice.properties'}]}
+2019-12-05 21:35:44.656  INFO [category-microservice,,,] 88262 --- [           main] c.e.category.CategoryApplication         : No active profile set, falling back to default profiles: default
+2019-12-05 21:35:46.923  INFO [category-microservice,,,] 88262 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-05 21:35:47.035  INFO [category-microservice,,,] 88262 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95ms. Found 1 repository interfaces.
+2019-12-05 21:35:47.235  WARN [category-microservice,,,] 88262 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-05 21:35:47.720  INFO [category-microservice,,,] 88262 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4be0831b-1e31-3773-8a62-c01a1f16ca64
+2019-12-05 21:35:48.260  INFO [category-microservice,,,] 88262 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:48.419  INFO [category-microservice,,,] 88262 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fe6940c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-05 21:35:48.862  INFO [category-microservice,,,] 88262 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2019-12-05 21:35:48.873  INFO [category-microservice,,,] 88262 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-05 21:35:48.873  INFO [category-microservice,,,] 88262 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-05 21:35:49.025  INFO [category-microservice,,,] 88262 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-05 21:35:49.025  INFO [category-microservice,,,] 88262 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4344 ms
+2019-12-05 21:35:49.223  WARN [category-microservice,,,] 88262 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 21:35:49.223  INFO [category-microservice,,,] 88262 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-05 21:35:49.233  INFO [category-microservice,,,] 88262 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@77e6761f
+2019-12-05 21:35:49.422  INFO [category-microservice,,,] 88262 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-05 21:35:49.568  INFO [category-microservice,,,] 88262 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-05 21:35:49.576  INFO [category-microservice,,,] 88262 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-05 21:35:50.392  WARN [category-microservice,,,] 88262 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7131d668}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2019-12-05 21:35:50.718  INFO [category-microservice,,,] 88262 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-05 21:35:50.838  INFO [category-microservice,,,] 88262 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-12-05 21:35:51.068  INFO [category-microservice,,,] 88262 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-05 21:35:51.275  INFO [category-microservice,,,] 88262 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table category if exists
 Hibernate: drop sequence if exists hibernate_sequence
 Hibernate: create sequence hibernate_sequence start with 1 increment by 1
 Hibernate: create table category (id integer not null, color varchar(255), name varchar(50), primary key (id))
-2019-12-05 16:01:01.634  INFO [category-microservice,,,] 47442 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-05 16:01:01.645  INFO [category-microservice,,,] 47442 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-05 16:01:02.505  WARN [category-microservice,,,] 47442 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-05 16:01:02.758  INFO [category-microservice,,,] 47442 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2019-12-05 16:01:02.913  INFO [category-microservice,,,] 47442 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-05 16:01:02.954  WARN [category-microservice,,,] 47442 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-05 16:01:02.954  INFO [category-microservice,,,] 47442 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-05 16:01:03.210  INFO [category-microservice,,,] 47442 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-05 16:01:03.999  WARN [category-microservice,,,] 47442 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2019-12-05 16:01:04.325  INFO [category-microservice,,,] 47442 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-12-05 16:01:04.434  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-12-05 16:01:04.636  INFO [category-microservice,,,] 47442 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-12-05 16:01:04.636  INFO [category-microservice,,,] 47442 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-05 21:35:52.196  INFO [category-microservice,,,] 88262 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-05 21:35:52.207  INFO [category-microservice,,,] 88262 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-05 21:35:53.072  WARN [category-microservice,,,] 88262 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-05 21:35:53.323  INFO [category-microservice,,,] 88262 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-05 21:35:53.489  INFO [category-microservice,,,] 88262 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-05 21:35:53.529  WARN [category-microservice,,,] 88262 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-05 21:35:53.530  INFO [category-microservice,,,] 88262 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-05 21:35:53.821  INFO [category-microservice,,,] 88262 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 21:35:54.465  WARN [category-microservice,,,] 88262 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-05 21:35:54.748  INFO [category-microservice,,,] 88262 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-05 21:35:54.846  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-05 21:35:55.049  INFO [category-microservice,,,] 88262 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-05 21:35:55.050  INFO [category-microservice,,,] 88262 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
 WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-2019-12-05 16:01:04.786  INFO [category-microservice,,,] 47442 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-12-05 16:01:04.786  INFO [category-microservice,,,] 47442 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-12-05 16:01:04.987  INFO [category-microservice,,,] 47442 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:01:05.004  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-05 16:01:05.004  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-05 16:01:05.004  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-05 16:01:05.004  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-05 16:01:05.005  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-05 16:01:05.005  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-12-05 16:01:05.005  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-05 16:01:05.139  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-05 16:01:05.143  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-12-05 16:01:05.145  INFO [category-microservice,,,] 47442 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-12-05 16:01:05.150  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575558065149 with initial instances count: 1
-2019-12-05 16:01:05.161  INFO [category-microservice,,,] 47442 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CATEGORY-MICROSERVICE with eureka with status UP
-2019-12-05 16:01:05.162  INFO [category-microservice,,,] 47442 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575558065162, current=UP, previous=STARTING]
-2019-12-05 16:01:05.164  INFO [category-microservice,,,] 47442 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORY-MICROSERVICE/port-201811-01:category-microservice:9091: registering service...
-2019-12-05 16:01:05.164  INFO [category-microservice,,,] 47442 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-05 16:01:05.179  INFO [category-microservice,,,] 47442 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-05 16:01:05.202  INFO [category-microservice,,,] 47442 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORY-MICROSERVICE/port-201811-01:category-microservice:9091 - registration status: 204
-2019-12-05 16:01:05.231  INFO [category-microservice,,,] 47442 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-05 16:01:05.448  INFO [category-microservice,,,] 47442 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
-2019-12-05 16:01:05.449  INFO [category-microservice,,,] 47442 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9091
-2019-12-05 16:01:05.456  INFO [category-microservice,,,] 47442 --- [           main] c.e.category.CategoryApplication         : Started CategoryApplication in 14.289 seconds (JVM running for 15.204)
-2019-12-05 16:04:08.616  INFO [category-microservice,,,] 47442 --- [nio-9091-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-05 16:04:08.617  INFO [category-microservice,,,] 47442 --- [nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-05 16:04:08.652  INFO [category-microservice,,,] 47442 --- [nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
-2019-12-05 16:04:09.360  WARN [category-microservice,,,] 47442 --- [ender@127d2aee}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
-2019-12-05 16:04:09.373  WARN [category-microservice,,,] 47442 --- [ender@127d2aee}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+2019-12-05 21:35:55.179  INFO [category-microservice,,,] 88262 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-05 21:35:55.179  INFO [category-microservice,,,] 88262 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-05 21:35:55.340  INFO [category-microservice,,,] 88262 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:35:55.355  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-05 21:35:55.355  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-05 21:35:55.355  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-05 21:35:55.355  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-05 21:35:55.355  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-05 21:35:55.355  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-05 21:35:55.355  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-05 21:35:55.467  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-05 21:35:55.469  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-05 21:35:55.471  INFO [category-microservice,,,] 88262 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-05 21:35:55.475  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1575578155474 with initial instances count: 1
+2019-12-05 21:35:55.490  INFO [category-microservice,,,] 88262 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CATEGORY-MICROSERVICE with eureka with status UP
+2019-12-05 21:35:55.491  INFO [category-microservice,,,] 88262 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575578155491, current=UP, previous=STARTING]
+2019-12-05 21:35:55.493  INFO [category-microservice,,,] 88262 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-05 21:35:55.497  INFO [category-microservice,,,] 88262 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORY-MICROSERVICE/port-201811-01:category-microservice:9091: registering service...
+2019-12-05 21:35:55.515  INFO [category-microservice,,,] 88262 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-05 21:35:55.542  INFO [category-microservice,,,] 88262 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORY-MICROSERVICE/port-201811-01:category-microservice:9091 - registration status: 204
+2019-12-05 21:35:55.582  INFO [category-microservice,,,] 88262 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-05 21:35:55.770  INFO [category-microservice,,,] 88262 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2019-12-05 21:35:55.771  INFO [category-microservice,,,] 88262 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9091
+2019-12-05 21:35:55.777  INFO [category-microservice,,,] 88262 --- [           main] c.e.category.CategoryApplication         : Started CategoryApplication in 14.078 seconds (JVM running for 15.004)
+2019-12-05 21:40:55.354  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:45:55.356  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:50:55.358  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 21:55:55.359  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:00:55.400  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:05:55.414  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:10:55.424  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:15:55.436  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:20:55.444  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:25:55.454  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:30:55.468  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:35:55.480  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:40:55.491  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:45:55.498  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:50:55.509  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 22:55:55.523  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:00:55.532  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:05:55.539  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:10:55.547  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:15:55.556  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:20:55.568  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:25:55.576  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:30:55.573  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:35:55.583  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:40:55.591  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:45:55.600  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:50:55.608  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-05 23:55:55.620  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:00:55.614  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:03:27.680  INFO [category-microservice,,,] 88262 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:9095: The target server failed to respond
+2019-12-06 00:03:27.682  INFO [category-microservice,,,] 88262 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Retrying request to {}->http://localhost:9095
+2019-12-06 00:05:55.623  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:10:55.634  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:15:55.644  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:20:55.653  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:25:55.664  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:30:55.664  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:35:55.677  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:40:55.686  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:45:55.697  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:50:55.710  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 00:55:55.721  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 01:00:55.720  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 01:04:18.429  WARN [category-microservice,,,] 88262 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s332ms).
+2019-12-06 03:04:22.780  WARN [category-microservice,,,] 88262 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m34s336ms).
+2019-12-06 05:05:26.252  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 05:05:26.268  WARN [category-microservice,,,] 88262 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h3s440ms).
+2019-12-06 05:05:27.520 ERROR [category-microservice,,,] 88262 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:9095/eureka/}
 
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.0.RC1.jar:2.2.0.RC1]
-	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.17.0.jar:na]
-	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.10.3.jar:na]
-	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) ~[zipkin-reporter-2.10.3.jar:na]
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[na:na]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[na:na]
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	... 9 common frames omitted
+Caused by: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.12.jar:4.4.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.10.jar:4.5.10]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.10.jar:4.5.10]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
 
-2019-12-05 16:06:05.019  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:11:05.018  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:15:35.442  INFO [category-microservice,,,] 47442 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:9095: The target server failed to respond
-2019-12-05 16:15:35.443  INFO [category-microservice,,,] 47442 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Retrying request to {}->http://localhost:9095
-2019-12-05 16:16:05.046  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:21:05.059  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:26:05.074  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:31:05.088  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:36:05.107  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:41:05.101  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:46:05.117  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:51:05.133  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 16:56:05.148  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 17:01:05.160  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 17:06:05.173  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 17:11:05.183  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-05 17:16:05.179  INFO [category-microservice,,,] 47442 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 05:05:27.525  WARN [category-microservice,,,] 88262 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:9095 failed to respond
+2019-12-06 05:05:27.531 ERROR [category-microservice,,,] 88262 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CATEGORY-MICROSERVICE/port-201811-01:category-microservice:9091 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864) ~[eureka-client-1.9.13.jar:1.9.13]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423) ~[eureka-client-1.9.13.jar:1.9.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2019-12-06 07:05:43.063  WARN [category-microservice,,,] 88262 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h16s831ms).
+2019-12-06 07:05:43.227  INFO [category-microservice,,,] 88262 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:9095: The target server failed to respond
+2019-12-06 07:05:43.230  INFO [category-microservice,,,] 88262 --- [freshExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Retrying request to {}->http://localhost:9095
+2019-12-06 08:15:09.035  WARN [category-microservice,,,] 88262 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m25s970ms).
+2019-12-06 10:24:31.025  WARN [category-microservice,,,] 88262 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h9m21s992ms).
+2019-12-06 10:27:57.775  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:32:57.902  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:37:57.902  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:42:57.900  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:47:57.901  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:52:57.899  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 10:57:57.899  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:02:57.927  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:07:57.930  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:12:57.933  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:17:57.940  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:22:57.942  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:27:57.943  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:32:57.974  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:37:57.976  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:42:57.986  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:47:57.992  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:52:58.001  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 11:57:58.006  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:02:58.027  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:07:58.037  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:12:58.046  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:17:58.050  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:22:58.058  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:27:58.067  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:32:58.077  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:37:58.089  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:42:58.096  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-06 12:47:58.115  INFO [category-microservice,,,] 88262 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

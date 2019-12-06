@@ -1,7 +1,7 @@
-package com.ecommerce.adventure.filter;
-import com.ecommerce.adventure.constants.GatewayConstant;
-import com.ecommerce.adventure.exception.ErrorResponse;
-import com.ecommerce.adventure.exception.UnauthorisedException;
+package com.ecommerce.client.filter;
+import com.ecommerce.client.constants.GatewayConstant;
+import com.ecommerce.client.exceptions.ErrorResponse;
+import com.ecommerce.client.exceptions.UnauthorisedException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.filter.GenericFilterBean;
 
@@ -12,6 +12,10 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CustomGatewayFilter extends GenericFilterBean {
 
@@ -22,9 +26,11 @@ public class CustomGatewayFilter extends GenericFilterBean {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
+        System.out.println("wesh" + request.getHeader("Host") + " " + request.getHeader("X-Forwarded-Host"));
         String proxyForwardedHostHeader = request.getHeader("X-Forwarded-Host");
+        
 
-        if (proxyForwardedHostHeader == null || !proxyForwardedHostHeader.equals(GatewayConstant.getGatewayURL())) {
+            if (proxyForwardedHostHeader == null || !proxyForwardedHostHeader.equals(GatewayConstant.getGatewayURL())) {
             UnauthorisedException unauthorisedException = new UnauthorisedException("Unauthorized Access",
                     "Unauthorized Access, you should pass through the API gateway");
             byte[] responseToSend = restResponseBytes(unauthorisedException.getErrorResponse());

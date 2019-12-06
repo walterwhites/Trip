@@ -4,11 +4,13 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "client")
+@PropertySource("classpath:startup.properties")
 public class StartupProperties {
 
     private String username;
