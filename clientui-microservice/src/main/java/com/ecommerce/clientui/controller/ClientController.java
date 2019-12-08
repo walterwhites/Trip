@@ -17,6 +17,10 @@ public class ClientController {
     @Autowired
     MicroserviceAdventureProxy microserviceAdventureProxy;
 
+    //@RequestMapping("/")
+    /*public String home(Model model) {
+        return "trip-index";
+    }*/
     @RequestMapping("/")
     public String home(Model model) {
         return "index";
@@ -31,7 +35,7 @@ public class ClientController {
 
     @RequestMapping("/pricing")
     public String pricing(Model model) {
-        return "pricing";
+        return "login";
     }
 
     @RequestMapping("/adventures")
@@ -50,5 +54,9 @@ public class ClientController {
         AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id);
         model.addAttribute("adventure", adventure);
         return "adventures/detail";
+    }
+    @RequestMapping("/login")
+    public String login(Model model) {
+        return "login";
     }
 }

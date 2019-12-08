@@ -1,10 +1,15 @@
-#adventures-img {
-    display: inline-block;
-    margin-bottom: 10px;
+h1 {
+    color: #78ab46;
 }
 
-.btn-primary {
-    background-color: #007b5e;
-    border-color: #007b5e;
-    color: white;
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc
+}
+
+footer p {
+    padding: 15px;
 }
