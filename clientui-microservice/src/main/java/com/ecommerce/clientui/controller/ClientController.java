@@ -59,4 +59,16 @@ public class ClientController {
     public String login(Model model) {
         return "login";
     }
+
+    @RequestMapping("/about")
+    public String about(Model model) {
+        return "about";
+    }
+
+    @RequestMapping("/destination")
+    public String destination(Model model) {
+        return "destination";
+    }
+
+
 }
