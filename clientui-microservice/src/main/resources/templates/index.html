@@ -53,7 +53,7 @@
     </div>
 </nav>
 
-<div class="hero-wrap js-fullheight" style="background-image: url('traveland/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap js-fullheight" th:style="'background-image: url(' + @{/traveland/images/bg_1.jpg} + ');'" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
@@ -308,7 +308,7 @@
     <div class="container">
         <div class="row d-flex">
             <div class="col-md-6 d-flex">
-                <div class="img d-flex align-self-stretch" style="background-image:url(images/about.jpg);"></div>
+                <div class="img d-flex align-self-stretch" th:style="'background-image:url(' + @{/traveland/images/about.jpg} +');'"></div>
             </div>
             <div class="col-md-6 pl-md-5 py-5">
                 <div class="row justify-content-start pb-3">
@@ -455,7 +455,7 @@
     <div class="container">
         <div class="row d-flex">
             <div class="col-md-6 order-md-last d-flex">
-                <div class="img d-flex align-self-stretch" style="background-image:url(images/about-1.jpg);"></div>
+                <div class="img d-flex align-self-stretch" th:style="'background-image:url(' + @{/traveland/images/about-1.jpg} +');'"></div>
             </div>
             <div class="col-md-6 pr-md-5 py-5">
                 <div class="row justify-content-start pb-3">
@@ -478,7 +478,7 @@
 </section>
 
 
-<section class="ftco-section ftco-no-pb testimony-section" style="background-image: url(images/bg_1.jpg);">
+<section class="ftco-section ftco-no-pb testimony-section" th:style="'background-image: url(' + {/traveland/images/bg_1.jpg} +');'">
     <div class="overlay"></div>
     <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -490,7 +490,7 @@
             <div class="col-md-12 testimonial">
                 <div class="carousel-testimony owl-carousel ftco-owl">
                     <div class="item">
-                        <div class="testimony-wrap img" style="background-image: url(images/traveler-1.jpg);">
+                        <div class="testimony-wrap img" th:style="'background-image: url(' + @{/traveland/images/traveler-1.jpg} +');'">
                             <div class="overlay"></div>
                             <div class="text">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -500,7 +500,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap" style="background-image: url(images/traveler-2.jpg);">
+                        <div class="testimony-wrap" th:style="'background-image: url(' + @{/traveland/images/traveler-2.jpg} +');'">
                             <div class="overlay"></div>
                             <div class="text">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -510,7 +510,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap" style="background-image: url(images/traveler-3.jpg);">
+                        <div class="testimony-wrap" th:style="'background-image: url(' + @{/traveland/images/traveler-3.jpg} +');'">
                             <div class="overlay"></div>
                             <div class="text">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -520,7 +520,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap" style="background-image: url(images/traveler-4.jpg);">
+                        <div class="testimony-wrap" th:style="'background-image: url(' + @{/traveland/images/traveler-4.jpg} +');'">
                             <div class="overlay"></div>
                             <div class="text">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -530,7 +530,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="testimony-wrap" style="background-image: url(images/traveler-5.jpg);">
+                        <div class="testimony-wrap" th:style="'background-image: url(' + @{/traveland/images/traveler-5.jpg} +');'">
                             <div class="overlay"></div>
                             <div class="text">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -555,7 +555,7 @@
         <div class="row d-flex">
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+                    <a href="blog-single.html" class="block-20" th:style="'background-image: url(' + @{/traveland/images/image_1.jpg} +');'">
                     </a>
                     <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -573,7 +573,7 @@
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+                    <a href="blog-single.html" class="block-20" th:style="'background-image: url(' + @{/traveland/images/image_2.jpg} +');'">
                     </a>
                     <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -591,7 +591,7 @@
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+                    <a href="blog-single.html" class="block-20" style="background-image: url('../static/traveland/images/image_3.jpg');">
                     </a>
                     <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -611,7 +611,7 @@
     </div>
 </section>
 
-<section class="ftco-subscribe" style="background-image: url(images/bg_1.jpg);">
+<section class="ftco-subscribe" style="background-image: url('../static/traveland/images/bg_1.jpg');">
     <div class="overlay">
         <div class="container">
             <div class="row d-flex justify-content-center">
