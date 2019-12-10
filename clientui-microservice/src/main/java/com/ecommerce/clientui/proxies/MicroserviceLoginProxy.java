@@ -13,5 +13,5 @@ import static com.ecommerce.clientui.constants.SecurityConstants.*;
 public interface MicroserviceLoginProxy {
 
     @PostMapping(value = "login-microservice/api/login")
-    ClientBean postLogin(@RequestBody() ClientBean clientBean, @RequestHeader(value= REFERER_HEADER) String referer);
+    String postLogin(@RequestBody() ClientBean clientBean, @RequestHeader(value= REFERER_HEADER) String referer);
 }

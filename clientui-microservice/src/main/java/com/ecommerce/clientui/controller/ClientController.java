@@ -80,7 +80,7 @@ public class ClientController {
             model.addAttribute("error", "Wrong Username or password");
             return "login";
         } else {
-            microserviceLoginProxy.postLogin(clientBean, request.getHeader(REFERER_HEADER));
+            String token = microserviceLoginProxy.postLogin(clientBean, request.getHeader(REFERER_HEADER));
         }
         return "account/index";
     }
