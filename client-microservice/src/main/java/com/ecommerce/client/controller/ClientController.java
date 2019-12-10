@@ -1,10 +1,7 @@
 package com.ecommerce.client.controller;
 
-import com.ecommerce.client.requestDTO.ClientRequestDTO;
-import com.ecommerce.client.responseDTO.ResponseDTO;
+import com.ecommerce.client.model.Client;
 import com.ecommerce.client.service.ClientService;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -29,22 +26,22 @@ public class ClientController {
     @PostMapping(value = SAVE)
     @ApiOperation(value = "Save new client")
     @ResponseBody
-    public ResponseEntity<?> saveClient(@RequestBody ClientRequestDTO requestDTO) {
-        clientService.saveClient(requestDTO);
+    public ResponseEntity<?> saveClient(@RequestBody Client client) {
+        clientService.saveClient(client);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PostMapping(value = SEARCH)
     @ApiOperation(value = "Search client by given parameters in request")
     public ResponseEntity<?> searchClient(@ApiParam(value = "Parameter value is client username")
-                                         @RequestBody ClientRequestDTO requestDTO) {
-        return ok().body(clientService.searchClient(requestDTO));
+                                         @RequestBody Client client) {
+        return ok().body(clientService.searchClient(client));
     }
 
     @PostMapping(value = UPDATE)
     @ApiOperation(value = "Update client information")
-    public ResponseEntity<?> updateClient(@RequestBody ClientRequestDTO requestDTO) {
-        return ok().body(clientService.updateClient(requestDTO));
+    public ResponseEntity<?> updateClient(@RequestBody Client client) {
+        return ok().body(clientService.updateClient(client));
     }
 
 
@@ -54,7 +51,7 @@ public class ClientController {
     }
 
     @GetMapping("/clients")
-    public ResponseEntity<ResponseDTO> getClientsToSendEmail() {
+    public ResponseEntity<?> getClientsToSendEmail() {
         return new ResponseEntity<>(clientService.clientsToSendEmails(), HttpStatus.OK);
     }
 }

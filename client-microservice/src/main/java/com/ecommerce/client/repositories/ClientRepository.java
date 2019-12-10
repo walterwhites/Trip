@@ -24,4 +24,6 @@ public interface ClientRepository extends JpaRepository<Client, Long>, ClientRep
     @Query(value = "SELECT * FROM client", nativeQuery = true)
     List<Client> fetchAllClients();
 
+    @Query(value = "SELECT a.id, a.email_address FROM client a WHERE a.email_sent = 'N'", nativeQuery = true)
+    List<Client> fetchAllClientsToSendEmails();
 }

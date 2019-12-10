@@ -1,18 +1,15 @@
 package com.ecommerce.client.service;
 
 import com.ecommerce.client.model.Client;
-import com.ecommerce.client.requestDTO.ClientRequestDTO;
-import com.ecommerce.client.responseDTO.ClientResponseDTO;
-import com.ecommerce.client.responseDTO.ResponseDTO;
-
 import java.util.List;
+import java.util.Optional;
 
 public interface ClientService {
 
-    void saveClient(ClientRequestDTO requestDTO);
-    ClientResponseDTO searchClient(ClientRequestDTO requestDTO);
-    Client updateClient(ClientRequestDTO requestDTO);
-    ClientResponseDTO fetchClientByUsername(String username);
-    ResponseDTO clientsToSendEmails();
+    void saveClient(Client client);
+    Optional<Client> searchClient(Client client);
+    Client updateClient(Client client);
+    Optional<Client> fetchClientByUsername(String username);
+    List<Client> clientsToSendEmails();
     List<Client> fetchAllClient();
 }

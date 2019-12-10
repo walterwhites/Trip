@@ -3,24 +3,16 @@ package com.ecommerce.client.service.impl;
 import com.ecommerce.client.exceptions.NoContentFoundException;
 import com.ecommerce.client.model.Client;
 import com.ecommerce.client.repositories.ClientRepository;
-import com.ecommerce.client.requestDTO.ClientRequestDTO;
-import com.ecommerce.client.responseDTO.ClientResponseDTO;
-import com.ecommerce.client.responseDTO.ResponseDTO;
 import com.ecommerce.client.service.ClientService;
-import com.ecommerce.client.utils.ClientUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Consumer;
-import java.util.stream.Collectors;
-
-import static com.ecommerce.client.queries.ClientQuery.*;
-import static com.ecommerce.client.utils.ClientUtils.*;
 
 @Service
 @Transactional
@@ -39,15 +31,15 @@ public class ClientServiceImpl implements ClientService {
 
 
     @Override
-    public void saveClient(ClientRequestDTO requestDTO) {
+    public void saveClient(Client client) {
 
         log.info(":::: SAVE CLIENT PROCESS STARTED::::");
-        validateClientRequestDTO.accept(requestDTO);
+        validateClientRequestDTO.accept(client);
 
         System.out.println("VALIDATION DONE");
     }
 
-    public Consumer<ClientRequestDTO> validateClientRequestDTO = (requestDTO) -> {
+    public Consumer<Client> validateClientRequestDTO = (client) -> {
 //        adminRepository.fetchAdminByUsername(requestDTO.getUsername()).ifPresent(admin -> {
 //            throw new DataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);
 //        });
@@ -58,38 +50,28 @@ public class ClientServiceImpl implements ClientService {
     };
 
     @Override
-    public ClientResponseDTO searchClient(ClientRequestDTO requestDTO) throws NoContentFoundException {
-        List<Object[]> results = entityManager.createNativeQuery(
-                createQueryToFetchClientDetails.apply(requestDTO)).getResultList();
-        return convertToClientResponse.apply(results);
+    public Optional<Client> searchClient(Client client) throws NoContentFoundException {
+        return clientRepository.fetchClientByUsername(client.getUsername());
     }
 
     @Override
-    public Client updateClient(ClientRequestDTO requestDTO) {
+    public Client updateClient(Client client) {
         return null;
     }
 
     @Override
-    public ClientResponseDTO fetchClientByUsername(String username) {
-        List<Object[]> results = entityManager.createNativeQuery(
-                createQueryToFetchClientByUsername.apply(username)).getResultList();
-        return convertToClientResponse.apply(results);
+    public Optional<Client> fetchClientByUsername(String username) {
+        return clientRepository.fetchClientByUsername(username);
     }
 
     @Override
-    public ResponseDTO clientsToSendEmails() {
-
-        List<Object[]> results = entityManager.createNativeQuery(
-                createQueryToFetchClientToSendEmail.get()).getResultList();
-
-        List<ClientResponseDTO> responseDTOS = results.stream().map(ClientUtils.convertToResponse)
-                .collect(Collectors.toList());
-
-        return ResponseDTO.builder().adminResponseDTOS(responseDTOS).build();
+    public List<Client> clientsToSendEmails() {
+        List<Client> clientBeanList = clientRepository.fetchAllClientsToSendEmails();
+        return clientBeanList;
     }
 
     @Override
     public List<Client> fetchAllClient() {
-        return null;
+        return clientRepository.findAll();
     }
 }
