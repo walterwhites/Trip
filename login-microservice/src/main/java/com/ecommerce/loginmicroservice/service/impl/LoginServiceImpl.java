@@ -1,12 +1,10 @@
 package com.ecommerce.loginmicroservice.service.impl;
 
+import com.ecommerce.loginmicroservice.beans.ClientBean;
 import com.ecommerce.loginmicroservice.constants.PatternConstants;
 import com.ecommerce.loginmicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.loginmicroservice.feignInterface.ClientInterface;
 import com.ecommerce.loginmicroservice.jwt.JwtTokenProvider;
-import com.ecommerce.loginmicroservice.requestDTO.ClientRequestDTO;
-import com.ecommerce.loginmicroservice.requestDTO.LoginRequestDTO;
-import com.ecommerce.loginmicroservice.responseDTO.ClientResponseDTO;
 import com.ecommerce.loginmicroservice.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
@@ -35,27 +33,27 @@ public class LoginServiceImpl implements LoginService {
     private HttpServletRequest request;
 
     @Override
-    public String login(LoginRequestDTO requestDTO, HttpServletRequest request) throws RuntimeException {
+    public String login(ClientBean clientBean, HttpServletRequest request) throws RuntimeException {
         this.request = request;
-        ClientResponseDTO client = fetchClientDetails.apply(requestDTO);
+        ClientBean client = fetchClientDetails.apply(clientBean);
         validateClientStatus.accept(client);
-        validatePassword.accept(requestDTO, client);
-        return jwtTokenProvider.createToken(requestDTO.getUsername(), request);
+        validatePassword.accept(clientBean, client);
+        return jwtTokenProvider.createToken(clientBean.getUsername(), request);
     }
 
-    private Function<LoginRequestDTO, ClientResponseDTO> fetchClientDetails = (loginRequestDTO) -> {
+    private Function<ClientBean, ClientBean> fetchClientDetails = (clientBean) -> {
         Pattern pattern = Pattern.compile(PatternConstants.EmailConstants.EMAIL_PATTERN);
-        Matcher m = pattern.matcher(loginRequestDTO.getUsername());
+        Matcher m = pattern.matcher(clientBean.getUsername());
         Boolean find = m.find();
-        ClientResponseDTO clientResponseDTO =  find ? clientInterface.searchClient(ClientRequestDTO.builder().username(null).emailAddress(loginRequestDTO.getUsername()).build(), request.getHeader(REFERER_HEADER)) :
-                clientInterface.searchClient(ClientRequestDTO.builder().username(loginRequestDTO.getUsername()).emailAddress(null).build(), request.getHeader(REFERER_HEADER));
+        ClientBean clientResponseDTO =  find ? clientInterface.searchClient(clientBean, request.getHeader(REFERER_HEADER)) :
+                clientInterface.searchClient(clientBean, request.getHeader(REFERER_HEADER));
         if (clientResponseDTO.getEmailAddress() == null) {
             throw new UnauthorisedException(InvalidCredentials.MESSAGE, InvalidClientUsername.DEVELOPER_MESSAGE);
         }
         return clientResponseDTO;
     };
 
-    private Consumer<ClientResponseDTO> validateClientStatus = (client) -> {
+    private Consumer<ClientBean> validateClientStatus = (client) -> {
         switch (client.getStatus()) {
             case 'B':
                 throw new UnauthorisedException(InvalidClientStatus.MESSAGE_FOR_BLOCKED,
@@ -67,7 +65,7 @@ public class LoginServiceImpl implements LoginService {
         }
     };
 
-    private BiConsumer<LoginRequestDTO, ClientResponseDTO> validatePassword = (requestDTO, client) -> {
+    private BiConsumer<ClientBean, ClientBean> validatePassword = (requestDTO, client) -> {
         if (BCrypt.checkpw(requestDTO.getPassword(), client.getPassword())) {
             client.setLoginAttempt(0);
             clientInterface.updateClient(client);

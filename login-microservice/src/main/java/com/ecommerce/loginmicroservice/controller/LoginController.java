@@ -1,5 +1,6 @@
 package com.ecommerce.loginmicroservice.controller;
 
+import com.ecommerce.loginmicroservice.beans.ClientBean;
 import com.ecommerce.loginmicroservice.constants.WebResourceKeyConstants;
 import com.ecommerce.loginmicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.loginmicroservice.requestDTO.LoginRequestDTO;
@@ -29,14 +30,14 @@ public class LoginController {
 
     @PostMapping(value = WebResourceKeyConstants.LOGIN)
     @ApiOperation(value = "This is login api", notes = "Request contains username and password")
-    public ResponseEntity<String> loginUser(@RequestBody LoginRequestDTO requestDTO, HttpServletRequest request) {
+    public ResponseEntity<String> loginUser(@RequestBody ClientBean clientBean, HttpServletRequest request) {
         try {
-            String token = loginService.login(requestDTO, request);
+            String token = loginService.login(clientBean, request);
         } catch (UnauthorisedException unauthorisedException) {
             LOGGER.info("dev_message: " + unauthorisedException.getErrorResponse().getDeveloperMsg());
             return ResponseEntity.status(unauthorisedException.getErrorResponse().getStatus()).body(unauthorisedException.getErrorResponse().getErrorMsg());
         }
-        return ok().body(loginService.login(requestDTO, request));
+        return ok().body(loginService.login(clientBean, request));
     }
 
     @GetMapping("/test")
