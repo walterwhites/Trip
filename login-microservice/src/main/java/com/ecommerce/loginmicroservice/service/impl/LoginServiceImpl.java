@@ -1,6 +1,6 @@
 package com.ecommerce.loginmicroservice.service.impl;
 
-import com.ecommerce.loginmicroservice.Constants.PatternConstants;
+import com.ecommerce.loginmicroservice.constants.PatternConstants;
 import com.ecommerce.loginmicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.loginmicroservice.feignInterface.ClientInterface;
 import com.ecommerce.loginmicroservice.jwt.JwtTokenProvider;
@@ -19,9 +19,8 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import com.ecommerce.loginmicroservice.Constants.ErrorMessageConstants.*;
-
-import static com.ecommerce.loginmicroservice.Constants.SecurityConstants.REFERER_HEADER;
+import com.ecommerce.loginmicroservice.constants.ErrorMessageConstants.*;
+import static com.ecommerce.loginmicroservice.constants.SecurityConstants.REFERER_HEADER;
 
 @Service
 @Transactional("transactionManager")

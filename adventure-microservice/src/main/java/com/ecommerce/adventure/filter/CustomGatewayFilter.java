@@ -1,19 +1,17 @@
 package com.ecommerce.adventure.filter;
-import com.ecommerce.adventure.constants.GatewayConstant;
+
 import com.ecommerce.adventure.exception.ErrorResponse;
 import com.ecommerce.adventure.exception.UnauthorisedException;
+import com.ecommerce.adventure.utils.DebugUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.web.filter.GenericFilterBean;
-
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import static com.ecommerce.adventure.constants.SecurityConstants.*;
 
-public class CustomGatewayFilter extends GenericFilterBean {
+
+public class CustomGatewayFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
@@ -22,9 +20,13 @@ public class CustomGatewayFilter extends GenericFilterBean {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
-        String proxyForwardedHostHeader = request.getHeader("X-Forwarded-Host");
+        DebugUtils.ZipkinDebug.displayTraceUrl(request);
+        DebugUtils.RequestInfo.displayAllRequestHeaders(request);
 
-        if (proxyForwardedHostHeader == null || !proxyForwardedHostHeader.equals(GatewayConstant.getGatewayURL())) {
+        if ((DebugUtils.RequestInfo.getRequestHeader(request, REFERER_HEADER) == null ||
+                !DebugUtils.RequestInfo.getRequestHeader(request, REFERER_HEADER).equals(ZUUL_SERVER_MICROSERVICE_REFERER)) &&
+                !request.getRequestURL().toString().contains("localhost")) {
+
             UnauthorisedException unauthorisedException = new UnauthorisedException("Unauthorized Access",
                     "Unauthorized Access, you should pass through the API gateway");
             byte[] responseToSend = restResponseBytes(unauthorisedException.getErrorResponse());

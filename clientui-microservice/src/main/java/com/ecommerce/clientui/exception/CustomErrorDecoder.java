@@ -10,8 +10,10 @@ public class CustomErrorDecoder implements ErrorDecoder {
     @Override
     public Exception decode(String s, Response response) {
 
-        if (response.status() == 404) {
+        if (response.status() == 404 && s.contains("MicroserviceAdventureProxy")) {
             return new AdventureNotFoundException("Adventure not found");
+        } else if (response.status() == 404 && s.contains("MicroserviceLoginProxy")) {
+            return new ClientNotFoundException("Client not found");
         }
 
         if (response.status() == 403) {

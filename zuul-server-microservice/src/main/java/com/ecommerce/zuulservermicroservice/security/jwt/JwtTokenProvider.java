@@ -1,6 +1,6 @@
 package com.ecommerce.zuulservermicroservice.security.jwt;
 
-import com.ecommerce.zuulservermicroservice.Constants.ErrorMessage;
+import com.ecommerce.zuulservermicroservice.constants.ErrorMessage;
 import com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.zuulservermicroservice.security.CustomUserDetailsService;
 import org.slf4j.Logger;
@@ -20,7 +20,7 @@ import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 
-import static com.ecommerce.zuulservermicroservice.Constants.SecurityConstants.*;
+import static com.ecommerce.zuulservermicroservice.constants.SecurityConstants.*;
 
 @Component
 public class JwtTokenProvider {

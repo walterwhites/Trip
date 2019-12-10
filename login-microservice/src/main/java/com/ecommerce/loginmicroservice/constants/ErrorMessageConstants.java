@@ -1,4 +1,4 @@
-package com.ecommerce.loginmicroservice.Constants;
+package com.ecommerce.loginmicroservice.constants;
 
 public class ErrorMessageConstants {
     public interface ForgetPassword {

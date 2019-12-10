@@ -1,21 +1,34 @@
 package com.ecommerce.clientui.controller;
 
 import com.ecommerce.clientui.beans.AdventureBean;
+import com.ecommerce.clientui.beans.ClientBean;
 import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
+import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.List;
+
+import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
 public class ClientController {
 
     @Autowired
     MicroserviceAdventureProxy microserviceAdventureProxy;
+
+    @Autowired
+    MicroserviceLoginProxy microserviceLoginProxy;
 
     //@RequestMapping("/")
     /*public String home(Model model) {
@@ -55,8 +68,20 @@ public class ClientController {
         model.addAttribute("adventure", adventure);
         return "adventures/detail";
     }
+
     @RequestMapping("/login")
     public String login(Model model) {
         return "login";
+    }
+
+    @RequestMapping(value = "/login", method = POST)
+    public String submit(@Valid @ModelAttribute("login") ClientBean clientBean, BindingResult result, ModelMap model, HttpServletRequest request) {
+        if (result.hasErrors()) {
+            model.addAttribute("error", "Wrong Username or password");
+            return "login";
+        } else {
+            microserviceLoginProxy.postLogin(clientBean, request.getHeader(REFERER_HEADER));
+        }
+        return "account/index";
     }
 }

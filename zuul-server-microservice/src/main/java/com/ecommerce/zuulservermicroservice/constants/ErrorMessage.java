@@ -1,4 +1,4 @@
-package com.ecommerce.zuulservermicroservice.Constants;
+package com.ecommerce.zuulservermicroservice.constants;
 
 public class ErrorMessage {
     public interface TokenInvalid {

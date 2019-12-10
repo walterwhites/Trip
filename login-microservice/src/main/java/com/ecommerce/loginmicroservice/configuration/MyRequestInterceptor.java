@@ -1,5 +1,6 @@
 package com.ecommerce.loginmicroservice.configuration;
 
+import com.ecommerce.loginmicroservice.utils.DebugUtils;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.stereotype.Component;
@@ -7,8 +8,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 
-import static com.ecommerce.loginmicroservice.Constants.SecurityConstants.*;
-
+import static com.ecommerce.loginmicroservice.constants.SecurityConstants.*;
 
 @Component
 public class MyRequestInterceptor implements RequestInterceptor {
@@ -23,11 +23,7 @@ public class MyRequestInterceptor implements RequestInterceptor {
         if (request == null) {
             return;
         }
-
-        /*String refererHeader = request.getHeader(REFERER);
-        if (refererHeader == null) {
-            return;
-        }*/
-        requestTemplate.header(REFERER_HEADER, REFERER_HEADER_VALUE);
+        DebugUtils.RequestInfo.displayAllRequestHeaders(request);
+        requestTemplate.header(REFERER_HEADER, request.getHeader(REFERER_HEADER));
     }
 }

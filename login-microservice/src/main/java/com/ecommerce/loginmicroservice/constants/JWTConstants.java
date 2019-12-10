@@ -1,4 +1,4 @@
-package com.ecommerce.loginmicroservice.Constants;
+package com.ecommerce.loginmicroservice.constants;
 
 public class JWTConstants {
     public static final String JWT_SECRET_KEY = "QnuQblQWn8H9ggiwfGbCxpPA3gdY1oAe";

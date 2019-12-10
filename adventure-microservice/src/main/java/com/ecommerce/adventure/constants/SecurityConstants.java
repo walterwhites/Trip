@@ -1,4 +1,4 @@
-package com.ecommerce.client.constants;
+package com.ecommerce.adventure.constants;
 
 public class SecurityConstants {
 

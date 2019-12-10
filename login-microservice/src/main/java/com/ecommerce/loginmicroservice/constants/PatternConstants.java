@@ -1,4 +1,4 @@
-package com.ecommerce.loginmicroservice.Constants;
+package com.ecommerce.loginmicroservice.constants;
 
 public class PatternConstants {
     public interface NetworkConstants {

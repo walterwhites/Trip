@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Base64;
 import java.util.Date;
 
-import static com.ecommerce.loginmicroservice.Constants.JWTConstants.JWT_KEY;
+import static com.ecommerce.loginmicroservice.constants.JWTConstants.JWT_KEY;
 
 @Component
 public class JwtTokenProvider {

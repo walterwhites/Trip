@@ -1,6 +1,6 @@
 package com.ecommerce.loginmicroservice.utils;
 
-import com.ecommerce.loginmicroservice.Constants.PatternConstants;
+import com.ecommerce.loginmicroservice.constants.PatternConstants;
 import com.ecommerce.loginmicroservice.responseDTO.NetworkResponseDTO;
 
 import javax.servlet.http.HttpServletRequest;

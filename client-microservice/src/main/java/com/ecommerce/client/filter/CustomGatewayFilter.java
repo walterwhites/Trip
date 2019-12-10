@@ -7,8 +7,8 @@ import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import static com.ecommerce.client.constants.SecurityConstants.LOGIN_MICROSERVICE_REFERER;
-import static com.ecommerce.client.constants.SecurityConstants.REFERER_HEADER;
+
+import static com.ecommerce.client.constants.SecurityConstants.*;
 
 public class CustomGatewayFilter implements Filter {
 
@@ -22,8 +22,9 @@ public class CustomGatewayFilter implements Filter {
         ZipkinDebug.displayTraceUrl(request);
         RequestInfo.displayAllRequestHeaders(request);
 
-        if (RequestInfo.getRequestHeader(request, REFERER_HEADER) == null ||
-                !RequestInfo.getRequestHeader(request, REFERER_HEADER).equals(LOGIN_MICROSERVICE_REFERER)) {
+        if ((RequestInfo.getRequestHeader(request, REFERER_HEADER) == null ||
+                !RequestInfo.getRequestHeader(request, REFERER_HEADER).equals(ZUUL_SERVER_MICROSERVICE_REFERER)) &&
+                !request.getRequestURL().toString().contains("localhost")) {
 
             UnauthorisedException unauthorisedException = new UnauthorisedException("Unauthorized Access",
                     "Unauthorized Access, you should pass through the API gateway");

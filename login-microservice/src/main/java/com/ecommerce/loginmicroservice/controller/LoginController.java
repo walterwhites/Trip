@@ -1,6 +1,6 @@
 package com.ecommerce.loginmicroservice.controller;
 
-import com.ecommerce.loginmicroservice.Constants.WebResourceKeyConstants;
+import com.ecommerce.loginmicroservice.constants.WebResourceKeyConstants;
 import com.ecommerce.loginmicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.loginmicroservice.requestDTO.LoginRequestDTO;
 import com.ecommerce.loginmicroservice.service.LoginService;

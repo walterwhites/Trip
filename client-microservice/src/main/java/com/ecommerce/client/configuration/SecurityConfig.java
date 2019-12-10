@@ -19,5 +19,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().addFilterAfter(new CustomGatewayFilter(), ConcurrentSessionFilter.class)
                 .authorizeRequests()
                 .antMatchers("/**").permitAll();
+        //.antMatchers("/**").permitAll().and().headers().frameOptions().sameOrigin();
     }
 }
