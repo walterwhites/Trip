@@ -13,6 +13,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -75,13 +76,18 @@ public class ClientController {
     }
 
     @RequestMapping(value = "/login", method = POST)
-    public String submit(@Valid @ModelAttribute("login") ClientBean clientBean, BindingResult result, ModelMap model, HttpServletRequest request) {
-        if (result.hasErrors()) {
-            model.addAttribute("error", "Wrong Username or password");
-            return "login";
-        } else {
+    public ModelAndView submit(@Valid @ModelAttribute("login") ClientBean clientBean, BindingResult result, ModelMap model, HttpServletRequest request) throws UnauthorisedException {
+        try {
             String token = microserviceLoginProxy.postLogin(clientBean, request.getHeader(REFERER_HEADER));
+        } catch (UnauthorisedException unauthorisedException) {
+            model.addAttribute("error", "Wrong Username or password");
+            return new ModelAndView("login", model);
         }
+        return new ModelAndView("redirect:/account", model);
+    }
+
+    @RequestMapping("/account")
+    public String account(Model model) {
         return "account/index";
     }
 }
