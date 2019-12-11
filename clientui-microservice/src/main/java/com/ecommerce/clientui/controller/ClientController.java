@@ -74,20 +74,17 @@ public class ClientController {
     public String login(Model model) {
         return "login";
     }
-
     @RequestMapping(value = "/login", method = POST)
-    public ModelAndView submit(@Valid @ModelAttribute("login") ClientBean clientBean, BindingResult result, ModelMap model, HttpServletRequest request) throws UnauthorisedException {
-        try {
-            String token = microserviceLoginProxy.postLogin(clientBean, request.getHeader(REFERER_HEADER));
-        } catch (UnauthorisedException unauthorisedException) {
-            model.addAttribute("error", "Wrong Username or password");
-            return new ModelAndView("login", model);
-        }
-        return new ModelAndView("redirect:/account", model);
+
+    @RequestMapping("/about")
+    public String about(Model model) {
+        return "about";
     }
 
-    @RequestMapping("/account")
-    public String account(Model model) {
-        return "account/index";
+    @RequestMapping("/destination")
+    public String destination(Model model) {
+        return "destination";
     }
+
+
 }

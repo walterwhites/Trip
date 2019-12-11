@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Trip</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 </head>
 
 
@@ -19,10 +19,8 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
-                <li class="nav-item"><a href="hotel-resto.html" class="nav-link">Hotels &amp; Restaurant</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a th:href="@{/about}" class="nav-link">About</a></li>
+                <li class="nav-item"><a th:href="@{/destination}" class="nav-link">Destination</a></li>
                 <li class="nav-item"><a th:href="@{/login}" class="nav-link">Login</a></li>
                 <li class="nav-item cta"><a href="#" class="nav-link">Book Now</a></li>
 
@@ -31,93 +29,148 @@
     </div>
 </nav>
 
-<div class="hero-wrap js-fullheight" style="background-image: url('../static/traveland/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap js-fullheight" th:style="'background-image: url(' + @{/traveland/images/bg_1.jpg} + ');'" data-stellar-background-ratio="0.5">
 
-    <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
             <div class="col-md-7 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Be a Traveler not a Tourist</h1>
-                <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Travel to the any corner of the world, without going around in circles</p>
+                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%' }">Be a Traveler not a Tourist</h1>
+                <p class="mb-4" data-scrollax="properties: { translateY: '30%' }">Travel to the any corner of the world, without going around in circles</p>
             </div>
         </div>
     </div>
 </div>
 
-<section class="ftco-section ftco-no-pb ftco-no-pt">
+<div class="d-flex justify-content-end" style="height: 100px;"></div>
+
+<section class="ftco-section">
     <div class="container">
+        <div >
+            <div >
+                <h2 class="mb-4">Best Place to Travel</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
+        </div>
+
         <div class="row">
-            <div class="col-md-12">
-                <div class="search-wrap-1 ftco-animate p-4">
-                    <form action="#" class="search-property-1">
-                        <div class="row">
-                            <div class="col-lg align-items-end">
-                                <div class="form-group">
-                                    <label for="#">Destination</label>
-                                    <div class="form-field">
-                                        <div class="icon"><span class="ion-ios-search"></span></div>
-                                        <input type="text" class="form-control" placeholder="Search place">
-                                    </div>
-                                </div>
+            <div class="col-md-6 col-lg-3 ">
+                <div class="project">
+                    <div class="img">
+                        <img th:src="@{/traveland/images/destination-1.jpg}"  class="img-fluid" alt="Colorlib Template">
+                    </div>
+                    <div class="text">
+                        <h4 class="price">$400</h4>
+                        <span>15 Days Tour</span>
+                        <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
+                        <div class="star d-flex clearfix">
+                            <div class="mr-auto float-left">
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
                             </div>
-                            <div class="col-lg align-items-end">
-                                <div class="form-group">
-                                    <label for="#">Check-in date</label>
-                                    <div class="form-field">
-                                        <div class="icon"><span class="ion-ios-calendar"></span></div>
-                                        <input type="text" class="form-control checkin_date" placeholder="Check In Date">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg align-items-end">
-                                <div class="form-group">
-                                    <label for="#">Check-out date</label>
-                                    <div class="form-field">
-                                        <div class="icon"><span class="ion-ios-calendar"></span></div>
-                                        <input type="text" class="form-control checkout_date" placeholder="Check Out Date">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg align-items-end">
-                                <div class="form-group">
-                                    <label for="#">Price Limit</label>
-                                    <div class="form-field">
-                                        <div class="select-wrap">
-                                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">$5,000</option>
-                                                <option value="">$10,000</option>
-                                                <option value="">$50,000</option>
-                                                <option value="">$100,000</option>
-                                                <option value="">$200,000</option>
-                                                <option value="">$300,000</option>
-                                                <option value="">$400,000</option>
-                                                <option value="">$500,000</option>
-                                                <option value="">$600,000</option>
-                                                <option value="">$700,000</option>
-                                                <option value="">$800,000</option>
-                                                <option value="">$900,000</option>
-                                                <option value="">$1,000,000</option>
-                                                <option value="">$2,000,000</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg align-self-end">
-                                <div class="form-group">
-                                    <div class="form-field">
-                                        <input type="submit" value="Search" class="form-control btn btn-primary">
-                                    </div>
-                                </div>
+                            <div class="float-right">
+                                <span class="rate"><a href="#">(120)</a></span>
                             </div>
                         </div>
-                    </form>
+                    </div>
+                    <!-- DISPLAY Adventure Link -->
+                    <a th:href="@{/traveland/images/destination-1.jpg}" class="icon image-popup d-flex justify-content-center align-items-center">
+                        <span class="icon-expand"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+                <div class="project">
+                    <div class="img">
+                        <img th:src="@{/traveland/images/destination-2.jpg}" class="img-fluid" alt="Colorlib Template">
+                    </div>
+                    <div class="text">
+                        <h4 class="price">$400</h4>
+                        <span>15 Days Tour</span>
+                        <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
+                        <div class="star d-flex clearfix">
+                            <div class="mr-auto float-left">
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                            </div>
+                            <div class="float-right">
+                                <span class="rate"><a href="#">(120)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a th:href="@{/traveland/images/destination-2.jpg}" class="icon image-popup d-flex justify-content-center align-items-center">
+                        <span class="icon-expand"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ">
+                <div class="project">
+                    <div class="img">
+                        <img th:src="@{/traveland/images/destination-3.jpg}" class="img-fluid" alt="Colorlib Template">
+                    </div>
+                    <div class="text">
+                        <h4 class="price">$400</h4>
+                        <span>15 Days Tour</span>
+                        <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
+                        <div class="star d-flex clearfix">
+                            <div class="mr-auto float-left">
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                            </div>
+                            <div class="float-right">
+                                <span class="rate"><a href="#">(120)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a th:href="@{/traveland/images/destination-3.jpg}" class="icon image-popup d-flex justify-content-center align-items-center">
+                        <span class="icon-expand"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="project">
+                    <div class="img">
+                        <img th:src="@{/traveland/images/destination-4.jpg}" class="img-fluid" alt="Colorlib Template">
+                    </div>
+                    <div class="text">
+                        <h4 class="price">$400</h4>
+                        <span>15 Days Tour</span>
+                        <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
+                        <div class="star d-flex clearfix">
+                            <div class="mr-auto float-left">
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                                <span class="ion-ios-star"></span>
+                            </div>
+                            <div class="float-right">
+                                <span class="rate"><a href="#">(120)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a th:href="@{/traveland/images/destination-4.jpg}" class="icon image-popup d-flex justify-content-center align-items-center">
+                        <span class="icon-expand"></span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </section>
+
+<div class="d-flex justify-content-start" style="height: 100px;"></div>
 
 </body>
 <footer lang="en" th:replace="fragments/footer :: footer"></footer>
