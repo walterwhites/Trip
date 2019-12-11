@@ -20,6 +20,10 @@ public class CustomErrorDecoder implements ErrorDecoder {
             return new UnauthorisedException("Access denied", "Access denied, zuul server responds 403");
         }
 
+        if (response.status() == 401) {
+            return new UnauthorisedException("Access denied, not authentified", "Access denied, zuul server responds 401");
+        }
+
         return defaultErrorDecoder.decode(s, response);
     }
 }

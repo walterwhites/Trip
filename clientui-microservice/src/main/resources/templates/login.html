@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<header lang="en" th:replace="fragments/header :: header"></header>
 <head>
     <meta charset="UTF-8">
-    <title>Pricing - Trip</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Login - Trip</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/traveland/scss/style.scss}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}"/>
+
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 </head>
-<header lang="en" th:replace="fragments/header :: header"></header>
-<link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.css}"/>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-md-offset-4">
-                <h1 class="text-center login-title">Sign in to continue to Traveland</h1>
-                <div class="account-wall">
-                    <img class="profile-img" th:src="@{/traveland/images/image_2.jpg}" width="350" height="150"
-                         alt="">
-                    <form class="form-signin" th:action="@{/login}" method="post">
-                        <input type="text" class="form-control" placeholder="Username" name="username" required autofocus>
-                        <input type="password" class="form-control" placeholder="Password" name="password" required>
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">
-                            Sign in</button>
-                        <label class="checkbox pull-left">
-                            <input type="checkbox" value="remember-me">
-                            Remember me
-                        </label>
-                        <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                    </form>
+<div class="container">
+    <div th:if="${error}">
+        <!-- Error Alert -->
+        <div id="message">
+            <div style="padding: 5px;" class="centered">
+                <div id="errorLoginAlert" class="alert alert alert-danger alert-dismissible fade show">
+                    <strong>Error!</strong> Wrong username or password
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
                 </div>
-                <a href="#" class="text-center new-account">Create an account </a>
-                <p><a href="/" th:href="@{/}">Back to home page</a></p>
             </div>
         </div>
     </div>
-<div class="d-flex justify-content-end" style="height: 200px;"></div>
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>Sign In</h3>
+            </div>
+            <div class="card-body">
+                <form class="form-signin" th:action="@{/login}" method="POST">
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input name="username" type="text" class="form-control" placeholder="username">
+
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input name="password" type="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login" class="btn float-right login_btn">
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account?<a href="#">Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <footer lang="en" th:replace="fragments/footer :: footer"></footer>
 </html>
