@@ -14,16 +14,14 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ login-microservice ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 26 source files to /Users/florent.masdoumier/IdeaProjects/Trip/login-microservice/target/classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ login-microservice ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/login-microservice/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ login-microservice ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /Users/florent.masdoumier/IdeaProjects/Trip/login-microservice/target/test-classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ login-microservice <<<
 [INFO] 
@@ -31,7 +29,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ login-microservice ---
 [INFO] Attaching agents: []
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-2019-12-11 11:37:53.058  INFO [login-microservice,,,] 85785 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f47e2430] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:11:52.482  INFO [login-microservice,,,] 70657 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9aa89d6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -41,82 +39,432 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
-2019-12-11 11:37:53.333  INFO [login-microservice,,,] 85785 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-11 11:37:54.302  INFO [login-microservice,,,] 85785 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=login-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
-2019-12-11 11:37:54.303  INFO [login-microservice,,,] 85785 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/login-microservice.properties'}]}
-2019-12-11 11:37:54.332  INFO [login-microservice,,,] 85785 --- [           main] c.e.l.LoginMicroserviceApplication       : No active profile set, falling back to default profiles: default
-2019-12-11 11:37:55.818  WARN [login-microservice,,,] 85785 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-11 11:37:56.204  INFO [login-microservice,,,] 85785 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b5e9419-46f3-3df2-a395-e6f1974cc06f
-2019-12-11 11:37:56.744  INFO [login-microservice,,,] 85785 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-11 11:37:56.916  INFO [login-microservice,,,] 85785 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f47e2430] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-11 11:37:57.497  INFO [login-microservice,,,] 85785 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9097 (http)
-2019-12-11 11:37:57.510  INFO [login-microservice,,,] 85785 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-11 11:37:57.510  INFO [login-microservice,,,] 85785 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-11 11:37:57.754  INFO [login-microservice,,,] 85785 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-11 11:37:57.754  INFO [login-microservice,,,] 85785 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3395 ms
-2019-12-11 11:37:58.021  WARN [login-microservice,,,] 85785 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-11 11:37:58.021  INFO [login-microservice,,,] 85785 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-11 11:37:58.037  INFO [login-microservice,,,] 85785 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@59f76e56
-2019-12-11 11:37:58.129  INFO [login-microservice,,,] 85785 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2019-12-11 11:37:58.298  INFO [login-microservice,,,] 85785 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2019-12-11 11:37:59.557  INFO [login-microservice,,,] 85785 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-12-13 11:11:52.671  INFO [login-microservice,,,] 70657 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-13 11:11:54.942  INFO [login-microservice,,,] 70657 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=login-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
+2019-12-13 11:11:54.943  INFO [login-microservice,,,] 70657 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/login-microservice.properties'}]}
+2019-12-13 11:11:55.002  INFO [login-microservice,,,] 70657 --- [           main] c.e.l.LoginMicroserviceApplication       : No active profile set, falling back to default profiles: default
+2019-12-13 11:11:56.798  WARN [login-microservice,,,] 70657 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-13 11:11:57.235  INFO [login-microservice,,,] 70657 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b5e9419-46f3-3df2-a395-e6f1974cc06f
+2019-12-13 11:11:57.649  INFO [login-microservice,,,] 70657 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:11:57.815  INFO [login-microservice,,,] 70657 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9aa89d6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:11:58.276  INFO [login-microservice,,,] 70657 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9097 (http)
+2019-12-13 11:11:58.289  INFO [login-microservice,,,] 70657 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-13 11:11:58.289  INFO [login-microservice,,,] 70657 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-13 11:11:58.453  INFO [login-microservice,,,] 70657 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-13 11:11:58.453  INFO [login-microservice,,,] 70657 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3397 ms
+2019-12-13 11:11:58.687  WARN [login-microservice,,,] 70657 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-13 11:11:58.687  INFO [login-microservice,,,] 70657 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-13 11:11:58.699  INFO [login-microservice,,,] 70657 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6921cfa
+2019-12-13 11:11:58.788  INFO [login-microservice,,,] 70657 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2019-12-13 11:11:59.147  INFO [login-microservice,,,] 70657 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-13 11:12:00.688  INFO [login-microservice,,,] 70657 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-12-11 11:37:59.674  INFO [login-microservice,,,] 85785 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.0.Final}
-2019-12-11 11:37:59.676  INFO [login-microservice,,,] 85785 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-12-11 11:37:59.837  INFO [login-microservice,,,] 85785 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-11 11:37:59.963  INFO [login-microservice,,,] 85785 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-12-11 11:38:00.303  INFO [login-microservice,,,] 85785 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@bc88295'
-2019-12-11 11:38:00.304  INFO [login-microservice,,,] 85785 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-11 11:38:00.310  INFO [login-microservice,,,] 85785 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-11 11:38:00.552  WARN [login-microservice,,,] 85785 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-11 11:38:01.503  INFO [login-microservice,,,] 85785 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-12-11 11:38:01.716  INFO [login-microservice,,,] 85785 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-11 11:38:01.750  WARN [login-microservice,,,] 85785 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-11 11:38:01.750  INFO [login-microservice,,,] 85785 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-11 11:38:02.125  INFO [login-microservice,,,] 85785 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-11 11:38:02.807  WARN [login-microservice,,,] 85785 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2019-12-11 11:38:03.223  INFO [login-microservice,,,] 85785 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-12-11 11:38:03.403  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-12-11 11:38:03.702  INFO [login-microservice,,,] 85785 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-12-11 11:38:03.702  INFO [login-microservice,,,] 85785 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-13 11:12:00.772  INFO [login-microservice,,,] 70657 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.0.Final}
+2019-12-13 11:12:00.774  INFO [login-microservice,,,] 70657 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-13 11:12:00.926  INFO [login-microservice,,,] 70657 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 11:12:01.049  INFO [login-microservice,,,] 70657 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-13 11:12:01.316  INFO [login-microservice,,,] 70657 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@575cfec1'
+2019-12-13 11:12:01.318  INFO [login-microservice,,,] 70657 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 11:12:01.321  INFO [login-microservice,,,] 70657 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-13 11:12:01.563  WARN [login-microservice,,,] 70657 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-13 11:12:02.381  INFO [login-microservice,,,] 70657 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-13 11:12:02.616  INFO [login-microservice,,,] 70657 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-13 11:12:02.666  WARN [login-microservice,,,] 70657 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-13 11:12:02.667  INFO [login-microservice,,,] 70657 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-13 11:12:03.003  INFO [login-microservice,,,] 70657 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-13 11:12:03.660  WARN [login-microservice,,,] 70657 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-13 11:12:03.933  INFO [login-microservice,,,] 70657 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-13 11:12:04.044  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-13 11:12:04.204  INFO [login-microservice,,,] 70657 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-13 11:12:04.204  INFO [login-microservice,,,] 70657 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
 WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-2019-12-11 11:38:03.953  INFO [login-microservice,,,] 85785 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-12-11 11:38:03.953  INFO [login-microservice,,,] 85785 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-12-11 11:38:04.170  INFO [login-microservice,,,] 85785 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-11 11:38:04.190  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-11 11:38:04.190  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-11 11:38:04.190  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-11 11:38:04.191  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-11 11:38:04.191  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-11 11:38:04.191  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-12-11 11:38:04.191  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-11 11:38:04.336  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-11 11:38:04.339  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-12-11 11:38:04.342  INFO [login-microservice,,,] 85785 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-12-11 11:38:04.347  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576060684346 with initial instances count: 0
-2019-12-11 11:38:04.363  INFO [login-microservice,,,] 85785 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOGIN-MICROSERVICE with eureka with status UP
-2019-12-11 11:38:04.365  INFO [login-microservice,,,] 85785 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576060684364, current=UP, previous=STARTING]
-2019-12-11 11:38:04.367  INFO [login-microservice,,,] 85785 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOGIN-MICROSERVICE/192.168.1.100:login-microservice:9097: registering service...
-2019-12-11 11:38:04.368  INFO [login-microservice,,,] 85785 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-11 11:38:04.386  INFO [login-microservice,,,] 85785 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-11 11:38:04.409  INFO [login-microservice,,,] 85785 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOGIN-MICROSERVICE/192.168.1.100:login-microservice:9097 - registration status: 204
-2019-12-11 11:38:04.430  INFO [login-microservice,,,] 85785 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-11 11:38:04.673  INFO [login-microservice,,,] 85785 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
-2019-12-11 11:38:04.676  INFO [login-microservice,,,] 85785 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
-2019-12-11 11:38:04.755  INFO [login-microservice,,,] 85785 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9097 (http) with context path ''
-2019-12-11 11:38:04.756  INFO [login-microservice,,,] 85785 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
-2019-12-11 11:38:04.761  INFO [login-microservice,,,] 85785 --- [           main] c.e.l.LoginMicroserviceApplication       : Started LoginMicroserviceApplication in 13.05 seconds (JVM running for 14.15)
-2019-12-11 11:38:34.343  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-11 11:38:34.344  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-11 11:38:34.344  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-11 11:38:34.344  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-11 11:38:34.344  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-11 11:38:34.344  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2019-12-11 11:38:34.344  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-11 11:38:34.363  INFO [login-microservice,,,] 85785 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-11 11:43:04.206  INFO [login-microservice,,,] 85785 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:12:04.333  INFO [login-microservice,,,] 70657 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-13 11:12:04.333  INFO [login-microservice,,,] 70657 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-13 11:12:04.499  INFO [login-microservice,,,] 70657 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:12:04.513  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-13 11:12:04.513  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-13 11:12:04.513  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-13 11:12:04.513  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-13 11:12:04.513  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-13 11:12:04.513  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-13 11:12:04.513  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-13 11:12:04.626  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-13 11:12:04.629  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-13 11:12:04.631  INFO [login-microservice,,,] 70657 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-13 11:12:04.636  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576231924634 with initial instances count: 2
+2019-12-13 11:12:04.647  INFO [login-microservice,,,] 70657 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOGIN-MICROSERVICE with eureka with status UP
+2019-12-13 11:12:04.647  INFO [login-microservice,,,] 70657 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576231924647, current=UP, previous=STARTING]
+2019-12-13 11:12:04.649  INFO [login-microservice,,,] 70657 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOGIN-MICROSERVICE/192.168.1.100:login-microservice:9097: registering service...
+2019-12-13 11:12:04.650  INFO [login-microservice,,,] 70657 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-13 11:12:04.665  INFO [login-microservice,,,] 70657 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-13 11:12:04.683  INFO [login-microservice,,,] 70657 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOGIN-MICROSERVICE/192.168.1.100:login-microservice:9097 - registration status: 204
+2019-12-13 11:12:04.699  INFO [login-microservice,,,] 70657 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-13 11:12:04.865  INFO [login-microservice,,,] 70657 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-12-13 11:12:04.867  INFO [login-microservice,,,] 70657 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-12-13 11:12:04.933  INFO [login-microservice,,,] 70657 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9097 (http) with context path ''
+2019-12-13 11:12:04.934  INFO [login-microservice,,,] 70657 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
+2019-12-13 11:12:04.939  INFO [login-microservice,,,] 70657 --- [           main] c.e.l.LoginMicroserviceApplication       : Started LoginMicroserviceApplication in 13.975 seconds (JVM running for 14.695)
+2019-12-13 11:12:33.506  INFO [login-microservice,,,] 70657 --- [nio-9097-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 11:12:33.506  INFO [login-microservice,,,] 70657 --- [nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-13 11:12:33.519  INFO [login-microservice,,,] 70657 --- [nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:9dbbbfea-96b8-44f2-bf19-b0729f2574f7
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/login-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:0:0:0:0:0:0:0:1
+Header Name:content-length   Header Value:56
+Header Name:host   Header Value:192.168.1.100:9097
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:a08c34f3435ae916
+Header Name:x-b3-spanid   Header Value:47039372b5d52ad4
+Header Name:x-b3-parentspanid   Header Value:a08c34f3435ae916
+Header Name:x-b3-sampled   Header Value:1
+2019-12-13 11:12:33.743  INFO [login-microservice,a08c34f3435ae916,47039372b5d52ad4,true] 70657 --- [nio-9097-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-13 11:12:33.752  INFO [login-microservice,a08c34f3435ae916,47039372b5d52ad4,true] 70657 --- [nio-9097-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-client-microservice
+2019-12-13 11:12:33.752  INFO [login-microservice,a08c34f3435ae916,47039372b5d52ad4,true] 70657 --- [nio-9097-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: client-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=client-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-12-13 11:12:33.757  INFO [login-microservice,a08c34f3435ae916,47039372b5d52ad4,true] 70657 --- [nio-9097-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-12-13 11:12:33.759  INFO [login-microservice,a08c34f3435ae916,47039372b5d52ad4,true] 70657 --- [nio-9097-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client client-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=client-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@1fe1eee8
+2019-12-13 11:12:33.806 ERROR [login-microservice,a08c34f3435ae916,47039372b5d52ad4,true] 70657 --- [nio-9097-exec-1] o.s.c.s.i.web.ExceptionLoggingFilter     : Uncaught exception thrown
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: client-microservice
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:65) ~[brave-instrumentation-servlet-5.8.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:82) ~[brave-instrumentation-servlet-5.8.0.jar:na]
+	at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:138) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: client-microservice
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90) ~[spring-cloud-openfeign-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.execute(TraceLoadBalancerFeignClient.java:71) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110) ~[feign-core-10.4.0.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80) ~[feign-core-10.4.0.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103) ~[feign-core-10.4.0.jar:na]
+	at com.sun.proxy.$Proxy165.searchClient(Unknown Source) ~[na:na]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl.lambda$new$0(LoginServiceImpl.java:51) ~[classes/:na]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl.login(LoginServiceImpl.java:40) ~[classes/:na]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$c2e17792.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:353) ~[spring-tx-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$20adcc26.login(<generated>) ~[classes/:na]
+	at com.ecommerce.loginmicroservice.controller.LoginController.loginUser(LoginController.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 51 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: client-microservice
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83) ~[spring-cloud-openfeign-core-2.2.0.RC1.jar:2.2.0.RC1]
+	... 83 common frames omitted
+
+2019-12-13 11:12:33.811 ERROR [login-microservice,,,] 70657 --- [nio-9097-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: client-microservice] with root cause
+
+com.netflix.client.ClientException: Load balancer does not have available server for client: client-microservice
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83) ~[spring-cloud-openfeign-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.cloud.sleuth.instrument.web.client.feign.TraceLoadBalancerFeignClient.execute(TraceLoadBalancerFeignClient.java:71) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110) ~[feign-core-10.4.0.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80) ~[feign-core-10.4.0.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103) ~[feign-core-10.4.0.jar:na]
+	at com.sun.proxy.$Proxy165.searchClient(Unknown Source) ~[na:na]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl.lambda$new$0(LoginServiceImpl.java:51) ~[classes/:na]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl.login(LoginServiceImpl.java:40) ~[classes/:na]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl$$FastClassBySpringCGLIB$$c2e17792.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:353) ~[spring-tx-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl$$EnhancerBySpringCGLIB$$20adcc26.login(<generated>) ~[classes/:na]
+	at com.ecommerce.loginmicroservice.controller.LoginController.loginUser(LoginController.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:65) ~[brave-instrumentation-servlet-5.8.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:82) ~[brave-instrumentation-servlet-5.8.0.jar:na]
+	at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:138) ~[spring-cloud-sleuth-core-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2019-12-13 11:12:34.770  INFO [login-microservice,,,] 70657 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: client-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:406e6113-35d3-4e1a-b24b-222ce04492c6
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/login-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:0:0:0:0:0:0:0:1
+Header Name:content-length   Header Value:56
+Header Name:host   Header Value:192.168.1.100:9097
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-spanid   Header Value:8836e79b6d44c3ed
+Header Name:x-b3-parentspanid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-sampled   Header Value:1
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:406e6113-35d3-4e1a-b24b-222ce04492c6
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/login-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:0:0:0:0:0:0:0:1
+Header Name:content-length   Header Value:56
+Header Name:host   Header Value:192.168.1.100:9097
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-spanid   Header Value:8836e79b6d44c3ed
+Header Name:x-b3-parentspanid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-sampled   Header Value:1
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:406e6113-35d3-4e1a-b24b-222ce04492c6
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/login-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:0:0:0:0:0:0:0:1
+Header Name:content-length   Header Value:56
+Header Name:host   Header Value:192.168.1.100:9097
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-spanid   Header Value:8836e79b6d44c3ed
+Header Name:x-b3-parentspanid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-sampled   Header Value:1
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:406e6113-35d3-4e1a-b24b-222ce04492c6
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/login-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:0:0:0:0:0:0:0:1
+Header Name:content-length   Header Value:56
+Header Name:host   Header Value:192.168.1.100:9097
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-spanid   Header Value:8836e79b6d44c3ed
+Header Name:x-b3-parentspanid   Header Value:8022ec3a6a9ed0a9
+Header Name:x-b3-sampled   Header Value:1
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:f0699f28b88f054f
+Header Name:x-b3-spanid   Header Value:eb77e942e7ada417
+Header Name:x-b3-parentspanid   Header Value:2016a6cc096ca893
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:x-forwarded-host   Header Value:192.168.1.100:9099
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/login-microservice
+Header Name:x-forwarded-port   Header Value:9099
+Header Name:x-forwarded-for   Header Value:192.168.1.100
+Header Name:accept-encoding   Header Value:gzip
+Header Name:content-length   Header Value:156
+Header Name:host   Header Value:192.168.1.100:9097
+Header Name:connection   Header Value:Keep-Alive
+2019-12-13 11:12:39.274  INFO [login-microservice,f0699f28b88f054f,eb77e942e7ada417,true] 70657 --- [nio-9097-exec-3] c.e.l.service.impl.LoginServiceImpl      : dev_message: Client with this username / email doesn't exits.
