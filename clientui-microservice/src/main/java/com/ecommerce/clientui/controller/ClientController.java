@@ -58,9 +58,19 @@ public class ClientController {
         return "about-us";
     }
 
-    @RequestMapping("/pricing")
-    public String pricing(Model model) {
-        return "login";
+    @RequestMapping("/blog")
+    public String blog(Model model) {
+        return "blog";
+    }
+
+    @RequestMapping("/destination")
+    public String destination(Model model) {
+        return "destination";
+    }
+
+    @RequestMapping("/contact")
+    public String contact(Model model) {
+        return "contact";
     }
 
     @RequestMapping("/adventures")
@@ -75,9 +85,13 @@ public class ClientController {
     }
 
     @RequestMapping("/adventures/{id}")
-    public String adventures(Model model, @PathVariable("id") int id, HttpServletRequest request) {
-        AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
-        model.addAttribute("adventure", adventure);
+    public String adventures(Model model, @PathVariable("id") int id, HttpServletRequest request) throws UnauthorisedException {
+        try {
+            AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
+            model.addAttribute("adventure", adventure);
+        } catch (UnauthorisedException unauthorisedException) {
+            return "redirect:/login";
+        }
         return "adventures/detail";
     }
 
@@ -118,7 +132,6 @@ public class ClientController {
     @RequestMapping("/account")
     public ModelAndView account(ModelMap model, HttpServletRequest request) throws UnauthorisedException  {
         try {
-            System.out.println("dfsdfsdfdpooer" + request.getCookies());
             DebugUtils.RequestInfo.displayAllRequestHeaders(request);
             //Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations(DebugUtils.RequestInfo.getRequestHeader(request, "Authorisation"));
             //System.out.println("dto response + " + clientResponseDTO);
