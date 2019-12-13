@@ -1,15 +1,416 @@
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] Scanning for projects...
-[ERROR] [ERROR] Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for org.springframework.session:spring-session:jar is missing. @ line 95, column 15
- @ 
-[ERROR] The build could not read 1 project -> [Help 1]
-[ERROR]   
-[ERROR]   The project com.ecommerce:zuul-server-microservice:0.0.1-SNAPSHOT (/Users/florent.masdoumier/IdeaProjects/Trip/zuul-server-microservice/pom.xml) has 1 error
-[ERROR]     'dependencies.dependency.version' for org.springframework.session:spring-session:jar is missing. @ line 95, column 15
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.ecommerce:zuul-server-microservice >---------------
+[INFO] Building zuul-server-microservice 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ zuul-server-microservice >>>
+[INFO] 
+[INFO] ---------------< com.ecommerce:zuul-server-microservice >---------------
+[INFO] Building zuul-server-microservice 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ zuul-server-microservice >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ zuul-server-microservice ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ zuul-server-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zuul-server-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zuul-server-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ zuul-server-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/zuul-server-microservice/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ zuul-server-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ zuul-server-microservice <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ zuul-server-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ zuul-server-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/zuul-server-microservice/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ zuul-server-microservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ zuul-server-microservice <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ zuul-server-microservice ---
+[INFO] Attaching agents: []
+[INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
+2019-12-12 23:13:56.661  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$973d1b6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:13:56.661  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b4ba61fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+2019-12-12 23:13:56.819  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-12 23:13:56.828  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-12 23:13:59.558  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=zuul-server-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
+2019-12-12 23:13:59.559  INFO [zuul-server-microservice,,,] 41726 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/zuul-server-microservice.properties'}]}
+2019-12-12 23:13:59.589  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : No active profile set, falling back to default profiles: default
+2019-12-12 23:14:00.000  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=zuul-server-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
+2019-12-12 23:14:00.000  INFO [zuul-server-microservice,,,] 41727 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/zuul-server-microservice.properties'}]}
+2019-12-12 23:14:00.048  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : No active profile set, falling back to default profiles: default
+2019-12-12 23:14:01.016  INFO [zuul-server-microservice,,,] 41726 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-12 23:14:01.019  INFO [zuul-server-microservice,,,] 41726 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-12 23:14:01.050  INFO [zuul-server-microservice,,,] 41726 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-12-12 23:14:01.200  WARN [zuul-server-microservice,,,] 41726 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-12 23:14:01.305  WARN [zuul-server-microservice,,,] 41726 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-12-12 23:14:01.388  INFO [zuul-server-microservice,,,] 41727 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-12 23:14:01.390  INFO [zuul-server-microservice,,,] 41727 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-12 23:14:01.437  INFO [zuul-server-microservice,,,] 41727 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-12-12 23:14:01.590  WARN [zuul-server-microservice,,,] 41727 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-12 23:14:01.677  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d3a16008-96ea-31a9-bf0c-e995cf69a207
+2019-12-12 23:14:01.702  WARN [zuul-server-microservice,,,] 41727 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-12-12 23:14:02.130  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d3a16008-96ea-31a9-bf0c-e995cf69a207
+2019-12-12 23:14:02.266  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$973d1b6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.311  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.propagation.SleuthTagPropagationAutoConfiguration$TagPropagationConfiguration' of type [org.springframework.cloud.sleuth.propagation.SleuthTagPropagationAutoConfiguration$TagPropagationConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.326  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.sleuth-org.springframework.cloud.sleuth.autoconfig.SleuthProperties' of type [org.springframework.cloud.sleuth.autoconfig.SleuthProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.339  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.sleuth.propagation.tag-org.springframework.cloud.sleuth.propagation.SleuthTagPropagationProperties' of type [org.springframework.cloud.sleuth.propagation.SleuthTagPropagationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.344  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthFinishedSpanHandler' of type [org.springframework.cloud.sleuth.propagation.TagPropagationFinishedSpanHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.351  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration$Slf4jConfiguration' of type [org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration$Slf4jConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.361  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.sleuth.log.slf4j-org.springframework.cloud.sleuth.log.SleuthSlf4jProperties' of type [org.springframework.cloud.sleuth.log.SleuthSlf4jProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.367  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'slf4jSpanDecorator' of type [org.springframework.cloud.sleuth.log.Slf4jScopeDecorator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.406  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.autoconfig.TraceAutoConfiguration' of type [org.springframework.cloud.sleuth.autoconfig.TraceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.429  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthPropagation' of type [brave.propagation.B3Propagation$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.440  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthCurrentTraceContextBuilder' of type [brave.propagation.ThreadLocalCurrentTraceContext$Builder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.446  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthCurrentTraceContext' of type [brave.propagation.ThreadLocalCurrentTraceContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.494  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'errorParser' of type [brave.ErrorParser] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.512  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.ZipkinAutoConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.ZipkinAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.523  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.ZipkinBackwardsCompatibilityAutoConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.ZipkinBackwardsCompatibilityAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.527  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinReporterMetrics' of type [zipkin2.reporter.InMemoryReporterMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.545  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.zipkin-org.springframework.cloud.sleuth.zipkin2.ZipkinProperties' of type [org.springframework.cloud.sleuth.zipkin2.ZipkinProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.564  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration.RibbonClientSpecification' of type [org.springframework.cloud.netflix.ribbon.RibbonClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.570  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.ribbon.eureka.RibbonEurekaAutoConfiguration.RibbonClientSpecification' of type [org.springframework.cloud.netflix.ribbon.RibbonClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.576  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'ribbon.eager-load-org.springframework.cloud.netflix.ribbon.RibbonEagerLoadProperties' of type [org.springframework.cloud.netflix.ribbon.RibbonEagerLoadProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.580  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration' of type [org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration$$EnhancerBySpringCGLIB$$786f784c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.594  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'springClientFactory' of type [org.springframework.cloud.netflix.ribbon.SpringClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.606  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClient' of type [org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.612  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$DiscoveryClientZipkinUrlExtractorConfiguration$ZipkinClientLoadBalancedConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$DiscoveryClientZipkinUrlExtractorConfiguration$ZipkinClientLoadBalancedConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.617  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientZipkinLoadBalancer' of type [org.springframework.cloud.sleuth.zipkin2.sender.LoadBalancerClientZipkinLoadBalancer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.622  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinUrlExtractor' of type [org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$CachingZipkinUrlExtractor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.625  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.635  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinRestTemplateCustomizer' of type [org.springframework.cloud.sleuth.zipkin2.DefaultZipkinRestTemplateCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.651  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinSender' of type [org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.730  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b4ba61fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.742  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinReporter' of type [zipkin2.reporter.AsyncReporter$BoundedAsyncReporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.797  INFO [zuul-server-microservice,,,] 41726 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'tracing' of type [brave.Tracing$Default] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.820  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.propagation.SleuthTagPropagationAutoConfiguration$TagPropagationConfiguration' of type [org.springframework.cloud.sleuth.propagation.SleuthTagPropagationAutoConfiguration$TagPropagationConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.858  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.sleuth-org.springframework.cloud.sleuth.autoconfig.SleuthProperties' of type [org.springframework.cloud.sleuth.autoconfig.SleuthProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.868  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.sleuth.propagation.tag-org.springframework.cloud.sleuth.propagation.SleuthTagPropagationProperties' of type [org.springframework.cloud.sleuth.propagation.SleuthTagPropagationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.873  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthFinishedSpanHandler' of type [org.springframework.cloud.sleuth.propagation.TagPropagationFinishedSpanHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.881  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration$Slf4jConfiguration' of type [org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration$Slf4jConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.889  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.sleuth.log.slf4j-org.springframework.cloud.sleuth.log.SleuthSlf4jProperties' of type [org.springframework.cloud.sleuth.log.SleuthSlf4jProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.892  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'slf4jSpanDecorator' of type [org.springframework.cloud.sleuth.log.Slf4jScopeDecorator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.916  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.autoconfig.TraceAutoConfiguration' of type [org.springframework.cloud.sleuth.autoconfig.TraceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.930  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthPropagation' of type [brave.propagation.B3Propagation$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.939  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthCurrentTraceContextBuilder' of type [brave.propagation.ThreadLocalCurrentTraceContext$Builder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.943  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthCurrentTraceContext' of type [brave.propagation.ThreadLocalCurrentTraceContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.986  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'errorParser' of type [brave.ErrorParser] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:02.994  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.ZipkinAutoConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.ZipkinAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.002  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.ZipkinBackwardsCompatibilityAutoConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.ZipkinBackwardsCompatibilityAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.006  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinReporterMetrics' of type [zipkin2.reporter.InMemoryReporterMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.025  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.zipkin-org.springframework.cloud.sleuth.zipkin2.ZipkinProperties' of type [org.springframework.cloud.sleuth.zipkin2.ZipkinProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.050  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration.RibbonClientSpecification' of type [org.springframework.cloud.netflix.ribbon.RibbonClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.056  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.netflix.ribbon.eureka.RibbonEurekaAutoConfiguration.RibbonClientSpecification' of type [org.springframework.cloud.netflix.ribbon.RibbonClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.062  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'ribbon.eager-load-org.springframework.cloud.netflix.ribbon.RibbonEagerLoadProperties' of type [org.springframework.cloud.netflix.ribbon.RibbonEagerLoadProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.067  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration' of type [org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration$$EnhancerBySpringCGLIB$$95ecbeda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.082  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'springClientFactory' of type [org.springframework.cloud.netflix.ribbon.SpringClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.093  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClient' of type [org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.098  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$DiscoveryClientZipkinUrlExtractorConfiguration$ZipkinClientLoadBalancedConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$DiscoveryClientZipkinUrlExtractorConfiguration$ZipkinClientLoadBalancedConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.104  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientZipkinLoadBalancer' of type [org.springframework.cloud.sleuth.zipkin2.sender.LoadBalancerClientZipkinLoadBalancer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.108  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinUrlExtractor' of type [org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration$CachingZipkinUrlExtractor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.112  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration' of type [org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateSenderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.119  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinRestTemplateCustomizer' of type [org.springframework.cloud.sleuth.zipkin2.DefaultZipkinRestTemplateCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.133  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinSender' of type [org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.155  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'zipkinReporter' of type [zipkin2.reporter.AsyncReporter$BoundedAsyncReporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.170  INFO [zuul-server-microservice,,,] 41727 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'tracing' of type [brave.Tracing$Default] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:03.266  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9099 (http)
+2019-12-12 23:14:03.275  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-12 23:14:03.276  INFO [zuul-server-microservice,,,] 41726 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-12 23:14:03.439  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-12 23:14:03.439  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3824 ms
+2019-12-12 23:14:03.563  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9096 (http)
+2019-12-12 23:14:03.575  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-12 23:14:03.575  INFO [zuul-server-microservice,,,] 41727 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-12 23:14:03.683  WARN [zuul-server-microservice,,,] 41726 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-12 23:14:03.683  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-12 23:14:03.695  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3b0ed98a
+2019-12-12 23:14:03.720  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-12 23:14:03.720  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3644 ms
+2019-12-12 23:14:03.952  WARN [zuul-server-microservice,,,] 41727 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-12 23:14:03.952  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-12 23:14:03.965  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@20dd5870
+2019-12-12 23:14:05.232  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-12-12 23:14:05.482  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-12-12 23:14:05.498  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-12 23:14:05.592  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-12 23:14:05.764  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-12 23:14:05.791  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-12 23:14:05.803  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-12-12 23:14:05.898  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-12 23:14:05.927  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-12 23:14:05.927  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-12 23:14:06.103  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-12 23:14:06.104  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-12 23:14:06.187  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-12-12 23:14:06.204  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-12 23:14:06.204  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-12 23:14:06.205  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-12 23:14:06.205  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-12 23:14:06.205  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-12 23:14:06.205  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-12 23:14:06.205  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-12 23:14:06.252  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-12 23:14:06.252  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-12 23:14:06.403  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-12 23:14:06.405  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-12 23:14:06.407  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-12 23:14:06.413  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576188846411 with initial instances count: 0
+2019-12-12 23:14:06.451  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-12 23:14:06.468  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-12 23:14:06.468  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-12 23:14:06.468  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-12 23:14:06.468  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-12 23:14:06.468  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-12 23:14:06.468  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-12 23:14:06.468  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-12 23:14:06.568  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-12 23:14:06.570  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-12 23:14:06.572  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-12 23:14:06.577  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576188846575 with initial instances count: 0
+2019-12-12 23:14:06.603  WARN [zuul-server-microservice,,,] 41726 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-12 23:14:06.603  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-12 23:14:06.758  WARN [zuul-server-microservice,,,] 41727 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-12 23:14:06.760  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-12 23:14:06.918  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-12 23:14:07.062  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-12 23:14:07.612  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@489989eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1eda853f, org.springframework.security.web.header.HeaderWriterFilter@423791, org.springframework.security.web.authentication.logout.LogoutFilter@26fc464f, com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenFilter@6d97a357, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64821706, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ae2028d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e6cd1c, org.springframework.security.web.session.SessionManagementFilter@64641998, org.springframework.security.web.access.ExceptionTranslationFilter@597eb9ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c8f7d6a]
+2019-12-12 23:14:07.706  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65fa1cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@77feca04, org.springframework.security.web.header.HeaderWriterFilter@419c70f6, org.springframework.security.web.authentication.logout.LogoutFilter@1ff52a71, com.ecommerce.zuulservermicroservice.security.jwt.JwtTokenFilter@106c73ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a20aa4e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f51d1cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cd1ee, org.springframework.security.web.session.SessionManagementFilter@35bb3fea, org.springframework.security.web.access.ExceptionTranslationFilter@1bf4a79b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dc9e4d2]
+2019-12-12 23:14:07.745  WARN [zuul-server-microservice,,,] 41726 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-12 23:14:07.835  WARN [zuul-server-microservice,,,] 41727 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-12 23:14:07.930  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2019-12-12 23:14:07.977  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-12-12 23:14:08.020  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2019-12-12 23:14:08.030  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZUUL-SERVER-MICROSERVICE with eureka with status UP
+2019-12-12 23:14:08.031  INFO [zuul-server-microservice,,,] 41726 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576188848031, current=UP, previous=STARTING]
+2019-12-12 23:14:08.032  INFO [zuul-server-microservice,,,] 41726 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9099: registering service...
+2019-12-12 23:14:08.072  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-12-12 23:14:08.079  INFO [zuul-server-microservice,,,] 41726 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9099 - registration status: 204
+2019-12-12 23:14:08.088  INFO [zuul-server-microservice,,,] 41726 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9099 (http) with context path ''
+2019-12-12 23:14:08.088  INFO [zuul-server-microservice,,,] 41726 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9099
+2019-12-12 23:14:08.094  INFO [zuul-server-microservice,,,] 41726 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : Started ZuulServerMicroserviceApplication in 12.567 seconds (JVM running for 13.131)
+2019-12-12 23:14:08.126  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZUUL-SERVER-MICROSERVICE with eureka with status UP
+2019-12-12 23:14:08.127  INFO [zuul-server-microservice,,,] 41727 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576188848127, current=UP, previous=STARTING]
+2019-12-12 23:14:08.128  INFO [zuul-server-microservice,,,] 41727 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9096: registering service...
+2019-12-12 23:14:08.153  INFO [zuul-server-microservice,,,] 41727 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9096 - registration status: 204
+2019-12-12 23:14:08.176  INFO [zuul-server-microservice,,,] 41727 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9096 (http) with context path ''
+2019-12-12 23:14:08.176  INFO [zuul-server-microservice,,,] 41727 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
+2019-12-12 23:14:08.181  INFO [zuul-server-microservice,,,] 41727 --- [           main] c.e.z.ZuulServerMicroserviceApplication  : Started ZuulServerMicroserviceApplication in 12.649 seconds (JVM running for 13.188)
+2019-12-12 23:14:36.410  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-12 23:14:36.413  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-12 23:14:36.413  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-12 23:14:36.414  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-12 23:14:36.414  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-12 23:14:36.414  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-12-12 23:14:36.414  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-12 23:14:36.495  INFO [zuul-server-microservice,,,] 41726 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-12 23:14:36.578  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-12 23:14:36.580  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-12 23:14:36.581  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-12 23:14:36.581  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-12 23:14:36.581  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-12 23:14:36.581  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-12-12 23:14:36.581  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-12 23:14:36.646  INFO [zuul-server-microservice,,,] 41727 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-12 23:16:46.682  INFO [zuul-server-microservice,,,] 41726 --- [nio-9099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-12 23:16:46.683  INFO [zuul-server-microservice,,,] 41726 --- [nio-9099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-12 23:16:46.768  INFO [zuul-server-microservice,,,] 41726 --- [nio-9099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 85 ms
+2019-12-12 23:16:46.851  INFO [zuul-server-microservice,b0ad8c7175d67212,8c247b15040be5a6,true] 41726 --- [nio-9099-exec-1] c.e.z.filters.MyZuulFilter               : request intercepted http://192.168.1.100:9099/login-microservice/api/login
+2019-12-12 23:16:47.006  INFO [zuul-server-microservice,b0ad8c7175d67212,8c247b15040be5a6,true] 41726 --- [nio-9099-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-12 23:16:47.035  INFO [zuul-server-microservice,b0ad8c7175d67212,8c247b15040be5a6,true] 41726 --- [nio-9099-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-login-microservice
+2019-12-12 23:16:47.036  INFO [zuul-server-microservice,b0ad8c7175d67212,8c247b15040be5a6,true] 41726 --- [nio-9099-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: login-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=login-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-12-12 23:16:47.043  INFO [zuul-server-microservice,b0ad8c7175d67212,8c247b15040be5a6,true] 41726 --- [nio-9099-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-12-12 23:16:47.067  INFO [zuul-server-microservice,b0ad8c7175d67212,8c247b15040be5a6,true] 41726 --- [nio-9099-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-12 23:16:47.069  INFO [zuul-server-microservice,b0ad8c7175d67212,8c247b15040be5a6,true] 41726 --- [nio-9099-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client login-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=login-microservice,current list of Servers=[192.168.1.100:9097],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.100:9097;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@57e243a5
+2019-12-12 23:16:48.047  INFO [zuul-server-microservice,,,] 41726 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-12 23:16:55.240  INFO [zuul-server-microservice,,,] 41727 --- [nio-9096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-12 23:16:55.240  INFO [zuul-server-microservice,,,] 41727 --- [nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-12 23:16:55.284  INFO [zuul-server-microservice,,,] 41727 --- [nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
+2019-12-12 23:16:55.345  INFO [zuul-server-microservice,377fbd5a96a97116,7e7d9b537618ad9a,true] 41727 --- [nio-9096-exec-1] c.e.z.filters.MyZuulFilter               : request intercepted http://192.168.1.100:9096/login-microservice/api/login
+2019-12-12 23:16:55.482  INFO [zuul-server-microservice,377fbd5a96a97116,7e7d9b537618ad9a,true] 41727 --- [nio-9096-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-12 23:16:55.510  INFO [zuul-server-microservice,377fbd5a96a97116,7e7d9b537618ad9a,true] 41727 --- [nio-9096-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-login-microservice
+2019-12-12 23:16:55.511  INFO [zuul-server-microservice,377fbd5a96a97116,7e7d9b537618ad9a,true] 41727 --- [nio-9096-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: login-microservice instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=login-microservice,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-12-12 23:16:55.517  INFO [zuul-server-microservice,377fbd5a96a97116,7e7d9b537618ad9a,true] 41727 --- [nio-9096-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-12-12 23:16:55.537  INFO [zuul-server-microservice,377fbd5a96a97116,7e7d9b537618ad9a,true] 41727 --- [nio-9096-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-12 23:16:55.539  INFO [zuul-server-microservice,377fbd5a96a97116,7e7d9b537618ad9a,true] 41727 --- [nio-9096-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client login-microservice initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=login-microservice,current list of Servers=[192.168.1.100:9097],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.100:9097;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 01:00:00 CET 1970;	First connection made: Thu Jan 01 01:00:00 CET 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@476b99a8
+2019-12-12 23:16:56.521  INFO [zuul-server-microservice,,,] 41727 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: login-microservice.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-12-12 23:17:59.328  INFO [zuul-server-microservice,b2853e05b7fe0a49,d7dee2d899c43fe6,true] 41727 --- [nio-9096-exec-3] c.e.z.filters.MyZuulFilter               : request intercepted http://192.168.1.100:9096/login-microservice/api/login
+2019-12-12 23:18:05.738  INFO [zuul-server-microservice,95cf555a7ab59aeb,ebac1f8a7c99e803,true] 41726 --- [nio-9099-exec-2] c.e.z.filters.MyZuulFilter               : request intercepted http://192.168.1.100:9099/login-microservice/api/login
+2019-12-12 23:18:57.595  INFO [zuul-server-microservice,,,] 41727 --- [      Thread-10] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2019-12-12 23:18:57.598  INFO [zuul-server-microservice,,,] 41726 --- [      Thread-10] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2019-12-12 23:18:57.603  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ZUUL-SERVER-MICROSERVICE with eureka with status DOWN
+2019-12-12 23:18:57.603  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ZUUL-SERVER-MICROSERVICE with eureka with status DOWN
+2019-12-12 23:18:57.603  WARN [zuul-server-microservice,,,] 41727 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576189137603, current=DOWN, previous=UP]
+2019-12-12 23:18:57.603  WARN [zuul-server-microservice,,,] 41726 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576189137603, current=DOWN, previous=UP]
+2019-12-12 23:18:57.604  INFO [zuul-server-microservice,,,] 41726 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9099: registering service...
+2019-12-12 23:18:57.604  INFO [zuul-server-microservice,,,] 41727 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9096: registering service...
+2019-12-12 23:18:57.618  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] o.s.c.n.zuul.ZuulFilterInitializer       : Stopping filter initializer
+2019-12-12 23:18:57.619  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] o.s.c.n.zuul.ZuulFilterInitializer       : Stopping filter initializer
+2019-12-12 23:18:57.620  INFO [zuul-server-microservice,,,] 41726 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9099 - registration status: 204
+2019-12-12 23:18:57.621  INFO [zuul-server-microservice,,,] 41727 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9096 - registration status: 204
+2019-12-12 23:18:57.625  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-12 23:18:57.626  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-12 23:18:57.774  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-login-microservice
+2019-12-12 23:18:57.784  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Exception caught (might be ok if at shutdown)
+
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82) ~[na:na]
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:243) ~[na:na]
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70) ~[netflix-commons-util-0.3.0.jar:0.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92) ~[spring-cloud-context-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+
+2019-12-12 23:18:57.790  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-12 23:18:58.361  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-login-microservice
+2019-12-12 23:18:58.370  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Exception caught (might be ok if at shutdown)
+
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82) ~[na:na]
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:243) ~[na:na]
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70) ~[netflix-commons-util-0.3.0.jar:0.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92) ~[spring-cloud-context-2.2.0.RC1.jar:2.2.0.RC1]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+
+2019-12-12 23:18:58.373  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-12 23:19:00.794  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-12 23:19:00.809  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9096 - deregister  status: 200
+2019-12-12 23:19:00.821  INFO [zuul-server-microservice,,,] 41727 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:11 min
+[INFO] Finished at: 2019-12-12T23:19:01+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project zuul-server-microservice: Application finished with exit code: 143 -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2019-12-12 23:19:01.376  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-12 23:19:01.382  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZUUL-SERVER-MICROSERVICE/192.168.1.100:zuul-server-microservice:9099 - deregister  status: 200
+2019-12-12 23:19:01.394  INFO [zuul-server-microservice,,,] 41726 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:11 min
+[INFO] Finished at: 2019-12-12T23:19:01+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project zuul-server-microservice: Application finished with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -13,18 +13,14 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] Copying 2 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ client-microservice ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 27 source files to /Users/florent.masdoumier/IdeaProjects/Trip/client-microservice/target/classes
-[INFO] /Users/florent.masdoumier/IdeaProjects/Trip/client-microservice/src/main/java/com/ecommerce/client/service/impl/ClientServiceImpl.java: /Users/florent.masdoumier/IdeaProjects/Trip/client-microservice/src/main/java/com/ecommerce/client/service/impl/ClientServiceImpl.java uses unchecked or unsafe operations.
-[INFO] /Users/florent.masdoumier/IdeaProjects/Trip/client-microservice/src/main/java/com/ecommerce/client/service/impl/ClientServiceImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ client-microservice ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/client-microservice/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ client-microservice ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /Users/florent.masdoumier/IdeaProjects/Trip/client-microservice/target/test-classes
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ client-microservice <<<
 [INFO] 
@@ -32,9 +28,9 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ client-microservice ---
 [INFO] Attaching agents: []
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-2019-12-11 11:37:53.724  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2019-12-11 11:37:53.727  INFO [client-microservice,,,] 85789 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-12-11 11:37:54.057  INFO [client-microservice,,,] 85789 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5bc64804] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:21.419  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/florent.masdoumier/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-12 23:14:21.428  INFO [client-microservice,,,] 41904 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-12 23:14:21.896  INFO [client-microservice,,,] 41904 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$207efe39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -44,93 +40,593 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
-2019-12-11 11:37:54.225  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-11 11:37:55.203  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=client-microservice, profiles=[default], label=null, version=2d57eea6f627bdca98c59539000988821b3bde20, state=null
-2019-12-11 11:37:55.205  INFO [client-microservice,,,] 85789 --- [  restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/client-microservice.properties'}]}
-2019-12-11 11:37:55.239  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.ecommerce.client.ClientApplication   : No active profile set, falling back to default profiles: default
-2019-12-11 11:37:57.125  INFO [client-microservice,,,] 85789 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-11 11:37:57.267  INFO [client-microservice,,,] 85789 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118ms. Found 1 repository interfaces.
-2019-12-11 11:37:57.597  WARN [client-microservice,,,] 85789 --- [  restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-11 11:37:58.083  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d55d5cd-66dc-314c-b780-5d4c062346d9
-2019-12-11 11:37:58.516  INFO [client-microservice,,,] 85789 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-11 11:37:58.650  INFO [client-microservice,,,] 85789 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5bc64804] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-11 11:37:59.414  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9098 (http)
-2019-12-11 11:37:59.428  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-11 11:37:59.429  INFO [client-microservice,,,] 85789 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-11 11:37:59.681  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-11 11:37:59.681  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4417 ms
-2019-12-11 11:37:59.921  WARN [client-microservice,,,] 85789 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-11 11:37:59.922  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-11 11:37:59.933  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6b848bb5
+2019-12-12 23:14:22.076  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-12 23:14:22.933  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=client-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
+2019-12-12 23:14:22.934  INFO [client-microservice,,,] 41904 --- [  restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/client-microservice.properties'}]}
+2019-12-12 23:14:22.966  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.ecommerce.client.ClientApplication   : No active profile set, falling back to default profiles: default
+2019-12-12 23:14:25.015  INFO [client-microservice,,,] 41904 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-12 23:14:25.163  INFO [client-microservice,,,] 41904 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 1 repository interfaces.
+2019-12-12 23:14:25.520  WARN [client-microservice,,,] 41904 --- [  restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-12 23:14:26.296  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d55d5cd-66dc-314c-b780-5d4c062346d9
+2019-12-12 23:14:26.973  INFO [client-microservice,,,] 41904 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:27.133  INFO [client-microservice,,,] 41904 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$207efe39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-12 23:14:27.996  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9098 (http)
+2019-12-12 23:14:28.015  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-12 23:14:28.016  INFO [client-microservice,,,] 41904 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-12 23:14:28.171  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-12 23:14:28.172  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5184 ms
+2019-12-12 23:14:28.449  WARN [client-microservice,,,] 41904 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-12 23:14:28.449  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-12 23:14:28.460  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4387a330
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils (file:/Users/florent.masdoumier/.m2/repository/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
 WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-2019-12-11 11:38:00.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-11 11:38:00.314  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-11 11:38:00.323  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2019-12-11 11:38:02.184  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-11 11:38:02.275  INFO [client-microservice,,,] 85789 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
-2019-12-11 11:38:02.425  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-11 11:38:02.562  INFO [client-microservice,,,] 85789 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-12 23:14:28.652  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-12 23:14:28.769  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-12 23:14:28.778  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-12 23:14:30.329  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-12 23:14:30.443  INFO [client-microservice,,,] 41904 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-12-12 23:14:30.599  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-12 23:14:30.744  INFO [client-microservice,,,] 41904 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table client if exists
 Hibernate: drop table client_roles if exists
 Hibernate: create table client (id bigint generated by default as identity, email_address varchar(200), email_sent char(255), fullname varchar(255), login_attempt integer, password varchar(255), profile_id bigint, status char(255), username varchar(255), primary key (id))
 Hibernate: create table client_roles (client_id bigint not null, roles varchar(255))
 Hibernate: alter table client_roles add constraint FKhcuwm327ncan0ue5b65v578cl foreign key (client_id) references client
-2019-12-11 11:38:03.627  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-11 11:38:03.638  INFO [client-microservice,,,] 85789 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-11 11:38:03.710  WARN [client-microservice,,,] 85789 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2019-12-11 11:38:03.947  WARN [client-microservice,,,] 85789 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-11 11:38:05.167  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2019-12-11 11:38:05.368  INFO [client-microservice,,,] 85789 --- [  restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-11 11:38:05.404  WARN [client-microservice,,,] 85789 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-11 11:38:05.406  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-11 11:38:05.637  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-11 11:38:06.070  INFO [client-microservice,,,] 85789 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2019-12-12 23:14:32.061  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-12 23:14:32.079  INFO [client-microservice,,,] 41904 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-12 23:14:32.199  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-12 23:14:32.480  WARN [client-microservice,,,] 41904 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-12 23:14:34.506  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-12 23:14:34.846  INFO [client-microservice,,,] 41904 --- [  restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-12 23:14:34.930  WARN [client-microservice,,,] 41904 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-12 23:14:34.930  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-12 23:14:35.446  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-12 23:14:37.039  INFO [client-microservice,,,] 41904 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 8be2d3e9-e0fd-4813-a2fa-abb7ec335f3f
+Using generated security password: c43e3c28-5c0b-41dd-bee7-433cbd05fa44
 
-2019-12-11 11:38:06.192  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17abc17d, org.springframework.security.web.context.SecurityContextPersistenceFilter@315c547a, org.springframework.security.web.header.HeaderWriterFilter@3d5ed2f1, org.springframework.security.web.authentication.logout.LogoutFilter@386ba668, com.ecommerce.client.filter.CustomGatewayFilter@83e5705, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13ef77f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d553c4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c5bc705, org.springframework.security.web.session.SessionManagementFilter@44f0e6af, org.springframework.security.web.access.ExceptionTranslationFilter@24fe942a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c665d9]
-2019-12-11 11:38:06.456  WARN [client-microservice,,,] 85789 --- [  restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2019-12-11 11:38:06.754  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-12-11 11:38:06.821  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-12-11 11:38:06.951  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-12-11 11:38:06.951  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2019-12-11 11:38:07.048  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-12-11 11:38:07.048  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-12-11 11:38:07.164  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-11 11:38:07.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-11 11:38:07.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-11 11:38:07.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-11 11:38:07.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-11 11:38:07.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-11 11:38:07.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-12-11 11:38:07.174  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-11 11:38:07.248  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-11 11:38:07.249  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-12-11 11:38:07.250  INFO [client-microservice,,,] 85789 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-12-11 11:38:07.253  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576060687252 with initial instances count: 0
-2019-12-11 11:38:07.266  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLIENT-MICROSERVICE with eureka with status UP
-2019-12-11 11:38:07.266  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576060687266, current=UP, previous=STARTING]
-2019-12-11 11:38:07.267  INFO [client-microservice,,,] 85789 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENT-MICROSERVICE/192.168.1.100:client-microservice:9098: registering service...
-2019-12-11 11:38:07.268  INFO [client-microservice,,,] 85789 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-11 11:38:07.279  INFO [client-microservice,,,] 85789 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-11 11:38:07.294  INFO [client-microservice,,,] 85789 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENT-MICROSERVICE/192.168.1.100:client-microservice:9098 - registration status: 204
-2019-12-11 11:38:07.311  INFO [client-microservice,,,] 85789 --- [  restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-11 11:38:07.459  INFO [client-microservice,,,] 85789 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9098 (http) with context path ''
-2019-12-11 11:38:07.460  INFO [client-microservice,,,] 85789 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9098
-2019-12-11 11:38:07.465  INFO [client-microservice,,,] 85789 --- [  restartedMain] com.ecommerce.client.ClientApplication   : Started ClientApplication in 14.356 seconds (JVM running for 15.484)
+2019-12-12 23:14:37.520  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@447943ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f2c754a, org.springframework.security.web.header.HeaderWriterFilter@11bc17a7, org.springframework.security.web.authentication.logout.LogoutFilter@3cf01328, com.ecommerce.client.filter.CustomGatewayFilter@3d9e8fe9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2eb37247, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d8b852f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d628ab3, org.springframework.security.web.session.SessionManagementFilter@68b202ee, org.springframework.security.web.access.ExceptionTranslationFilter@1c3c63dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@358b17b6]
+2019-12-12 23:14:38.529  WARN [client-microservice,,,] 41904 --- [  restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-12 23:14:39.512  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-12 23:14:39.706  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-12 23:14:40.094  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-12 23:14:40.094  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-12 23:14:40.370  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-12 23:14:40.371  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-12 23:14:40.788  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-12 23:14:40.822  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-12 23:14:40.823  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-12 23:14:40.823  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-12 23:14:40.823  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-12 23:14:40.823  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-12 23:14:40.823  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-12 23:14:40.823  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-12 23:14:41.158  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-12 23:14:41.167  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-12 23:14:41.175  INFO [client-microservice,,,] 41904 --- [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-12 23:14:41.190  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576188881187 with initial instances count: 2
+2019-12-12 23:14:41.241  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLIENT-MICROSERVICE with eureka with status UP
+2019-12-12 23:14:41.243  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576188881242, current=UP, previous=STARTING]
+2019-12-12 23:14:41.246  INFO [client-microservice,,,] 41904 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENT-MICROSERVICE/192.168.1.100:client-microservice:9098: registering service...
+2019-12-12 23:14:41.248  INFO [client-microservice,,,] 41904 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-12 23:14:41.299  INFO [client-microservice,,,] 41904 --- [  restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-12 23:14:41.309  INFO [client-microservice,,,] 41904 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENT-MICROSERVICE/192.168.1.100:client-microservice:9098 - registration status: 204
+2019-12-12 23:14:41.411  INFO [client-microservice,,,] 41904 --- [  restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-12 23:14:41.957  INFO [client-microservice,,,] 41904 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9098 (http) with context path ''
+2019-12-12 23:14:41.960  INFO [client-microservice,,,] 41904 --- [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9098
+2019-12-12 23:14:41.973  INFO [client-microservice,,,] 41904 --- [  restartedMain] com.ecommerce.client.ClientApplication   : Started ClientApplication in 21.547 seconds (JVM running for 23.463)
 Hibernate: select client0_.id as id1_0_, client0_.email_address as email_ad2_0_, client0_.email_sent as email_se3_0_, client0_.fullname as fullname4_0_, client0_.login_attempt as login_at5_0_, client0_.password as password6_0_, client0_.profile_id as profile_7_0_, client0_.status as status8_0_, client0_.username as username9_0_ from client client0_
 Hibernate: insert into client (id, email_address, email_sent, fullname, login_attempt, password, profile_id, status, username) values (null, ?, ?, ?, ?, ?, ?, ?, ?)
 Hibernate: insert into client_roles (client_id, roles) values (?, ?)
-2019-12-11 11:38:37.254  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-11 11:38:37.256  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-11 11:38:37.256  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-11 11:38:37.256  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-11 11:38:37.256  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-11 11:38:37.256  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2019-12-11 11:38:37.256  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-11 11:38:37.275  INFO [client-microservice,,,] 85789 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-11 11:43:07.189  INFO [client-microservice,,,] 85789 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-12 23:16:47.705  INFO [client-microservice,,,] 41904 --- [nio-9098-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-12 23:16:47.706  INFO [client-microservice,,,] 41904 --- [nio-9098-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-12 23:16:47.722  INFO [client-microservice,,,] 41904 --- [nio-9098-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/b0ad8c7175d67212[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:b0ad8c7175d67212
+Header Name:x-b3-spanid   Header Value:2a88400d1bdb093d
+Header Name:x-b3-parentspanid   Header Value:639d98bf065daede
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:39
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'dkjf'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/377fbd5a96a97116[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:377fbd5a96a97116
+Header Name:x-b3-spanid   Header Value:4149aebe3da061df
+Header Name:x-b3-parentspanid   Header Value:1227fa8afa1bb8a1
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/377fbd5a96a97116[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:377fbd5a96a97116
+Header Name:x-b3-spanid   Header Value:f5aa321d1621a90c
+Header Name:x-b3-parentspanid   Header Value:1227fa8afa1bb8a1
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/377fbd5a96a97116[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:377fbd5a96a97116
+Header Name:x-b3-spanid   Header Value:b8330f1fb2488318
+Header Name:x-b3-parentspanid   Header Value:1227fa8afa1bb8a1
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/377fbd5a96a97116[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:377fbd5a96a97116
+Header Name:x-b3-spanid   Header Value:fec1ca8740196a55
+Header Name:x-b3-parentspanid   Header Value:1227fa8afa1bb8a1
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/b2853e05b7fe0a49[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:b2853e05b7fe0a49
+Header Name:x-b3-spanid   Header Value:bfaf2a8a66bf2785
+Header Name:x-b3-parentspanid   Header Value:c138231e58bb2556
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:36
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'd'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/95cf555a7ab59aeb[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:95cf555a7ab59aeb
+Header Name:x-b3-spanid   Header Value:3ea594aa33fe5769
+Header Name:x-b3-parentspanid   Header Value:d3569349dbfac12e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/95cf555a7ab59aeb[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:95cf555a7ab59aeb
+Header Name:x-b3-spanid   Header Value:c1b68b11a48fe02f
+Header Name:x-b3-parentspanid   Header Value:d3569349dbfac12e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/95cf555a7ab59aeb[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:95cf555a7ab59aeb
+Header Name:x-b3-spanid   Header Value:742c3a9558429957
+Header Name:x-b3-parentspanid   Header Value:d3569349dbfac12e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/95cf555a7ab59aeb[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:95cf555a7ab59aeb
+Header Name:x-b3-spanid   Header Value:65bb155db6c17e11
+Header Name:x-b3-parentspanid   Header Value:d3569349dbfac12e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+2019-12-12 23:19:40.836  INFO [client-microservice,,,] 41904 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/e49abea79337e293[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:e49abea79337e293
+Header Name:x-b3-spanid   Header Value:6db39fcb7a68a8ef
+Header Name:x-b3-parentspanid   Header Value:823325f7836e61c2
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/e49abea79337e293[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:e49abea79337e293
+Header Name:x-b3-spanid   Header Value:4954251150dceb47
+Header Name:x-b3-parentspanid   Header Value:823325f7836e61c2
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/e49abea79337e293[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:e49abea79337e293
+Header Name:x-b3-spanid   Header Value:4607b2ec8614152a
+Header Name:x-b3-parentspanid   Header Value:823325f7836e61c2
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/e49abea79337e293[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:e49abea79337e293
+Header Name:x-b3-spanid   Header Value:c14851da4270ad2f
+Header Name:x-b3-parentspanid   Header Value:823325f7836e61c2
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/80ed23443650c33a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:80ed23443650c33a
+Header Name:x-b3-spanid   Header Value:f401a949d978f576
+Header Name:x-b3-parentspanid   Header Value:f779e60131211575
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/80ed23443650c33a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:80ed23443650c33a
+Header Name:x-b3-spanid   Header Value:569e127b8f53276d
+Header Name:x-b3-parentspanid   Header Value:f779e60131211575
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/80ed23443650c33a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:80ed23443650c33a
+Header Name:x-b3-spanid   Header Value:37ae91180b92a42c
+Header Name:x-b3-parentspanid   Header Value:f779e60131211575
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/80ed23443650c33a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:80ed23443650c33a
+Header Name:x-b3-spanid   Header Value:29ebf5dd2659008c
+Header Name:x-b3-parentspanid   Header Value:f779e60131211575
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/e05bb9968210bbed[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:e05bb9968210bbed
+Header Name:x-b3-spanid   Header Value:bcc18e8e32a5fb1e
+Header Name:x-b3-parentspanid   Header Value:c3ca43efa6b023ab
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:36
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'f'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/31a9b3bba97c944a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:31a9b3bba97c944a
+Header Name:x-b3-spanid   Header Value:d906fe807ca51ec9
+Header Name:x-b3-parentspanid   Header Value:b796f46e0526413e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/31a9b3bba97c944a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:31a9b3bba97c944a
+Header Name:x-b3-spanid   Header Value:93e08ccfa917f186
+Header Name:x-b3-parentspanid   Header Value:b796f46e0526413e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/31a9b3bba97c944a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:31a9b3bba97c944a
+Header Name:x-b3-spanid   Header Value:93bc9558706329b9
+Header Name:x-b3-parentspanid   Header Value:b796f46e0526413e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/31a9b3bba97c944a[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:31a9b3bba97c944a
+Header Name:x-b3-spanid   Header Value:2574b8de0f3a8ec9
+Header Name:x-b3-parentspanid   Header Value:b796f46e0526413e
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/d20bc9433b0387d0[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:d20bc9433b0387d0
+Header Name:x-b3-spanid   Header Value:5f36dd84cf13089e
+Header Name:x-b3-parentspanid   Header Value:1f08288c10611b69
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/d20bc9433b0387d0[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:d20bc9433b0387d0
+Header Name:x-b3-spanid   Header Value:ee8eb14e6ed36791
+Header Name:x-b3-parentspanid   Header Value:1f08288c10611b69
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/d20bc9433b0387d0[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:d20bc9433b0387d0
+Header Name:x-b3-spanid   Header Value:f1cc9b7cbe5ae7bb
+Header Name:x-b3-parentspanid   Header Value:1f08288c10611b69
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/d20bc9433b0387d0[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:d20bc9433b0387d0
+Header Name:x-b3-spanid   Header Value:338fc5a08c3267e7
+Header Name:x-b3-parentspanid   Header Value:1f08288c10611b69
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+2019-12-12 23:24:40.851  INFO [client-microservice,,,] 41904 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/40112bf5eecfae7f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:40112bf5eecfae7f
+Header Name:x-b3-spanid   Header Value:bb1a3bd72ab9db2a
+Header Name:x-b3-parentspanid   Header Value:90a903b1d2a67c8a
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/40112bf5eecfae7f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:40112bf5eecfae7f
+Header Name:x-b3-spanid   Header Value:4a822f6b008e4ba7
+Header Name:x-b3-parentspanid   Header Value:90a903b1d2a67c8a
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/40112bf5eecfae7f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:40112bf5eecfae7f
+Header Name:x-b3-spanid   Header Value:561ea5ce691b7f38
+Header Name:x-b3-parentspanid   Header Value:90a903b1d2a67c8a
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/40112bf5eecfae7f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:40112bf5eecfae7f
+Header Name:x-b3-spanid   Header Value:5fcfaef31e9f60f2
+Header Name:x-b3-parentspanid   Header Value:90a903b1d2a67c8a
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+2019-12-12 23:29:40.866  INFO [client-microservice,,,] 41904 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/eccc583bd0fefd2f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:eccc583bd0fefd2f
+Header Name:x-b3-spanid   Header Value:4acea03ac9671403
+Header Name:x-b3-parentspanid   Header Value:3c59257707739941
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/eccc583bd0fefd2f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:eccc583bd0fefd2f
+Header Name:x-b3-spanid   Header Value:a3259f8b7cb23e6b
+Header Name:x-b3-parentspanid   Header Value:3c59257707739941
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/eccc583bd0fefd2f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:eccc583bd0fefd2f
+Header Name:x-b3-spanid   Header Value:fcb35d7143a61e0d
+Header Name:x-b3-parentspanid   Header Value:3c59257707739941
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:46
+Hibernate:  SELECT a.id, a.password, a.status, a.login_attempt, a.email_address FROM client a WHERE a.id!=0 AND a.username= 'superclient'
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/eccc583bd0fefd2f[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-b3-traceid   Header Value:eccc583bd0fefd2f
+Header Name:x-b3-spanid   Header Value:aadcfd8a39d40da5
+Header Name:x-b3-parentspanid   Header Value:3c59257707739941
+Header Name:x-b3-sampled   Header Value:1
+Header Name:accept   Header Value:*/*
+Header Name:user-agent   Header Value:Java/11.0.2
+Header Name:host   Header Value:192.168.1.100:9098
+Header Name:connection   Header Value:keep-alive
+Header Name:content-length   Header Value:225
+2019-12-12 23:31:34.941  INFO [client-microservice,,,] 41904 --- [extShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLIENT-MICROSERVICE with eureka with status DOWN
+2019-12-12 23:31:34.942  WARN [client-microservice,,,] 41904 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576189894942, current=DOWN, previous=UP]
+2019-12-12 23:31:34.943  INFO [client-microservice,,,] 41904 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENT-MICROSERVICE/192.168.1.100:client-microservice:9098: registering service...
+2019-12-12 23:31:34.953  INFO [client-microservice,,,] 41904 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENT-MICROSERVICE/192.168.1.100:client-microservice:9098 - registration status: 204
+2019-12-12 23:31:35.060  INFO [client-microservice,,,] 41904 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-12 23:31:35.098  INFO [client-microservice,,,] 41904 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-12 23:31:35.114  INFO [client-microservice,,,] 41904 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Hibernate: drop table client if exists
+Hibernate: drop table client_roles if exists
+2019-12-12 23:31:35.317  WARN [client-microservice,,,] 41904 --- [extShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-12-12 23:31:35.406  INFO [client-microservice,,,] 41904 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-12 23:31:38.412  INFO [client-microservice,,,] 41904 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-12 23:31:38.430  INFO [client-microservice,,,] 41904 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENT-MICROSERVICE/192.168.1.100:client-microservice:9098 - deregister  status: 200
+2019-12-12 23:31:38.473  INFO [client-microservice,,,] 41904 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-12-12 23:31:38.475  INFO [client-microservice,,,] 41904 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-12 23:31:38.490  INFO [client-microservice,,,] 41904 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17:28 min
+[INFO] Finished at: 2019-12-12T23:31:39+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project client-microservice: Application finished with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

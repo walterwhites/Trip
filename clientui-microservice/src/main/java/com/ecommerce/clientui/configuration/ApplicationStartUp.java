@@ -15,8 +15,12 @@ import java.util.List;
 @Component
 public class ApplicationStartUp {
 
+    private final StartupProperties startupProperties;
+
     @Autowired
-    private StartupProperties startupProperties;
+    public ApplicationStartUp(StartupProperties startupProperties) {
+        this.startupProperties = startupProperties;
+    }
 
     @Bean
     public CommandLineRunner loadData(ClientRepository clientRepository) {
