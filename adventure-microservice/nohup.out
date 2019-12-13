@@ -7,14 +7,14 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] Building adventure 0.0.1-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ adventure-microservice >>>
-[INFO] 
 [INFO] ----------------< com.ecommerce:adventure-microservice >----------------
 [INFO] Building adventure 0.0.1-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ adventure-microservice >>>
 [INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) > test-compile @ adventure-microservice >>>
+[INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ adventure-microservice ---
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ adventure-microservice ---
@@ -28,27 +28,31 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] Copying 3 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ adventure-microservice ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/classes
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ adventure-microservice ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ adventure-microservice ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/test-classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ adventure-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ adventure-microservice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/target/test-classes
 [INFO] 
 [INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ adventure-microservice <<<
 [INFO] 
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) @ adventure-microservice ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ adventure-microservice ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /Users/florent.masdoumier/IdeaProjects/Trip/adventure-microservice/src/test/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ adventure-microservice ---
-[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] <<< spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) < test-compile @ adventure-microservice <<<
 [INFO] 
@@ -58,8 +62,8 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
 [INFO] Attaching agents: []
 Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
-2019-12-12 23:14:21.340  INFO [adventure-microservice,,,] 41896 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e2645beb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-12 23:14:21.400  INFO [adventure-microservice,,,] 41901 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$66ea1517] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:17:04.501  INFO [adventure-microservice,,,] 71792 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4f47c626] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:17:04.715  INFO [adventure-microservice,,,] 71794 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccb8733b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -69,6 +73,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
+2019-12-13 11:17:04.840  INFO [adventure-microservice,,,] 71792 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -78,251 +83,414 @@ Picked up JAVA_TOOL_OPTIONS: -Dsun.locale.formatasdefault=true
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.0.RELEASE)
 
-2019-12-12 23:14:21.639  INFO [adventure-microservice,,,] 41901 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-12 23:14:21.650  INFO [adventure-microservice,,,] 41896 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
-2019-12-12 23:14:22.393  INFO [adventure-microservice,,,] 41901 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
-2019-12-12 23:14:22.394  INFO [adventure-microservice,,,] 41901 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
-2019-12-12 23:14:22.422  INFO [adventure-microservice,,,] 41901 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
-2019-12-12 23:14:23.775  INFO [adventure-microservice,,,] 41901 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-12 23:14:23.926  INFO [adventure-microservice,,,] 41901 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139ms. Found 1 repository interfaces.
-2019-12-12 23:14:24.149  WARN [adventure-microservice,,,] 41901 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-12 23:14:24.384  INFO [adventure-microservice,,,] 41896 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
-2019-12-12 23:14:24.385  INFO [adventure-microservice,,,] 41896 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
-2019-12-12 23:14:24.429  INFO [adventure-microservice,,,] 41896 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
-2019-12-12 23:14:24.760  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61af3d11-26eb-36ac-b7f4-477de0eddd95
-2019-12-12 23:14:25.440  INFO [adventure-microservice,,,] 41901 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-12 23:14:25.726  INFO [adventure-microservice,,,] 41901 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$66ea1517] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-12 23:14:26.502  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2019-12-12 23:14:26.517  INFO [adventure-microservice,,,] 41901 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-12 23:14:26.518  INFO [adventure-microservice,,,] 41901 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-12 23:14:26.801  INFO [adventure-microservice,,,] 41901 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-12 23:14:26.801  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4357 ms
-2019-12-12 23:14:26.880  INFO [adventure-microservice,,,] 41896 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-12-12 23:14:26.986  INFO [adventure-microservice,,,] 41896 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 1 repository interfaces.
-2019-12-12 23:14:27.045  WARN [adventure-microservice,,,] 41901 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-12 23:14:27.046  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-12 23:14:27.056  INFO [adventure-microservice,,,] 41901 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@55c46ec1
-2019-12-12 23:14:27.181  WARN [adventure-microservice,,,] 41896 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-12-12 23:14:27.278  INFO [adventure-microservice,,,] 41901 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-12 23:14:27.430  INFO [adventure-microservice,,,] 41901 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-12 23:14:27.437  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2019-12-12 23:14:27.512  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61af3d11-26eb-36ac-b7f4-477de0eddd95
-2019-12-12 23:14:28.073  INFO [adventure-microservice,,,] 41896 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-12 23:14:28.230  INFO [adventure-microservice,,,] 41896 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e2645beb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-12 23:14:28.675  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9011 (http)
-2019-12-12 23:14:28.687  INFO [adventure-microservice,,,] 41896 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-12 23:14:28.687  INFO [adventure-microservice,,,] 41896 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-12 23:14:28.874  INFO [adventure-microservice,,,] 41896 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-12 23:14:28.874  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4421 ms
-2019-12-12 23:14:28.959  INFO [adventure-microservice,,,] 41901 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-12 23:14:29.096  INFO [adventure-microservice,,,] 41901 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
-2019-12-12 23:14:29.118  WARN [adventure-microservice,,,] 41896 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-12 23:14:29.118  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-12 23:14:29.130  INFO [adventure-microservice,,,] 41896 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@720c8f80
-2019-12-12 23:14:29.340  INFO [adventure-microservice,,,] 41896 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-12 23:14:29.346  INFO [adventure-microservice,,,] 41901 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-12 23:14:29.449  INFO [adventure-microservice,,,] 41896 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-12 23:14:29.457  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2019-12-12 23:14:29.525  INFO [adventure-microservice,,,] 41901 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-13 11:17:05.060  INFO [adventure-microservice,,,] 71794 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9094
+2019-12-13 11:17:05.720  INFO [adventure-microservice,,,] 71792 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
+2019-12-13 11:17:05.721  INFO [adventure-microservice,,,] 71792 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
+2019-12-13 11:17:05.764  INFO [adventure-microservice,,,] 71792 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
+2019-12-13 11:17:05.848  INFO [adventure-microservice,,,] 71794 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=adventure-microservice, profiles=[default], label=null, version=69df5952a4cd75b9f3561b4ffd5bdcdc72174af0, state=null
+2019-12-13 11:17:05.849  INFO [adventure-microservice,,,] 71794 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, OriginTrackedMapPropertySource {name='https://github.com/walterwhites/config-microservice-trip.git/adventure-microservice.properties'}]}
+2019-12-13 11:17:05.897  INFO [adventure-microservice,,,] 71794 --- [           main] c.e.adventure.AdventureApplication       : No active profile set, falling back to default profiles: default
+2019-12-13 11:17:08.911  INFO [adventure-microservice,,,] 71792 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-13 11:17:09.001  INFO [adventure-microservice,,,] 71794 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-13 11:17:09.033  INFO [adventure-microservice,,,] 71792 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 1 repository interfaces.
+2019-12-13 11:17:09.111  INFO [adventure-microservice,,,] 71794 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 1 repository interfaces.
+2019-12-13 11:17:09.274  WARN [adventure-microservice,,,] 71792 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-13 11:17:09.356  WARN [adventure-microservice,,,] 71794 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-13 11:17:09.771  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61af3d11-26eb-36ac-b7f4-477de0eddd95
+2019-12-13 11:17:09.906  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61af3d11-26eb-36ac-b7f4-477de0eddd95
+2019-12-13 11:17:10.439  INFO [adventure-microservice,,,] 71792 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:17:10.559  INFO [adventure-microservice,,,] 71794 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:17:10.665  INFO [adventure-microservice,,,] 71792 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4f47c626] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:17:10.787  INFO [adventure-microservice,,,] 71794 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccb8733b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-13 11:17:11.499  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-12-13 11:17:11.544  INFO [adventure-microservice,,,] 71792 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-13 11:17:11.569  INFO [adventure-microservice,,,] 71792 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-13 11:17:11.632  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9011 (http)
+2019-12-13 11:17:11.648  INFO [adventure-microservice,,,] 71794 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-13 11:17:11.648  INFO [adventure-microservice,,,] 71794 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-13 11:17:11.840  INFO [adventure-microservice,,,] 71792 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-13 11:17:11.841  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6049 ms
+2019-12-13 11:17:11.975  INFO [adventure-microservice,,,] 71794 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-13 11:17:11.976  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6051 ms
+2019-12-13 11:17:12.324  WARN [adventure-microservice,,,] 71792 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-13 11:17:12.325  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-13 11:17:12.340  INFO [adventure-microservice,,,] 71792 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@430aae8e
+2019-12-13 11:17:12.426  WARN [adventure-microservice,,,] 71794 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-13 11:17:12.427  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-13 11:17:12.443  INFO [adventure-microservice,,,] 71794 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2444c3df
+2019-12-13 11:17:12.672  INFO [adventure-microservice,,,] 71792 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-13 11:17:12.752  INFO [adventure-microservice,,,] 71794 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-13 11:17:12.844  INFO [adventure-microservice,,,] 71792 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-13 11:17:12.860  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-13 11:17:12.990  INFO [adventure-microservice,,,] 71794 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-13 11:17:13.002  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-12-13 11:17:15.258  INFO [adventure-microservice,,,] 71792 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 11:17:15.276  INFO [adventure-microservice,,,] 71794 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 11:17:15.375  INFO [adventure-microservice,,,] 71792 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-12-13 11:17:15.439  INFO [adventure-microservice,,,] 71794 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-12-13 11:17:15.618  INFO [adventure-microservice,,,] 71792 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 11:17:15.688  INFO [adventure-microservice,,,] 71794 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 11:17:15.803  INFO [adventure-microservice,,,] 71792 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-13 11:17:15.907  INFO [adventure-microservice,,,] 71794 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: drop table adventure if exists
 Hibernate: drop sequence if exists hibernate_sequence
 Hibernate: create sequence hibernate_sequence start with 1 increment by 1
 Hibernate: create table adventure (id integer not null, date timestamp, description varchar(255), image varchar(255), max_entrant integer not null, name varchar(50), price integer not null, primary key (id))
-2019-12-12 23:14:30.635  INFO [adventure-microservice,,,] 41901 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-12 23:14:30.646  INFO [adventure-microservice,,,] 41901 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-12 23:14:30.821  WARN [adventure-microservice,,,] 41901 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-12 23:14:30.855  INFO [adventure-microservice,,,] 41896 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-12 23:14:30.965  INFO [adventure-microservice,,,] 41896 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
-2019-12-12 23:14:31.174  INFO [adventure-microservice,,,] 41896 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-12 23:14:31.349  INFO [adventure-microservice,,,] 41896 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-12-12 23:14:32.643  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-13 11:17:16.772  INFO [adventure-microservice,,,] 71792 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 11:17:16.785  INFO [adventure-microservice,,,] 71792 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table adventure if exists
 Hibernate: drop sequence if exists hibernate_sequence
 Hibernate: create sequence hibernate_sequence start with 1 increment by 1
 Hibernate: create table adventure (id integer not null, date timestamp, description varchar(255), image varchar(255), max_entrant integer not null, name varchar(50), price integer not null, primary key (id))
-2019-12-12 23:14:32.855  INFO [adventure-microservice,,,] 41896 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-12 23:14:32.871  INFO [adventure-microservice,,,] 41896 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-12 23:14:32.996  INFO [adventure-microservice,,,] 41901 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-12 23:14:33.074  WARN [adventure-microservice,,,] 41901 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-12 23:14:33.075  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-12 23:14:33.092  WARN [adventure-microservice,,,] 41896 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-12 23:14:33.539  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-12 23:14:34.415  INFO [adventure-microservice,,,] 41901 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2019-12-13 11:17:16.846  INFO [adventure-microservice,,,] 71794 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 11:17:16.854  INFO [adventure-microservice,,,] 71794 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-13 11:17:16.966  WARN [adventure-microservice,,,] 71792 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-13 11:17:17.042  WARN [adventure-microservice,,,] 71794 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-13 11:17:18.071  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-13 11:17:18.108  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2019-12-13 11:17:18.285  INFO [adventure-microservice,,,] 71792 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-13 11:17:18.370  WARN [adventure-microservice,,,] 71792 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-13 11:17:18.371  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-13 11:17:18.374  INFO [adventure-microservice,,,] 71794 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-13 11:17:18.426  WARN [adventure-microservice,,,] 71794 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-13 11:17:18.427  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-13 11:17:18.674  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-13 11:17:18.720  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-13 11:17:19.263  INFO [adventure-microservice,,,] 71792 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: d50abf62-e9c7-4a74-ba7e-3dc2ba4da343
+Using generated security password: 7c7e7c80-72ff-4716-810d-909fa1c7dc0b
 
-2019-12-12 23:14:34.632  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@536d153b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2116e9cf, org.springframework.security.web.header.HeaderWriterFilter@64d49e35, org.springframework.security.web.authentication.logout.LogoutFilter@5e24af83, com.ecommerce.adventure.filter.CustomGatewayFilter@25e01756, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f0977d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@774b798, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76093fa9, org.springframework.security.web.session.SessionManagementFilter@56d9ef05, org.springframework.security.web.access.ExceptionTranslationFilter@9b84747, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34f4fd04]
-2019-12-12 23:14:34.770  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2019-12-12 23:14:35.013  WARN [adventure-microservice,,,] 41901 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2019-12-12 23:14:35.103  INFO [adventure-microservice,,,] 41896 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-12 23:14:35.182  WARN [adventure-microservice,,,] 41896 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-12-12 23:14:35.183  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-12-12 23:14:35.533  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-12-12 23:14:35.735  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-12-12 23:14:35.743  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-12 23:14:36.328  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-12-12 23:14:36.328  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-13 11:17:19.331  INFO [adventure-microservice,,,] 71794 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 521b40d9-791e-477c-a76b-0b3eb6a9a203
+
+2019-12-13 11:17:19.441  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24484dfb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d08fee2, org.springframework.security.web.header.HeaderWriterFilter@77510da, org.springframework.security.web.authentication.logout.LogoutFilter@3c251258, com.ecommerce.adventure.filter.CustomGatewayFilter@35d8a046, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@774b798, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20894afb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@257f1509, org.springframework.security.web.session.SessionManagementFilter@1f4dce67, org.springframework.security.web.access.ExceptionTranslationFilter@4ad0465c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26ab3c1b]
+2019-12-13 11:17:19.490  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a1148f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@63fcbf75, org.springframework.security.web.header.HeaderWriterFilter@480b785a, org.springframework.security.web.authentication.logout.LogoutFilter@6b17aa0b, com.ecommerce.adventure.filter.CustomGatewayFilter@641bd93e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cc3df02, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56d9ef05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62d10834, org.springframework.security.web.session.SessionManagementFilter@142ac60e, org.springframework.security.web.access.ExceptionTranslationFilter@4235e01b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19fdcaba]
+2019-12-13 11:17:19.676  WARN [adventure-microservice,,,] 71792 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-13 11:17:19.712  WARN [adventure-microservice,,,] 71794 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-13 11:17:20.014  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-13 11:17:20.051  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-13 11:17:20.105  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-13 11:17:20.143  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-13 11:17:20.298  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-13 11:17:20.298  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-13 11:17:20.326  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-13 11:17:20.326  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
 WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-2019-12-12 23:14:36.830  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-12-12 23:14:36.831  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-12-12 23:14:37.209  INFO [adventure-microservice,,,] 41896 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 9fd6ac6d-e71a-4a92-90b4-b7ddae32b787
-
-2019-12-12 23:14:37.456  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:14:37.506  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-12 23:14:37.506  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-12 23:14:37.506  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-12 23:14:37.506  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-12 23:14:37.506  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-12 23:14:37.507  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-12-12 23:14:37.507  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-12 23:14:37.642  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47cce306, org.springframework.security.web.context.SecurityContextPersistenceFilter@4235e01b, org.springframework.security.web.header.HeaderWriterFilter@5f0c04d2, org.springframework.security.web.authentication.logout.LogoutFilter@53b10e9a, com.ecommerce.adventure.filter.CustomGatewayFilter@4ba04fb4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@480b785a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5524e471, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11a8735d, org.springframework.security.web.session.SessionManagementFilter@1ca876b7, org.springframework.security.web.access.ExceptionTranslationFilter@505e8d48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@749ebc39]
-2019-12-12 23:14:37.907  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-12 23:14:37.913  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-12-12 23:14:37.917  INFO [adventure-microservice,,,] 41901 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-12-12 23:14:37.924  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576188877922 with initial instances count: 2
-2019-12-12 23:14:37.965  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADVENTURE-MICROSERVICE with eureka with status UP
-2019-12-12 23:14:37.966  INFO [adventure-microservice,,,] 41901 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576188877966, current=UP, previous=STARTING]
-2019-12-12 23:14:37.969  INFO [adventure-microservice,,,] 41901 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9090: registering service...
-2019-12-12 23:14:37.975  INFO [adventure-microservice,,,] 41901 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-12 23:14:38.009  INFO [adventure-microservice,,,] 41901 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-12 23:14:38.118  INFO [adventure-microservice,,,] 41901 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9090 - registration status: 204
-2019-12-12 23:14:38.135  INFO [adventure-microservice,,,] 41901 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-12 23:14:38.280  WARN [adventure-microservice,,,] 41896 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2019-12-12 23:14:38.623  INFO [adventure-microservice,,,] 41901 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2019-12-12 23:14:38.624  INFO [adventure-microservice,,,] 41901 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
-2019-12-12 23:14:38.716  INFO [adventure-microservice,,,] 41901 --- [           main] c.e.adventure.AdventureApplication       : Started AdventureApplication in 19.478 seconds (JVM running for 20.556)
-2019-12-12 23:14:39.124  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-12-12 23:14:39.325  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-12-12 23:14:39.754  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-12-12 23:14:39.754  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/Users/florent.masdoumier/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
 WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-2019-12-12 23:14:40.067  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-12-12 23:14:40.068  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-12-12 23:14:40.464  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:14:40.499  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-12-12 23:14:40.499  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-12-12 23:14:40.499  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-12-12 23:14:40.499  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-12-12 23:14:40.499  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-12-12 23:14:40.500  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-12-12 23:14:40.500  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-12-12 23:14:40.767  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-12-12 23:14:40.772  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-12-12 23:14:40.777  INFO [adventure-microservice,,,] 41896 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-12-12 23:14:40.787  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576188880783 with initial instances count: 2
-2019-12-12 23:14:40.816  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADVENTURE-MICROSERVICE with eureka with status UP
-2019-12-12 23:14:40.817  INFO [adventure-microservice,,,] 41896 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576188880817, current=UP, previous=STARTING]
-2019-12-12 23:14:40.820  INFO [adventure-microservice,,,] 41896 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9011: registering service...
-2019-12-12 23:14:40.822  INFO [adventure-microservice,,,] 41896 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-12 23:14:40.858  INFO [adventure-microservice,,,] 41896 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-12 23:14:40.882  INFO [adventure-microservice,,,] 41896 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9011 - registration status: 204
-2019-12-12 23:14:41.002  INFO [adventure-microservice,,,] 41896 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-12 23:14:41.482  INFO [adventure-microservice,,,] 41896 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9011 (http) with context path ''
-2019-12-12 23:14:41.484  INFO [adventure-microservice,,,] 41896 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9011
-2019-12-12 23:14:41.497  INFO [adventure-microservice,,,] 41896 --- [           main] c.e.adventure.AdventureApplication       : Started AdventureApplication in 22.384 seconds (JVM running for 23.538)
-2019-12-12 23:19:37.528  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:19:40.523  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:24:37.587  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:24:40.562  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:29:37.609  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:29:40.574  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:34:37.623  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:34:40.588  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:39:37.616  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:39:40.586  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:44:37.630  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:44:40.601  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:49:37.640  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:49:40.616  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:54:37.657  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:54:40.627  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:59:37.669  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-12 23:59:40.643  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:04:37.686  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:04:40.660  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:09:37.705  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:09:40.676  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:14:37.694  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:14:40.659  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:19:37.707  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:19:40.675  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:24:37.721  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:24:40.686  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:29:37.735  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:29:40.701  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:34:37.749  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:34:40.713  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:39:37.762  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:39:40.725  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:44:37.773  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:44:40.736  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:49:37.790  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:49:40.747  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:54:37.778  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:54:40.732  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:59:37.791  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 00:59:40.747  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:04:37.806  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:04:40.759  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:09:37.819  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:09:40.769  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:14:37.829  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:14:40.781  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:19:37.844  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:19:40.794  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:24:37.854  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:24:40.808  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:29:37.841  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:29:40.792  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:34:37.854  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:34:40.805  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:39:37.863  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:39:40.813  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:44:37.876  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:44:40.827  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:49:37.891  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:49:40.840  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:54:37.904  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:54:40.855  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:59:37.910  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 01:59:40.869  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:04:37.922  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:04:40.882  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:09:37.926  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:09:40.885  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:14:37.939  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:14:40.889  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:19:37.946  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:19:40.896  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:24:37.959  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:24:40.909  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:29:37.972  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:29:40.923  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:34:37.986  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:34:40.935  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:39:38.000  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:39:40.947  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:44:38.006  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:44:40.948  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:49:38.010  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:49:40.952  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:54:38.023  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 02:54:40.961  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 04:55:28.539  WARN [adventure-microservice,,,] 41901 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h29s78ms).
-2019-12-13 04:55:30.624  WARN [adventure-microservice,,,] 41896 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h29s73ms).
-2019-12-13 08:55:55.104  WARN [adventure-microservice,,,] 41901 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h26s569ms).
-2019-12-13 08:55:57.190  WARN [adventure-microservice,,,] 41896 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h26s567ms).
-2019-12-13 10:59:36.705  WARN [adventure-microservice,,,] 41901 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h3m41s604ms).
-2019-12-13 10:59:38.804  WARN [adventure-microservice,,,] 41896 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h3m41s617ms).
-2019-12-13 11:02:45.224  INFO [adventure-microservice,,,] 41901 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-12-13 11:02:48.166  INFO [adventure-microservice,,,] 41896 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:17:20.446  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-13 11:17:20.446  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-13 11:17:20.498  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-13 11:17:20.499  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-13 11:17:20.639  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:17:20.655  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-13 11:17:20.655  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-13 11:17:20.655  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-13 11:17:20.655  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-13 11:17:20.656  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-13 11:17:20.656  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-13 11:17:20.656  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-13 11:17:20.705  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:17:20.718  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-13 11:17:20.719  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-13 11:17:20.719  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-13 11:17:20.719  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-13 11:17:20.719  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-13 11:17:20.719  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-13 11:17:20.719  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-13 11:17:20.787  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-13 11:17:20.789  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-13 11:17:20.791  INFO [adventure-microservice,,,] 71792 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-13 11:17:20.794  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576232240793 with initial instances count: 0
+2019-12-13 11:17:20.808  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADVENTURE-MICROSERVICE with eureka with status UP
+2019-12-13 11:17:20.808  INFO [adventure-microservice,,,] 71792 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576232240808, current=UP, previous=STARTING]
+2019-12-13 11:17:20.810  INFO [adventure-microservice,,,] 71792 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9090: registering service...
+2019-12-13 11:17:20.810  INFO [adventure-microservice,,,] 71792 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-13 11:17:20.826  INFO [adventure-microservice,,,] 71792 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-13 11:17:20.842  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-13 11:17:20.844  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-13 11:17:20.847  INFO [adventure-microservice,,,] 71794 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-13 11:17:20.848  INFO [adventure-microservice,,,] 71792 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9090 - registration status: 204
+2019-12-13 11:17:20.853  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1576232240852 with initial instances count: 0
+2019-12-13 11:17:20.868  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADVENTURE-MICROSERVICE with eureka with status UP
+2019-12-13 11:17:20.868  INFO [adventure-microservice,,,] 71794 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576232240868, current=UP, previous=STARTING]
+2019-12-13 11:17:20.870  INFO [adventure-microservice,,,] 71794 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9011: registering service...
+2019-12-13 11:17:20.871  INFO [adventure-microservice,,,] 71794 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-13 11:17:20.884  INFO [adventure-microservice,,,] 71792 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-13 11:17:20.890  INFO [adventure-microservice,,,] 71794 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-13 11:17:20.907  INFO [adventure-microservice,,,] 71794 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9011 - registration status: 204
+2019-12-13 11:17:20.941  INFO [adventure-microservice,,,] 71794 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-13 11:17:21.079  INFO [adventure-microservice,,,] 71792 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2019-12-13 11:17:21.079  INFO [adventure-microservice,,,] 71792 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2019-12-13 11:17:21.085  INFO [adventure-microservice,,,] 71792 --- [           main] c.e.adventure.AdventureApplication       : Started AdventureApplication in 18.9 seconds (JVM running for 20.354)
+2019-12-13 11:17:21.132  INFO [adventure-microservice,,,] 71794 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9011 (http) with context path ''
+2019-12-13 11:17:21.133  INFO [adventure-microservice,,,] 71794 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9011
+2019-12-13 11:17:21.140  INFO [adventure-microservice,,,] 71794 --- [           main] c.e.adventure.AdventureApplication       : Started AdventureApplication in 18.609 seconds (JVM running for 20.053)
+2019-12-13 11:17:50.792  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-13 11:17:50.792  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-13 11:17:50.792  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-13 11:17:50.792  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-13 11:17:50.792  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-13 11:17:50.792  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-12-13 11:17:50.792  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-13 11:17:50.812  INFO [adventure-microservice,,,] 71792 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-13 11:17:50.844  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-13 11:17:50.844  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-13 11:17:50.844  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-13 11:17:50.844  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-13 11:17:50.845  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-13 11:17:50.845  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-12-13 11:17:50.845  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-13 11:17:50.864  INFO [adventure-microservice,,,] 71794 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-13 11:22:20.682  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:22:20.738  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:27:20.714  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:27:20.761  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:32:20.717  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:32:20.764  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:37:20.721  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:37:20.769  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:42:20.761  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:42:20.812  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:46:40.272  INFO [adventure-microservice,,,] 71792 --- [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 11:46:40.274  INFO [adventure-microservice,,,] 71792 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-13 11:46:40.413  INFO [adventure-microservice,,,] 71792 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 137 ms
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/4a1cbba9064e8b96[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:authorization   Header Value:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmNsaWVudCIsIm1hYyI6IjgyLTNCLTJELTJDLTlELTQ0IiwiaXAiOiIxOTIuMTY4LjEuMTAwIiwiaXNzIjoiUW51UWJsUVduOEg5Z2dpd2ZHYkN4cFBBM2dkWTFvQWUiLCJleHAiOjE1NzYyMzU1NTd9.VsMHtpZj7nVtJRanOsB4JBPQeoc3zGK0O6r0VhQvtug
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:82f8e4ab-0bcb-4496-b1a7-db67786ebf51
+Header Name:cookie   Header Value:JSESSIONID=D1A08DDCB7543B5099F89BC5B8ED5A4E
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/adventure-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:127.0.0.1
+Header Name:content-length   Header Value:0
+Header Name:host   Header Value:192.168.1.100:9090
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:4a1cbba9064e8b96
+Header Name:x-b3-spanid   Header Value:1b1af62f203d2556
+Header Name:x-b3-parentspanid   Header Value:4a1cbba9064e8b96
+Header Name:x-b3-sampled   Header Value:1
+2019-12-13 11:46:40.604  INFO [adventure-microservice,4a1cbba9064e8b96,1b1af62f203d2556,true] 71792 --- [nio-9090-exec-1] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+2019-12-13 11:46:44.788  INFO [adventure-microservice,,,] 71794 --- [nio-9011-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 11:46:44.790  INFO [adventure-microservice,,,] 71794 --- [nio-9011-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-13 11:46:44.877  INFO [adventure-microservice,,,] 71794 --- [nio-9011-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 87 ms
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/955423e40c5b9b43[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:authorization   Header Value:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXBlcmNsaWVudCIsIm1hYyI6IjgyLTNCLTJELTJDLTlELTQ0IiwiaXAiOiIxOTIuMTY4LjEuMTAwIiwiaXNzIjoiUW51UWJsUVduOEg5Z2dpd2ZHYkN4cFBBM2dkWTFvQWUiLCJleHAiOjE1NzYyMzU1NTd9.VsMHtpZj7nVtJRanOsB4JBPQeoc3zGK0O6r0VhQvtug
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:bf56eec6-7f00-4436-88d1-7d8038a2a9a1
+Header Name:cookie   Header Value:JSESSIONID=D1A08DDCB7543B5099F89BC5B8ED5A4E
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/adventure-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:127.0.0.1
+Header Name:content-length   Header Value:0
+Header Name:host   Header Value:192.168.1.100:9011
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:955423e40c5b9b43
+Header Name:x-b3-spanid   Header Value:5d62c9c074ef6691
+Header Name:x-b3-parentspanid   Header Value:955423e40c5b9b43
+Header Name:x-b3-sampled   Header Value:1
+2019-12-13 11:46:45.014  INFO [adventure-microservice,955423e40c5b9b43,5d62c9c074ef6691,true] 71794 --- [nio-9011-exec-1] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+2019-12-13 11:47:20.772  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:47:20.821  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:52:20.780  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:52:20.831  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:57:20.789  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 11:57:20.840  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:02:20.798  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:02:20.851  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:07:20.807  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:07:20.860  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:12:20.820  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:12:20.872  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:17:20.834  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:17:20.885  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:22:20.849  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:22:20.899  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:27:20.862  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:27:20.913  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:32:20.875  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:32:20.928  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:37:20.886  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:37:20.940  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:42:20.897  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:42:20.953  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:47:20.912  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:47:20.966  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/2111b40fbdf4d00d[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:authorization   Header Value:
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:52dcc60b-21fe-4afd-b138-89591dab4bb0
+Header Name:cookie   Header Value:JSESSIONID=D1A08DDCB7543B5099F89BC5B8ED5A4E
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/adventure-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:127.0.0.1
+Header Name:content-length   Header Value:0
+Header Name:host   Header Value:192.168.1.100:9011
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:2111b40fbdf4d00d
+Header Name:x-b3-spanid   Header Value:7553533f14914d99
+Header Name:x-b3-parentspanid   Header Value:2111b40fbdf4d00d
+Header Name:x-b3-sampled   Header Value:1
+2019-12-13 12:48:54.857  INFO [adventure-microservice,2111b40fbdf4d00d,7553533f14914d99,true] 71794 --- [nio-9011-exec-3] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/3c037ad32b27df67[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:authorization   Header Value:
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:dddee62f-3773-4aee-908a-a70864c08863
+Header Name:cookie   Header Value:JSESSIONID=D1A08DDCB7543B5099F89BC5B8ED5A4E
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/adventure-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:127.0.0.1
+Header Name:content-length   Header Value:0
+Header Name:host   Header Value:192.168.1.100:9090
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:3c037ad32b27df67
+Header Name:x-b3-spanid   Header Value:c37a887ff8ea8c41
+Header Name:x-b3-parentspanid   Header Value:3c037ad32b27df67
+Header Name:x-b3-sampled   Header Value:1
+2019-12-13 12:49:02.390  INFO [adventure-microservice,3c037ad32b27df67,c37a887ff8ea8c41,true] 71792 --- [nio-9090-exec-2] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/f145ca188dbb01de[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:authorization   Header Value:
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:515ae603-2282-49fd-a28f-ab0b2dc38b5d
+Header Name:cookie   Header Value:JSESSIONID=D1A08DDCB7543B5099F89BC5B8ED5A4E
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/adventure-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:127.0.0.1
+Header Name:content-length   Header Value:0
+Header Name:host   Header Value:192.168.1.100:9011
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:f145ca188dbb01de
+Header Name:x-b3-spanid   Header Value:ac27ffd610f68e7c
+Header Name:x-b3-parentspanid   Header Value:f145ca188dbb01de
+Header Name:x-b3-sampled   Header Value:1
+2019-12-13 12:49:47.034  INFO [adventure-microservice,f145ca188dbb01de,ac27ffd610f68e7c,true] 71794 --- [nio-9011-exec-4] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+[0;35mDebugUtils:ZipkinDebug -> http://localhost:9411/zipkin/traces/58ff88a405e70783[0m
+[31mDebugUtils:RequestInfo -> [0m
+Header Name:content-type   Header Value:application/json
+Header Name:authorization   Header Value:
+Header Name:user-agent   Header Value:PostmanRuntime/7.15.0
+Header Name:accept   Header Value:*/*
+Header Name:postman-token   Header Value:75b8d815-fc19-4e0c-9d7f-f90f86042b2a
+Header Name:cookie   Header Value:JSESSIONID=D1A08DDCB7543B5099F89BC5B8ED5A4E
+Header Name:accept-encoding   Header Value:gzip, deflate
+Header Name:referer   Header Value:TripApplication//microservice::zuul-server-microservice
+Header Name:x-forwarded-host   Header Value:localhost:9096
+Header Name:x-forwarded-proto   Header Value:http
+Header Name:x-forwarded-prefix   Header Value:/adventure-microservice
+Header Name:x-forwarded-port   Header Value:9096
+Header Name:x-forwarded-for   Header Value:127.0.0.1
+Header Name:content-length   Header Value:0
+Header Name:host   Header Value:192.168.1.100:9090
+Header Name:connection   Header Value:Keep-Alive
+Header Name:x-b3-traceid   Header Value:58ff88a405e70783
+Header Name:x-b3-spanid   Header Value:7903160e7a8d568f
+Header Name:x-b3-parentspanid   Header Value:58ff88a405e70783
+Header Name:x-b3-sampled   Header Value:1
+2019-12-13 12:49:58.553  INFO [adventure-microservice,58ff88a405e70783,7903160e7a8d568f,true] 71792 --- [nio-9090-exec-3] c.e.a.controller.AdventureController     : Get all adventures datas
+Hibernate: select adventure0_.id as id1_0_, adventure0_.date as date2_0_, adventure0_.description as descript3_0_, adventure0_.image as image4_0_, adventure0_.max_entrant as max_entr5_0_, adventure0_.name as name6_0_, adventure0_.price as price7_0_ from adventure adventure0_
+2019-12-13 12:52:20.927  INFO [adventure-microservice,,,] 71792 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:52:20.981  INFO [adventure-microservice,,,] 71794 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-13 12:55:29.373  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADVENTURE-MICROSERVICE with eureka with status DOWN
+2019-12-13 12:55:29.376  WARN [adventure-microservice,,,] 71792 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576238129375, current=DOWN, previous=UP]
+2019-12-13 12:55:29.383  INFO [adventure-microservice,,,] 71792 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9090: registering service...
+2019-12-13 12:55:29.408  INFO [adventure-microservice,,,] 71792 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9090 - registration status: 204
+2019-12-13 12:55:29.472  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-13 12:55:29.524  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-13 12:55:29.551  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Hibernate: drop table adventure if exists
+Hibernate: drop sequence if exists hibernate_sequence
+2019-12-13 12:55:30.274  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-13 12:55:32.828  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ADVENTURE-MICROSERVICE with eureka with status DOWN
+2019-12-13 12:55:32.830  WARN [adventure-microservice,,,] 71794 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1576238132829, current=DOWN, previous=UP]
+2019-12-13 12:55:32.833  INFO [adventure-microservice,,,] 71794 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9011: registering service...
+2019-12-13 12:55:32.853  INFO [adventure-microservice,,,] 71794 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9011 - registration status: 204
+2019-12-13 12:55:32.933  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-13 12:55:32.997  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-13 12:55:33.019  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+Hibernate: drop table adventure if exists
+Hibernate: drop sequence if exists hibernate_sequence
+2019-12-13 12:55:33.175  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-13 12:55:33.275  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-13 12:55:33.285  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9090 - deregister  status: 200
+2019-12-13 12:55:33.338  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-12-13 12:55:33.340  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-13 12:55:33.347  INFO [adventure-microservice,,,] 71792 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:38 h
+[INFO] Finished at: 2019-12-13T12:55:34+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project adventure-microservice: Application finished with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2019-12-13 12:55:36.175  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-13 12:55:36.190  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADVENTURE-MICROSERVICE/192.168.1.100:adventure-microservice:9011 - deregister  status: 200
+2019-12-13 12:55:36.250  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-12-13 12:55:36.251  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-13 12:55:36.257  INFO [adventure-microservice,,,] 71794 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:38 h
+[INFO] Finished at: 2019-12-13T12:55:36+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.0.RELEASE:run (default-cli) on project adventure-microservice: Application finished with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

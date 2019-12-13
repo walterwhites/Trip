@@ -9,9 +9,8 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.web.session.ConcurrentSessionFilter;
 
-import static com.ecommerce.zuulservermicroservice.constants.MicroServiceConstants.LOGIN_MICROSERVICE;
+import static com.ecommerce.zuulservermicroservice.constants.MicroServiceConstants.*;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -34,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers(LOGIN_MICROSERVICE).permitAll()
                 .anyRequest().authenticated()
-                .and()
+                .and().antMatcher(ADVENTURE_MICROSERVICE)
                 .apply(new JwtConfigurer(jwtTokenProvider));
     }
 }

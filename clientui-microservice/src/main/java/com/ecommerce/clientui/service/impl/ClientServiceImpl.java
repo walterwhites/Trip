@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Base64;
 import java.util.Optional;
 
+import static com.ecommerce.clientui.constants.SecurityConstants.AUTHORIZATION_HEADER;
 import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
 
 @Service
@@ -40,7 +41,7 @@ public class ClientServiceImpl implements ClientService {
 
     public Optional<ClientResponseDTO> getUserInformations(String token) {
         String username = getUsername(token);
-        return microserviceClientProxy.fetchClientByUsername(username, request.getHeader(REFERER_HEADER));
+        return microserviceClientProxy.fetchClientByUsername(username, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
     }
 
 /*

@@ -38,6 +38,4 @@ public class UserFilter implements Filter {
         String serialized = new ObjectMapper().writeValueAsString(errorResponse);
         return serialized.getBytes();
     }
-
-
 }

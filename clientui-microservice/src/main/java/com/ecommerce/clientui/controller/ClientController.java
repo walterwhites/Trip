@@ -26,6 +26,7 @@ import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
+import static com.ecommerce.clientui.constants.SecurityConstants.AUTHORIZATION_HEADER;
 import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -51,8 +52,8 @@ public class ClientController {
     }
 
     @RequestMapping("/about-us")
-    public String aboutUs(Model model) {
-        List<AdventureBean> adventures = microserviceAdventureProxy.adventureList();
+    public String aboutUs(Model model, HttpServletRequest request) {
+        List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
         model.addAttribute("adventures", adventures);
         return "about-us";
     }
@@ -63,9 +64,9 @@ public class ClientController {
     }
 
     @RequestMapping("/adventures")
-    public String adventures(Model model) throws UnauthorisedException {
+    public String adventures(Model model, HttpServletRequest request) throws UnauthorisedException {
         try {
-            List<AdventureBean> adventures = microserviceAdventureProxy.adventureList();
+            List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
             model.addAttribute("adventures", adventures);
         } catch (UnauthorisedException unauthorisedException) {
             return "redirect:/login";
@@ -74,8 +75,8 @@ public class ClientController {
     }
 
     @RequestMapping("/adventures/{id}")
-    public String adventures(Model model, @PathVariable("id") int id) {
-        AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id);
+    public String adventures(Model model, @PathVariable("id") int id, HttpServletRequest request) {
+        AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
         model.addAttribute("adventure", adventure);
         return "adventures/detail";
     }

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Optional;
 
+import static com.ecommerce.clientui.constants.SecurityConstants.AUTHORIZATION_HEADER;
 import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
 
 @FeignClient(name ="zuul-server-microservice")
@@ -20,5 +21,5 @@ public interface MicroserviceClientProxy {
     ClientResponseDTO searchClient(@RequestHeader(value= REFERER_HEADER) String referer);
 
     @RequestMapping(value = ClientMicroServiceConstants.FETCH_CLIENT_BY_USERNAME)
-    Optional<ClientResponseDTO> fetchClientByUsername(@PathVariable("username") String username, @RequestHeader(value= REFERER_HEADER) String referer);
+    Optional<ClientResponseDTO> fetchClientByUsername(@PathVariable("username") String username, @RequestHeader(value= REFERER_HEADER) String referer, @RequestHeader(value= AUTHORIZATION_HEADER) String authorisation);
 }
