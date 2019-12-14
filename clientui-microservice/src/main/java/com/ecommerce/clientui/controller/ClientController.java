@@ -121,18 +121,6 @@ public class ClientController {
         return new ModelAndView("redirect:/account", model);
     }
 
-    /*
-    @RequestMapping("/account")
-    public ModelAndView account(ModelMap model, HttpServletRequest request) throws UnauthorisedException  {
-        try {
-            ClientBean clientBean = microserviceClientProxy.searchClient(re, request.getHeader(REFERER_HEADER));
-        } catch (UnauthorisedException unauthorisedException) {
-            model.addAttribute("error", "Wrong Username or password");
-            return new ModelAndView("login", model);
-        }
-        return "account/index";
-    } */
-
     @RequestMapping("/account")
     public ModelAndView account(ModelMap model) {
         try {
