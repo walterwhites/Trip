@@ -21,3 +21,7 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;
 }
+
+.btn {
+    font-family: sans-serif;
+}

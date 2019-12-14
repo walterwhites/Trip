@@ -19,7 +19,13 @@ public class ClientRequestDTO implements Serializable {
     @ApiModelProperty(value = "This is the username of the client")
     private String username;
 
-    @ApiModelProperty(value = "This is full name of the client")
+    @ApiModelProperty(value = "This is the firstname of the client")
+    private String firstname;
+
+    @ApiModelProperty(value = "This is the lastname of the client")
+    private String lastname;
+
+    @ApiModelProperty(value = "This is full full of the client")
     private String fullName;
 
     @ApiModelProperty(value = "This is the email address of the client")

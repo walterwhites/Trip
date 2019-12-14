@@ -22,6 +22,12 @@ public class Client implements Serializable {
     @Column(name="username")
     private String username;
 
+    @Column(name="firstname")
+    private String firstname;
+
+    @Column(name="lastname")
+    private String lastname;
+
     @Column(name = "fullname")
     private String fullName;
 

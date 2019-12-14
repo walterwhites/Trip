@@ -4,5 +4,5 @@ import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
 import java.util.Optional;
 
 public interface ClientService {
-    public Optional<ClientResponseDTO> getUserInformations(String token);
+    public Optional<ClientResponseDTO> getUserInformations();
 }

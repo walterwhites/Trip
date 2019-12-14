@@ -32,6 +32,8 @@ public class ApplicationStartUp {
     public Client saveClient() {
         Client client = new Client();
         client.setUsername(startupProperties.getUsername());
+        client.setFirstname(startupProperties.getFirstname());
+        client.setLastname(startupProperties.getLastname());
         client.setFullName(startupProperties.getFullName());
         client.setPassword(BCrypt.hashpw(startupProperties.getPassword(), BCrypt.gensalt()));
         client.setEmailAddress(startupProperties.getEmailAddress());

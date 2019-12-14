@@ -14,6 +14,8 @@ public class ClientQuery {
 
         String query = "";
         query = " SELECT a.id," +
+                " a.firstname," +
+                " a.lastname," +
                 " a.password," +
                 " a.status," +
                 " a.login_attempt," +
@@ -33,6 +35,8 @@ public class ClientQuery {
 
         String query = "";
         query = " SELECT a.id," +
+                " a.firstname," +
+                " a.lastname," +
                 " a.password," +
                 " a.status," +
                 " a.login_attempt," +
