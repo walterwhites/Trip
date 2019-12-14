@@ -6,4 +6,6 @@ public class SecurityConstants {
 
     public static final String REFERER_HEADER = "referer";
     public static final String REFERER_HEADER_VALUE = "TripApplication//microservice::clientui-microservice";
+
+    public static final String JWT_COOKIE = "jwt_token";
 }

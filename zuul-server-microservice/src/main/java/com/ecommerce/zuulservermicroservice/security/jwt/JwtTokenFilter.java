@@ -1,8 +1,6 @@
 package com.ecommerce.zuulservermicroservice.security.jwt;
 
-import com.ecommerce.zuulservermicroservice.exceptionHandler.ErrorResponse;
 import com.ecommerce.zuulservermicroservice.exceptionHandler.UnauthorisedException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -24,10 +22,9 @@ public class JwtTokenFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
-                                    FilterChain filterChain) throws ServletException, IOException {
-        String token = jwtTokenProvider.resolveToken(request);
-
+                                    FilterChain filterChain) throws IOException, ServletException {
         try {
+            String token = jwtTokenProvider.resolveToken(request);
             if (!Objects.isNull(token) && jwtTokenProvider.validateToken(token)) {
                 Authentication auth = jwtTokenProvider.getAuthentication(token);
                 if (!Objects.isNull(auth))

@@ -19,15 +19,19 @@ public class ClientUtils {
 
     public static Function<List<Object[]>, ClientResponseDTO> convertToClientResponse = (objects) -> {
         final Integer ID = 0;
-        final Integer PASSWORD = 1;
-        final Integer STATUS = 2;
-        final Integer LOGIN_ATTEMPT = 3;
-        final Integer EMAIL_ADDRESS = 4;
+        final Integer FIRSTNAME = 1;
+        final Integer LASTNAME = 2;
+        final Integer PASSWORD = 3;
+        final Integer STATUS = 4;
+        final Integer LOGIN_ATTEMPT = 5;
+        final Integer EMAIL_ADDRESS = 6;
 
         ClientResponseDTO responseDTO = new ClientResponseDTO();
 
         objects.forEach(object -> {
             responseDTO.setId(Long.parseLong(object[ID].toString()));
+            responseDTO.setFirstname(object[FIRSTNAME].toString());
+            responseDTO.setLastname(object[LASTNAME].toString());
             responseDTO.setPassword(object[PASSWORD].toString());
             responseDTO.setStatus(object[STATUS].toString().charAt(0));
             if (object[LOGIN_ATTEMPT] == null) {

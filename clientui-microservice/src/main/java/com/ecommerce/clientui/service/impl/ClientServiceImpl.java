@@ -1,47 +1,45 @@
 package com.ecommerce.clientui.service.impl;
 
-
+import com.ecommerce.clientui.constants.ErrorMessage;
+import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroserviceClientProxy;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
-import com.ecommerce.clientui.security.jwt.JwtProperties;
+import com.ecommerce.clientui.security.jwt.JwtTokenProvider;
 import com.ecommerce.clientui.service.ClientService;
-import io.jsonwebtoken.Jwts;
+import com.ecommerce.clientui.utils.CookiesUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Base64;
 import java.util.Optional;
-
-import static com.ecommerce.clientui.constants.SecurityConstants.AUTHORIZATION_HEADER;
-import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
+import static com.ecommerce.clientui.constants.SecurityConstants.*;
 
 @Service
 @Transactional("transactionManager")
 public class ClientServiceImpl implements ClientService {
 
     private HttpServletRequest request;
+    private MicroserviceClientProxy microserviceClientProxy;
+    private JwtTokenProvider jwtTokenProvider;
 
     @Autowired
-    MicroserviceClientProxy microserviceClientProxy;
-
-    private String secretKey;
-
-    public ClientServiceImpl(HttpServletRequest request, JwtProperties jwtProperties) {
+    public ClientServiceImpl(HttpServletRequest request, MicroserviceClientProxy microserviceClientProxy, JwtTokenProvider jwtTokenProvider) {
         this.request = request;
-        this.secretKey = Base64.getEncoder().encodeToString(jwtProperties.getSecretKey().getBytes());
+        this.microserviceClientProxy = microserviceClientProxy;
+        this.jwtTokenProvider = jwtTokenProvider;
     }
 
-
-    private String getUsername(String token) {
-        return Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody().getSubject();
-    }
-
-    public Optional<ClientResponseDTO> getUserInformations(String token) {
-        String username = getUsername(token);
-        return microserviceClientProxy.fetchClientByUsername(username, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+    public Optional<ClientResponseDTO> getUserInformations() throws UnauthorisedException {
+        try {
+            String token = CookiesUtils.getCookie(request, JWT_COOKIE);
+            jwtTokenProvider.validateToken(token);
+            String username = jwtTokenProvider.getUsername(token);
+            Optional<ClientResponseDTO> clientResponseDTO = microserviceClientProxy.fetchClientByUsername(username, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+            clientResponseDTO.get().setUsername(username);
+            return clientResponseDTO;
+        } catch (UnauthorisedException unauthorisedException) {
+            throw new UnauthorisedException(ErrorMessage.TokenInvalid.MESSAGE, ErrorMessage.TokenInvalid.DEVELOPER_MESSAGE);
+        }
     }
 
 /*

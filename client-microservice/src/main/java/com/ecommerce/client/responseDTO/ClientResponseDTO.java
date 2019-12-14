@@ -15,6 +15,8 @@ import java.util.List;
 public class ClientResponseDTO implements Serializable {
 
     private String emailAddress;
+    private String firstname;
+    private String lastname;
     private Long id;
     private String password;
     private Character status;

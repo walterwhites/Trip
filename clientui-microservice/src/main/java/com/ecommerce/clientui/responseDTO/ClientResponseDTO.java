@@ -12,6 +12,8 @@ import java.util.List;
 public class ClientResponseDTO {
 
     private Long id;
+    private String firstname;
+    private String lastname;
     private String username;
     private String emailAddress;
     private String password;

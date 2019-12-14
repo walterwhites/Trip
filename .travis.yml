@@ -14,3 +14,7 @@ before_install:
   - mvn -q install
   - cd ../payment-microservice
   - mvn -q install
+  - cd ../client-microservice
+  - mvn -q install
+  - cd ../login-microservice
+  - mvn -q install
