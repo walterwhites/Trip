@@ -104,6 +104,11 @@ public class ClientController {
         return "login";
     }
 
+    @RequestMapping("/register")
+    public String register(Model model) {
+        return "register";
+    }
+
     @RequestMapping(value = "/login", method = POST)
     public ModelAndView submit(@Valid @ModelAttribute("login") ClientBean clientBean, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
         try {
