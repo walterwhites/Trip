@@ -42,30 +42,23 @@ public class ClientController {
     @Autowired
     ClientServiceImpl clientService;
 
-    //@RequestMapping("/")
-    /*public String home(Model model) {
-        return "trip-index";
-    }*/
     @RequestMapping("/")
     public String home(Model model) {
         return "index";
     }
 
-    @RequestMapping("/about-us")
+    @RequestMapping("/about")
     public String aboutUs(Model model, HttpServletRequest request) {
         List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
         model.addAttribute("adventures", adventures);
-        return "about-us";
+        return "about";
     }
 
     @RequestMapping("/blog")
-    public String blog(Model model) {
+    public String blog(Model model, HttpServletRequest request) {
+        List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
+        model.addAttribute("adventures", adventures);
         return "blog";
-    }
-
-    @RequestMapping("/destination")
-    public String destination(Model model) {
-        return "destination";
     }
 
     @RequestMapping("/contact")

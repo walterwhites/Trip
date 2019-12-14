@@ -5,14 +5,15 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #222831;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+
 #footer {
-    background: #007b5e !important;
-    margin-top: 100px;
+    background: #222831 !important;
 }
+
 #footer h5{
     padding-left: 10px;
     border-left: 3px solid #eeeeee;
