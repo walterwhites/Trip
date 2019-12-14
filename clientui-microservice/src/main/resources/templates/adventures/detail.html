@@ -2,11 +2,11 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Adventure detail - Trip</title>
+    <title>Adventure detail - Wild Adventures</title>
 </head>
-<header lang="en" th:replace="fragments/header :: header"></header>
 <body>
-<nav lang="en" th:replace="fragments/navDetail :: nav"></nav>
+<header lang="en" th:replace="fragments/header :: header"></header>
+<nav lang="en" th:replace="fragments/nav :: nav"></nav>
 <div class="container">
     <h1 th:text= "${adventure.name}"></h1>
 
@@ -24,6 +24,6 @@
         </div>
     </div>
 </div>
-</body>
 <footer lang="en" th:replace="fragments/footer :: footer"></footer>
+</body>
 </html>

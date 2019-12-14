@@ -1,5 +1,6 @@
 package com.ecommerce.clientui.configuration;
 
+import com.ecommerce.clientui.utils.CookiesUtils;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.stereotype.Component;
@@ -8,8 +9,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
-import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER_VALUE;
+import static com.ecommerce.clientui.constants.SecurityConstants.*;
 
 @Component
 public class MyRequestInterceptor implements RequestInterceptor {
@@ -29,6 +29,8 @@ public class MyRequestInterceptor implements RequestInterceptor {
         if (refererHeader == null) {
             return;
         }*/
-        requestTemplate.header(REFERER_HEADER, REFERER_HEADER_VALUE);
+        //requestTemplate.header(REFERER_HEADER, REFERER_HEADER_VALUE);
+        String jwt_token = CookiesUtils.getCookie(request, "jwt_token");
+        requestTemplate.header(AUTHORIZATION_HEADER, BEARER_PREFIX + jwt_token);
     }
 }

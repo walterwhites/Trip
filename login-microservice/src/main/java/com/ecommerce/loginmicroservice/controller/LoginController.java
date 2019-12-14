@@ -12,7 +12,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import static org.springframework.http.ResponseEntity.ok;
 
@@ -29,7 +31,7 @@ public class LoginController {
 
     @PostMapping(value = WebResourceKeyConstants.LOGIN)
     @ApiOperation(value = "This is login api", notes = "Request contains username and password")
-    public ResponseEntity<String> loginUser(@RequestBody LoginRequestDTO requestDTO, HttpServletRequest request) {
+    public ResponseEntity<String> loginUser(@RequestBody LoginRequestDTO requestDTO, HttpServletRequest request, HttpServletResponse response) {
         try {
             String token = loginService.login(requestDTO, request);
         } catch (UnauthorisedException unauthorisedException) {

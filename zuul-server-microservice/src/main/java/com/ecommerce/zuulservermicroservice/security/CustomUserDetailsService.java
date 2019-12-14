@@ -29,7 +29,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        System.out.println("djsfkndsf " + request.getHeader(REFERER_HEADER) );
         ClientResponseDTO clientResponseDTO = clientInterface.fetchClientByUsername(username, this.request.getHeader(REFERER_HEADER))
                 .orElseThrow(() -> new UsernameNotFoundException("Username: " + username + " not found"));
 

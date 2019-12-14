@@ -13,3 +13,11 @@ footer {
 footer p {
     padding: 15px;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+}

@@ -1,5 +1,6 @@
 package com.ecommerce.zuulservermicroservice.configuration;
 
+import com.ecommerce.zuulservermicroservice.utils.DebugUtils;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.stereotype.Component;
@@ -14,13 +15,9 @@ public class MyRequestInterceptor implements RequestInterceptor {
     @Override
     public void apply(RequestTemplate requestTemplate) {
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        if (requestAttributes == null) {
-            return;
-        }
+
         HttpServletRequest request = requestAttributes.getRequest();
-        if (request == null) {
-            return;
-        }
+        DebugUtils.RequestInfo.displayAllRequestHeaders(request);
         requestTemplate.header(REFERER_HEADER, ZUUL_SERVER_MICROSERVICE_REFERER);
     }
 }
