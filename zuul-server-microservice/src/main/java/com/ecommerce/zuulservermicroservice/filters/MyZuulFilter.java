@@ -1,6 +1,5 @@
 package com.ecommerce.zuulservermicroservice.filters;
 
-import com.ecommerce.zuulservermicroservice.utils.CookiesUtils;
 import com.ecommerce.zuulservermicroservice.utils.DebugUtils;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
