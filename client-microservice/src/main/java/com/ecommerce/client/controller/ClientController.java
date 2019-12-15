@@ -1,6 +1,7 @@
 package com.ecommerce.client.controller;
 
 import com.ecommerce.client.requestDTO.ClientRequestDTO;
+import com.ecommerce.client.requestDTO.RegisterRequestDTO;
 import com.ecommerce.client.responseDTO.ResponseDTO;
 import com.ecommerce.client.service.ClientService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -29,7 +30,7 @@ public class ClientController {
     @PostMapping(value = SAVE)
     @ApiOperation(value = "Save new client")
     @ResponseBody
-    public ResponseEntity<?> saveClient(@RequestBody ClientRequestDTO requestDTO) {
+    public ResponseEntity<?> saveClient(@RequestBody RegisterRequestDTO requestDTO) {
         clientService.saveClient(requestDTO);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

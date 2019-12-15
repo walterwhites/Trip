@@ -15,6 +15,8 @@ public class ClientBean implements Serializable {
 
     private Long id;
     private String username;
+    private String firstname;
+    private String lastname;
     private String fullName;
     private String emailAddress;
     private Long profileId;

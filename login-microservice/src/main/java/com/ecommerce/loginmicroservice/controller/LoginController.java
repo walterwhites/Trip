@@ -3,7 +3,9 @@ package com.ecommerce.loginmicroservice.controller;
 import com.ecommerce.loginmicroservice.constants.WebResourceKeyConstants;
 import com.ecommerce.loginmicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.loginmicroservice.requestDTO.LoginRequestDTO;
+import com.ecommerce.loginmicroservice.requestDTO.RegisterRequestDTO;
 import com.ecommerce.loginmicroservice.service.LoginService;
+import com.ecommerce.loginmicroservice.service.RegisterService;
 import com.ecommerce.loginmicroservice.service.impl.LoginServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -24,9 +26,12 @@ import static org.springframework.http.ResponseEntity.ok;
 public class LoginController {
 
     private final LoginService loginService;
+    private final RegisterService registerService;
     private static final Logger LOGGER = LoggerFactory.getLogger(LoginServiceImpl.class);
-    public LoginController(LoginService loginService) {
+
+    public LoginController(LoginService loginService, RegisterService registerService) {
         this.loginService = loginService;
+        this.registerService = registerService;
     }
 
     @PostMapping(value = WebResourceKeyConstants.LOGIN)
@@ -34,15 +39,21 @@ public class LoginController {
     public ResponseEntity<String> loginUser(@RequestBody LoginRequestDTO requestDTO, HttpServletRequest request, HttpServletResponse response) {
         try {
             String token = loginService.login(requestDTO, request);
+            return ok().body(token);
         } catch (UnauthorisedException unauthorisedException) {
             LOGGER.info("dev_message: " + unauthorisedException.getErrorResponse().getDeveloperMsg());
             return ResponseEntity.status(unauthorisedException.getErrorResponse().getStatus()).body(unauthorisedException.getErrorResponse().getErrorMsg());
         }
-        return ok().body(loginService.login(requestDTO, request));
     }
 
-    @GetMapping("/test")
-    public String test() {
-        return "test done";
+    @PostMapping(value = WebResourceKeyConstants.REGISTER)
+    @ApiOperation(value = "This is register api", notes = "Request contains client informations")
+    public ResponseEntity<String> registerUser(@RequestBody RegisterRequestDTO requestDTO, HttpServletRequest request, HttpServletResponse response) {
+        try {
+            registerService.register(requestDTO, request);
+            return ok().body("");
+        } catch (UnauthorisedException unauthorisedException) {
+            return ResponseEntity.status(unauthorisedException.getErrorResponse().getStatus()).body(unauthorisedException.getErrorResponse().getErrorMsg());
+        }
     }
 }

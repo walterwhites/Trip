@@ -109,8 +109,19 @@ public class ClientController {
         return "register";
     }
 
+    @RequestMapping(value = "/register", method = POST)
+    public ModelAndView register(@Valid @ModelAttribute("login") ClientBean clientBean, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+        try {
+            microserviceLoginProxy.postRegister(clientBean, request.getHeader(REFERER_HEADER));
+        } catch (UnauthorisedException unauthorisedException) {
+            model.addAttribute("error", "Wrong Username or password");
+            return new ModelAndView("login", model);
+        }
+        return new ModelAndView("redirect:/login", model);
+    }
+
     @RequestMapping(value = "/login", method = POST)
-    public ModelAndView submit(@Valid @ModelAttribute("login") ClientBean clientBean, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+    public ModelAndView login(@Valid @ModelAttribute("login") ClientBean clientBean, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
         try {
             String token = microserviceLoginProxy.postLogin(clientBean, request.getHeader(REFERER_HEADER));
             Cookie cookie = new Cookie(JWT_COOKIE, token);

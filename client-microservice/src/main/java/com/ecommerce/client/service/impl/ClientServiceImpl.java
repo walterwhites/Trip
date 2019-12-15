@@ -1,24 +1,27 @@
 package com.ecommerce.client.service.impl;
 
+import com.ecommerce.client.exceptions.DataDuplicationException;
 import com.ecommerce.client.exceptions.NoContentFoundException;
 import com.ecommerce.client.model.Client;
 import com.ecommerce.client.repositories.ClientRepository;
 import com.ecommerce.client.requestDTO.ClientRequestDTO;
+import com.ecommerce.client.requestDTO.RegisterRequestDTO;
 import com.ecommerce.client.responseDTO.ClientResponseDTO;
 import com.ecommerce.client.responseDTO.ResponseDTO;
 import com.ecommerce.client.service.ClientService;
 import com.ecommerce.client.utils.ClientUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
+import static com.ecommerce.client.constants.ErrorMessage.DataDuplication.*;
 import static com.ecommerce.client.queries.ClientQuery.*;
 import static com.ecommerce.client.utils.ClientUtils.*;
 
@@ -39,22 +42,24 @@ public class ClientServiceImpl implements ClientService {
 
 
     @Override
-    public void saveClient(ClientRequestDTO requestDTO) {
+    public void saveClient(RegisterRequestDTO requestDTO) {
 
         log.info(":::: SAVE CLIENT PROCESS STARTED::::");
-        validateClientRequestDTO.accept(requestDTO);
-
+        validateRegisterRequestDTO.accept(requestDTO);
+        ModelMapper modelMapper = new ModelMapper();
+        Client client = modelMapper.map(requestDTO, Client.class);
+        clientRepository.save(client);
         System.out.println("VALIDATION DONE");
     }
 
-    public Consumer<ClientRequestDTO> validateClientRequestDTO = (requestDTO) -> {
-//        adminRepository.fetchAdminByUsername(requestDTO.getUsername()).ifPresent(admin -> {
-//            throw new DataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);
-//        });
-//
-//        adminRepository.fetchAdminByEmailAddress(requestDTO.getEmailAddress()).ifPresent(admin -> {
-//            throw new DataDuplicationException(DUPLICATE_EMAILADDRESS_MESSAGE, DUPLICATE_EMAILADDRESS_DEVELOPER_MESSAGE);
-//        });
+    public Consumer<RegisterRequestDTO> validateRegisterRequestDTO = (requestDTO) -> {
+        clientRepository.fetchClientByUsername(requestDTO.getUsername()).ifPresent(admin -> {
+            throw new DataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);
+        });
+
+        clientRepository.fetchClientByUsername(requestDTO.getEmailAddress()).ifPresent(admin -> {
+            throw new DataDuplicationException(DUPLICATE_EMAILADDRESS_MESSAGE, DUPLICATE_EMAILADDRESS_DEVELOPER_MESSAGE);
+        });
     };
 
     @Override

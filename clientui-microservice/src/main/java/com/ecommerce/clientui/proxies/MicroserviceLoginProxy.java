@@ -14,4 +14,7 @@ public interface MicroserviceLoginProxy {
 
     @PostMapping(value = "login-microservice/api/login")
     String postLogin(@RequestBody() ClientBean clientBean, @RequestHeader(value= REFERER_HEADER) String referer);
+
+    @PostMapping(value = "login-microservice/api/register")
+    String postRegister(@RequestBody() ClientBean clientBean, @RequestHeader(value= REFERER_HEADER) String referer);
 }
