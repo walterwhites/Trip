@@ -1,6 +1,8 @@
 package com.ecommerce.client.service.impl;
 
+import com.ecommerce.client.constants.ErrorMessage;
 import com.ecommerce.client.exceptions.DataDuplicationException;
+import com.ecommerce.client.exceptions.MissingFieldException;
 import com.ecommerce.client.exceptions.NoContentFoundException;
 import com.ecommerce.client.model.Client;
 import com.ecommerce.client.repositories.ClientRepository;
@@ -13,6 +15,7 @@ import com.ecommerce.client.utils.ClientUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
@@ -42,9 +45,10 @@ public class ClientServiceImpl implements ClientService {
 
 
     @Override
-    public void saveClient(RegisterRequestDTO requestDTO) {
+    public void saveClient(RegisterRequestDTO requestDTO) throws DataDuplicationException, MissingFieldException {
 
         log.info(":::: SAVE CLIENT PROCESS STARTED::::");
+        validateRequestDTOFields.accept(requestDTO);
         validateRegisterRequestDTO.accept(requestDTO);
         ModelMapper modelMapper = new ModelMapper();
         Client client = modelMapper.map(requestDTO, Client.class);
@@ -52,14 +56,32 @@ public class ClientServiceImpl implements ClientService {
         System.out.println("VALIDATION DONE");
     }
 
-    public Consumer<RegisterRequestDTO> validateRegisterRequestDTO = (requestDTO) -> {
-        clientRepository.fetchClientByUsername(requestDTO.getUsername()).ifPresent(admin -> {
-            throw new DataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);
+    private Consumer<RegisterRequestDTO> validateRegisterRequestDTO = (requestDTO) -> {
+        clientRepository.fetchClientByUsername(requestDTO.getUsername()).ifPresent(client -> {
+            DataDuplicationException dataDuplicationException = new DataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);
+            dataDuplicationException.getErrorResponse().setStatus(HttpStatus.CONFLICT);
+            throw dataDuplicationException;
         });
 
-        clientRepository.fetchClientByUsername(requestDTO.getEmailAddress()).ifPresent(admin -> {
-            throw new DataDuplicationException(DUPLICATE_EMAILADDRESS_MESSAGE, DUPLICATE_EMAILADDRESS_DEVELOPER_MESSAGE);
+        clientRepository.fetchClientByUsername(requestDTO.getEmailAddress()).ifPresent(client -> {
+            DataDuplicationException dataDuplicationException = new DataDuplicationException(DUPLICATE_EMAILADDRESS_MESSAGE, DUPLICATE_EMAILADDRESS_DEVELOPER_MESSAGE);
+            dataDuplicationException.getErrorResponse().setStatus(HttpStatus.CONFLICT);
+            throw dataDuplicationException;
         });
+    };
+
+    private Consumer<RegisterRequestDTO> validateRequestDTOFields = (requestDTO) -> {
+        if (requestDTO.getEmailAddress() == null) {
+            throw new MissingFieldException(ErrorMessage.MissingField.MISSING_EMAIL_MESSAGE, ErrorMessage.MissingField.MISSING_EMAIL_MESSAGE);
+        } else if (requestDTO.getUsername() == null) {
+            throw new MissingFieldException(ErrorMessage.MissingField.MISSING_USERNAME_MESSAGE, ErrorMessage.MissingField.MISSING_USERNAME_MESSAGE);
+        } else if (requestDTO.getFirstname() == null) {
+            throw new MissingFieldException(ErrorMessage.MissingField.MISSING_FIRSTNAME_MESSAGE, ErrorMessage.MissingField.MISSING_FIRSTNAME_MESSAGE);
+        } else if (requestDTO.getLastname() == null) {
+            throw new MissingFieldException(ErrorMessage.MissingField.MISSING_LASTNAME_MESSAGE, ErrorMessage.MissingField.MISSING_LASTNAME_MESSAGE);
+        } else if (requestDTO.getPassword() == null) {
+            throw new MissingFieldException(ErrorMessage.MissingField.MISSING_PASSWORD_MESSAGE, ErrorMessage.MissingField.MISSING_PASSWORD_MESSAGE);
+        }
     };
 
     @Override

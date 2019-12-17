@@ -1,6 +1,7 @@
 package com.ecommerce.loginmicroservice.controller;
 
 import com.ecommerce.loginmicroservice.constants.WebResourceKeyConstants;
+import com.ecommerce.loginmicroservice.exceptionHandler.DataDuplicationException;
 import com.ecommerce.loginmicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.loginmicroservice.requestDTO.LoginRequestDTO;
 import com.ecommerce.loginmicroservice.requestDTO.RegisterRequestDTO;
@@ -49,11 +50,7 @@ public class LoginController {
     @PostMapping(value = WebResourceKeyConstants.REGISTER)
     @ApiOperation(value = "This is register api", notes = "Request contains client informations")
     public ResponseEntity<String> registerUser(@RequestBody RegisterRequestDTO requestDTO, HttpServletRequest request, HttpServletResponse response) {
-        try {
-            registerService.register(requestDTO, request);
-            return ok().body("");
-        } catch (UnauthorisedException unauthorisedException) {
-            return ResponseEntity.status(unauthorisedException.getErrorResponse().getStatus()).body(unauthorisedException.getErrorResponse().getErrorMsg());
-        }
+        registerService.register(requestDTO, request);
+        return ok().body("");
     }
 }

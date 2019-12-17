@@ -1,4 +1,4 @@
-package com.ecommerce.client.exceptions;
+package com.ecommerce.loginmicroservice.exceptionHandler;
 
 import lombok.Getter;
 import lombok.Setter;

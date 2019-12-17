@@ -1,5 +1,7 @@
 package com.ecommerce.loginmicroservice.service.impl;
 
+import com.ecommerce.loginmicroservice.exceptionHandler.DataDuplicationException;
+import com.ecommerce.loginmicroservice.exceptionHandler.MissingFieldException;
 import com.ecommerce.loginmicroservice.feignInterface.ClientInterface;
 import com.ecommerce.loginmicroservice.jwt.JwtTokenProvider;
 import com.ecommerce.loginmicroservice.requestDTO.RegisterRequestDTO;
@@ -27,15 +29,23 @@ public class RegisterServiceImpl implements RegisterService {
     private HttpServletRequest request;
 
     @Override
-    public String register(RegisterRequestDTO requestDTO, HttpServletRequest request) throws RuntimeException {
-        this.request = request;
-        RegisterRequestDTO client = registerClient.apply(requestDTO);
-        clientInterface.saveClient(client, request.getHeader(REFERER_HEADER));
-        return "";
+    public String register(RegisterRequestDTO requestDTO, HttpServletRequest request) throws DataDuplicationException, MissingFieldException {
+        try {
+            this.request = request;
+            RegisterRequestDTO client = registerClient.apply(requestDTO);
+            clientInterface.saveClient(client, request.getHeader(REFERER_HEADER));
+            return "";
+        } catch (DataDuplicationException dataDuplicationException) {
+            throw new DataDuplicationException(dataDuplicationException.getMessage(), dataDuplicationException.getMessage());
+        } catch (MissingFieldException missingFieldException) {
+            throw new MissingFieldException(missingFieldException.getMessage(), missingFieldException.getMessage());
+        }
     }
 
     private Function<RegisterRequestDTO, RegisterRequestDTO> registerClient = (registerRequestDTO) -> {
-        registerRequestDTO.setPassword(BCrypt.hashpw(registerRequestDTO.getPassword(), BCrypt.gensalt()));
+        if (registerRequestDTO.getPassword() != null) {
+            registerRequestDTO.setPassword(BCrypt.hashpw(registerRequestDTO.getPassword(), BCrypt.gensalt()));
+        }
         registerRequestDTO.setStatus('Y');
         registerRequestDTO.setCreatedDate(new Date());
         registerRequestDTO.setLastModifiedDate(new Date());

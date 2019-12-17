@@ -1,5 +1,7 @@
 package com.ecommerce.client.controller;
 
+import com.ecommerce.client.exceptions.DataDuplicationException;
+import com.ecommerce.client.exceptions.MissingFieldException;
 import com.ecommerce.client.requestDTO.ClientRequestDTO;
 import com.ecommerce.client.requestDTO.RegisterRequestDTO;
 import com.ecommerce.client.responseDTO.ResponseDTO;
@@ -30,7 +32,7 @@ public class ClientController {
     @PostMapping(value = SAVE)
     @ApiOperation(value = "Save new client")
     @ResponseBody
-    public ResponseEntity<?> saveClient(@RequestBody RegisterRequestDTO requestDTO) {
+    public ResponseEntity<?> saveClient(@RequestBody RegisterRequestDTO requestDTO) throws DataDuplicationException, MissingFieldException {
         clientService.saveClient(requestDTO);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

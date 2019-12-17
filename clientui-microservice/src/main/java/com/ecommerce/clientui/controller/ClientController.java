@@ -123,6 +123,9 @@ public class ClientController {
     @RequestMapping(value = "/login", method = POST)
     public ModelAndView login(@Valid @ModelAttribute("login") ClientBean clientBean, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
         try {
+            if (CookiesUtils.getCookie(request, JWT_COOKIE) != null)  {
+                CookiesUtils.removeCookie(JWT_COOKIE, response);
+            }
             String token = microserviceLoginProxy.postLogin(clientBean, request.getHeader(REFERER_HEADER));
             Cookie cookie = new Cookie(JWT_COOKIE, token);
             cookie.setMaxAge(60 * 60); // expires in 1 hour
@@ -150,11 +153,7 @@ public class ClientController {
 
     @RequestMapping("/logout")
     public ModelAndView logout(HttpServletResponse response) {
-        Cookie cookie = new Cookie(JWT_COOKIE, "");
-        cookie.setMaxAge(0);
-        cookie.setHttpOnly(true); // JS not able to read it
-        cookie.setPath("/");
-        response.addCookie(cookie);
+        CookiesUtils.removeCookie(JWT_COOKIE, response);
         return new ModelAndView("redirect:/login");
     }
 }

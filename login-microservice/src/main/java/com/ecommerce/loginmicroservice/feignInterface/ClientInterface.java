@@ -2,6 +2,7 @@ package com.ecommerce.loginmicroservice.feignInterface;
 
 import com.ecommerce.loginmicroservice.constants.MicroServiceConstants;
 import com.ecommerce.loginmicroservice.constants.MicroServiceConstants.*;
+import com.ecommerce.loginmicroservice.exceptionHandler.DataDuplicationException;
 import com.ecommerce.loginmicroservice.requestDTO.ClientRequestDTO;
 import com.ecommerce.loginmicroservice.requestDTO.RegisterRequestDTO;
 import com.ecommerce.loginmicroservice.responseDTO.ClientResponseDTO;
@@ -25,5 +26,5 @@ public interface ClientInterface {
     void updateClient(@RequestBody ClientResponseDTO responseDTO);
 
     @RequestMapping(value = ClientMicroServiceConstants.SAVE, method = POST)
-    void saveClient(@RequestBody RegisterRequestDTO requestDTO, @RequestHeader(value= REFERER_HEADER) String referer);
+    void saveClient(@RequestBody RegisterRequestDTO requestDTO, @RequestHeader(value= REFERER_HEADER) String referer) throws DataDuplicationException;
 }
