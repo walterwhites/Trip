@@ -2,6 +2,7 @@ package com.ecommerce.clientui.controller;
 
 import com.ecommerce.clientui.beans.AdventureBean;
 import com.ecommerce.clientui.beans.ClientBean;
+import com.ecommerce.clientui.beans.PaymentBean;
 import com.ecommerce.clientui.exception.CustomException;
 import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
@@ -28,6 +29,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
+import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
@@ -181,6 +184,53 @@ public class ClientController {
             return new ModelAndView("redirect:/login");
         }
         return new ModelAndView("account/index", model);
+    }
+
+    @RequestMapping("/commands/{id}")
+    public ModelAndView commands(ModelMap model, @PathVariable("id") int id, HttpServletRequest request) {
+        try {
+            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+            PaymentBean paymentBean = new PaymentBean(id, "23423482348284", 100, 1, 1, "in progress", new Date());
+            model.addAttribute("payment", paymentBean);
+        } catch (UnauthorisedException unauthorisedException) {
+            return new ModelAndView("redirect:/login");
+        }
+        return new ModelAndView("commands/detail", model);
+    }
+
+    @RequestMapping("/commands")
+    public ModelAndView commands(ModelMap model) {
+        try {
+            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+            PaymentBean paymentBean = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean2 = new PaymentBean(2, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean3 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean4 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean5 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean6 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean7 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean8 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean9 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean10 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean11 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "paid", new Date());
+
+            List<PaymentBean> paymentBeans  = new LinkedList<>();
+            paymentBeans.add(paymentBean);
+            paymentBeans.add(paymentBean2);
+            paymentBeans.add(paymentBean3);
+            paymentBeans.add(paymentBean4);
+            paymentBeans.add(paymentBean5);
+            paymentBeans.add(paymentBean6);
+            paymentBeans.add(paymentBean7);
+            paymentBeans.add(paymentBean8);
+            paymentBeans.add(paymentBean9);
+            paymentBeans.add(paymentBean10);
+            paymentBeans.add(paymentBean11);
+            model.addAttribute("payments", paymentBeans);
+        } catch (UnauthorisedException unauthorisedException) {
+            return new ModelAndView("redirect:/login");
+        }
+        return new ModelAndView("commands/index", model);
     }
 
     @RequestMapping("/logout")

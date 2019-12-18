@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Command detail - Wild Adventures</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/payment.css}"/>
+</head>
+<body id="page-top">
+    <header lang="en" th:replace="fragments/header :: header"></header>
+    <nav lang="en" th:replace="fragments/nav :: nav"></nav>
+
+    <div class="payment-page">
+    <div class="page-header header-filter" data-parallax="true" style="background-image:url('http://wallpapere.org/wp-content/uploads/2012/02/black-and-white-city-night.png');"></div>
+    <div class="main main-raised">
+        <div class="command-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 ml-auto mr-auto">
+                        <div class="payment">
+                            <div class="avatar">
+                                <img th:src="@{/img/basket.png}" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                            </div>
+                                <div class="name">
+                                    <h3 class="title" th:text="'My command ' + ${payment.getCommandId()}">My command</h3>
+                                    <p class="panel-heading">
+                                        Detail of your command
+                                    </p>
+                                </div>
+                                <!-- /.row -->
+                                <div class="row" id="detail-block">
+                                    <div class="card mb-3 mt-auto">
+                                        <div class="card-body">
+                                            <img class="card-img-top" id="img-top" src="https://culturecdn.fra1.cdn.digitaloceanspaces.com//2016/02/ccs_5437-700x467.jpg" alt="Adventure card">
+                                            <h5 class="card-title" th:text="${payment.getAdventureId()}">Title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer lang="en" th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>
