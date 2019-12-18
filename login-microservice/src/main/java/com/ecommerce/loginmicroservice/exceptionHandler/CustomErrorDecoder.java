@@ -1,9 +1,9 @@
-package com.ecommerce.clientui.exception;
+package com.ecommerce.loginmicroservice.exceptionHandler;
 
 import feign.Response;
 import feign.codec.ErrorDecoder;
-import static com.ecommerce.clientui.constants.ErrorMessage.DataDuplication.*;
-import static com.ecommerce.clientui.constants.ErrorMessage.MissingField.*;
+import static com.ecommerce.loginmicroservice.constants.ErrorMessageConstants.DataDuplication.*;
+import static com.ecommerce.loginmicroservice.constants.ErrorMessageConstants.MissingField.*;
 
 public class CustomErrorDecoder implements ErrorDecoder {
 
@@ -15,24 +15,7 @@ public class CustomErrorDecoder implements ErrorDecoder {
     public Exception decode(String s, Response response) {
 
         this.response = response;
-
-        if (response.body() != null) {
-            this.responseBody = response.body().toString();
-        }
-
-        if (response.status() == 404 && s.contains("MicroserviceAdventureProxy")) {
-            return new AdventureNotFoundException("Adventure not found");
-        } else if (response.status() == 404 && s.contains("MicroserviceLoginProxy")) {
-            return new ClientNotFoundException("Client not found");
-        }
-
-        if (response.status() == 403) {
-            return new UnauthorisedException("Access denied", "Access denied, zuul server responds 403");
-        }
-
-        if (response.status() == 401) {
-            return new UnauthorisedException("Access denied, not authentified", "Access denied, zuul server responds 401");
-        }
+        this.responseBody = response.body().toString();
 
         Exception checkDataDuplicationExceptionUsername = checkDataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);
         if (checkDataDuplicationExceptionUsername != null) return checkDataDuplicationExceptionUsername;

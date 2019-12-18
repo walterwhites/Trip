@@ -4,13 +4,11 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Component;
 
 @Data
 @Configuration
-@Component
 @ConfigurationProperties(prefix = "client")
-@PropertySource("classpath:startup.properties")
+@PropertySource(value = "classpath:startup.properties", ignoreResourceNotFound=true)
 public class StartupProperties {
 
     private String username;
@@ -23,3 +21,4 @@ public class StartupProperties {
     private Integer loginAttempt;
     private Long profileId;
 }
+

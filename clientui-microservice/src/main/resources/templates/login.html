@@ -14,7 +14,18 @@
         <div id="message">
             <div style="padding: 5px;" class="centered">
                 <div id="errorLoginAlert" class="alert alert alert-danger alert-dismissible fade show">
-                    <strong>Error!</strong> Wrong username or password
+                    <strong>Error!</strong> <p th:text="${error}"></p>
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:if="${success}">
+        <!-- Error Alert -->
+        <div id="message">
+            <div style="padding: 5px;" class="centered">
+                <div id="successLoginAlert" class="alert alert alert-success alert-dismissible fade show">
+                    <p th:text="${success}"></p>
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
                 </div>
             </div>
@@ -47,7 +58,7 @@
             </div>
             <div class="card-footer">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account?<a href="#">Sign Up</a>
+                    Don't have an account?<a th:href="@{/register}">Sign Up</a>
                 </div>
                 <div class="d-flex justify-content-center">
                     <a href="#">Forgot your password?</a>

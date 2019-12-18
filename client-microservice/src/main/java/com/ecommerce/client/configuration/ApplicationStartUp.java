@@ -4,6 +4,7 @@ import com.ecommerce.client.model.Client;
 import com.ecommerce.client.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Component;
@@ -13,6 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
+@EnableConfigurationProperties(StartupProperties.class)
 public class ApplicationStartUp {
 
     @Autowired

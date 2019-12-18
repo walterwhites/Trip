@@ -7,5 +7,6 @@ public class MicroServiceConstants {
         String BASE = "client-microservice";
         String SEARCH_CLIENT = "/search";
         String UPDATE_CLIENT = "/update";
+        String SAVE = "/save";
     }
 }

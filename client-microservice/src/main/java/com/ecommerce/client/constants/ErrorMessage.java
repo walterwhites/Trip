@@ -1,11 +1,6 @@
-package com.ecommerce.clientui.constants;
+package com.ecommerce.client.constants;
 
 public class ErrorMessage {
-    public interface TokenInvalid {
-        String DEVELOPER_MESSAGE= "Request not authorized.";
-        String MESSAGE ="Unmatched JWT token.";
-    }
-
     public interface DataDuplication {
         String DUPLICATE_USERNAME_MESSAGE = "Username already taken";
         String DUPLICATE_EMAILADDRESS_MESSAGE = "Email address already taken";

@@ -1,6 +1,7 @@
 package com.ecommerce.loginmicroservice.service.impl;
 
 import com.ecommerce.loginmicroservice.constants.PatternConstants;
+import com.ecommerce.loginmicroservice.exceptionHandler.MissingFieldException;
 import com.ecommerce.loginmicroservice.exceptionHandler.UnauthorisedException;
 import com.ecommerce.loginmicroservice.feignInterface.ClientInterface;
 import com.ecommerce.loginmicroservice.jwt.JwtTokenProvider;
@@ -12,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import javax.servlet.http.HttpServletRequest;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -20,6 +20,8 @@ import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import com.ecommerce.loginmicroservice.constants.ErrorMessageConstants.*;
+
+import static com.ecommerce.loginmicroservice.constants.ErrorMessageConstants.MissingField.*;
 import static com.ecommerce.loginmicroservice.constants.SecurityConstants.REFERER_HEADER;
 
 @Service
@@ -37,6 +39,7 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public String login(LoginRequestDTO requestDTO, HttpServletRequest request) throws RuntimeException {
         this.request = request;
+        validateFields.accept(requestDTO);
         ClientResponseDTO client = fetchClientDetails.apply(requestDTO);
         validateClientStatus.accept(client);
         validatePassword.accept(requestDTO, client);
@@ -73,6 +76,14 @@ public class LoginServiceImpl implements LoginService {
             clientInterface.updateClient(client);
         } else {
             throw new UnauthorisedException(InvalidCredentials.MESSAGE, ForgetPassword.DEVELOPER_MESSAGE);
+        }
+    };
+
+    private Consumer<LoginRequestDTO> validateFields = (requestDTO) -> {
+        if (requestDTO.getUsername() == null) {
+            throw new MissingFieldException(MISSING_USERNAME_MESSAGE, MISSING_USERNAME_MESSAGE);
+        } else if (requestDTO.getPassword() == null) {
+            throw new MissingFieldException(MISSING_PASSWORD_MESSAGE, MISSING_PASSWORD_MESSAGE);
         }
     };
 
