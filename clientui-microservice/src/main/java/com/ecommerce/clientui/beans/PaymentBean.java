@@ -2,6 +2,8 @@ package com.ecommerce.clientui.beans;
 
 import lombok.Getter;
 import lombok.Setter;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Getter
@@ -14,7 +16,7 @@ public class PaymentBean {
 
     private Integer amount;
 
-    private Date paymentDate;
+    private LocalDateTime paymentDate;
 
     private String state;
 
@@ -25,7 +27,7 @@ public class PaymentBean {
     public PaymentBean() {
     }
 
-    public PaymentBean(int id, String commandId, Integer amount, int clientId, int adventureId, String state, Date paymentDate) {
+    public PaymentBean(int id, String commandId, Integer amount, int clientId, int adventureId, String state, LocalDateTime paymentDate) {
         this.id = id;
         this.commandId = commandId;
         this.amount = amount;
@@ -59,11 +61,11 @@ public class PaymentBean {
         this.amount = amount;
     }
 
-    public Date getPaymentDate() {
+    public LocalDateTime getPaymentDate() {
         return paymentDate;
     }
 
-    public void setPaymentDate(Date paymentDate) {
+    public void setPaymentDate(LocalDateTime paymentDate) {
         this.paymentDate = paymentDate;
     }
 

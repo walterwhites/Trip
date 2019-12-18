@@ -10,25 +10,23 @@ import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
 import com.ecommerce.clientui.service.impl.ClientServiceImpl;
 import com.ecommerce.clientui.utils.CookiesUtils;
-import com.thoughtworks.xstream.converters.reflection.MissingFieldException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.annotation.PostConstruct;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -190,7 +188,7 @@ public class ClientController {
     public ModelAndView commands(ModelMap model, @PathVariable("id") int id, HttpServletRequest request) {
         try {
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-            PaymentBean paymentBean = new PaymentBean(id, "23423482348284", 100, 1, 1, "in progress", new Date());
+            PaymentBean paymentBean = new PaymentBean(id, "23423482348284", 100, 1, 1, "in progress", LocalDateTime.now());
             model.addAttribute("payment", paymentBean);
         } catch (UnauthorisedException unauthorisedException) {
             return new ModelAndView("redirect:/login");
@@ -202,17 +200,17 @@ public class ClientController {
     public ModelAndView commands(ModelMap model) {
         try {
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-            PaymentBean paymentBean = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean2 = new PaymentBean(2, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean3 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean4 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean5 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean6 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean7 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean8 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean9 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean10 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", new Date());
-            PaymentBean paymentBean11 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "paid", new Date());
+            PaymentBean paymentBean = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean2 = new PaymentBean(2, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean3 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean4 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean5 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean6 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean7 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean8 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean9 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean10 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+            PaymentBean paymentBean11 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "paid", LocalDateTime.now());
 
             List<PaymentBean> paymentBeans  = new LinkedList<>();
             paymentBeans.add(paymentBean);

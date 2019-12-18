@@ -53,7 +53,8 @@
                                                     th:alt-title="${iStat.even}? 'even' : 'odd'">
                                                     <td th:text="${payment.getCommandId()}"></td>
                                                     <td th:text="${payment.getState()}"></td>
-                                                    <td th:text="|${payment.getPaymentDate().getDay()}/${payment.getPaymentDate().getMonth()}/${payment.getPaymentDate().getYear() + 1900}|"></td>
+                                                    <td th:text="|${payment.getPaymentDate().getDayOfWeek()} ${payment.getPaymentDate().getMonth()} ${payment.getPaymentDate().getYear()} to
+                                                        ${payment.getPaymentDate().toLocalTime().getHour()} ${payment.getPaymentDate().toLocalTime().getMinute()}|"></td>
                                                     <td th:text="${payment.getAdventureId()}"></td>
                                                     <td th:text="${payment.getAmount()}"></td>
                                                     <td><a th:href="@{'/commands/' + ${payment.getId()}}"><button class="btn success" type="submit">Edit this command</button></a></td>
