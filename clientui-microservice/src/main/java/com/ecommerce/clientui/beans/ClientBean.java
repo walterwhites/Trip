@@ -3,6 +3,7 @@ package com.ecommerce.clientui.beans;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -29,6 +30,7 @@ public class ClientBean implements Serializable {
     private String fullName;
 
     @Size(min = 6, max = 80, message = "Email must be between 6 and 80 characters")
+    @Email(message = "Email should be valid")
     private String emailAddress;
 
     private Long profileId;

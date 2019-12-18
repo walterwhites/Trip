@@ -117,13 +117,17 @@ public class ClientController {
     }
 
     @RequestMapping(value = "/register", method = POST)
-    public ModelAndView register(@Valid @ModelAttribute("register") @Validated ClientBean clientBean, BindingResult bindingResult, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+    public ModelAndView register(@Valid @ModelAttribute("register") @Validated ClientBean clientBean, BindingResult bindingResult, ModelMap model, HttpServletRequest request, @RequestParam("confirm_password") String confirmPassword) {
         if (bindingResult.hasErrors()) {
             var error = new Object() {
                 String message = "";
             };
-            bindingResult.getFieldErrors().forEach(f -> error.message += f.getField() + ": " + f.getDefaultMessage() + "\n");
+            bindingResult.getFieldErrors().forEach(f -> error.message += f.getField() + ": " + f.getDefaultMessage() + "<br/>");
             model.addAttribute("error", error.message);
+            return new ModelAndView("register", model);
+        }
+        if (clientBean.getPassword() != null && confirmPassword != null && !clientBean.getPassword().equals(confirmPassword)) {
+            model.addAttribute("error", "2 passwords are differents");
             return new ModelAndView("register", model);
         }
         try {
@@ -137,8 +141,16 @@ public class ClientController {
     }
 
     @RequestMapping(value = "/login", method = POST)
-    public ModelAndView login(@Valid @ModelAttribute("login") ClientBean clientBean, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
+    public ModelAndView login(@Valid @ModelAttribute("login") @Validated ClientBean clientBean, BindingResult bindingResult, ModelMap model, HttpServletRequest request, HttpServletResponse response) {
         try {
+            if (bindingResult.hasErrors()) {
+                var error = new Object() {
+                    String message = "";
+                };
+                bindingResult.getFieldErrors().forEach(f -> error.message += f.getField() + ": " + f.getDefaultMessage() + "\n");
+                model.addAttribute("error", error.message);
+                return new ModelAndView("login", model);
+            }
             if (CookiesUtils.getCookie(request, JWT_COOKIE) != null)  {
                 CookiesUtils.removeCookie(JWT_COOKIE, response);
             }
