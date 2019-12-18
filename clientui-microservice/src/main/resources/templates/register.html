@@ -14,7 +14,7 @@
         <div id="message">
             <div style="padding: 5px;" class="centered">
                 <div id="errorLoginAlert" class="alert alert alert-danger alert-dismissible fade show">
-                    <strong>Error!</strong> Wrong username or password
+                    <strong>Error!</strong> <p th:text="${error}"></p>
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
                 </div>
             </div>

@@ -6,15 +6,16 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 @Setter
-public class UnauthorisedException extends CustomException {
+public class MissingFieldException extends CustomException {
+    private ErrorResponse errorResponse;
 
-    public UnauthorisedException(String message, String developerMessage) {
+    public MissingFieldException(String message, String developerMessage) {
         super(message);
 
         errorResponse = new ErrorResponse();
 
         errorResponse.setDeveloperMsg(developerMessage);
         errorResponse.setErrorMsg(message);
-        errorResponse.setStatus(HttpStatus.UNAUTHORIZED);
+        errorResponse.setStatus(HttpStatus.UNPROCESSABLE_ENTITY);
     }
 }
