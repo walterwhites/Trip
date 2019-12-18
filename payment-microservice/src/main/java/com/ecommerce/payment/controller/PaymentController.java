@@ -18,7 +18,7 @@ public class PaymentController {
     @PostMapping(value = "/payment")
     public ResponseEntity<Payment>  paidCommand(@RequestBody Payment payment){
 
-        Payment paymentExist = paymentDao.findByIdCommand(payment.getIdCommand());
+        Payment paymentExist = paymentDao.findById(payment.getId());
         if(paymentExist != null) throw new PaymentAlreadyExistException("This command is already paid");
 
         Payment newPayment = paymentDao.save(payment);
@@ -30,8 +30,5 @@ public class PaymentController {
         return new ResponseEntity<Payment>(newPayment, HttpStatus.CREATED);
 
     }
-
-
-
 
 }

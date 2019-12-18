@@ -14,24 +14,27 @@ public class Payment {
     private int id;
 
     @Column(unique = true)
-    private Integer idCommand;
+    private String commandId;
 
     private Integer amount;
-
-    private Long cardNumber;
 
     private Date paymentDate;
 
     private String state;
 
+    private int clientId;
+
+    private int adventureId;
+
     public Payment() {
     }
 
-    public Payment(int id, Integer idCommand, Integer amount, Long cardNumber) {
+    public Payment(int id, String commandId, Integer amount, int clientId, int adventureId) {
         this.id = id;
-        this.idCommand = idCommand;
+        this.commandId = commandId;
         this.amount = amount;
-        this.cardNumber = cardNumber;
+        this.clientId = clientId;
+        this.adventureId = adventureId;
     }
 
     public int getId() {
@@ -42,12 +45,12 @@ public class Payment {
         this.id = id;
     }
 
-    public Integer getIdCommand() {
-        return idCommand;
+    public String getCommandId() {
+        return commandId;
     }
 
-    public void setIdCommand(Integer idCommand) {
-        this.idCommand = idCommand;
+    public void setCommandId(String commandId) {
+        this.commandId = commandId;
     }
 
     public Integer getAmount() {
@@ -56,14 +59,6 @@ public class Payment {
 
     public void setAmount(Integer amount) {
         this.amount = amount;
-    }
-
-    public Long getCardNumber() {
-        return cardNumber;
-    }
-
-    public void setCardNumber(Long cardNumber) {
-        this.cardNumber = cardNumber;
     }
 
     public Date getPaymentDate() {
@@ -82,15 +77,32 @@ public class Payment {
         this.state = state;
     }
 
+    public int getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(int clientId) {
+        this.clientId = clientId;
+    }
+
+    public int getAdventureId() {
+        return adventureId;
+    }
+
+    public void setAdventureId(int adventureId) {
+        this.adventureId = adventureId;
+    }
+
     @Override
     public String toString() {
         return "Payment{" +
                 "id=" + id +
-                ", idCommand=" + idCommand +
+                ", commandId=" + commandId +
                 ", amount=" + amount +
-                ", cardNumber=" + cardNumber +
                 ", paymentDate=" + paymentDate +
                 ", state='" + state + '\'' +
+                ", clientId=" + clientId +
+                ", adventureId=" + adventureId +
                 '}';
     }
 }
