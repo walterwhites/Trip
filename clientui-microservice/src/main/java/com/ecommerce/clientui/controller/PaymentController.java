@@ -63,6 +63,8 @@ public class PaymentController {
     public String adventures(Model model, @PathVariable("id") int id, HttpServletRequest request) {
         try {
             AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
+            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+            model.addAttribute("email", clientResponseDTO.get().getEmailAddress());
             model.addAttribute("adventure", adventure);
             model.addAttribute("amount", adventure.getPrice()); // in cents
             model.addAttribute("stripePublicKey", stripePublicKey);
@@ -74,9 +76,8 @@ public class PaymentController {
     }
 
     @RequestMapping("/commands/{id}")
-    public ModelAndView commands(ModelMap model, @PathVariable("id") int id, HttpServletRequest request) {
+    public ModelAndView commands(ModelMap model, @PathVariable("id") int id) {
         try {
-            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
             PaymentBean paymentBean = new PaymentBean(id, "23423482348284", 100, 1, 1, "in progress", LocalDateTime.now());
             model.addAttribute("payment", paymentBean);
         } catch (UnauthorisedException unauthorisedException) {
