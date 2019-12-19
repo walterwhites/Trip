@@ -37,11 +37,11 @@ public class ChargeController {
     }
 
     @PostMapping("/charge")
-    public String charge(ChargeRequest chargeRequest, Model model, @RequestParam String email) throws StripeException {
+    public String charge(ChargeRequest chargeRequest, Model model, @RequestParam String email, @RequestParam String name, @RequestParam String adventure) throws StripeException {
 
-        chargeRequest.setDescription("Example charge");
+        chargeRequest.setDescription("Book adventure: " + adventure);
         chargeRequest.setCurrency(ChargeRequest.Currency.EUR);
-        Customer customer = paymentsService.createCustomer(email);
+        Customer customer = paymentsService.createCustomer(email, name);
         Card card = paymentsService.createAcard(customer, chargeRequest.getStripeToken());
         Charge charge = paymentsService.charge(chargeRequest, customer.getId(), card);
 

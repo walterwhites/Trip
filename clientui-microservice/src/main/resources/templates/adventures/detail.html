@@ -23,8 +23,10 @@
                 </div>
                 <form action='/charge' method='POST' id='checkout-form'>
                     <input type='hidden' th:value='${amount}' name='amount' />
-                    <input type='hidden' th:value='${email}' name='email' />
-                    <input type="submit" th:value="|Book for ${adventure.price} $|" class="btn btn-success d-inline-block w-25"/>
+                    <input type='hidden' th:value='${client.getFirstname() + " " + client.getLastname()}' name='name' />
+                    <input type='hidden' th:value='${client.getEmailAddress()}' name='email' />
+                    <input type='hidden' th:value='${adventure.getName()}' name='adventure' />
+                    <input type="submit" th:value="|Book for ${adventure.price} €|" class="btn btn-success d-inline-block w-25"/>
                     <!-- NOTE: data-key/data-amount/data-currency will be rendered by Thymeleaf -->
                     <script
                             src='https://checkout.stripe.com/checkout.js'

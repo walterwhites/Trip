@@ -6,6 +6,7 @@ import com.stripe.exception.StripeException;
 import com.stripe.model.Card;
 import com.stripe.model.Charge;
 import com.stripe.model.Customer;
+import com.stripe.model.CustomerCollection;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -34,14 +35,22 @@ public class StripeService {
         return Charge.create(chargeParams);
     }
 
-    public Customer createCustomer(String email) {
+    public Customer createCustomer(String email, String name) throws StripeException {
+        Map<String, Object> params = new HashMap<>();
+        params.put("limit", 1);
+        params.put("email", email);
+        CustomerCollection customers = Customer.list(params);
         Customer customer = null;
+        if (customers.getData().size() != 0) {
+            return customers.getData().get(0);
+        }
         try {
             Stripe.apiKey = secretKey;
             Map<String, Object> customerParams = new HashMap<>();
             // add customer unique id here to track them in your web application
             customerParams.put("description", "Customer for " + email);
             customerParams.put("email", email);
+            customerParams.put("name", name);
 
             //create a new customer
             customer = Customer.create(customerParams);

@@ -64,9 +64,9 @@ public class PaymentController {
         try {
             AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-            model.addAttribute("email", clientResponseDTO.get().getEmailAddress());
+            model.addAttribute("client", clientResponseDTO.get());
             model.addAttribute("adventure", adventure);
-            model.addAttribute("amount", adventure.getPrice()); // in cents
+            model.addAttribute("amount", adventure.getPrice() * 100); // Stripe payment in cents
             model.addAttribute("stripePublicKey", stripePublicKey);
             model.addAttribute("currency", ChargeRequest.Currency.EUR);
         } catch (UnauthorisedException unauthorisedException) {
