@@ -2,6 +2,8 @@ package com.ecommerce.clientui.exception;
 
 import feign.Response;
 import feign.codec.ErrorDecoder;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
+
 import static com.ecommerce.clientui.constants.ErrorMessage.DataDuplication.*;
 import static com.ecommerce.clientui.constants.ErrorMessage.MissingField.*;
 
@@ -32,6 +34,10 @@ public class CustomErrorDecoder implements ErrorDecoder {
 
         if (response.status() == 401) {
             return new UnauthorisedException("Access denied, not authentified", "Access denied, zuul server responds 401");
+        }
+
+        if (response.status() == 405) {
+            return new HttpRequestMethodNotSupportedException(response.request().httpMethod().name());
         }
 
         Exception checkDataDuplicationExceptionUsername = checkDataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);
