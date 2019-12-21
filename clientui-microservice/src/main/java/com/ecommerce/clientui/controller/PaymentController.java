@@ -65,63 +65,55 @@ public class PaymentController {
 
     @RequestMapping("/adventures/{id}")
     public String adventures(Model model, @PathVariable("id") int id, HttpServletRequest request) {
-        try {
-            AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
-            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-            model.addAttribute("client", clientResponseDTO.get());
-            model.addAttribute("adventure", adventure);
-            model.addAttribute("amount", adventure.getPrice() * 100); // Stripe payment in cents
-            model.addAttribute("stripePublicKey", stripePublicKey);
-            model.addAttribute("currency", ChargeRequest.Currency.EUR);
-        } catch (UnauthorisedException unauthorisedException) {
-            return "redirect:/login";
-        }
+
+        AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
+        Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+        model.addAttribute("client", clientResponseDTO.get());
+        model.addAttribute("adventure", adventure);
+        model.addAttribute("amount", adventure.getPrice() * 100); // Stripe payment in cents
+        model.addAttribute("stripePublicKey", stripePublicKey);
+        model.addAttribute("currency", ChargeRequest.Currency.EUR);
         return "adventures/detail";
     }
 
     @RequestMapping("/commands/{id}")
     public ModelAndView commands(ModelMap model, @PathVariable("id") int id) {
-        try {
-            PaymentBean paymentBean = new PaymentBean(id, "23423482348284", 100, 1, 1, "in progress", LocalDateTime.now());
-            model.addAttribute("payment", paymentBean);
-        } catch (UnauthorisedException unauthorisedException) {
-            return new ModelAndView("redirect:/login");
-        }
+
+        Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+        PaymentBean paymentBean = new PaymentBean(id, "23423482348284", 100, 1, 1, "in progress", LocalDateTime.now());
+        model.addAttribute("payment", paymentBean);
         return new ModelAndView("commands/detail", model);
     }
 
     @RequestMapping("/commands")
     public ModelAndView commands(ModelMap model) {
-        try {
-            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-            PaymentBean paymentBean = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean2 = new PaymentBean(2, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean3 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean4 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean5 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean6 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean7 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean8 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean9 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean10 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-            PaymentBean paymentBean11 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "paid", LocalDateTime.now());
 
-            List<PaymentBean> paymentBeans  = new LinkedList<>();
-            paymentBeans.add(paymentBean);
-            paymentBeans.add(paymentBean2);
-            paymentBeans.add(paymentBean3);
-            paymentBeans.add(paymentBean4);
-            paymentBeans.add(paymentBean5);
-            paymentBeans.add(paymentBean6);
-            paymentBeans.add(paymentBean7);
-            paymentBeans.add(paymentBean8);
-            paymentBeans.add(paymentBean9);
-            paymentBeans.add(paymentBean10);
-            paymentBeans.add(paymentBean11);
-            model.addAttribute("payments", paymentBeans);
-        } catch (UnauthorisedException unauthorisedException) {
-            return new ModelAndView("redirect:/login");
-        }
+        Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+        PaymentBean paymentBean = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean2 = new PaymentBean(2, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean3 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean4 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean5 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean6 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean7 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean8 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean9 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean10 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentBean paymentBean11 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "paid", LocalDateTime.now());
+
+        List<PaymentBean> paymentBeans  = new LinkedList<>();
+        paymentBeans.add(paymentBean);
+        paymentBeans.add(paymentBean2);
+        paymentBeans.add(paymentBean3);
+        paymentBeans.add(paymentBean4);
+        paymentBeans.add(paymentBean5);
+        paymentBeans.add(paymentBean6);
+        paymentBeans.add(paymentBean7);
+        paymentBeans.add(paymentBean8);
+        paymentBeans.add(paymentBean9);
+        paymentBeans.add(paymentBean10);
+        paymentBeans.add(paymentBean11);
+        model.addAttribute("payments", paymentBeans);
         return new ModelAndView("commands/index", model);
     }
 }

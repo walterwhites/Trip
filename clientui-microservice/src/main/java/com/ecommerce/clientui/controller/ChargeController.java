@@ -1,7 +1,9 @@
 package com.ecommerce.clientui.controller;
 
 import com.ecommerce.clientui.beans.ChargeRequest;
+import com.ecommerce.clientui.exception.BadRequestException;
 import com.ecommerce.clientui.exception.CustomException;
+import com.ecommerce.clientui.exception.MethodNotSupportedException;
 import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroservicePaymentProxy;
 import com.ecommerce.clientui.requestDTO.ChargeRequestDTO;
@@ -50,11 +52,7 @@ public class ChargeController {
             model.addAttribute("status", chargeResponseDTO.get().getStatus());
             model.addAttribute("chargeId", chargeResponseDTO.get().getId());
             model.addAttribute("balance_transaction", chargeResponseDTO.get().getBalance_transaction());
-        }
-        catch (StripeException stripeException) {
-            System.out.println("fdsfsdfsfs " + stripeException.getMessage());
-        }
-        catch (UnauthorisedException unauthorisedException) {
+        } catch (UnauthorisedException unauthorisedException) {
             return "redirect:/login";
         }
         return "commands/result";

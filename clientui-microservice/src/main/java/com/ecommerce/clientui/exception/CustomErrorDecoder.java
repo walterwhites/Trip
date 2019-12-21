@@ -29,15 +29,19 @@ public class CustomErrorDecoder implements ErrorDecoder {
         }
 
         if (response.status() == 403) {
-            return new UnauthorisedException("Access denied", "Access denied, zuul server responds 403");
+            return new UnauthorisedException(responseBody, "Access denied, zuul server responds 403");
         }
 
         if (response.status() == 401) {
-            return new UnauthorisedException("Access denied, not authentified", "Access denied, zuul server responds 401");
+            return new UnauthorisedException(responseBody, "Access denied, zuul server responds 401");
         }
 
         if (response.status() == 405) {
-            return new HttpRequestMethodNotSupportedException(response.request().httpMethod().name());
+            return new MethodNotSupportedException(responseBody, "Method not valid");
+        }
+
+        if (response.status() == 400) {
+            return new BadRequestException(responseBody, "The request is not valid");
         }
 
         Exception checkDataDuplicationExceptionUsername = checkDataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);

@@ -81,12 +81,8 @@ public class ClientController {
 
     @RequestMapping("/adventures")
     public String adventures(Model model, HttpServletRequest request) {
-        try {
-            List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
-            model.addAttribute("adventures", adventures);
-        } catch (UnauthorisedException unauthorisedException) {
-            return "redirect:/login";
-        }
+        List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
+        model.addAttribute("adventures", adventures);
         return "adventures/list";
     }
 
@@ -158,12 +154,8 @@ public class ClientController {
 
     @RequestMapping("/account")
     public ModelAndView account(ModelMap model) {
-        try {
-            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-            model.addAttribute("client", clientResponseDTO.get());
-        } catch (UnauthorisedException unauthorisedException) {
-            return new ModelAndView("redirect:/login");
-        }
+        Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+        model.addAttribute("client", clientResponseDTO.get());
         return new ModelAndView("account/index", model);
     }
 

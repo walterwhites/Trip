@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error - Wild Adventure</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/errors.css}"/>
+</head>
+
+<body id="page-top">
+<header lang="en" th:replace="fragments/header :: header"></header>
+
+<img id="logo" th:src="@{/img/400.png}" alt="">
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">You try to do something wrong</h2>
+                <a th:href="@{/}"><h3 id="gold">Return to the home</h3></a>
+            </div>
+        </div>
+        <img src="img/ipad.png" class="img-fluid" alt="">
+    </div>
+</section>
+</body>
+</html>

@@ -7,15 +7,15 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 @Setter
-public class UnauthorisedException extends CustomException {
+public class BadRequestException extends CustomException {
 
-    public UnauthorisedException(String message, String developerMessage) {
+    public BadRequestException(String message, String developerMessage) {
         super(message);
 
         errorResponse = new ErrorResponse();
 
         errorResponse.setDeveloperMsg(developerMessage);
         errorResponse.setErrorMsg(message);
-        errorResponse.setStatus(HttpStatus.UNAUTHORIZED);
+        errorResponse.setStatus(HttpStatus.BAD_REQUEST);
     }
 }
