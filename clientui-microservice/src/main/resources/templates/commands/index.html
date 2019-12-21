@@ -54,7 +54,7 @@
                                                     <td th:text="${payment.getCommandId()}"></td>
                                                     <td th:text="${payment.getState()}"></td>
                                                     <td th:text="|${#temporals.format(payment.getPaymentDate(), 'dd-MM-yyyy hh:mm a')}|"></td>
-                                                    <td th:text="${payment.getAdventureId()}"></td>
+                                                    <td th:text="${payment.getAdventure()}"></td>
                                                     <td th:text="${payment.getAmount()}"></td>
                                                     <td><a th:href="@{'/commands/' + ${payment.getId()}}"><button class="btn success" type="submit">Edit this command</button></a></td>
                                                 </tr>

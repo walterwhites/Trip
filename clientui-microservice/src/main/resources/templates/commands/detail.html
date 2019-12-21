@@ -31,9 +31,12 @@
                                     <div class="card mb-3 mt-auto">
                                         <div class="card-body">
                                             <img class="card-img-top" id="img-top" src="https://culturecdn.fra1.cdn.digitaloceanspaces.com//2016/02/ccs_5437-700x467.jpg" alt="Adventure card">
-                                            <h5 class="card-title" th:text="${payment.getAdventureId()}">Title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                            <h5 class="card-title" th:text="${payment.getAdventure()}">Title</h5>
+                                            <p class="card-text" th:text="'Command id:' + ${payment.getCommandId()}">Command Id</p>
+                                            <p class="card-text" th:text="'Command state:' + ${payment.getState()}">Command state</p>
+                                            <p class="card-text" th:text="'Adventure:' + ${payment.getAdventure()}">Adventure</p>
+                                            <p class="card-text" th:text="'Payment amount:' + ${payment.getAmount()}">Payment's amount</p>
+                                            <p class="card-text"><small class="text-muted" th:text="${payment.getPaymentDate()}">Payment date</small></p>
                                         </div>
                                     </div>
                                 </div>

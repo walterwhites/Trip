@@ -8,6 +8,8 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
+
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -32,11 +34,11 @@ public class ApplicationStartUp {
     public Payment savePayment() {
         Payment payment = new Payment();
         payment.setClientId(startupProperties.getClientId());
-        payment.setAdventureId(startupProperties.getAdventureId());
+        payment.setAdventure(startupProperties.getAdventure());
         payment.setAmount(startupProperties.getAmount());
         payment.setState(startupProperties.getState());
         payment.setCommandId(startupProperties.getCommandId());
-        payment.setPaymentDate(new Date());
+        payment.setPaymentDate(LocalDateTime.now());
 
         return payment;
     }

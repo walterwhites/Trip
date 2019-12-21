@@ -10,87 +10,25 @@ import java.util.Date;
 @Setter
 public class PaymentBean {
 
-    private int id;
-
+    private Long id;
+    private String adventure;
+    private int amount;
+    private Long clientId;
     private String commandId;
-
-    private Integer amount;
-
     private LocalDateTime paymentDate;
-
     private String state;
-
-    private int clientId;
-
-    private int adventureId;
 
     public PaymentBean() {
     }
 
-    public PaymentBean(int id, String commandId, Integer amount, int clientId, int adventureId, String state, LocalDateTime paymentDate) {
+    public PaymentBean(Long id, String commandId, Integer amount, Long clientId, String adventure, String state, LocalDateTime paymentDate) {
         this.id = id;
         this.commandId = commandId;
         this.amount = amount;
         this.clientId = clientId;
-        this.adventureId = adventureId;
+        this.adventure = adventure;
         this.state = state;
         this.paymentDate = paymentDate;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getCommandId() {
-        return commandId;
-    }
-
-    public void setCommandId(String commandId) {
-        this.commandId = commandId;
-    }
-
-    public Integer getAmount() {
-        return amount;
-    }
-
-    public void setAmount(Integer amount) {
-        this.amount = amount;
-    }
-
-    public LocalDateTime getPaymentDate() {
-        return paymentDate;
-    }
-
-    public void setPaymentDate(LocalDateTime paymentDate) {
-        this.paymentDate = paymentDate;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public int getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(int clientId) {
-        this.clientId = clientId;
-    }
-
-    public int getAdventureId() {
-        return adventureId;
-    }
-
-    public void setAdventureId(int adventureId) {
-        this.adventureId = adventureId;
     }
 
     @Override
@@ -102,7 +40,7 @@ public class PaymentBean {
                 ", paymentDate=" + paymentDate +
                 ", state='" + state + '\'' +
                 ", clientId=" + clientId +
-                ", adventureId=" + adventureId +
+                ", adventure=" + adventure +
                 '}';
     }
 }

@@ -1,7 +1,10 @@
 package com.ecommerce.payment.controller;
 
 import com.ecommerce.payment.requestDTO.ChargeRequestDTO;
+import com.ecommerce.payment.responseDTO.ClientResponseDTO;
+import com.ecommerce.payment.service.ClientService;
 import com.ecommerce.payment.service.PaymentService;
+import com.ecommerce.payment.service.impl.ClientServiceImpl;
 import com.ecommerce.payment.utils.CookiesUtils;
 import com.stripe.exception.StripeException;
 import io.swagger.annotations.Api;
@@ -13,6 +16,8 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 
+import java.util.Optional;
+
 import static org.springframework.http.ResponseEntity.badRequest;
 import static org.springframework.http.ResponseEntity.ok;
 
@@ -22,10 +27,12 @@ import static org.springframework.http.ResponseEntity.ok;
 public class ChargeController {
 
     private final PaymentService paymentservice;
+    private final ClientServiceImpl clientService;
 
     @Autowired
-    public ChargeController(PaymentService paymentservice) {
+    public ChargeController(PaymentService paymentservice, ClientServiceImpl clientService) {
         this.paymentservice = paymentservice;
+        this.clientService = clientService;
     }
 
     @InitBinder
@@ -44,9 +51,10 @@ public class ChargeController {
     @PostMapping(value="charge")
     @ApiOperation(value = "Make a payment")
     @ResponseBody
-    public ResponseEntity<?> charge(@RequestBody ChargeRequestDTO chargeRequestDTO) throws StripeException {
+    public ResponseEntity<?> charge(@RequestBody ChargeRequestDTO chargeRequestDTO) {
         try {
-            return ok().body(paymentservice.charge(chargeRequestDTO));
+            Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+            return ok().body(paymentservice.charge(chargeRequestDTO, clientResponseDTO));
         } catch (StripeException stripeException) {
             return badRequest().body(stripeException.getMessage());
         }

@@ -10,12 +10,15 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface PaymentRepository extends JpaRepository<Payment, Long>, PaymentRepositoryCustom {
+public interface PaymentRepository extends JpaRepository<Payment, Integer>, PaymentRepositoryCustom {
 
-    @Query(value = "SELECT * FROM payment WHERE id = :id", nativeQuery = true)
-    Optional<Payment> getPaymentById(@Param("id") Long id);
+    @Query(value = "SELECT p FROM Payment p WHERE p.id = :id")
+    Optional<Payment> getPaymentById(@Param("id") int id);
 
     @Query(value = "SELECT * FROM payment", nativeQuery = true)
     List<Payment> fetchAllPayments();
+
+    @Query(value = "SELECT p FROM Payment p WHERE p.clientId = :client")
+    List<Payment> fetchAllClientPayments(@Param("client") Long client);
 
 }

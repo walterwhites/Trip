@@ -1,6 +1,9 @@
 package com.ecommerce.client.queries;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.ecommerce.client.requestDTO.ClientRequestDTO;
+
+import java.net.SocketOption;
 import java.util.Objects;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -26,7 +29,7 @@ public class ClientQuery {
                 " a.id!=0";
 
         if (!Objects.isNull(username))
-            query += " AND a.username= '" + username + "'";
+            query += " AND a.username= '" + username + "' OR a.email_address= '" + username + "'";
 
         return query;
     };

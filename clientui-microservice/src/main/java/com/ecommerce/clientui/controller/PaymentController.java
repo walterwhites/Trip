@@ -3,20 +3,18 @@ package com.ecommerce.clientui.controller;
 import com.ecommerce.clientui.beans.AdventureBean;
 import com.ecommerce.clientui.beans.ChargeRequest;
 import com.ecommerce.clientui.beans.PaymentBean;
-import com.ecommerce.clientui.exception.UnauthorisedException;
-import com.ecommerce.clientui.model.Client;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
 import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import com.ecommerce.clientui.proxies.MicroservicePaymentProxy;
-import com.ecommerce.clientui.requestDTO.ClientRequestDTO;
+import com.ecommerce.clientui.requestDTO.PaymentDetailRequestDTO;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
+import com.ecommerce.clientui.responseDTO.PaymentResponseDTO;
 import com.ecommerce.clientui.service.impl.ClientServiceImpl;
 import com.ecommerce.clientui.utils.CookiesUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -26,14 +24,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
-import java.time.LocalDateTime;
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
 import static com.ecommerce.clientui.constants.SecurityConstants.AUTHORIZATION_HEADER;
+import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
 
 @Controller
 public class PaymentController {
@@ -43,6 +40,9 @@ public class PaymentController {
 
     @Autowired
     MicroserviceLoginProxy microserviceLoginProxy;
+
+    @Autowired
+    MicroservicePaymentProxy microservicePaymentProxy;
 
     @Autowired
     ClientServiceImpl clientService;
@@ -77,42 +77,27 @@ public class PaymentController {
     }
 
     @RequestMapping("/commands/{id}")
-    public ModelAndView commands(ModelMap model, @PathVariable("id") int id) {
+    public ModelAndView commandDetail(ModelMap model, HttpServletRequest request, @PathVariable("id") int id) {
 
         Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-        PaymentBean paymentBean = new PaymentBean(id, "23423482348284", 100, 1, 1, "in progress", LocalDateTime.now());
+        PaymentDetailRequestDTO paymentDetailRequestDTO = new PaymentDetailRequestDTO();
+        paymentDetailRequestDTO.setClientId(clientResponseDTO.get().getId());
+        paymentDetailRequestDTO.setId(id);
+        Optional<PaymentResponseDTO> payment  = microservicePaymentProxy.paymentDetail(paymentDetailRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+        ModelMapper modelMapper = new ModelMapper();
+        PaymentBean paymentBean = modelMapper.map(payment.get(), PaymentBean.class);
         model.addAttribute("payment", paymentBean);
         return new ModelAndView("commands/detail", model);
     }
 
     @RequestMapping("/commands")
-    public ModelAndView commands(ModelMap model) {
+    public ModelAndView commands(ModelMap model, HttpServletRequest request) {
 
         Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
-        PaymentBean paymentBean = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean2 = new PaymentBean(2, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean3 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean4 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean5 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean6 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean7 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean8 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean9 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean10 = new PaymentBean(1, "dfsf", 100, 1, 1, "in progress", LocalDateTime.now());
-        PaymentBean paymentBean11 = new PaymentBean(1, "kkkkkkkkkk", 100, 1, 1, "paid", LocalDateTime.now());
+        List<PaymentResponseDTO> payments  = microservicePaymentProxy.payments(clientResponseDTO.get().getId(), request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+        ModelMapper modelMapper = new ModelMapper();
+        List<PaymentBean> paymentBeans  = Arrays.asList(modelMapper.map(payments, PaymentBean[].class));
 
-        List<PaymentBean> paymentBeans  = new LinkedList<>();
-        paymentBeans.add(paymentBean);
-        paymentBeans.add(paymentBean2);
-        paymentBeans.add(paymentBean3);
-        paymentBeans.add(paymentBean4);
-        paymentBeans.add(paymentBean5);
-        paymentBeans.add(paymentBean6);
-        paymentBeans.add(paymentBean7);
-        paymentBeans.add(paymentBean8);
-        paymentBeans.add(paymentBean9);
-        paymentBeans.add(paymentBean10);
-        paymentBeans.add(paymentBean11);
         model.addAttribute("payments", paymentBeans);
         return new ModelAndView("commands/index", model);
     }
