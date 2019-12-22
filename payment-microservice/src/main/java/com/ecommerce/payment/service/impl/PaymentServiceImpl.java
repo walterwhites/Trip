@@ -63,6 +63,7 @@ public class PaymentServiceImpl implements PaymentService {
         payment.setState("paid");
         payment.setCommandId(chargeRequestDTO.getChargeRequest().getStripeToken());
         payment.setPaymentDate(LocalDateTime.now());
+        payment.setChargeId(charge.getId());
 
         paymentRepository.save(payment);
         return chargeResponseDTO;

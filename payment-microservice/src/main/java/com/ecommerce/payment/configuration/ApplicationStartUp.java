@@ -38,6 +38,7 @@ public class ApplicationStartUp {
         payment.setAmount(startupProperties.getAmount());
         payment.setState(startupProperties.getState());
         payment.setCommandId(startupProperties.getCommandId());
+        payment.setChargeId(startupProperties.getChargeId());
         payment.setPaymentDate(LocalDateTime.now());
 
         return payment;

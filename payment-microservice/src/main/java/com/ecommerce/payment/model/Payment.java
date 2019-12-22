@@ -21,6 +21,9 @@ public class Payment implements Serializable {
     @Column(unique = true, name = "commandId")
     private String commandId;
 
+    @Column(unique = true, name = "chargeId")
+    private String chargeId;
+
     @Column(name="amount")
     private Integer amount;
 

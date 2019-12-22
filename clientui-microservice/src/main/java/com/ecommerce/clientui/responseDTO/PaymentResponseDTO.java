@@ -17,6 +17,7 @@ public class PaymentResponseDTO implements Serializable {
     private int amount;
     private Long clientId;
     private String commandId;
+    private String chargeId;
     private LocalDateTime paymentDate;
     private String state;
 }

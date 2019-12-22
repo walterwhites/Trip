@@ -2,9 +2,7 @@ package com.ecommerce.clientui.beans;
 
 import lombok.Getter;
 import lombok.Setter;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Getter
 @Setter
@@ -15,6 +13,7 @@ public class PaymentBean {
     private int amount;
     private Long clientId;
     private String commandId;
+    private String chargeId;
     private LocalDateTime paymentDate;
     private String state;
 
@@ -36,6 +35,7 @@ public class PaymentBean {
         return "Payment{" +
                 "id=" + id +
                 ", commandId=" + commandId +
+                ", commandId=" + chargeId +
                 ", amount=" + amount +
                 ", paymentDate=" + paymentDate +
                 ", state='" + state + '\'' +

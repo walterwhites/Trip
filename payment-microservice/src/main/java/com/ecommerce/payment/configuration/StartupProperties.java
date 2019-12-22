@@ -12,6 +12,7 @@ import org.springframework.context.annotation.PropertySource;
 public class StartupProperties {
 
     private String commandId;
+    private String chargeId;
     private Long clientId;
     private String adventure;
     private String state;
