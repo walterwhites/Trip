@@ -5,6 +5,7 @@ import com.ecommerce.payment.beans.ChargeRequest;
 import com.ecommerce.payment.model.Payment;
 import com.ecommerce.payment.proxies.MicroserviceAdventureProxy;
 import com.ecommerce.payment.repositories.PaymentRepository;
+import com.ecommerce.payment.requestDTO.AdventureEntrantRequestDTO;
 import com.ecommerce.payment.requestDTO.ChargeRequestDTO;
 import com.ecommerce.payment.responseDTO.ChargeResponseDTO;
 import com.ecommerce.payment.responseDTO.ClientResponseDTO;
@@ -79,12 +80,18 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public void reduceMaxEntrant(String chargeId, String adventure, HttpServletRequest request) {
-        microserviceAdventureProxy.reduceEntrantsAdventure(chargeId, adventure, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+        AdventureEntrantRequestDTO adventureEntrantRequestDTO = new AdventureEntrantRequestDTO();
+        adventureEntrantRequestDTO.setAdventure(adventure);
+        adventureEntrantRequestDTO.setChargeId(chargeId);
+        microserviceAdventureProxy.reduceEntrantsAdventure(adventureEntrantRequestDTO, request.getHeader(AUTHORIZATION_HEADER));
     }
 
     @Override
     public void upMaxEntrant(String chargeId, String adventure, HttpServletRequest request) {
-        microserviceAdventureProxy.reduceEntrantsAdventure(chargeId, adventure, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+        AdventureEntrantRequestDTO adventureEntrantRequestDTO = new AdventureEntrantRequestDTO();
+        adventureEntrantRequestDTO.setAdventure(adventure);
+        adventureEntrantRequestDTO.setChargeId(chargeId);
+        microserviceAdventureProxy.upEntrantsAdventure(adventureEntrantRequestDTO, request.getHeader(AUTHORIZATION_HEADER));
     }
 
     @Override

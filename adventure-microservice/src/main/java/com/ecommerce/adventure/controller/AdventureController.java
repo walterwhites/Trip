@@ -4,6 +4,7 @@ import com.ecommerce.adventure.configuration.ApplicationPropertiesConfig;
 import com.ecommerce.adventure.dao.AdventureDao;
 import com.ecommerce.adventure.exception.AdventureNotFoundException;
 import com.ecommerce.adventure.model.Adventure;
+import com.ecommerce.adventure.requestDTO.AdventureEntrantRequestDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -72,17 +73,17 @@ public class AdventureController {
 
     @ApiOperation(value = "Reduce entrant in an adventure")
     @PostMapping(value = "adventures/entrants/reduce")
-    public ResponseEntity<Void> reduceEntrant(@Valid @RequestBody String chargeId, @RequestBody String adventure) {
-        Adventure adventure1 = adventureDao.findByName(adventure);
-        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() - 1);
+    public ResponseEntity<Void> reduceEntrant(@RequestBody AdventureEntrantRequestDTO adventureEntrantRequestDTO) {
+        Adventure adventure1 = adventureDao.findByName(adventureEntrantRequestDTO.getAdventure());
+        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() - 1, adventureEntrantRequestDTO.getAdventure());
         return ResponseEntity.ok().build();
     }
 
     @ApiOperation(value = "Up entrant in an adventure")
     @PostMapping(value = "adventures/entrants/up")
-    public ResponseEntity<Void> upEntrant(@Valid @RequestBody String chargeId, @RequestBody String adventure) {
-        Adventure adventure1 = adventureDao.findByName(adventure);
-        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() + 1);
+    public ResponseEntity<Void> upEntrant(@RequestBody AdventureEntrantRequestDTO adventureEntrantRequestDTO) {
+        Adventure adventure1 = adventureDao.findByName(adventureEntrantRequestDTO.getAdventure());
+        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() + 1, adventureEntrantRequestDTO.getAdventure());
         return ResponseEntity.ok().build();
     }
 }

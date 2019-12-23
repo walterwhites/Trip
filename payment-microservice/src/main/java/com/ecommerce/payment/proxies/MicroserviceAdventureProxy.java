@@ -1,6 +1,7 @@
 package com.ecommerce.payment.proxies;
 
 import com.ecommerce.payment.beans.AdventureBean;
+import com.ecommerce.payment.requestDTO.AdventureEntrantRequestDTO;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
@@ -21,8 +22,8 @@ public interface MicroserviceAdventureProxy {
     AdventureBean displayAdventure(@PathVariable("id") int id, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
 
     @PostMapping(value = "/adventure-microservice/adventures/entrants/reduce")
-    void reduceEntrantsAdventure(@RequestBody() String chargeId, @RequestBody() String adventure, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
+    void reduceEntrantsAdventure(@RequestBody()AdventureEntrantRequestDTO adventureEntrantRequestDTO, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
 
     @PostMapping(value = "/adventure-microservice/adventures/entrants/up")
-    void upEntrantsAdventure(@RequestBody() String chargeId, @RequestBody() String adventure, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
+    void upEntrantsAdventure(@RequestBody()AdventureEntrantRequestDTO adventureEntrantRequestDTO, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
 }
