@@ -2,6 +2,7 @@ package com.ecommerce.clientui.controller;
 
 import com.ecommerce.clientui.beans.AdventureBean;
 import com.ecommerce.clientui.beans.ClientBean;
+import com.ecommerce.clientui.exception.AdventureNotFoundException;
 import com.ecommerce.clientui.exception.CustomException;
 import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
@@ -9,25 +10,21 @@ import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
 import com.ecommerce.clientui.service.impl.ClientServiceImpl;
 import com.ecommerce.clientui.utils.CookiesUtils;
-import com.thoughtworks.xstream.converters.reflection.MissingFieldException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.annotation.PostConstruct;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
 import java.util.List;
 import java.util.Optional;
 
@@ -102,8 +99,16 @@ public class ClientController {
             model.addAttribute("adventure", adventure);
         } catch (UnauthorisedException unauthorisedException) {
             return "redirect:/login";
+
+        } catch (AdventureNotFoundException adventureNotFoundException){
+            return "redirect:/error404";
         }
         return "adventures/detail";
+    }
+
+    @RequestMapping("/error404")
+    public String error404(Model model) {
+        return "404";
     }
 
     @RequestMapping("/login")
