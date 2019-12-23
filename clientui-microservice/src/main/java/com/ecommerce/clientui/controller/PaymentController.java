@@ -3,6 +3,7 @@ package com.ecommerce.clientui.controller;
 import com.ecommerce.clientui.beans.AdventureBean;
 import com.ecommerce.clientui.beans.ChargeRequest;
 import com.ecommerce.clientui.beans.PaymentBean;
+import com.ecommerce.clientui.exception.BadRequestException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
 import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import com.ecommerce.clientui.proxies.MicroservicePaymentProxy;
@@ -97,6 +98,7 @@ public class PaymentController {
     public ModelAndView commands(ModelMap model, HttpServletRequest request) {
         DebugUtils.RequestInfo.displayAllRequestHeaders(request);
         Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+        DebugUtils.RequestInfo.displayAllRequestHeaders(request);
         List<PaymentResponseDTO> payments  = microservicePaymentProxy.payments(clientResponseDTO.get().getId(), request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
         ModelMapper modelMapper = new ModelMapper();
         List<PaymentBean> paymentBeans  = Arrays.asList(modelMapper.map(payments, PaymentBean[].class));
@@ -115,8 +117,8 @@ public class PaymentController {
             refundRequestDTO.setChargeId(chargeId);
             DebugUtils.RequestInfo.displayAllRequestHeaders(request);
             microservicePaymentProxy.refundCommand(refundRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
-        } catch (Exception exception) {
-            model.addAttribute("error", "Error processing the refund " + exception.getCause());
+        } catch (BadRequestException badRequestException) {
+            model.addAttribute("error", "Error processing the refund " + badRequestException.getMessage());
         }
 
         return new ModelAndView("forward:/commands/" + id, model);

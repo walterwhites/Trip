@@ -22,7 +22,6 @@ public class MyRequestInterceptor implements RequestInterceptor {
         if (request == null) {
             return;
         }
-        //DebugUtils.RequestInfo.displayAllRequestHeaders(request);
         requestTemplate.header(REFERER_HEADER, request.getHeader(REFERER_HEADER));
     }
 }

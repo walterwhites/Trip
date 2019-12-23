@@ -47,6 +47,14 @@ public class AdventureController {
         return adventure;
     }
 
+    @ApiOperation(value = "Get adventure by name")
+    @GetMapping(value = "adventures/names/{name}")
+    public Adventure getAdventureByName(@PathVariable String name) throws AdventureNotFoundException {
+        Adventure adventure = adventureDao.findByName(name);
+        if (adventure == null) throw new AdventureNotFoundException("Adventure with name " + name + " doesn't exist");
+        return adventure;
+    }
+
     @ApiOperation(value = "Create an adventures")
     @PostMapping(value = "adventures")
     public ResponseEntity<Void> addAdventure(@Valid @RequestBody Adventure adventure) {
@@ -60,5 +68,21 @@ public class AdventureController {
                 .buildAndExpand(adventure1.getId()).toUri();
 
         return ResponseEntity.created(location).build();
+    }
+
+    @ApiOperation(value = "Reduce entrant in an adventure")
+    @PostMapping(value = "adventures/entrants/reduce")
+    public ResponseEntity<Void> reduceEntrant(@Valid @RequestBody String chargeId, @RequestBody String adventure) {
+        Adventure adventure1 = adventureDao.findByName(adventure);
+        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() - 1);
+        return ResponseEntity.ok().build();
+    }
+
+    @ApiOperation(value = "Up entrant in an adventure")
+    @PostMapping(value = "adventures/entrants/up")
+    public ResponseEntity<Void> upEntrant(@Valid @RequestBody String chargeId, @RequestBody String adventure) {
+        Adventure adventure1 = adventureDao.findByName(adventure);
+        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() + 1);
+        return ResponseEntity.ok().build();
     }
 }

@@ -1,5 +1,6 @@
 package com.ecommerce.payment.controller;
 
+import brave.http.HttpServerRequest;
 import com.ecommerce.payment.exceptions.UnauthorisedException;
 import com.ecommerce.payment.requestDTO.PaymentDetailRequestDTO;
 import com.ecommerce.payment.requestDTO.RefundRequestDTO;
@@ -36,7 +37,7 @@ public class RefundController {
     @PostMapping(value="refund")
     @ApiOperation(value = "Refund a command")
     @ResponseBody
-    ResponseEntity<?> refundCommand(@RequestBody RefundRequestDTO refundRequestDto, @RequestHeader(value= REFERER_HEADER) String referer, @RequestHeader(value= AUTHORIZATION_HEADER) String authorisation) {
+    ResponseEntity<?> refundCommand(@RequestBody RefundRequestDTO refundRequestDto, @RequestHeader(value= REFERER_HEADER) String referer, @RequestHeader(value= AUTHORIZATION_HEADER) String authorisation, HttpServerRequest request) {
         try {
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
             if (!refundRequestDto.getClientId().equals(clientResponseDTO.get().getId())) {

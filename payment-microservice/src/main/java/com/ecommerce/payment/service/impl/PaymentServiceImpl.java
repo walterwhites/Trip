@@ -1,7 +1,9 @@
 package com.ecommerce.payment.service.impl;
 
+import com.ecommerce.payment.beans.AdventureBean;
 import com.ecommerce.payment.beans.ChargeRequest;
 import com.ecommerce.payment.model.Payment;
+import com.ecommerce.payment.proxies.MicroserviceAdventureProxy;
 import com.ecommerce.payment.repositories.PaymentRepository;
 import com.ecommerce.payment.requestDTO.ChargeRequestDTO;
 import com.ecommerce.payment.responseDTO.ChargeResponseDTO;
@@ -20,8 +22,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 import java.util.*;
+
+import static com.ecommerce.payment.constants.SecurityConstants.AUTHORIZATION_HEADER;
+import static com.ecommerce.payment.constants.SecurityConstants.REFERER_HEADER;
 
 
 @Service
@@ -31,6 +37,9 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Autowired
     private PaymentRepository paymentRepository;
+
+    @Autowired
+    private MicroserviceAdventureProxy microserviceAdventureProxy;
 
     @PersistenceContext
     private EntityManager entityManager;
@@ -66,6 +75,16 @@ public class PaymentServiceImpl implements PaymentService {
 
         paymentRepository.save(payment);
         return chargeResponseDTO;
+    }
+
+    @Override
+    public void reduceMaxEntrant(String chargeId, String adventure, HttpServletRequest request) {
+        microserviceAdventureProxy.reduceEntrantsAdventure(chargeId, adventure, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+    }
+
+    @Override
+    public void upMaxEntrant(String chargeId, String adventure, HttpServletRequest request) {
+        microserviceAdventureProxy.reduceEntrantsAdventure(chargeId, adventure, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.ecommerce.payment.controller;
 
 import com.ecommerce.payment.requestDTO.ChargeRequestDTO;
+import com.ecommerce.payment.responseDTO.ChargeResponseDTO;
 import com.ecommerce.payment.responseDTO.ClientResponseDTO;
 import com.ecommerce.payment.service.ClientService;
 import com.ecommerce.payment.service.PaymentService;
@@ -45,9 +46,11 @@ public class ChargeController {
     @PostMapping(value="charge")
     @ApiOperation(value = "Make a payment")
     @ResponseBody
-    public ResponseEntity<?> charge(@RequestBody ChargeRequestDTO chargeRequestDTO) {
+    public ResponseEntity<?> charge(@RequestBody ChargeRequestDTO chargeRequestDTO, HttpServletRequest request) {
         try {
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+            ChargeResponseDTO chargeResponseDTO = paymentservice.charge(chargeRequestDTO, clientResponseDTO);
+            paymentservice.reduceMaxEntrant(chargeResponseDTO.getChargeId(), chargeRequestDTO.getAdventure(), request);
             return ok().body(paymentservice.charge(chargeRequestDTO, clientResponseDTO));
         } catch (StripeException stripeException) {
             return badRequest().body(stripeException.getMessage());
