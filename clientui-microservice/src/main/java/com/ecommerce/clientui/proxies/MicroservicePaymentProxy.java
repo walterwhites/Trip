@@ -2,6 +2,7 @@ package com.ecommerce.clientui.proxies;
 
 import com.ecommerce.clientui.requestDTO.ChargeRequestDTO;
 import com.ecommerce.clientui.requestDTO.PaymentDetailRequestDTO;
+import com.ecommerce.clientui.requestDTO.RefundRequestDTO;
 import com.ecommerce.clientui.responseDTO.ChargeResponseDTO;
 import com.ecommerce.clientui.responseDTO.PaymentResponseDTO;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -25,4 +26,7 @@ public interface MicroservicePaymentProxy {
 
     @PostMapping(value = "/payment")
     Optional<PaymentResponseDTO> paymentDetail(@RequestBody() PaymentDetailRequestDTO paymentDetailRequestDTO, @RequestHeader(value= REFERER_HEADER) String referer, @RequestHeader(value= AUTHORIZATION_HEADER) String authorisation);
+
+    @PostMapping(value = "/refund")
+    void refundCommand(@RequestBody() RefundRequestDTO refundRequestDTO, @RequestHeader(value= REFERER_HEADER) String referer, @RequestHeader(value= AUTHORIZATION_HEADER) String authorisation);
 }

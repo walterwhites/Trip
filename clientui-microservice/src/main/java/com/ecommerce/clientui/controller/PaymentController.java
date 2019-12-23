@@ -7,10 +7,14 @@ import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
 import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import com.ecommerce.clientui.proxies.MicroservicePaymentProxy;
 import com.ecommerce.clientui.requestDTO.PaymentDetailRequestDTO;
+import com.ecommerce.clientui.requestDTO.RefundRequestDTO;
+import com.ecommerce.clientui.responseDTO.ChargeResponseDTO;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
 import com.ecommerce.clientui.responseDTO.PaymentResponseDTO;
 import com.ecommerce.clientui.service.impl.ClientServiceImpl;
 import com.ecommerce.clientui.utils.CookiesUtils;
+import com.ecommerce.clientui.utils.DebugUtils;
+import com.stripe.exception.StripeException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,11 +23,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.List;
@@ -92,7 +95,7 @@ public class PaymentController {
 
     @RequestMapping("/commands")
     public ModelAndView commands(ModelMap model, HttpServletRequest request) {
-
+        DebugUtils.RequestInfo.displayAllRequestHeaders(request);
         Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
         List<PaymentResponseDTO> payments  = microservicePaymentProxy.payments(clientResponseDTO.get().getId(), request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
         ModelMapper modelMapper = new ModelMapper();
@@ -100,5 +103,22 @@ public class PaymentController {
 
         model.addAttribute("payments", paymentBeans);
         return new ModelAndView("commands/index", model);
+    }
+
+    @PostMapping("/commands/{id}/refund")
+    public ModelAndView commandRefund(ModelMap model, HttpServletRequest request, @RequestParam String chargeId, @PathVariable("id") int id) {
+
+        try {
+            ClientResponseDTO clientResponseDTO = clientService.getUserInformations().get();
+            RefundRequestDTO refundRequestDTO = new RefundRequestDTO();
+            refundRequestDTO.setClientId(clientResponseDTO.getId());
+            refundRequestDTO.setChargeId(chargeId);
+            DebugUtils.RequestInfo.displayAllRequestHeaders(request);
+            microservicePaymentProxy.refundCommand(refundRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+        } catch (Exception exception) {
+            model.addAttribute("error", "Error processing the refund " + exception.getCause());
+        }
+
+        return new ModelAndView("forward:/commands/" + id, model);
     }
 }

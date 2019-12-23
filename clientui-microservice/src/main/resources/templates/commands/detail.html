@@ -26,6 +26,17 @@
                                         Detail of your command
                                     </p>
                                 </div>
+                                <div th:if="${error}">
+                                    <!-- Error Alert -->
+                                    <div id="message">
+                                        <div style="padding: 5px;" class="centered">
+                                            <div id="errorLoginAlert" class="alert alert alert-danger alert-dismissible fade show">
+                                                <strong>Error!</strong> <p th:text="${error}"></p>
+                                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- /.row -->
                                 <div class="row" id="detail-block">
                                     <div class="card mb-3 mt-auto" id="card-receipt">
@@ -39,8 +50,12 @@
                                                 <p class="card-text" th:text="'Adventure:' + ${payment.getAdventure()}">Adventure</p>
                                                 <p class="card-text" th:text="'Payment amount:' + ${payment.getAmount()} + ' €'">Payment's amount</p>
                                                 <p class="card-text"><small class="text-muted" th:text="|${#temporals.format(payment.getPaymentDate(), 'dd-MM-yyyy hh:mm a')}|">Payment date</small></p>
+
                                                 <div th:if="${!payment.getState().equals('canceled')}">
-                                                    <a th:href="@{'/commands/' + ${payment.getId()} + '/cancel'}"><button class="btn btn-primary" type="submit">Cancel this command</button></a>
+                                                    <form th:method="POST" th:action="@{'/commands/' + ${payment.getId()} + '/refund'}">
+                                                        <input type="hidden" th:value="${payment.getChargeId()}" name="chargeId" />
+                                                        <input class="btn btn-primary" type="submit" value="Cancel this command"/>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>

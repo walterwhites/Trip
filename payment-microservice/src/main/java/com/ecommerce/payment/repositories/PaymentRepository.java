@@ -15,6 +15,9 @@ public interface PaymentRepository extends JpaRepository<Payment, Integer>, Paym
     @Query(value = "SELECT p FROM Payment p WHERE p.id = :id")
     Optional<Payment> getPaymentById(@Param("id") int id);
 
+    @Query(value = "SELECT p FROM Payment p WHERE p.chargeId = :chargeId")
+    Optional<Payment> getPaymentByChargeId(@Param("chargeId") String chargeId);
+
     @Query(value = "SELECT * FROM payment", nativeQuery = true)
     List<Payment> fetchAllPayments();
 

@@ -12,6 +12,7 @@ import com.stripe.exception.StripeException;
 import com.stripe.model.Card;
 import com.stripe.model.Charge;
 import com.stripe.model.Customer;
+import com.stripe.model.Refund;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.time.LocalDateTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 
 @Service
@@ -83,5 +82,15 @@ public class PaymentServiceImpl implements PaymentService {
         Optional<Payment> payment = paymentRepository.getPaymentById(id);
         ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(payment.get(), PaymentResponseDTO.class);
+    }
+
+    @Override
+    public void refundCard(String chargeId) throws StripeException {
+        Payment payment = paymentRepository.getPaymentByChargeId(chargeId).get();
+        Map<String, Object> params = new HashMap<>();
+        params.put("charge", chargeId);
+        Refund.create(params);
+        payment.setState("canceled");
+        paymentRepository.save(payment);
     }
 }

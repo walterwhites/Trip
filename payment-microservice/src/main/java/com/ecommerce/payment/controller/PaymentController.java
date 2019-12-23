@@ -38,7 +38,7 @@ public class PaymentController {
         try {
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
             if (!clientId.equals(clientResponseDTO.get().getId())) {
-                throw new UnauthorisedException("Wrong user", "A client try to see all commands which are not to him");
+                throw new UnauthorisedException("Wrong user", "A client try to see list of a other client's command");
             }
             List<PaymentResponseDTO> payments = paymentservice.getPayments(clientId);
             return ok().body(payments);
@@ -54,7 +54,7 @@ public class PaymentController {
         try {
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
             if (!paymentDetailRequestDTO.getClientId().equals(clientResponseDTO.get().getId())) {
-                throw new UnauthorisedException("Wrong user", "A client try to see a command which are not to him");
+                throw new UnauthorisedException("Wrong user", "A client try to see a other client's command");
             }
             PaymentResponseDTO payment = paymentservice.getPayment(paymentDetailRequestDTO.getId());
             return ok().body(payment);

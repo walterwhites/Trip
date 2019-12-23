@@ -42,12 +42,6 @@ public class ChargeController {
         binder.registerCustomEditor( String.class, new StringTrimmerEditor( true ));
     }
 
-    @ModelAttribute("logged")
-    public Boolean bindCookies(HttpServletRequest request) {
-        String jwt_token = CookiesUtils.getCookie(request, "jwt_token");
-        return (jwt_token != null && !jwt_token.isEmpty());
-    }
-
     @PostMapping(value="charge")
     @ApiOperation(value = "Make a payment")
     @ResponseBody

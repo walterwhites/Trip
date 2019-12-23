@@ -1,6 +1,7 @@
 package com.ecommerce.clientui.configuration;
 
 import com.ecommerce.clientui.utils.CookiesUtils;
+import com.ecommerce.clientui.utils.DebugUtils;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.stereotype.Component;

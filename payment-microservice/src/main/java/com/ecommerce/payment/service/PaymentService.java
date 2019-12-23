@@ -1,5 +1,6 @@
 package com.ecommerce.payment.service;
 
+import com.ecommerce.payment.model.Payment;
 import com.ecommerce.payment.requestDTO.ChargeRequestDTO;
 import com.ecommerce.payment.responseDTO.ChargeResponseDTO;
 import com.ecommerce.payment.responseDTO.ClientResponseDTO;
@@ -13,5 +14,6 @@ public interface PaymentService {
 
     ChargeResponseDTO charge(ChargeRequestDTO chargeRequestDTO, Optional<ClientResponseDTO> clientResponseDTO) throws StripeException;
     List<PaymentResponseDTO> getPayments(Long client);
-    public PaymentResponseDTO getPayment(int id);
+    PaymentResponseDTO getPayment(int id);
+    void refundCard(String chargeId) throws StripeException;
 }
