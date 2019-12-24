@@ -5,6 +5,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -18,7 +19,7 @@ public class Adventure {
     private String name;
     private String description;
     private String image;
-    private Date date;
+    private LocalDate date;
     private int maxEntrant;
     private int price;
 
@@ -26,7 +27,7 @@ public class Adventure {
 
     }
 
-    public Adventure(int id, int price, String name, String description, String image, Date date, int maxEntrant) {
+    public Adventure(int id, int price, String name, String description, String image, LocalDate date, int maxEntrant) {
         this.id = id;
         this.price = price;
         this.name = name;
@@ -76,11 +77,11 @@ public class Adventure {
         this.image = image;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

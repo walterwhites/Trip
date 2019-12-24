@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 @Getter
 @Setter
 public class MissingFieldException extends CustomException {
-    private ErrorResponse errorResponse;
 
     public MissingFieldException(String message, String developerMessage) {
         super(message);

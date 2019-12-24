@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment - Wild Adventures</title>
+</head>
+<body th:style="'background-image:url(' + @{/img/payment_background.jpg} + ');'">
+<header lang="en" th:replace="fragments/header :: header"></header>
+<nav lang="en" th:replace="fragments/nav :: nav"></nav>
+<div class="container text-center" style="margin-bottom: 300px;">
+    <div class="col-md-12 mt-5">
+        <h1>Payment</h1>
+        <div class="row">
+            <div class="mr-auto ml-auto">
+                <h2 th:if='${error}' th:text='${error}' style='color: red;'></h2>
+                <div th:unless='${error}'>
+                    <h3 style='color: green;'>Success!</h3>
+                    <div>Id.: <span th:text='${id}' /></div>
+                    <div>Status: <span th:text='${status}' /></div>
+                    <div>Charge id.: <span th:text='${chargeId}' /></div>
+                    <div>Balance transaction id.: <span th:text='${balance_transaction}' /></div>
+                </div>
+                <a th:href="@{/adventures}">See other adventures</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer lang="en" th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

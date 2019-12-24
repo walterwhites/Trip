@@ -8,22 +8,10 @@
 <header lang="en" th:replace="fragments/header :: header"></header>
 <nav lang="en" th:replace="fragments/nav :: nav"></nav>
 <div class="container">
-    <h1>Adventures</h1>
+    <div class="col-md-12 mt-5 mb-5">
+        <h1>About us</h1>
+        <div class="row">
 
-    <div class="row">
-        <div th:each="adventure : ${adventures}" class="col-md-4 my-1">
-            <a th:href="@{|/adventures/${adventure.id}|}" >
-                <img id="adventures-img" th:width="200" th:height="200" th:src="${adventure.image}"  class="card-img-top" />
-                <h5 th:text= "${adventure.name}"></h5>
-            </a>
-            <h6 th:text= "${adventure.description}"></h6>
-            <div class="block">
-                <i class="fa d-inline-block fa-calendar m-2"></i><p class="d-inline-block" th:text="| Started date: ${#dates.format(adventure.date, 'MM-dd-yyyy HH:mm')}|"></p>
-            </div>
-            <div class="block">
-                <i class="fa d-inline-block fa-ticket m-2"></i><p class="d-inline-block" th:text= "| Maximum Entrance: ${adventure.maxEntrant}|"></p>
-            </div>
-            <span th:text= "| ${adventure.price} $|" class="badge badge-pill badge-primary"></span>
         </div>
     </div>
 </div>

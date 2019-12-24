@@ -13,4 +13,5 @@ public class ErrorResponse {
     private HttpStatus status;
     private String errorMsg;
     private String developerMsg;
+    private String template;
 }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Command detail - Wild Adventures</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/payment.css}"/>
+</head>
+<body id="page-top">
+    <header lang="en" th:replace="fragments/header :: header"></header>
+    <nav lang="en" th:replace="fragments/nav :: nav"></nav>
+
+    <div class="payment-page">
+    <div class="page-header header-filter" data-parallax="true" style="background-image:url('http://wallpapere.org/wp-content/uploads/2012/02/black-and-white-city-night.png');"></div>
+    <div class="main main-raised">
+        <div class="command-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 ml-auto mr-auto">
+                        <div class="payment">
+                            <div class="avatar">
+                                <img th:src="@{/img/basket.png}" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                            </div>
+                                <div class="name">
+                                    <h3 class="title" th:text="'My command for ' + ${payment.getAdventure()}">My command</h3>
+                                    <p class="panel-heading">
+                                        Detail of your command
+                                    </p>
+                                </div>
+                                <div th:if="${error}">
+                                    <!-- Error Alert -->
+                                    <div id="message">
+                                        <div style="padding: 5px;" class="centered">
+                                            <div id="errorLoginAlert" class="alert alert alert-danger alert-dismissible fade show">
+                                                <strong>Error!</strong> <p th:text="${error}"></p>
+                                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div th:if="${success}">
+                                    <!-- Error Alert -->
+                                    <div id="message">
+                                        <div style="padding: 5px;" class="centered">
+                                            <div id="successLoginAlert" class="alert alert alert-success alert-dismissible fade show">
+                                                <strong>Success!</strong> <p th:text="${success}"></p>
+                                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
+                                <div class="row" id="detail-block">
+                                    <div class="card mb-3 mt-auto" id="card-receipt">
+                                        <div class="card-body">
+                                            <img class="card-img-top" id="img-top" th:src="@{/img/receipt.png}" alt="receipt image">
+                                            <div id="receipt-detail">
+                                                <h5 class="card-title" th:text="${payment.getAdventure()}">Title</h5>
+                                                <p class="card-text" th:text="'Command id:' + ${payment.getCommandId()}">Command id</p>
+                                                <p class="card-text" th:text="'Charge id:' + ${payment.getChargeId()}">Charge id</p>
+                                                <p class="card-text" th:text="'Command state:' + ${payment.getState()}">Command state</p>
+                                                <p class="card-text" th:text="'Adventure:' + ${payment.getAdventure()}">Adventure</p>
+                                                <p class="card-text" th:text="'Payment amount:' + ${payment.getAmount()} + ' €'">Payment's amount</p>
+                                                <p class="card-text"><small class="text-muted" th:text="|${#temporals.format(payment.getPaymentDate(), 'dd-MM-yyyy hh:mm a')}|">Payment date</small></p>
+
+                                                <div th:if="${!payment.getState().equals('canceled')}">
+                                                    <form th:method="POST" th:action="@{'/commands/' + ${payment.getId()} + '/refund'}">
+                                                        <input type="hidden" th:value="${payment.getChargeId()}" name="chargeId" />
+                                                        <input type="hidden" th:value="${payment.getAdventure()}" name="adventure" />
+                                                        <input class="btn btn-primary" type="submit" value="Cancel this command"/>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer lang="en" th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

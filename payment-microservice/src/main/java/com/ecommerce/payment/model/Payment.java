@@ -1,96 +1,65 @@
 package com.ecommerce.payment.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 
+@Table(name = "payment")
 @Entity
-public class Payment {
+@Getter
+@Setter
+public class Payment implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(unique = true)
-    private Integer idCommand;
+    @Column(unique = true, name = "commandId")
+    private String commandId;
 
+    @Column(unique = true, name = "chargeId")
+    private String chargeId;
+
+    @Column(name="amount")
     private Integer amount;
 
-    private Long cardNumber;
+    @Column(name="paymentDate")
+    private LocalDateTime paymentDate;
 
-    private Date paymentDate;
-
+    @Column(name="state")
     private String state;
+
+    @Column(name="client")
+    private Long clientId;
+
+    @Column(name="adventure")
+    private String adventure;
 
     public Payment() {
     }
 
-    public Payment(int id, Integer idCommand, Integer amount, Long cardNumber) {
+    public Payment(int id, String commandId, Integer amount, Long clientId, String adventure) {
         this.id = id;
-        this.idCommand = idCommand;
+        this.commandId = commandId;
         this.amount = amount;
-        this.cardNumber = cardNumber;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Integer getIdCommand() {
-        return idCommand;
-    }
-
-    public void setIdCommand(Integer idCommand) {
-        this.idCommand = idCommand;
-    }
-
-    public Integer getAmount() {
-        return amount;
-    }
-
-    public void setAmount(Integer amount) {
-        this.amount = amount;
-    }
-
-    public Long getCardNumber() {
-        return cardNumber;
-    }
-
-    public void setCardNumber(Long cardNumber) {
-        this.cardNumber = cardNumber;
-    }
-
-    public Date getPaymentDate() {
-        return paymentDate;
-    }
-
-    public void setPaymentDate(Date paymentDate) {
-        this.paymentDate = paymentDate;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
+        this.clientId = clientId;
+        this.adventure = adventure;
     }
 
     @Override
     public String toString() {
         return "Payment{" +
                 "id=" + id +
-                ", idCommand=" + idCommand +
+                ", commandId=" + commandId +
                 ", amount=" + amount +
-                ", cardNumber=" + cardNumber +
                 ", paymentDate=" + paymentDate +
                 ", state='" + state + '\'' +
+                ", clientId=" + clientId +
+                ", adventure=" + adventure +
                 '}';
     }
 }

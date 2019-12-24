@@ -2,6 +2,10 @@ package com.ecommerce.clientui.exception;
 
 import feign.Response;
 import feign.codec.ErrorDecoder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
+
 import static com.ecommerce.clientui.constants.ErrorMessage.DataDuplication.*;
 import static com.ecommerce.clientui.constants.ErrorMessage.MissingField.*;
 
@@ -15,23 +19,33 @@ public class CustomErrorDecoder implements ErrorDecoder {
     public Exception decode(String s, Response response) {
 
         this.response = response;
+        Logger logger = LoggerFactory.getLogger(this.getClass());
 
         if (response.body() != null) {
             this.responseBody = response.body().toString();
         }
 
         if (response.status() == 404 && s.contains("MicroserviceAdventureProxy")) {
+            logger.info("CustomErrorDecoderLogger : " + responseBody);
             return new AdventureNotFoundException("Adventure not found");
         } else if (response.status() == 404 && s.contains("MicroserviceLoginProxy")) {
             return new ClientNotFoundException("Client not found");
         }
 
         if (response.status() == 403) {
-            return new UnauthorisedException("Access denied", "Access denied, zuul server responds 403");
+            return new UnauthorisedException(responseBody, "Access denied, zuul server responds 403");
         }
 
         if (response.status() == 401) {
-            return new UnauthorisedException("Access denied, not authentified", "Access denied, zuul server responds 401");
+            return new UnauthorisedException(responseBody, "Access denied, zuul server responds 401");
+        }
+
+        if (response.status() == 405) {
+            return new MethodNotSupportedException(responseBody, "Method not valid");
+        }
+
+        if (response.status() == 400) {
+            return new BadRequestException(responseBody, "The request is not valid");
         }
 
         Exception checkDataDuplicationExceptionUsername = checkDataDuplicationException(DUPLICATE_USERNAME_MESSAGE, DUPLICATE_USERNAME_DEVELOPER_MESSAGE);

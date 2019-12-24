@@ -10,4 +10,6 @@ lsof -ti:9097 | xargs kill &&
 lsof -ti:9098 | xargs kill &&
 lsof -ti:9099 | xargs kill &&
 lsof -ti:9011 | xargs kill &&
+lsof -ti:9210 | xargs kill &&
+lsof -ti:9211 | xargs kill &&
 rm -rf */nohup.out
