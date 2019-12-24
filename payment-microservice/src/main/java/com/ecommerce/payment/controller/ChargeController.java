@@ -51,7 +51,7 @@ public class ChargeController {
             Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
             ChargeResponseDTO chargeResponseDTO = paymentservice.charge(chargeRequestDTO, clientResponseDTO);
             paymentservice.reduceMaxEntrant(chargeResponseDTO.getChargeId(), chargeRequestDTO.getAdventure(), request);
-            return ok().body(paymentservice.charge(chargeRequestDTO, clientResponseDTO));
+            return ok().body(chargeResponseDTO);
         } catch (StripeException stripeException) {
             return badRequest().body(stripeException.getMessage());
         }

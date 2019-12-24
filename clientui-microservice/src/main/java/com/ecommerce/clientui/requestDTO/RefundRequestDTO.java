@@ -13,4 +13,5 @@ public class RefundRequestDTO implements Serializable {
 
     private String chargeId;
     private Long clientId;
+    private String adventure;
 }

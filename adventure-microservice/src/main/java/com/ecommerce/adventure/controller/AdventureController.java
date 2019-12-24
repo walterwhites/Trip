@@ -75,7 +75,7 @@ public class AdventureController {
     @PostMapping(value = "adventures/entrants/reduce")
     public ResponseEntity<Void> reduceEntrant(@RequestBody AdventureEntrantRequestDTO adventureEntrantRequestDTO) {
         Adventure adventure1 = adventureDao.findByName(adventureEntrantRequestDTO.getAdventure());
-        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() - 1, adventureEntrantRequestDTO.getAdventure());
+        adventureDao.updateMaxEntrant(adventure1.getMaxEntrant() - 1, adventureEntrantRequestDTO.getAdventure());
         return ResponseEntity.ok().build();
     }
 
@@ -83,7 +83,7 @@ public class AdventureController {
     @PostMapping(value = "adventures/entrants/up")
     public ResponseEntity<Void> upEntrant(@RequestBody AdventureEntrantRequestDTO adventureEntrantRequestDTO) {
         Adventure adventure1 = adventureDao.findByName(adventureEntrantRequestDTO.getAdventure());
-        adventureDao.reduceMaxEntrant(adventure1.getMaxEntrant() + 1, adventureEntrantRequestDTO.getAdventure());
+        adventureDao.updateMaxEntrant(adventure1.getMaxEntrant() + 1, adventureEntrantRequestDTO.getAdventure());
         return ResponseEntity.ok().build();
     }
 }

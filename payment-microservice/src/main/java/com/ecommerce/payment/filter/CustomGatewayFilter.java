@@ -21,9 +21,6 @@ public class CustomGatewayFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
-        ZipkinDebug.displayTraceUrl(request);
-        RequestInfo.displayAllRequestHeaders(request);
-
         if ((RequestInfo.getRequestHeader(request, REFERER_HEADER) == null) &&
                 !request.getRequestURL().toString().contains("localhost")) {
 

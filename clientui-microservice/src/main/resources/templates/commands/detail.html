@@ -54,6 +54,7 @@
                                                 <div th:if="${!payment.getState().equals('canceled')}">
                                                     <form th:method="POST" th:action="@{'/commands/' + ${payment.getId()} + '/refund'}">
                                                         <input type="hidden" th:value="${payment.getChargeId()}" name="chargeId" />
+                                                        <input type="hidden" th:value="${payment.getAdventure()}" name="adventure" />
                                                         <input class="btn btn-primary" type="submit" value="Cancel this command"/>
                                                     </form>
                                                 </div>

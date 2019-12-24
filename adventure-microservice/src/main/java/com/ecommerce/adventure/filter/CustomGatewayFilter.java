@@ -20,11 +20,7 @@ public class CustomGatewayFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
-        DebugUtils.ZipkinDebug.displayTraceUrl(request);
-        DebugUtils.RequestInfo.displayAllRequestHeaders(request);
-
-        if ((DebugUtils.RequestInfo.getRequestHeader(request, REFERER_HEADER) == null ||
-                !DebugUtils.RequestInfo.getRequestHeader(request, REFERER_HEADER).equals(ZUUL_SERVER_MICROSERVICE_REFERER)) &&
+        if ((DebugUtils.RequestInfo.getRequestHeader(request, REFERER_HEADER) == null) &&
                 !request.getRequestURL().toString().contains("localhost")) {
 
             UnauthorisedException unauthorisedException = new UnauthorisedException("Unauthorized Access",

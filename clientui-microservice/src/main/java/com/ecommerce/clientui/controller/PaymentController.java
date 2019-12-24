@@ -108,13 +108,14 @@ public class PaymentController {
     }
 
     @PostMapping("/commands/{id}/refund")
-    public ModelAndView commandRefund(ModelMap model, HttpServletRequest request, @RequestParam String chargeId, @PathVariable("id") int id) {
+    public ModelAndView commandRefund(ModelMap model, HttpServletRequest request, @RequestParam String chargeId, @RequestParam String adventure, @PathVariable("id") int id) {
 
         try {
             ClientResponseDTO clientResponseDTO = clientService.getUserInformations().get();
             RefundRequestDTO refundRequestDTO = new RefundRequestDTO();
             refundRequestDTO.setClientId(clientResponseDTO.getId());
             refundRequestDTO.setChargeId(chargeId);
+            refundRequestDTO.setAdventure(adventure);
             DebugUtils.RequestInfo.displayAllRequestHeaders(request);
             microservicePaymentProxy.refundCommand(refundRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
         } catch (BadRequestException badRequestException) {
