@@ -116,8 +116,8 @@ public class PaymentController {
             refundRequestDTO.setClientId(clientResponseDTO.getId());
             refundRequestDTO.setChargeId(chargeId);
             refundRequestDTO.setAdventure(adventure);
-            DebugUtils.RequestInfo.displayAllRequestHeaders(request);
             microservicePaymentProxy.refundCommand(refundRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+            model.addAttribute("success", "Payment has been refunded ");
         } catch (BadRequestException badRequestException) {
             model.addAttribute("error", "Error processing the refund " + badRequestException.getMessage());
         }
