@@ -1,6 +1,5 @@
 package com.ecommerce.clientui.beans;
-
-import java.util.Date;
+import java.time.LocalDate;
 
 public class AdventureBean {
 
@@ -11,7 +10,7 @@ public class AdventureBean {
     private String name;
     private String description;
     private String image;
-    private Date date;
+    private LocalDate date;
     private int maxEntrant;
     private int price;
 
@@ -47,11 +46,11 @@ public class AdventureBean {
         this.image = image;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

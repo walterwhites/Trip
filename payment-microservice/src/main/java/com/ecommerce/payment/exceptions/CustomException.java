@@ -1,0 +1,14 @@
+package com.ecommerce.payment.exceptions;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class CustomException extends RuntimeException {
+    protected ErrorResponse errorResponse;
+
+    public CustomException(String message) {
+        super(message);
+    }
+}

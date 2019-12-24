@@ -50,6 +50,7 @@ public class LoginServiceImpl implements LoginService {
         Pattern pattern = Pattern.compile(PatternConstants.EmailConstants.EMAIL_PATTERN);
         Matcher m = pattern.matcher(loginRequestDTO.getUsername());
         Boolean find = m.find();
+
         ClientResponseDTO clientResponseDTO =  find ? clientInterface.searchClient(ClientRequestDTO.builder().username(null).emailAddress(loginRequestDTO.getUsername()).build(), request.getHeader(REFERER_HEADER)) :
                 clientInterface.searchClient(ClientRequestDTO.builder().username(loginRequestDTO.getUsername()).emailAddress(null).build(), request.getHeader(REFERER_HEADER));
         if (clientResponseDTO.getEmailAddress() == null) {

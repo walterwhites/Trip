@@ -19,12 +19,7 @@ public class CustomGatewayFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
-        ZipkinDebug.displayTraceUrl(request);
-        RequestInfo.displayAllRequestHeaders(request);
-
-        if ((RequestInfo.getRequestHeader(request, REFERER_HEADER) == null ||
-                !RequestInfo.getRequestHeader(request, REFERER_HEADER).equals(ZUUL_SERVER_MICROSERVICE_REFERER)) &&
-                !request.getRequestURL().toString().contains("localhost")) {
+        if ((RequestInfo.getRequestHeader(request, REFERER_HEADER) == null ) && !request.getRequestURL().toString().contains("localhost")) {
 
             UnauthorisedException unauthorisedException = new UnauthorisedException("Unauthorized Access",
                     "Unauthorized Access, you should pass through the API gateway");

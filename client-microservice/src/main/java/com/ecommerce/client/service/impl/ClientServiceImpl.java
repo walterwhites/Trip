@@ -86,6 +86,7 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public ClientResponseDTO searchClient(ClientRequestDTO requestDTO) throws NoContentFoundException {
+
         List<Object[]> results = entityManager.createNativeQuery(
                 createQueryToFetchClientDetails.apply(requestDTO)).getResultList();
         return convertToClientResponse.apply(results);

@@ -4,6 +4,7 @@ import com.ecommerce.adventure.configuration.ApplicationPropertiesConfig;
 import com.ecommerce.adventure.dao.AdventureDao;
 import com.ecommerce.adventure.exception.AdventureNotFoundException;
 import com.ecommerce.adventure.model.Adventure;
+import com.ecommerce.adventure.requestDTO.AdventureEntrantRequestDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -47,6 +48,14 @@ public class AdventureController {
         return adventure;
     }
 
+    @ApiOperation(value = "Get adventure by name")
+    @GetMapping(value = "adventures/names/{name}")
+    public Adventure getAdventureByName(@PathVariable String name) throws AdventureNotFoundException {
+        Adventure adventure = adventureDao.findByName(name);
+        if (adventure == null) throw new AdventureNotFoundException("Adventure with name " + name + " doesn't exist");
+        return adventure;
+    }
+
     @ApiOperation(value = "Create an adventures")
     @PostMapping(value = "adventures")
     public ResponseEntity<Void> addAdventure(@Valid @RequestBody Adventure adventure) {
@@ -60,5 +69,21 @@ public class AdventureController {
                 .buildAndExpand(adventure1.getId()).toUri();
 
         return ResponseEntity.created(location).build();
+    }
+
+    @ApiOperation(value = "Reduce entrant in an adventure")
+    @PostMapping(value = "adventures/entrants/reduce")
+    public ResponseEntity<Void> reduceEntrant(@RequestBody AdventureEntrantRequestDTO adventureEntrantRequestDTO) {
+        Adventure adventure1 = adventureDao.findByName(adventureEntrantRequestDTO.getAdventure());
+        adventureDao.updateMaxEntrant(adventure1.getMaxEntrant() - 1, adventureEntrantRequestDTO.getAdventure());
+        return ResponseEntity.ok().build();
+    }
+
+    @ApiOperation(value = "Up entrant in an adventure")
+    @PostMapping(value = "adventures/entrants/up")
+    public ResponseEntity<Void> upEntrant(@RequestBody AdventureEntrantRequestDTO adventureEntrantRequestDTO) {
+        Adventure adventure1 = adventureDao.findByName(adventureEntrantRequestDTO.getAdventure());
+        adventureDao.updateMaxEntrant(adventure1.getMaxEntrant() + 1, adventureEntrantRequestDTO.getAdventure());
+        return ResponseEntity.ok().build();
     }
 }

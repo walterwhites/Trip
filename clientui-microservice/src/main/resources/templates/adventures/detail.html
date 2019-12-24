@@ -7,20 +7,46 @@
 <body>
 <header lang="en" th:replace="fragments/header :: header"></header>
 <nav lang="en" th:replace="fragments/nav :: nav"></nav>
-<div class="container">
-    <h1 th:text= "${adventure.name}"></h1>
+<div class="container text-center" th:style="back">
+    <div class="col-md-12 mt-5 mb-5">
+        <h1 th:text= "${adventure.name}"></h1>
 
-    <div class="row align-content-center">
-        <div class="col-md-6 my-1">
-            <img id="adventures-img" th:width="300" th:src="${adventure.image}"  class="card-img-top" />
-            <h6 th:text= "${adventure.description}"></h6>
-            <div class="block">
-                <i class="fa d-inline-block fa-calendar m-2"></i><p class="d-inline-block" th:text="| Started date: ${#dates.format(adventure.date, 'MM-dd-yyyy HH:mm')}|"></p>
+        <div class="row">
+            <div>
+                <img id="adventures-img" th:src="${adventure.image}"  class="card-img-top mb-4 w-75" />
+                <h6 th:text= "${adventure.description}" class="w-75 ml-auto mr-auto mb-4"></h6>
+                <div class="block">
+                    <i class="fa d-inline-block fa-calendar m-2"></i><p class="d-inline-block" th:text="| Started date: ${#temporals.format(adventure.date, 'dd-MM-yyyy')} |"></p>
+                </div>
+                <div class="block">
+                    <i class="fa d-inline-block fa-ticket m-2"></i><p class="d-inline-block" th:text= "| Maximum Entrance: ${adventure.maxEntrant}|"></p>
+                </div>
+                <form action='/charge' method='POST' id='checkout-form'>
+                    <input type='hidden' th:value='${amount}' name='amount' />
+                    <input type='hidden' th:value='${client.getFirstname() + " " + client.getLastname()}' name='name' />
+                    <input type='hidden' th:value='${client.getEmailAddress()}' name='email' />
+                    <input type='hidden' th:value='${adventure.getName()}' name='adventure' />
+                    <input type="submit" th:value="|Book for ${adventure.price} €|" class="btn btn-success d-inline-block w-25"/>
+                    <!-- NOTE: data-key/data-amount/data-currency will be rendered by Thymeleaf -->
+                    <script
+                            src='https://checkout.stripe.com/checkout.js'
+                            class='stripe-button'
+                            th:attr='data-key=${stripePublicKey},
+                             data-amount=${amount},
+                             data-currency=${currency}'
+                            data-name='Wild Adventure'
+                            data-description='Book an adventure'
+                            th:data-image='@{/img/logo.png}'
+                            data-locale='en'
+                            data-zip-code='false'>
+                    </script>
+                    <script>
+                        // Hide default stripe button, be careful there if you
+                        // have more than 1 button of that class
+                        document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+                    </script>
+                </form>
             </div>
-            <div class="block">
-                <i class="fa d-inline-block fa-ticket m-2"></i><p class="d-inline-block" th:text= "| Maximum Entrance: ${adventure.maxEntrant}|"></p>
-            </div>
-            <span th:text= "| ${adventure.price} $|" class="badge badge-pill badge-primary"></span>
         </div>
     </div>
 </div>
