@@ -61,9 +61,6 @@ public class ClientController {
 
     @RequestMapping("/about")
     public String aboutUs(Model model, HttpServletRequest request) {
-        List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
-        model.addAttribute("adventures", adventures);
-        model.addAttribute("logged", true);
         return "about";
     }
 
