@@ -9,13 +9,13 @@ Swagger JSON doc: http://localhost:9090/v2/api-docs
 CI : Travis https://travis-ci.com/walterwhites/Trip/builds
 
 Applications port listening:
-- adventure-microservice = 9090
+- adventure-microservice = 9090, 9011
 - category-microservice = 9091
 - clientui-microservice = 9092
 - payment-microservice = 9093
 - config-server-microservice = 9094
 - Eureka server = 9095
-- Zuul server = 9096
+- Zuul server = 9096, 9099, 9210, 9211
 - login-microservice = 9097
 - client-microservice = 9098
 
@@ -50,6 +50,14 @@ http://localhost:9096/adventure-microservice/adventures/1
 ## Other informations
 - All microservices use Actuator library which allow to expose endpoint that Eureka Server use to know microservices's health:
 Exemple, Eureka call http://localhost:9096/actuator to know Zuul microservice's health
+
+## Db init
+We use Postgres, schema and data file are provided inside resources folders,
+the only requirement is to have these Postgres Db or create them:
+- createdb adventures
+- createdb category
+- createdb client
+- createdb payment
 
 ## Debug the app
 DebugUtils class provide many methods to debug the code, requests etc.

@@ -1,15 +1,3 @@
-DROP TABLE IF EXISTS adventure;
-
-CREATE TABLE adventure (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  price INT DEFAULT NULL,
-  name VARCHAR(50) NOT NULL,
-  description VARCHAR(500) DEFAULT NULL,
-  image VARCHAR(500) DEFAULT NULL,
-  date TIMESTAMP DEFAULT NULL,
-  max_entrant INT DEFAULT NULL
-);
-
 INSERT INTO adventure VALUES(1, 102, 'Liverpool Trip', 'Visit The Beatles Town, The Beatles were an English rock band formed in Liverpool in 1960. With a line-up comprising John Lennon, ' ||
 'Paul McCartney, George Harrison and Ringo Starr, they are regarded as the most influential band of all time.',
 'https://culturecdn.fra1.cdn.digitaloceanspaces.com//2016/02/ccs_5437-700x467.jpg', '2012-09-17 18:47:52.69', 12);
