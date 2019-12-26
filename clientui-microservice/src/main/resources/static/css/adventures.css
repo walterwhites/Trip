@@ -1,0 +1,20 @@
+.port-image
+{
+    width: 100%;
+}
+
+.each-item
+{
+    position:relative;
+    overflow:hidden;
+}
+
+.each-item:hover .cap2, .each-item:hover .cap1
+{
+    left:0px;
+}
+
+#adventure {
+    display: inline-block;
+    height: 150px;
+}
