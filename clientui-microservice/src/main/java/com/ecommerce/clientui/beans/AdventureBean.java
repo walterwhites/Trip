@@ -20,6 +20,9 @@ public class AdventureBean {
     private int maxEntrant;
     private int price;
 
+    private String categoryName;
+    private String categoryColor;
+
     @Override
     public String toString() {
         return "AdventureBean{" +
@@ -31,6 +34,8 @@ public class AdventureBean {
                 ", date=" + date +
                 ", maxEntrant=" + maxEntrant +
                 ", price=" + price +
+                ", categoryName=" + categoryName +
+                ", categoryColor=" + categoryColor +
                 '}';
     }
 }

@@ -5,12 +5,14 @@ $(document).ready(function(){
 
         if(value == "all")
         {
-            $('.filter').show('1000');
+            $(".filter").fadeIn("slow");
         }
         else
         {
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
+            $(".filter").not('.'+value).fadeOut("slow", function() {
+                $(".filter").not('.'+value).hide();
+                $(".filter").filter('.'+value).fadeIn("slow");
+            });
         }
         $(".filter-button").not("button[data-filter=" + value + "]").removeClass('btn-primary');
         $(".filter-button").filter("button[data-filter=" + value + "]").addClass('btn-primary');

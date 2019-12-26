@@ -1,10 +1,12 @@
 package com.ecommerce.clientui.controller;
 
 import com.ecommerce.clientui.beans.AdventureBean;
+import com.ecommerce.clientui.beans.CategoryBean;
 import com.ecommerce.clientui.beans.ChargeRequest;
 import com.ecommerce.clientui.beans.PaymentBean;
 import com.ecommerce.clientui.exception.BadRequestException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
+import com.ecommerce.clientui.proxies.MicroserviceCategoryProxy;
 import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import com.ecommerce.clientui.proxies.MicroservicePaymentProxy;
 import com.ecommerce.clientui.requestDTO.PaymentDetailRequestDTO;
@@ -49,6 +51,9 @@ public class PaymentController {
     MicroservicePaymentProxy microservicePaymentProxy;
 
     @Autowired
+    MicroserviceCategoryProxy microserviceCategoryProxy;
+
+    @Autowired
     ClientServiceImpl clientService;
 
     @Value("${STRIPE_PUBLIC_KEY}")
@@ -72,6 +77,11 @@ public class PaymentController {
 
         AdventureBean adventure = microserviceAdventureProxy.displayAdventure(id, request.getHeader(AUTHORIZATION_HEADER));
         Optional<ClientResponseDTO> clientResponseDTO = clientService.getUserInformations();
+
+        CategoryBean categoryBean = microserviceCategoryProxy.getCategoryById(adventure.getCategory(), request.getHeader(AUTHORIZATION_HEADER));
+        adventure.setCategoryName(categoryBean.getName());
+        adventure.setCategoryColor(categoryBean.getColor());
+
         model.addAttribute("client", clientResponseDTO.get());
         model.addAttribute("adventure", adventure);
         model.addAttribute("amount", adventure.getPrice() * 100); // Stripe payment in cents
