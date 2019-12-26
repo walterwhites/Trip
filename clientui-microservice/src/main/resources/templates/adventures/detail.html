@@ -19,7 +19,7 @@
                     <i class="fa d-inline-block fa-calendar m-2"></i><p class="d-inline-block" th:text="| Started date: ${#temporals.format(adventure.date, 'dd-MM-yyyy')} |"></p>
                 </div>
                 <div class="block">
-                    <i class="fa d-inline-block fa-ticket m-2"></i><p class="d-inline-block" th:text= "| Maximum Entrance: ${adventure.maxEntrant}|"></p>
+                    <i class="fa d-inline-block fa-ticket m-2"></i><p class="d-inline-block" th:text= "| Available places: ${adventure.maxEntrant}|"></p>
                 </div>
                 <div th:if="${adventure.getMaxEntrant() > 0}">
                     <form action='/charge' method='POST' id='checkout-form'>
