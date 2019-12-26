@@ -16,6 +16,6 @@ public interface AdventureDao extends JpaRepository<Adventure, Integer>, Adventu
     Adventure findByName(String name);
 
     @Modifying
-    @Query(value = "UPDATE adventure adv SET adv.max_entrant = :max_entrant WHERE adv.name = :adv_name", nativeQuery = true)
+    @Query(value = "UPDATE adventure SET max_entrant = :max_entrant WHERE name = :adv_name", nativeQuery = true)
     void updateMaxEntrant(@Param("max_entrant") int max_entrant, @Param("adv_name") String adv_name);
 }
