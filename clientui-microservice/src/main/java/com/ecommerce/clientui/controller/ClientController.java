@@ -1,11 +1,13 @@
 package com.ecommerce.clientui.controller;
 
 import com.ecommerce.clientui.beans.AdventureBean;
+import com.ecommerce.clientui.beans.CategoryBean;
 import com.ecommerce.clientui.beans.ClientBean;
 import com.ecommerce.clientui.beans.PaymentBean;
 import com.ecommerce.clientui.exception.CustomException;
 import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
+import com.ecommerce.clientui.proxies.MicroserviceCategoryProxy;
 import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
 import com.ecommerce.clientui.service.impl.ClientServiceImpl;
@@ -37,6 +39,9 @@ public class ClientController {
 
     @Autowired
     MicroserviceLoginProxy microserviceLoginProxy;
+
+    @Autowired
+    MicroserviceCategoryProxy microserviceCategoryProxy;
 
     @Autowired
     ClientServiceImpl clientService;
@@ -79,6 +84,12 @@ public class ClientController {
     @RequestMapping("/adventures")
     public String adventures(Model model, HttpServletRequest request) {
         List<AdventureBean> adventures = microserviceAdventureProxy.adventureList(request.getHeader(AUTHORIZATION_HEADER));
+        adventures.forEach((adventure) -> {
+            CategoryBean categoryBean = microserviceCategoryProxy.getCategoryById(adventure.getCategory(), request.getHeader(AUTHORIZATION_HEADER));
+            adventure.setCategoryName(categoryBean.getName());
+            adventure.setCategoryColor(categoryBean.getColor());
+        });
+
         model.addAttribute("adventures", adventures);
         return "adventures/list";
     }

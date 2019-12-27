@@ -1,5 +1,7 @@
 package com.ecommerce.adventure.model;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Entity;
@@ -9,6 +11,8 @@ import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
+@Getter
+@Setter
 public class Adventure {
 
     @Id
@@ -22,74 +26,20 @@ public class Adventure {
     private LocalDate date;
     private int maxEntrant;
     private int price;
+    private int category;
 
     public Adventure() {
 
     }
 
-    public Adventure(int id, int price, String name, String description, String image, LocalDate date, int maxEntrant) {
+    public Adventure(int id, int category, int price, String name, String description, String image, LocalDate date, int maxEntrant) {
         this.id = id;
+        this.category = category;
         this.price = price;
         this.name = name;
         this.image = image;
         this.description = description;
         this.date = date;
-        this.maxEntrant = maxEntrant;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    public int getMaxEntrant() {
-        return maxEntrant;
-    }
-
-    public void setMaxEntrant(int maxEntrant) {
         this.maxEntrant = maxEntrant;
     }
 
@@ -97,6 +47,7 @@ public class Adventure {
     public String toString() {
         return "Adventure{" +
                 "id=" + id +
+                "category=" + category +
                 ", price=" + price +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +

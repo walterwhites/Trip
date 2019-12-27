@@ -12,6 +12,7 @@ public class AdventureBean {
     }
 
     private int id;
+    private int category;
     private String name;
     private String description;
     private String image;
@@ -23,6 +24,7 @@ public class AdventureBean {
     public String toString() {
         return "AdventureBean{" +
                 "id=" + id +
+                ", category=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +

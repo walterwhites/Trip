@@ -36,8 +36,7 @@ public class AdventureController {
         log.info("Get all adventures datas");
         List<Adventure> adventureList = adventureDao.findAll();
         if(adventureList.isEmpty()) throw new AdventureNotFoundException("No adventures found");
-        List<Adventure> adventureList1 = adventureList.subList(0, applicationPropertiesConfig.getLimitAdventures());
-        return adventureList1;
+        return adventureList;
     }
 
     @ApiOperation(value = "Display an adventure")
