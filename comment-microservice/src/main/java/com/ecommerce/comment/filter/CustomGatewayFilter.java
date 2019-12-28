@@ -1,16 +1,17 @@
-package com.ecommerce.clientui.filters;
+package com.ecommerce.comment.filter;
 
-import com.ecommerce.clientui.exception.ErrorResponse;
-import com.ecommerce.clientui.exception.UnauthorisedException;
-import com.ecommerce.clientui.utils.DebugUtils.*;
+import com.ecommerce.comment.constants.SecurityConstants;
+import com.ecommerce.comment.exceptions.UnauthorisedException;
+import com.ecommerce.comment.utils.DebugUtils;
+import com.ecommerce.comment.exceptions.ErrorResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import static com.ecommerce.clientui.constants.SecurityConstants.*;
 
-public class UserFilter implements Filter {
+
+public class CustomGatewayFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
@@ -19,7 +20,9 @@ public class UserFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
-        if ((RequestInfo.getRequestHeader(request, REFERER_HEADER) == null)) {
+        if ((DebugUtils.RequestInfo.getRequestHeader(request, SecurityConstants.REFERER_HEADER) == null) &&
+                !request.getRequestURL().toString().contains("localhost")) {
+
             UnauthorisedException unauthorisedException = new UnauthorisedException("Unauthorized Access",
                     "Unauthorized Access, you should pass through the API gateway");
             byte[] responseToSend = restResponseBytes(unauthorisedException.getErrorResponse());

@@ -18,3 +18,5 @@ before_install:
   - mvn -q install
   - cd ../login-microservice
   - mvn -q install
+  - cd ../comment-microservice
+  - mvn -q install
