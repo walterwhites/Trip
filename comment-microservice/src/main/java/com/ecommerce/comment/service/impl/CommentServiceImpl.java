@@ -11,9 +11,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.time.LocalDateTime;
 import java.util.*;
-import static com.ecommerce.comment.constants.SecurityConstants.AUTHORIZATION_HEADER;
-
 
 @Service
 @Transactional
@@ -34,5 +33,19 @@ public class CommentServiceImpl implements CommentService {
         List<CommentResponseDTO> commentResponseDTOS = Arrays.asList(modelMapper.map(comments, CommentResponseDTO[].class));
 
         return commentResponseDTOS;
+    }
+
+    @Override
+    public void deleteComment(int id) {
+        Comment commentToDelete = commentRepository.findById(id).get();
+        commentRepository.delete(commentToDelete);
+    }
+
+    @Override
+    public void editComment(int id, String content) {
+        Comment commentToEdit = commentRepository.findById(id).get();
+        commentToEdit.setContent(content);
+        commentToEdit.setUpdatedDate(LocalDateTime.now());
+        commentRepository.save(commentToEdit);
     }
 }

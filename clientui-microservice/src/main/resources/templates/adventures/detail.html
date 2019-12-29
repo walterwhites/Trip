@@ -57,6 +57,28 @@
                     <p class="panel-heading">
                         Here appears all comments
                     </p>
+                    <div th:if="${error}">
+                        <!-- Error Alert -->
+                        <div id="messageError">
+                            <div style="padding: 5px;" class="centered">
+                                <div id="errorLoginAlert" class="alert alert alert-danger alert-dismissible fade show">
+                                    <strong>Error!</strong> <p th:text="${error}"></p>
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div th:if="${success}">
+                        <!-- Error Alert -->
+                        <div id="messageSuccess">
+                            <div style="padding: 5px;" class="centered">
+                                <div id="successLoginAlert" class="alert alert alert-success alert-dismissible fade show">
+                                    <strong>Success!</strong> <p th:text="${success}"></p>
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="">
                         <div class="panel panel-default">
                             <!-- /.panel-heading -->
@@ -65,9 +87,9 @@
                                     <thead>
                                     <tr>
                                         <th scope="col">Author</th>
-                                        <th scope="col">Comments</th>
+                                        <th scope="col">Comment</th>
                                         <th scope="col">Date</th>
-                                        <th scope="col"></th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -81,7 +103,59 @@
                                         <td th:text="${comment.getId()}"></td>
                                         <td th:text="${comment.getContent()}"></td>
                                         <td th:text="|${#temporals.format(comment.getUpdatedDate(), 'dd-MM-yyyy hh:mm a')}|"></td>
-                                        <!-- <td><a th:href="@{'/commands/' + ${payment.getId()}}"><button class="btn success" type="submit">See this command</button></a></td> !-->
+                                        <div th:if="${comment.getClientId().equals(client.getId())}">
+                                            <td>
+                                                <button class="btn btn-warning btn-sm p-3" data-toggle="modal" data-target="#editCommentModal">Edit this comment</button>
+                                                <button class="btn btn-danger btn-sm p-3" data-toggle="modal" data-target="#deleteCommentModal">Delete this comment</button>
+                                            </td>
+                                            <!-- Edit Comment Modal -->
+                                            <div class="modal fade" id="editCommentModal" tabindex="-1" role="dialog" aria-labelledby="editCommentModalTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Edit your comment</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <form th:action="@{'/comments/' + ${comment.getId()} + '/edit'}" method="POST">
+                                                            <div class="modal-body">
+                                                                <div class="form-group">
+                                                                    <textarea name="content" class="form-control" id="editFormCommentTextarea" rows="5" th:text="${comment.getContent()}" maxlength="200"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                                <button type="submit" class="btn btn-primary">Save my comment</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Delete Comment Modal -->
+                                            <div class="modal fade" id="deleteCommentModal" tabindex="-1" role="dialog" aria-labelledby="editCommentModalTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Confirm to delete this comment</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <form th:action="@{'/comments/' + ${comment.getId()} + '/delete'}" method="POST">
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                                <button type="submit" class="btn btn-primary">Delete my comment</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div th:unless="${comment.getClientId().equals(client.getId())}">
+                                            <td></td>
+                                        </div>
                                     </tr>
                                     </tbody>
                                 </table>

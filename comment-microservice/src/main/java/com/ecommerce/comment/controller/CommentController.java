@@ -1,5 +1,6 @@
 package com.ecommerce.comment.controller;
 
+import com.ecommerce.comment.requestDTO.CommentEditRequestDTO;
 import com.ecommerce.comment.requestDTO.CommentsRequestDTO;
 import com.ecommerce.comment.responseDTO.CommentResponseDTO;
 import com.ecommerce.comment.service.impl.ClientServiceImpl;
@@ -36,6 +37,32 @@ public class CommentController {
             clientService.getUserInformations();
             List<CommentResponseDTO> commentResponseDTOS = commentService.getComments(commentsRequestDTO.getAdventureId());
             return ok().body(commentResponseDTOS);
+        } catch (Exception exception) {
+            return badRequest().body(exception.getMessage());
+        }
+    }
+
+    @PostMapping(value="comments/{id}/delete")
+    @ApiOperation(value = "Delete a comment of adventure")
+    @ResponseBody
+    ResponseEntity<?> deleteComment(@RequestParam int id, HttpServletRequest request) {
+        try {
+            clientService.getUserInformations();
+            commentService.deleteComment(id);
+            return ok().build();
+        } catch (Exception exception) {
+            return badRequest().body(exception.getMessage());
+        }
+    }
+
+    @PostMapping(value="comments/{id}/edit")
+    @ApiOperation(value = "Edit a comment of adventure")
+    @ResponseBody
+    ResponseEntity<?> editComment(@RequestBody CommentEditRequestDTO commentEditRequestDTO, HttpServletRequest request) {
+        try {
+            clientService.getUserInformations();
+            commentService.editComment(commentEditRequestDTO.getId(), commentEditRequestDTO.getContent());
+            return ok().build();
         } catch (Exception exception) {
             return badRequest().body(exception.getMessage());
         }

@@ -18,6 +18,7 @@ Applications port listening:
 - Zuul server = 9096, 9099, 9210, 9211
 - login-microservice = 9097
 - client-microservice = 9098
+- comment-microservice = 9061
 
 ## Spring Cloud config
 endpoint spring cloud config
