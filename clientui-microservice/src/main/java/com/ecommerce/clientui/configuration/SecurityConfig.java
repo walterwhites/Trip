@@ -12,15 +12,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-            .antMatchers("/").permitAll()
-            .and()
-            .exceptionHandling().accessDeniedHandler(accessDeniedHandler());
+            .antMatchers("/").permitAll();
 
         //http.csrf().disable();
-    }
-
-    @Bean
-    public AccessDeniedHandler accessDeniedHandler(){
-        return new CustomAccessDeniedHandler();
     }
 }

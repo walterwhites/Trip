@@ -24,7 +24,7 @@
                     <i class="fa d-inline-block fa-ticket m-2"></i><p class="d-inline-block" th:text= "| Available places: ${adventure.maxEntrant}|"></p>
                 </div>
                 <div th:if="${adventure.getMaxEntrant() > 0}">
-                    <form action='/charge' method='POST' id='checkout-form'>
+                    <form th:action="@{/charge}" method='POST' id='checkout-form'>
                         <input type='hidden' th:value='${amount}' name='amount' />
                         <input type='hidden' th:value='${client.getFirstname() + " " + client.getLastname()}' name='name' />
                         <input type='hidden' th:value='${client.getEmailAddress()}' name='email' />
