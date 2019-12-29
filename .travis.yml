@@ -1,4 +1,6 @@
 language: java
+services:
+  - postgresql
 before_install:
   - cd config-server-microservice
   - mvn -q install
