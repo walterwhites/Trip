@@ -62,7 +62,7 @@
                                                 <p class="card-text" th:text="'Payment amount:' + ${payment.getAmount()} + ' €'">Payment's amount</p>
                                                 <p class="card-text"><small class="text-muted" th:text="|${#temporals.format(payment.getPaymentDate(), 'dd-MM-yyyy hh:mm a')}|">Payment date</small></p>
 
-                                                <div th:if="${!payment.getState().equals('canceled')}">
+                                                <div th:if="${!payment.getState().equals('canceled') && !payment.getState().equals('archived')}">
                                                     <form th:method="POST" th:action="@{'/commands/' + ${payment.getId()} + '/refund'}">
                                                         <input type="hidden" th:value="${payment.getChargeId()}" name="chargeId" />
                                                         <input type="hidden" th:value="${payment.getAdventure()}" name="adventure" />
