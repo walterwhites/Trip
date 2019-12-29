@@ -13,3 +13,4 @@ sleep 40 && cd login-microservice && nohup mvn spring-boot:run &
 sleep 40 && cd client-microservice && nohup mvn spring-boot:run &
 sleep 40 && cd payment-microservice && nohup mvn spring-boot:run &
 sleep 40 && cd clientui-microservice && nohup mvn spring-boot:run &
+sleep 40 && cd comment-microservice && nohup mvn spring-boot:run &

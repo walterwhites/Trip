@@ -1,14 +1,10 @@
 package com.ecommerce.clientui.controller;
 
-import com.ecommerce.clientui.beans.AdventureBean;
-import com.ecommerce.clientui.beans.CategoryBean;
-import com.ecommerce.clientui.beans.ChargeRequest;
-import com.ecommerce.clientui.beans.PaymentBean;
+import com.ecommerce.clientui.beans.*;
 import com.ecommerce.clientui.exception.BadRequestException;
-import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
-import com.ecommerce.clientui.proxies.MicroserviceCategoryProxy;
-import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
-import com.ecommerce.clientui.proxies.MicroservicePaymentProxy;
+import com.ecommerce.clientui.proxies.*;
+import com.ecommerce.clientui.requestDTO.CommentResponseDTO;
+import com.ecommerce.clientui.requestDTO.CommentsRequestDTO;
 import com.ecommerce.clientui.requestDTO.PaymentDetailRequestDTO;
 import com.ecommerce.clientui.requestDTO.RefundRequestDTO;
 import com.ecommerce.clientui.responseDTO.ChargeResponseDTO;
@@ -54,6 +50,9 @@ public class PaymentController {
     MicroserviceCategoryProxy microserviceCategoryProxy;
 
     @Autowired
+    MicroserviceCommentProxy microserviceCommentProxy;
+
+    @Autowired
     ClientServiceImpl clientService;
 
     @Value("${STRIPE_PUBLIC_KEY}")
@@ -82,11 +81,18 @@ public class PaymentController {
         adventure.setCategoryName(categoryBean.getName());
         adventure.setCategoryColor(categoryBean.getColor());
 
+        CommentsRequestDTO commentsRequestDTO = new CommentsRequestDTO();
+        commentsRequestDTO.setAdventureId(adventure.getId());
+        List<CommentResponseDTO> commentResponseDTO = microserviceCommentProxy.getComments(commentsRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+        ModelMapper modelMapper = new ModelMapper();
+        List<CommentBean> commentBeanList = Arrays.asList(modelMapper.map(commentResponseDTO, CommentBean[].class));
+
         model.addAttribute("client", clientResponseDTO.get());
         model.addAttribute("adventure", adventure);
         model.addAttribute("amount", adventure.getPrice() * 100); // Stripe payment in cents
         model.addAttribute("stripePublicKey", stripePublicKey);
         model.addAttribute("currency", ChargeRequest.Currency.EUR);
+        model.addAttribute("comments", commentBeanList);
         return "adventures/detail";
     }
 

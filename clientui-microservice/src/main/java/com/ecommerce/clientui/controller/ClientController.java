@@ -1,14 +1,14 @@
 package com.ecommerce.clientui.controller;
 
-import com.ecommerce.clientui.beans.AdventureBean;
-import com.ecommerce.clientui.beans.CategoryBean;
-import com.ecommerce.clientui.beans.ClientBean;
-import com.ecommerce.clientui.beans.PaymentBean;
+import com.ecommerce.clientui.beans.*;
 import com.ecommerce.clientui.exception.CustomException;
 import com.ecommerce.clientui.exception.UnauthorisedException;
 import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
 import com.ecommerce.clientui.proxies.MicroserviceCategoryProxy;
+import com.ecommerce.clientui.proxies.MicroserviceCommentProxy;
 import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
+import com.ecommerce.clientui.requestDTO.CommentAddRequestDTO;
+import com.ecommerce.clientui.requestDTO.CommentEditRequestDTO;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
 import com.ecommerce.clientui.service.impl.ClientServiceImpl;
 import com.ecommerce.clientui.utils.CookiesUtils;
@@ -22,12 +22,17 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.servlet.view.RedirectView;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
+
+import static com.ecommerce.clientui.constants.ErrorTemplate.FORBIDDEN;
 import static com.ecommerce.clientui.constants.SecurityConstants.*;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -45,6 +50,9 @@ public class ClientController {
 
     @Autowired
     ClientServiceImpl clientService;
+
+    @Autowired
+    MicroserviceCommentProxy microserviceCommentProxy;
 
     @InitBinder
     public void allowEmptyDateBinding( WebDataBinder binder )
@@ -171,5 +179,50 @@ public class ClientController {
     public ModelAndView logout(HttpServletResponse response) {
         CookiesUtils.removeCookie(JWT_COOKIE, response);
         return new ModelAndView("redirect:/login");
+    }
+
+    @PostMapping("/comments/{id}/delete")
+    public RedirectView deleteComment(ModelMap model, @RequestParam("adventureId") int adventureId, @PathVariable("id") int id, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        RedirectView redirectView = new RedirectView("/adventures/" + adventureId,true, true, false);
+        try {
+            microserviceCommentProxy.deleteComment(id, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+            redirectAttributes.addFlashAttribute("success", "This comment has been deleted");
+        } catch (CustomException customException) {
+            String message = customException.getErrorResponse().getErrorMsg();
+            redirectAttributes.addFlashAttribute("error", message);
+        }
+        return redirectView;
+    }
+
+    @PostMapping("/comments/{id}/edit")
+    public RedirectView editComment(ModelMap model, @PathVariable("id") int id, @Valid @ModelAttribute("comments") @Validated CommentEditRequestDTO commentEditRequestDTO, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        RedirectView redirectView = new RedirectView("/adventures/" + commentEditRequestDTO.getAdventureId(),true, true, false);
+        try {
+            commentEditRequestDTO.setId(id);
+            microserviceCommentProxy.editComment(id, commentEditRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+            redirectAttributes.addFlashAttribute("success", "This comment has been edited");
+        } catch (CustomException customException) {
+            String message = customException.getErrorResponse().getErrorMsg();
+            redirectAttributes.addFlashAttribute("error", message);
+        }
+        return redirectView;
+    }
+
+    @PostMapping("/comments/add")
+    public RedirectView addComment(ModelMap model, @Valid @ModelAttribute("comments") @Validated CommentAddRequestDTO commentAddRequestDTO, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        RedirectView redirectView = new RedirectView("/adventures/" + commentAddRequestDTO.getAdventureId(),true, true, false);
+        try {
+            microserviceCommentProxy.addComment(commentAddRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+            redirectAttributes.addFlashAttribute("success", "This comment has been added");
+        } catch (CustomException customException) {
+            String message = customException.getErrorResponse().getErrorMsg();
+            redirectAttributes.addFlashAttribute("error", message);
+        }
+        return redirectView;
+    }
+
+    @RequestMapping("/accessDenied")
+    public String accessDenied() {
+        return FORBIDDEN;
     }
 }

@@ -1,6 +1,7 @@
-package com.ecommerce.loginmicroservice.configuration;
+package com.ecommerce.comment.configuration;
 
-import com.ecommerce.loginmicroservice.utils.DebugUtils;
+import com.ecommerce.comment.utils.CookiesUtils;
+import com.ecommerce.comment.utils.DebugUtils;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.stereotype.Component;
@@ -8,7 +9,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 
-import static com.ecommerce.loginmicroservice.constants.SecurityConstants.*;
+import static com.ecommerce.comment.constants.SecurityConstants.*;
 
 @Component
 public class MyRequestInterceptor implements RequestInterceptor {
@@ -24,5 +25,6 @@ public class MyRequestInterceptor implements RequestInterceptor {
             return;
         }
         requestTemplate.header(REFERER_HEADER, request.getHeader(REFERER_HEADER));
+        DebugUtils.RequestInfo.displayAllRequestHeaders(request);
     }
 }
