@@ -58,7 +58,7 @@ public class CommentController {
     @PostMapping(value="comments/{id}/edit")
     @ApiOperation(value = "Edit a comment of adventure")
     @ResponseBody
-    ResponseEntity<?> editComment(@RequestBody CommentEditRequestDTO commentEditRequestDTO, HttpServletRequest request) {
+    ResponseEntity<?> editComment(@RequestParam int id, @RequestBody CommentEditRequestDTO commentEditRequestDTO, HttpServletRequest request) {
         try {
             clientService.getUserInformations();
             commentService.editComment(commentEditRequestDTO.getId(), commentEditRequestDTO.getContent());

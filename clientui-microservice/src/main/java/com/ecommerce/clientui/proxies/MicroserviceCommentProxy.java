@@ -19,11 +19,11 @@ import static com.ecommerce.clientui.constants.SecurityConstants.REFERER_HEADER;
 public interface MicroserviceCommentProxy {
 
     @PostMapping(value = "/comments")
-    List<CommentResponseDTO> getComments(@RequestBody CommentsRequestDTO commentsRequestDTO, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
+    List<CommentResponseDTO> getComments(@RequestBody() CommentsRequestDTO commentsRequestDTO, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
 
     @PostMapping(value = "/comments/{id}/delete")
     void deleteComment(@RequestParam int id, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
 
     @PostMapping(value = "/comments/{id}/edit")
-    void editComment(@RequestBody CommentEditRequestDTO commentsEditRequestDTO, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
+    void editComment(@RequestParam int id, @RequestBody() CommentEditRequestDTO commentsEditRequestDTO, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
 }

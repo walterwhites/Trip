@@ -28,6 +28,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
+
+import static com.ecommerce.clientui.constants.ErrorTemplate.FORBIDDEN;
 import static com.ecommerce.clientui.constants.SecurityConstants.*;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -192,12 +194,17 @@ public class ClientController {
     public ModelAndView editComment(ModelMap model, @PathVariable("id") int id, @Valid @ModelAttribute("comments") @Validated CommentEditRequestDTO commentEditRequestDTO, HttpServletRequest request) {
         try {
             commentEditRequestDTO.setId(id);
-            microserviceCommentProxy.editComment(commentEditRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+            microserviceCommentProxy.editComment(id, commentEditRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
             model.addAttribute("success", "This comment has been edited");
         } catch (CustomException customException) {
             String message = customException.getErrorResponse().getErrorMsg();
             model.addAttribute("error", message);
         }
         return new ModelAndView("forward:/adventures/" + id, model);
+    }
+
+    @RequestMapping("/accessDenied")
+    public String accessDenied() {
+        return FORBIDDEN;
     }
 }
