@@ -48,4 +48,14 @@ public class CommentServiceImpl implements CommentService {
         commentToEdit.setUpdatedDate(LocalDateTime.now());
         commentRepository.save(commentToEdit);
     }
+
+    @Override
+    public void addComment(int adventureId, Long clientId, String content) {
+        Comment commentToAdd = new Comment();
+        commentToAdd.setUpdatedDate(LocalDateTime.now());
+        commentToAdd.setAdventureId(adventureId);
+        commentToAdd.setContent(content);
+        commentToAdd.setClientId(clientId);
+        commentRepository.save(commentToAdd);
+    }
 }

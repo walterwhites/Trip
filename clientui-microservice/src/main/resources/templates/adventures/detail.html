@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Adventure detail - Wild Adventures</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/datatables.min.css}"/>
 </head>
 <body>
 <header lang="en" th:replace="fragments/header :: header"></header>
@@ -105,8 +106,12 @@
                                         <td th:text="|${#temporals.format(comment.getUpdatedDate(), 'dd-MM-yyyy hh:mm a')}|"></td>
                                         <div th:if="${comment.getClientId().equals(client.getId())}">
                                             <td>
-                                                <button class="btn btn-primary btn-sm p-3" data-toggle="modal" data-target="#editCommentModal">Edit this comment</button>
-                                                <button class="btn btn-danger btn-sm p-3" data-toggle="modal" data-target="#deleteCommentModal">Delete this comment</button>
+                                                <span style="color: Dodgerblue;">
+                                                    <i class="fa fa-edit fa-lg mr-1" data-toggle="modal" style="cursor: pointer; vertical-align: sub" data-target="#editCommentModal"></i>
+                                                </span>
+                                                <span style="color: darkred;">
+                                                 <i class="fa fa-trash fa-lg ml-1" data-toggle="modal" style="cursor: pointer;" data-target="#deleteCommentModal"></i>
+                                                </span>
                                             </td>
                                             <!-- Edit Comment Modal -->
                                             <div class="modal fade" id="editCommentModal" tabindex="-1" role="dialog" aria-labelledby="editCommentModalTitle" aria-hidden="true">
@@ -121,6 +126,7 @@
                                                         <form th:action="@{'/comments/' + ${comment.getId()} + '/edit'}" method="POST">
                                                             <div class="modal-body">
                                                                 <div class="form-group">
+                                                                    <input type="hidden" name="adventureId" th:value="${adventure.getId()}"/>
                                                                     <textarea name="content" class="form-control" id="editFormCommentTextarea" rows="5" th:text="${comment.getContent()}" maxlength="200"></textarea>
                                                                 </div>
                                                             </div>
@@ -145,6 +151,7 @@
                                                         </div>
                                                         <form th:action="@{'/comments/' + ${comment.getId()} + '/delete'}" method="POST">
                                                             <div class="modal-footer">
+                                                                <input type="hidden" name="adventureId" th:value="${adventure.getId()}"/>
                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                                                 <button type="submit" class="btn btn-danger">Delete my comment</button>
                                                             </div>
@@ -156,11 +163,39 @@
                                         <div th:unless="${comment.getClientId().equals(client.getId())}">
                                             <td></td>
                                         </div>
+                                        <!-- Add Comment Modal -->
+                                        <div class="modal fade" id="addCommentModal" tabindex="-1" role="dialog" aria-labelledby="addCommentModalTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Add a comment</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <form th:action="@{'/comments/add'}" method="POST">
+                                                        <div class="modal-body">
+                                                            <div class="form-group">
+                                                                <textarea name="content" class="form-control" id="addFormCommentTextarea" rows="5" maxlength="200"></textarea>
+                                                                <input type="hidden" name="adventureId" th:value="${adventure.getId()}"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                            <button type="submit" class="btn btn-primary">Save my comment</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <!-- /.panel-body -->
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-secondary btn-sm p-3 mt-3" data-toggle="modal" data-target="#addCommentModal">Add a comment</button>
                         </div>
                         <!-- /.panel -->
                     </div>
@@ -171,6 +206,8 @@
         </div>
     </div>
 </div>
+<script th:src="@{/js/comments.js}"></script>
+<script th:src="@{/js/datatables.min.js}"></script>
 <footer lang="en" th:replace="fragments/footer :: footer"></footer>
 </body>
 </html>

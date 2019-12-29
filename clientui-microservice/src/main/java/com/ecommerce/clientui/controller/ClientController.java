@@ -7,6 +7,7 @@ import com.ecommerce.clientui.proxies.MicroserviceAdventureProxy;
 import com.ecommerce.clientui.proxies.MicroserviceCategoryProxy;
 import com.ecommerce.clientui.proxies.MicroserviceCommentProxy;
 import com.ecommerce.clientui.proxies.MicroserviceLoginProxy;
+import com.ecommerce.clientui.requestDTO.CommentAddRequestDTO;
 import com.ecommerce.clientui.requestDTO.CommentEditRequestDTO;
 import com.ecommerce.clientui.responseDTO.ClientResponseDTO;
 import com.ecommerce.clientui.service.impl.ClientServiceImpl;
@@ -21,6 +22,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -179,28 +182,43 @@ public class ClientController {
     }
 
     @PostMapping("/comments/{id}/delete")
-    public ModelAndView deleteComment(ModelMap model, @PathVariable("id") int id, HttpServletRequest request) {
+    public RedirectView deleteComment(ModelMap model, @RequestParam("adventureId") int adventureId, @PathVariable("id") int id, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        RedirectView redirectView = new RedirectView("/adventures/" + adventureId,true, true, false);
         try {
             microserviceCommentProxy.deleteComment(id, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
-            model.addAttribute("success", "This comment has been deleted");
+            redirectAttributes.addFlashAttribute("success", "This comment has been deleted");
         } catch (CustomException customException) {
             String message = customException.getErrorResponse().getErrorMsg();
-            model.addAttribute("error", message);
+            redirectAttributes.addFlashAttribute("error", message);
         }
-        return new ModelAndView("forward:/adventures/" + id, model);
+        return redirectView;
     }
 
     @PostMapping("/comments/{id}/edit")
-    public ModelAndView editComment(ModelMap model, @PathVariable("id") int id, @Valid @ModelAttribute("comments") @Validated CommentEditRequestDTO commentEditRequestDTO, HttpServletRequest request) {
+    public RedirectView editComment(ModelMap model, @PathVariable("id") int id, @Valid @ModelAttribute("comments") @Validated CommentEditRequestDTO commentEditRequestDTO, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        RedirectView redirectView = new RedirectView("/adventures/" + commentEditRequestDTO.getAdventureId(),true, true, false);
         try {
             commentEditRequestDTO.setId(id);
             microserviceCommentProxy.editComment(id, commentEditRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
-            model.addAttribute("success", "This comment has been edited");
+            redirectAttributes.addFlashAttribute("success", "This comment has been edited");
         } catch (CustomException customException) {
             String message = customException.getErrorResponse().getErrorMsg();
-            model.addAttribute("error", message);
+            redirectAttributes.addFlashAttribute("error", message);
         }
-        return new ModelAndView("forward:/adventures/" + id, model);
+        return redirectView;
+    }
+
+    @PostMapping("/comments/add")
+    public RedirectView addComment(ModelMap model, @Valid @ModelAttribute("comments") @Validated CommentAddRequestDTO commentAddRequestDTO, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        RedirectView redirectView = new RedirectView("/adventures/" + commentAddRequestDTO.getAdventureId(),true, true, false);
+        try {
+            microserviceCommentProxy.addComment(commentAddRequestDTO, request.getHeader(REFERER_HEADER), request.getHeader(AUTHORIZATION_HEADER));
+            redirectAttributes.addFlashAttribute("success", "This comment has been added");
+        } catch (CustomException customException) {
+            String message = customException.getErrorResponse().getErrorMsg();
+            redirectAttributes.addFlashAttribute("error", message);
+        }
+        return redirectView;
     }
 
     @RequestMapping("/accessDenied")

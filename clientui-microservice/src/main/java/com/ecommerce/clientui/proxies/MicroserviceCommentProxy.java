@@ -26,4 +26,7 @@ public interface MicroserviceCommentProxy {
 
     @PostMapping(value = "/comments/{id}/edit")
     void editComment(@RequestParam int id, @RequestBody() CommentEditRequestDTO commentsEditRequestDTO, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
+
+    @PostMapping(value = "/comments/add")
+    void addComment(@RequestBody() CommentAddRequestDTO commentAddRequestDTO, @RequestHeader(value = REFERER_HEADER) String referer, @RequestHeader(value = AUTHORIZATION_HEADER) String authorisation);
 }

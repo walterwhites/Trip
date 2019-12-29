@@ -1,4 +1,4 @@
-package com.ecommerce.clientui.requestDTO;
+package com.ecommerce.comment.requestDTO;
 
 import lombok.*;
 
@@ -9,9 +9,9 @@ import java.io.Serializable;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CommentEditRequestDTO implements Serializable {
+public class CommentAddRequestDTO implements Serializable {
 
     private int adventureId;
-    private int id;
+    private Long clientId;
     private String content;
 }
