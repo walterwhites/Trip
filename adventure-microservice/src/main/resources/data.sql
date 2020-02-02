@@ -1,6 +1,6 @@
 INSERT INTO adventure VALUES(1, 192, 2,'Liverpool Trip', 'For 3 days - Visit The Beatles Town, The Beatles were an English rock band formed in Liverpool in 1960. With a line-up comprising John Lennon, ' ||
 'Paul McCartney, George Harrison and Ringo Starr, they are regarded as the most influential band of all time.',
-'https://culturecdn.fra1.cdn.digitaloceanspaces.com//2016/02/ccs_5437-700x467.jpg', '2020-01-17 18:47:52.69', 12);
+'https://culturecdn.fra1.cdn.digitaloceanspaces.com//2016/02/ccs_5437-700x467.jpg', '2020-02-17 18:47:52.69', 12);
 INSERT INTO adventure VALUES(2, 102, 2, 'London Trip', 'For 2 days - Big Ben. Westminster Abbey. St. Paul’s Cathedral. Buckingham Palace. The majesty of London attractions encapsulates a 2000-year history ' ||
 'that’s rich in power, innovation and culture. See the best of London’s iconic landmarks, and discover new treasures amongst the old with Big Bus Tours.',
 'https://cdn.londonandpartners.com/visit/general-london/areas/river/76709-640x360-houses-of-parliament-and-london-eye-on-thames-from-above-640.jpg', '2020-02-20 18:47:52.69', 12);
